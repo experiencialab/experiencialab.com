@@ -16,17 +16,27 @@
         style="position:relative;width:100vw;height:60vh"
       >
         <v-row
-          class="ma-0 mt-3 ml-6 mr-3 pa-0"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.6)"
+          class="ma-0 ml-6 mr-3 pa-0"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
           align="center"
           justify="center"
         >
-          PODCAST
+          PODCAST <v-icon class="ma-0 ml-7 pa-0">$corazon</v-icon>
         </v-row>
         <v-row
-          class="my-3 mx-6 pa-0"
-          style="background-color:green;width:100%"
+          class="my-1 mx-6 pa-0"
+          style="width:100%;min-height:100%"
         >
+          <VideoParallax class="ma-0 pa-0" style="width:100%;min-height:60vh" src="videos/lab.mov">
+
+            <v-row
+              class="ma-0 pa-0"
+              style="width:50%;min-height:65vh;background-color:transparent"
+            >
+
+            </v-row>
+
+          </VideoParallax>
         </v-row>
       </v-row>
       <v-row
@@ -34,14 +44,53 @@
         style="width:100vw;color:black;font-family:Space Grotesk"
       >
           <v-spacer></v-spacer>
-
-          <p class="ma-6 pa-0" style="width:40%"> {{ $store.state.bajada }} </p>
+          <v-icon class="ma-0 mt-10 mr-5 pa-0" style="transform:scale(2)">$corazon</v-icon>
+          <p class="mx-6 mb-5 mt-2 pa-0" style="width:40%"> {{ $store.state.bajada }} </p>
 
       </v-row>
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
+      style="width:100vw;height:70px"
+    >
+    </v-row>
+    <v-row
+      class="ma-0 ml-12 pa-0"
+      style="width:100vw;height:70px;font-size:20px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black"
+    >
+    SERVICIOS
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
+      style="position:relative;width:100vw;height:calc( 100vh - 70px )"
+    >
+        <v-img
+          class="ma-16 pa-0"
+          style="max-width:690px;max-heigth:calc( 100vh - 70px );left:5vw"
+          src="fotos/aceleracion-digital.jpg"/>
+        <v-row
+          class="ma-0 pa-0 justify-end"
+        >
+          <v-row
+            class="ma-0 mr-16 pa-0"
+            style="top:15vh;right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:450px;height:390px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            align="center"
+            justify="center"
+          >
+            PODCAST
+          </v-row>
+        </v-row>
+
+
     </v-row>
   </v-row>
 </template>
 
 <script>
-
+  import VideoParallax from 'vuetify-video-parallax';
+  export default {
+  components: {
+    VideoParallax,
+  }
+}
 </script>

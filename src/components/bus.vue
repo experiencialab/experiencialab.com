@@ -1,0 +1,49 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="370.11" height="196.666" viewBox="0 0 370.11 196.666">
+    <g id="Group_45" data-name="Group 45" transform="translate(-372.111 -458.924)">
+      <g id="Group_33" data-name="Group 33" transform="translate(372.111 458.924)">
+        <path id="Path_21" data-name="Path 21" d="M399.31,458.924H715.021a27.263,27.263,0,0,1,27.2,27.2V597.208a27.27,27.27,0,0,1-27.2,27.2h-6.136a35.9,35.9,0,0,0,.206-3.814,34.894,34.894,0,0,0-1.974-11.606h7.9A11.841,11.841,0,0,0,726.8,597.208V486.123a11.838,11.838,0,0,0-11.777-11.777H399.31a11.834,11.834,0,0,0-11.779,11.777V597.208a11.841,11.841,0,0,0,11.779,11.779h7.9a34.9,34.9,0,0,0-1.974,11.606,35.338,35.338,0,0,0,.208,3.814H399.31a27.262,27.262,0,0,1-27.2-27.2V486.123a27.259,27.259,0,0,1,27.2-27.2Zm73.946,150.063a34.9,34.9,0,0,1,1.972,11.606,35.364,35.364,0,0,1-.206,3.814H639.307a35.364,35.364,0,0,1-.206-3.814,34.9,34.9,0,0,1,1.972-11.606Z" transform="translate(-372.111 -458.924)" fill="#03f7f7"/>
+      </g>
+      <g id="Group_34" data-name="Group 34" transform="translate(379.821 484.257)">
+        <rect id="Rectangle_18" data-name="Rectangle 18" width="354.689" height="15.422" fill="#03f7f7"/>
+      </g>
+      <g id="Group_35" data-name="Group 35" transform="translate(379.821 538.826)">
+        <rect id="Rectangle_19" data-name="Rectangle 19" width="354.689" height="15.422" fill="#03f7f7"/>
+      </g>
+      <g id="Group_36" data-name="Group 36" transform="translate(419.333 491.968)">
+        <rect id="Rectangle_20" data-name="Rectangle 20" width="15.422" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_37" data-name="Group 37" transform="translate(465.655 491.968)">
+        <rect id="Rectangle_21" data-name="Rectangle 21" width="15.421" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_38" data-name="Group 38" transform="translate(511.976 491.968)">
+        <rect id="Rectangle_22" data-name="Rectangle 22" width="15.422" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_39" data-name="Group 39" transform="translate(558.298 491.968)">
+        <rect id="Rectangle_23" data-name="Rectangle 23" width="15.422" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_40" data-name="Group 40" transform="translate(604.62 491.968)">
+        <rect id="Rectangle_24" data-name="Rectangle 24" width="15.421" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_41" data-name="Group 41" transform="translate(650.942 491.968)">
+        <rect id="Rectangle_25" data-name="Rectangle 25" width="15.422" height="54.569" fill="#03f7f7"/>
+      </g>
+      <g id="Group_42" data-name="Group 42" transform="translate(639.102 585.599)">
+        <path id="Path_22" data-name="Path 22" d="M536.824,520.47a35,35,0,1,1-24.744,10.25,34.883,34.883,0,0,1,24.744-10.25Zm13.842,21.154a19.575,19.575,0,1,0,5.732,13.839A19.51,19.51,0,0,0,550.665,541.624Z" transform="translate(-501.83 -520.47)" fill="#03f7f7"/>
+      </g>
+      <g id="Group_43" data-name="Group 43" transform="translate(405.238 585.599)">
+        <path id="Path_23" data-name="Path 23" d="M423.2,520.47a35,35,0,1,1-24.746,10.25A34.886,34.886,0,0,1,423.2,520.47Zm13.842,21.154a19.576,19.576,0,1,0,5.732,13.839A19.514,19.514,0,0,0,437.044,541.624Z" transform="translate(-388.206 -520.47)" fill="#03f7f7"/>
+      </g>
+      <g id="Group_44" data-name="Group 44" transform="translate(698.685 570.008)">
+        <path id="Path_24" data-name="Path 24" d="M538.491,512.895a7.711,7.711,0,1,0,0,15.422H566.6a7.711,7.711,0,0,0,0-15.422Z" transform="translate(-530.779 -512.895)" fill="#03f7f7"/>
+      </g>
+    </g>
+  </svg>
+</template>
+
+<script>
+import Vue from "vue";
+export default Vue.extend({
+  name: "icon-name"
+});
+</script>

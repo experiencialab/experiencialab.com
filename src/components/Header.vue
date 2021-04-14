@@ -9,7 +9,7 @@
       max-height="50px"
       max-width="180px"
       src="logo-lab.png"
-      contain="true"/>
+      :contain="true"/>
     <v-spacer></v-spacer>
     <v-row
       class="ma-0 mr-6 pa-0"
