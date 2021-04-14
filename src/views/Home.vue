@@ -72,7 +72,7 @@
 
         >
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 mb-4 pb-8 pa-0"
             style="height:100%"
             align="center"
             justify="center"
