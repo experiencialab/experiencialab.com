@@ -63,12 +63,21 @@
     <v-row
       v-for="servicio in $store.state.servicios"  :key="servicio.index"
       class="ma-0 pa-0"
-      style="position:relative;width:100vw;height:calc( 100vh - 70px )"
+      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
     >
+      <v-row
+        class="ma-0 pa-0"
+        style="width:100vw"
+      >
+        <v-row
+          class="ma-0 pa-0"
+          style="width:100vw;height:12vh"
+        >
+        </v-row>
         <v-img
-          class="ma-16 pa-0"
-          style="min-width:50%;max-width:50%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
-          src="fotos/aceleracion-digital.jpg"
+          class="mx-16 pa-0"
+          style="min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
+          :src="$store.state.servicios[servicio.index].foto"
 
         >
           <v-row
@@ -87,12 +96,12 @@
         >
           <v-row
             class="ma-0 mr-16 pa-0"
-            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:500px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:40vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
               class="ma-0 pa-0"
-              style="width:100%;height:60px"
+              style="width:100%;height:10vh"
               align="center"
             >
               <v-row
@@ -104,14 +113,14 @@
               </v-row>
               <v-row
                 class="ma-0 ml-6 pa-0"
-                style="font-size:17px;font-family:Space Grotesk;font-weight:700"
+                style="font-size:18px;font-family:Space Grotesk;font-weight:700"
               >
                 {{ $store.state.servicios[servicio.index].titulo }}
               </v-row>
             </v-row>
             <v-row
               class="my-3 mx-12 pa-0"
-              style="width:100%;height:65%;font-size:14px;font-family:Space Grotesk;font-weight:400"
+              style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
               align="center"
             >
               <p>
@@ -128,8 +137,15 @@
             </v-row>
           </v-row>
         </v-row>
-
-
+      </v-row>
+    </v-row>
+    <v-row
+      class="mx-6 mb-16 pa-0"
+      style="overflow-x:hidden"
+    >
+      <v-img
+        max-width='100%'
+        src="fotos/testimonios.jpg"/>
     </v-row>
   </v-row>
 </template>
