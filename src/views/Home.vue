@@ -67,8 +67,20 @@
     >
         <v-img
           class="ma-16 pa-0"
-          style="max-width:690px;max-heigth:calc( 100vh - 70px );left:5vw"
-          src="fotos/aceleracion-digital.jpg"/>
+          style="min-width:50%;max-width:50%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
+          src="fotos/aceleracion-digital.jpg"
+
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="height:100%"
+            align="center"
+            justify="center"
+          >
+            {{ $store.state.servicios[servicio.index].letra }}
+
+          </v-row>
+        </v-img>
         <v-row
           class="ma-0 pa-0 justify-end"
           align="center"
@@ -103,7 +115,7 @@
               align="center"
             >
               <p>
-                {{ $store.state.servicios[servicio.index].texto }}
+                <span v-html="$store.state.servicios[servicio.index].texto"></span>
               </p>
             </v-row>
             <v-row
@@ -130,3 +142,8 @@
   }
 }
 </script>
+
+<style lang="sass">
+  .spany
+    font-weight: bold
+</style>
