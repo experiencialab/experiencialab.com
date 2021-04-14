@@ -61,6 +61,7 @@
     SERVICIOS
     </v-row>
     <v-row
+      v-for="servicio in $store.state.servicios"  :key="servicio.index"
       class="ma-0 pa-0"
       style="position:relative;width:100vw;height:calc( 100vh - 70px )"
     >
@@ -70,14 +71,49 @@
           src="fotos/aceleracion-digital.jpg"/>
         <v-row
           class="ma-0 pa-0 justify-end"
+          align="center"
         >
           <v-row
             class="ma-0 mr-16 pa-0"
-            style="top:15vh;right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:450px;height:390px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:500px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
-            justify="center"
           >
-            PODCAST
+            <v-row
+              class="ma-0 pa-0"
+              style="width:100%;height:60px"
+              align="center"
+            >
+              <v-row
+                class="ma-0 pa-0"
+                style="background-color:#03F7F7;max-width:5px;height:100%"
+                align="center"
+              >
+
+              </v-row>
+              <v-row
+                class="ma-0 ml-6 pa-0"
+                style="font-size:17px;font-family:Space Grotesk;font-weight:700"
+              >
+                {{ $store.state.servicios[servicio.index].titulo }}
+              </v-row>
+            </v-row>
+            <v-row
+              class="my-3 mx-12 pa-0"
+              style="width:100%;height:65%;font-size:14px;font-family:Space Grotesk;font-weight:400"
+              align="center"
+            >
+              <p>
+                {{ $store.state.servicios[servicio.index].texto }}
+              </p>
+            </v-row>
+            <v-row
+              class="ma-0 mb-5 pa-0"
+              style="width:100%;height:60px"
+              align="center"
+              justify="center"
+            >
+              <v-icon class="ma-0 pa-0">$corazon</v-icon>
+            </v-row>
           </v-row>
         </v-row>
 
