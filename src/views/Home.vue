@@ -21,7 +21,7 @@
           align="center"
           justify="center"
         >
-          PODCAST <v-icon class="ma-0 ml-7 pa-0">$corazon</v-icon>
+          PODCAST <v-icon class="ma-0 ml-7 pa-0" style="transform:scale(1.5)">$camion</v-icon>
         </v-row>
         <v-row
           class="my-1 mx-6 pa-0"
@@ -133,19 +133,62 @@
               align="center"
               justify="center"
             >
-              <v-icon class="ma-0 pa-0">$corazon</v-icon>
+              <v-icon v-if="servicio.index == 0" style="transform:scale(2.5)">$barco</v-icon>
+              <v-icon v-if="servicio.index == 1" style="transform:scale(3)">$cohete</v-icon>
+              <v-icon v-if="servicio.index == 2" style="transform:scale(3)">$avion</v-icon>
             </v-row>
           </v-row>
         </v-row>
       </v-row>
     </v-row>
     <v-row
-      class="mx-6 mb-16 pa-0"
-      style="overflow-x:hidden"
+      class="ma-0 pa-0"
+      style="width:100vw;position:relative"
     >
-      <v-img
-        max-width='100%'
-        src="fotos/testimonios.jpg"/>
+      <v-row
+        class="ma-0 mt-16 ml-3 pa-0"
+        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+      >
+      </v-row>
+      <v-row
+        class="ma-0 mx-6 mt-16 pa-0 pt-16"
+        style="overflow:hidden;width:100vw"
+      >
+        <v-img
+          class="ma-0 mt-16 pa-0"
+          max-width="100%"
+          height="350px"
+          src="fotos/testimonios.jpg"
+          style="color:white"
+        >
+          <v-carousel
+            hide-delimiters
+            :show-arrows="false"
+            continuos
+            cycle
+          >
+            <v-carousel-item
+              class="ma-0 pa-0"
+              transition="my-carousel-vertical"
+              v-for="(item, index) in $store.state.testimonios" :key="index"
+              style="font-size:25px;font-family:Space Grotesk;font-weight:600;width:100vw"
+            >
+              <v-row
+                class="ma-0 pa-0 justify-end"
+                style="width:100%;height:100%;background-color:red"
+                align="center"
+              >
+                <v-row
+                  class="ma-0 pa-0"
+                  style="background-color:yellow;width:100%;height:100%;"
+                >
+
+                </v-row>
+              </v-row>
+            </v-carousel-item>
+          </v-carousel>
+        </v-img>
+      </v-row>
     </v-row>
   </v-row>
 </template>

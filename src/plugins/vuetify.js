@@ -1,7 +1,11 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
-import Bus from "@/components/bus.vue";
-import Corazon from "@/components/corazon.vue";
+import Bus from "@/components/iconos/bus.vue";
+import Corazon from "@/components/iconos/corazon.vue";
+import Camion from "@/components/iconos/camion.vue";
+import Cohete from "@/components/iconos/cohete.vue";
+import Barco from "@/components/iconos/barco.vue";
+import Avion from "@/components/iconos/avion.vue";
 
 Vue.use(Vuetify);
 
@@ -12,11 +16,23 @@ export default new Vuetify({
   iconfont: "fa",
   icons: {
     values: {
-      bus: { // name of our custom icon
-        component: Bus, // our custom component
+      bus: {
+        component: Bus,
       },
-      corazon: { // name of our custom icon
-        component: Corazon, // our custom component
+      camion: {
+        component: Camion,
+      },
+      cohete: {
+        component: Cohete,
+      },
+      barco: {
+        component: Barco,
+      },
+      avion: {
+        component: Avion,
+      },
+      corazon: {
+        component: Corazon,
       }
     },
   },

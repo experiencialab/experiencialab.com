@@ -6,6 +6,18 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     bajada: 'Acompañamos a las organizaciones a adaptarse al entorno,  ser ágiles, acelerar su transformación digital y desarrollar productos digitales utilizando tecnologías emergentes en el ámbito de la creación de nuevas y valiosas  formas  en que empresas y personas viven, se relacionan, trabajan y experimentan compras & servicios.',
+    testimonios: [
+      {
+        cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de Experiencia Lab en este proyecto.",
+        autor: "Pablo Turner",
+        cargo: "Presidente Directorio AD Retail"
+      },
+      {
+        cita: "Fue una muy buena experiencia, una consultoria intensa, innovadora y de alto nivel.",
+        autor: "Pablo Turner",
+        cargo: "Presidente Directorio AD Retail"
+      }
+    ],
     servicios: [
       {
         index: 0,
