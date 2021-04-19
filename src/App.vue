@@ -4,6 +4,7 @@
       style="z-index:2"
     ></Header>
     <router-view/>
+    <Footer/>
   </v-app>
 </template>
 
@@ -14,7 +15,8 @@ export default {
       }
     },
     components: {
-      'Header': require('@/components/Header.vue').default
+      'Header': require('@/components/Header.vue').default,
+      'Footer': require('@/components/Footer.vue').default
     }
 }
 </script>
@@ -26,7 +28,6 @@ export default {
   ::-webkit-scrollbar
     display: none
 
-  .menu-item
-    font-family: Space Grotesk
+
 
 </style>

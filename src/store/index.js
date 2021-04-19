@@ -6,16 +6,21 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     bajada: 'Acompañamos a las organizaciones a adaptarse al entorno,  ser ágiles, acelerar su transformación digital y desarrollar productos digitales utilizando tecnologías emergentes en el ámbito de la creación de nuevas y valiosas  formas  en que empresas y personas viven, se relacionan, trabajan y experimentan compras & servicios.',
+    titulares: [
+      "Desarrollar productos digitales es nuestro arte",
+      "Hacemos la implementación que una consultora Big Four no hace",
+      "Generamos delivery siempre y antes que cualquier otro competidor"
+    ],
     testimonios: [
       {
-        cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de Experiencia Lab en este proyecto.",
+        cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de Experiencia Lab en este proyecto",
         autor: "Pablo Turner",
         cargo: "Presidente Directorio AD Retail"
       },
       {
-        cita: "Fue una muy buena experiencia, una consultoria intensa, innovadora y de alto nivel.",
-        autor: "Pablo Turner",
-        cargo: "Presidente Directorio AD Retail"
+        cita: "Fue una muy buena experiencia, una consultoria intensa, innovadora y de alto nivel",
+        autor: "Marcos Kulka",
+        cargo: "Gerente General Fundación Chile"
       }
     ],
     servicios: [
@@ -40,6 +45,22 @@ export default new Vuex.Store({
         letra: 'c.',
         texto: '¿Quieres más delivery, mejor time to market, productos digitales más centrados en tus usuarios? Nos especializamos en hacer que equipos de desarrollo digital adopten metodologías ágiles a través de entrenamiento y acompañamiento por 4 sprints (8 semanas), logrando desarrollo de productos digitales sorprendentes!'
       }
+    ],
+    logos: [
+      "logos/claro.png",
+      "logos/ADretail.png",
+      "logos/consorcio.png",
+      "logos/copeuch.png",
+      "logos/despegar.png",
+      "logos/eocean.png",
+      "logos/fundacion-chile.png",
+      "logos/hogar-de-cristo.png",
+      "logos/iconstruye.png",
+      "logos/ripley.png",
+      "logos/talento-digital.png",
+      "logos/toctoc.png",
+      "logos/tranoceanica.png",
+      "logos/vtrcom.png"
     ]
   },
   mutations: {
