@@ -12,7 +12,7 @@
       :contain="true"/>
     <v-spacer></v-spacer>
     <v-row
-      class="ma-0 mr-6 pa-0"
+      class="ma-0 mr-6 pa-0 d-none d-sm-flex"
     >
       <v-spacer></v-spacer>
       <a
