@@ -33,7 +33,7 @@
           </VideoParallax>
           <v-row
             class="ma-0 pa-0"
-            style="position:absolute;width:100%"
+            style="z-index:10;position:absolute;width:100%"
             align="center"
           >
             <v-carousel
@@ -119,7 +119,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 mr-8 pa-0 pr-3" style="top:75px;transform:scale(8);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="top:75px;transform:scale(30);position:absolute;opacity:.3">$corazon</v-icon>
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
       </v-row>
