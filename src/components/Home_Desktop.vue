@@ -75,9 +75,31 @@
         class="ma-0 mx-5 pa-0 justify-center"
         style="position:relative;width:100vw;height:30vh;color:black;font-family:Space Grotesk"
       >
-          <v-spacer></v-spacer>
-          <v-icon class="ma-0 mt-10 mr-16 pa-0 pr-3" style="transform:scale(3)rotate(-45deg);position:absolute">$corazon</v-icon>
-          <p class="ma-auto mr-16 pa-0" style="width:40%;font-size:17px;font-family:Space Grotesk;font-weight:500"> {{ $store.state.bajada }} </p>
+          <v-row
+            class="ma-0 pa-0"
+            style="height:100%;background-color:red"
+          >
+            <v-row
+              class="ma-0 pa-0"
+              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
+            >
+
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
+            >
+
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
+            >
+
+            </v-row>
+          </v-row>
+          <v-icon class="ma-0 mr-8 pa-0 pr-3" style="top:-30px;transform:scale(3);position:absolute">$corazon</v-icon>
+          <p class="ma-auto mr-8 pa-0 pl-8" style="width:50%;font-size:19px;font-family:Space Grotesk;font-weight:300;line-height:24px"> {{ $store.state.bajada }} </p>
 
       </v-row>
     </v-row>
