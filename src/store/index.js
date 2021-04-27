@@ -7,9 +7,9 @@ export default new Vuex.Store({
   state: {
     bajada: 'Acompañamos a las organizaciones a adaptarse al entorno,  ser ágiles, acelerar su transformación digital y desarrollar productos digitales utilizando tecnologías emergentes en el ámbito de la creación de nuevas y valiosas formas en que personas y empresas se relacionan, trabajan y experimentan compras & servicios.',
     titulares: [
-      "Desarrollar productos digitales es nuestro arte.",
-      "Hacemos la implementación que una consultora Big Four no hace.",
-      "Generamos delivery siempre y antes que cualquier otro competidor."
+      "Desarrollar <span>productos digitales</span> es nuestro arte.",
+      "Hacemos la <span>implementación</span> que una consultora Big Four no hace.",
+      "Generamos delivery <span>siempre y antes</span> que cualquier otro competidor."
     ],
     testimonios: [
       {

@@ -1,18 +1,29 @@
 <template>
   <v-row
     class="ma-0 pa-0"
-    style="position:fixed;width:100vw;height:75px;background-color:white"
+    style="position:fixed;width:100vw;background-color:white"
     align="center"
   >
     <v-img
-      class="ma-0 mb-1 ml-12 pl-16 pa-0"
+      class="ma-0 mt-2 ml-6 mb-1 pa-0 d-sm-none"
+      max-height="100px"
+      max-width="180px"
+      src="logo-lab.png"
+      :contain="true"/>
+    <v-img
+      class="ma-0 mt-2 mb-1 ml-12 pl-16 pa-0 d-none d-sm-flex"
       max-height="50px"
       max-width="180px"
       src="logo-lab.png"
       :contain="true"/>
     <v-spacer></v-spacer>
+    <v-spacer></v-spacer>
+    <v-app-bar-nav-icon x-large class="d-sm-none" color="#03F7F7" @click="drawer = true"></v-app-bar-nav-icon>
+    <v-spacer></v-spacer>
+
+
     <v-row
-      class="ma-0 mr-6 pa-0 d-none d-sm-flex"
+      class="ma-0 mt-2 mr-6 pa-0 d-none d-sm-flex"
     >
       <v-spacer></v-spacer>
       <a
