@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 mr-3  pa-0"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
         >
@@ -33,7 +33,7 @@
           </VideoParallax>
           <v-row
             class="ma-0 pa-0"
-            style="z-index:10;position:absolute;width:100%"
+            style="z-index:1;position:absolute;width:100%"
             align="center"
           >
             <v-carousel
@@ -119,7 +119,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="top:75px;transform:scale(30);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
       </v-row>
