@@ -1,19 +1,18 @@
 <template>
   <v-row
     class="ma-0 pa-0"
-    style="position:fixed;width:100vw;background-color:white"
-    align="center"
+    style="position:fixed;width:100vw;height:8vh;background-color:white"
   >
     <v-img
-      class="ma-0 mt-2 ml-6 mb-1 pa-0 d-sm-none"
+      class="ma-0 mt-2 ml-6 pa-0 d-sm-none"
       max-height="100px"
       max-width="180px"
       src="logo-lab.png"
       :contain="true"/>
     <v-img
-      class="ma-0 mt-2 mb-1 ml-12 pl-16 pa-0 d-none d-sm-flex"
+      class="ma-0 mt-1 mb-1 ml-12 pl-16 pa-0 d-none d-sm-flex"
       max-height="50px"
-      max-width="180px"
+      max-width="160px"
       src="logo-lab.png"
       :contain="true"/>
     <v-spacer></v-spacer>
@@ -23,7 +22,8 @@
 
 
     <v-row
-      class="ma-0 mt-2 mr-6 pa-0 d-none d-sm-flex"
+      class="ma-0 mt-1 mr-6 pa-0 d-none d-sm-flex"
+      align="center"
     >
       <v-spacer></v-spacer>
       <a

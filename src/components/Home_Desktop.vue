@@ -5,7 +5,7 @@
   >
     <v-row
       class="ma-0 mt-16 pa-0"
-      style="width:100%"
+      style="width:100%;height:90vh"
     >
       <v-row
         class="ma-0 pa-0 justify-end"
@@ -72,12 +72,12 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mx-6 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk"
+        class="ma-0 mx-5 pa-0 justify-center"
+        style="position:relative;width:100vw;height:30vh;color:black;font-family:Space Grotesk"
       >
           <v-spacer></v-spacer>
-          <v-icon class="ma-0 mt-10 mr-5 pa-0" style="transform:scale(2)">$corazon</v-icon>
-          <p class="mx-6 mb-5 mt-2 pa-0" style="width:40%"> {{ $store.state.bajada }} </p>
+          <v-icon class="ma-0 mt-10 mr-16 pa-0 pr-3" style="transform:scale(3)rotate(-45deg);position:absolute">$corazon</v-icon>
+          <p class="ma-auto mr-16 pa-0" style="width:40%;font-size:17px;font-family:Space Grotesk;font-weight:500"> {{ $store.state.bajada }} </p>
 
       </v-row>
     </v-row>
@@ -334,5 +334,5 @@
   .tlarge
     font-size: 1000px
   .highlight span
-    color: #03F7F7
+    color: #ADFFFF
 </style>
