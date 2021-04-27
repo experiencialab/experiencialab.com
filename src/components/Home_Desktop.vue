@@ -73,33 +73,54 @@
       </v-row>
       <v-row
         class="ma-0 mx-5 pa-0 justify-center"
-        style="position:relative;width:100vw;height:30vh;color:black;font-family:Space Grotesk"
+        style="position:relative;width:100vw;height:25vh;color:black;font-family:Space Grotesk;font-size:16px;font-weight:300"
+        align="center"
       >
           <v-row
             class="ma-0 pa-0"
-            style="height:100%;background-color:red"
+            style="max-width:40%;height:20vh"
+            align="center"
           >
             <v-row
               class="ma-0 pa-0"
-              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
-            >
+              style="width:100%"
 
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
             >
+              <v-row
+                class="ma-0 pa-0"
+                style="width:100%"
+                align="center"
+                justify="center"
+              >
+                Hemos coordinado exitosamente
+              </v-row>
+              <v-row
+                class="ma-0 pa-0 text-center"
+                style="width:33%"
 
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:25%;height:100%;background-color:#ADFFFF;border:4px solid white"
-            >
-
+              >
+                <p style="width:100%;font-size:50px;height:50px;font-weight:500">20+</p>
+                <p style="width:100%;font-size:15px">Experiencias</p>
+              </v-row>
+              <v-row
+                class="ma-0 pa-0 text-center"
+                style="width:33%"
+              >
+                <p style="width:100%;font-size:50px;height:50px;font-weight:700">30+</p>
+                <p style="width:100%;font-size:15px">Equipos</p>
+              </v-row>
+              <v-row
+                class="ma-0 pa-0 text-center"
+                style="width:34%"
+              >
+                <p style="width:100%;font-size:50px;height:50px">1000+</p>
+                <p style="width:100%;font-size:15px">Profesionales y Usuarios</p>
+              </v-row>
             </v-row>
           </v-row>
-          <v-icon class="ma-0 mr-8 pa-0 pr-3" style="top:-30px;transform:scale(3);position:absolute">$corazon</v-icon>
-          <p class="ma-auto mr-8 pa-0 pl-8" style="width:50%;font-size:19px;font-family:Space Grotesk;font-weight:300;line-height:24px"> {{ $store.state.bajada }} </p>
+
+          <v-icon class="ma-0 mr-8 pa-0 pr-3" style="top:75px;transform:scale(8);position:absolute;opacity:.3">$corazon</v-icon>
+          <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
       </v-row>
     </v-row>
