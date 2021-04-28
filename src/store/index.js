@@ -56,6 +56,7 @@ export default new Vuex.Store({
       "logos/fundacion-chile.png",
       "logos/hogar-de-cristo.png",
       "logos/iconstruye.png",
+      "logos/polpaico.png",
       "logos/ripley.png",
       "logos/talento-digital.png",
       "logos/toctoc.png",
