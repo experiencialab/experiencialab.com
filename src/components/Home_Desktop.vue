@@ -291,7 +291,7 @@
             :show-arrows="false"
             continuos
             cycle
-            style="width:60%;height:56vh"
+            style="width:70%;height:56vh"
           >
             <v-carousel-item
               class="ma-0 pa-0"
@@ -347,7 +347,7 @@
       class="ma-0 ml-12 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 ml-8 pa-0 text-uppercase">Quieres ser parte?</p>
+      <p class="ma-0 ml-8 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
     <v-row
       class="ma-0 mt-12 pa-0"
@@ -366,7 +366,7 @@
         >
           <v-row
             class="ma-0 pa-0 align-end"
-            style="height:100%;width:100%"
+            style="height:100%;width:100%;background-color:rgba(3, 247, 247,.3)"
           >
             <v-row
               class="ma-0 mb-8 ml-16 pa-0"
@@ -388,7 +388,7 @@
             justify="center"
             align="center"
           >
-            Trabaja con nosotros!
+            ¡Trabaja con nosotros!
           </v-row>
         </v-row>
       </v-row>
