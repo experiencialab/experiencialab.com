@@ -277,7 +277,7 @@
       </v-row>
       <v-row
         class="ma-0 mx-5 pa-0"
-        style="overflow:hidden;width:100vw"
+        style="width:100%;overflow:hidden;width:100vw"
       >
         <v-img
           class="ma-0 mt-8 pa-0"
@@ -291,7 +291,7 @@
             :show-arrows="false"
             continuos
             cycle
-            style="height:56vh"
+            style="width:60%;height:56vh"
           >
             <v-carousel-item
               class="ma-0 pa-0"
@@ -306,10 +306,10 @@
               >
                 <v-row
                   class="ma-0 pa-0"
-                  style="max-width:70%;height:100%"
+                  style="max-width:100%;height:100%"
                   align="center"
                 >
-                  <p class="ma-0 pa-0 font-italic" style="max-width:800px;;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
+                  <p class="ma-0 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
@@ -339,18 +339,28 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mt-16 pa-0 pt-16"
-      style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
+      class="ma-0 pa-0"
+      style="width:100vw;height:130px"
+    >
+    </v-row>
+    <v-row
+      class="ma-0 ml-12 pa-0"
+      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">Quieres ser parte?</p>
+    </v-row>
+    <v-row
+      class="ma-0 mt-12 pa-0"
+      style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
+    >
       <v-row
-        class="ma-0 mx-6 mb-16 pa-0 pb-16"
+        class="ma-0 mx-5 mb-16 pa-0 pb-16"
         style="overflow:hidden;width:100vw"
       >
         <v-img
           class="ma-0 mt-8 pa-0"
           max-width="100%"
-          height="350px"
+          height="56vh"
           src="fotos/trabaja-con-nosotros.jpg"
           style="color:white"
         >
@@ -359,27 +369,28 @@
             style="height:100%;width:100%"
           >
             <v-row
-              class="ma-0 ml-16 pa-0"
+              class="ma-0 mb-8 ml-16 pa-0"
               style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
             >
-              <p class="ma-0 mt-16 ml-5 pa-0 pt-16" style="">Desarrolla tus talentos con nosotros</p>
+              <p class="ma-0 mt-16 ml-5 pa-0 pt-16" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
             </v-row>
-            <v-icon class="ma-0 pa-0 pt-0 pb-2 pl-11" style="transform:scale(10)">$bus</v-icon>
-            <v-row
-              class="ma-0 pa-0"
-              style="height:100px;width:100%"
-            >
-              <v-row
-                class="ma-auto pa-0 text-uppercase"
-                style="background-color:#03F7F7;max-width:400px;height:50px;font-size:20px;font-weight:600;color:black"
-                justify="center"
-                align="center"
-              >
-                Trabaja con nosotros!
-              </v-row>
-            </v-row>
+            <v-icon class="ma-0 mb-8 pa-0 pt-0 pb-2 pl-11" style="transform:scale(10)">$bus</v-icon>
           </v-row>
         </v-img>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:100px;width:100%"
+        >
+          <v-spacer></v-spacer>
+          <v-row
+            class="ma-0 mt-8 mr-16 pa-0 text-uppercase"
+            style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            justify="center"
+            align="center"
+          >
+            Trabaja con nosotros!
+          </v-row>
+        </v-row>
       </v-row>
     </v-row>
   </v-row>
