@@ -22,7 +22,7 @@
         <v-row
           class="ma-0 pa-0"
         >
-          <VideoParallax class="ma-0 mx-5 pa-0" style="width:100%" src="videos/lab2mb.mp4">
+          <VideoParallax class="ma-0 mx-5 pa-0" style="width:100%" src="videos/LAB_1920x600_color.mp4">
 
             <v-row
               class="ma-0 pa-0"
@@ -223,7 +223,7 @@
             >
               <v-icon
                 style="width:50px"
-                class="mt-1 mr-1 mb-1"
+                class="mt-1 mr-1 mb-1 d-none"
 
                 color= "black"
               >
