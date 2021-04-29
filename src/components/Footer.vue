@@ -21,7 +21,7 @@
       <p>Connect with us</p>
     </v-row>
     <v-row
-      class="ma-0 mt-3 pa-0 pb-16"
+      class="ma-0 mt-3 pa-0 pb-10"
       style="width:100%;height:14px;color:#03F7F7"
       align="center"
       justify="center"
