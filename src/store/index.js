@@ -9,7 +9,7 @@ export default new Vuex.Store({
     titulares: [
       "Desarrollar <span>productos digitales</span> es nuestro arte.",
       "Hacemos la <span>implementación</span> que una consultora Big Four no hace.",
-      "Generamos delivery <span>siempre y antes</span> que cualquier otro competidor."
+      "Generamos delivery <span>siempre y antes</span> que cualquier competidor."
     ],
     testimonios: [
       {
