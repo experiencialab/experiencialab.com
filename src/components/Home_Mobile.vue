@@ -336,7 +336,7 @@
 
     <v-row
       class="ma-0 mt-16 ml-5 pa-0 pt-8"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:40px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
