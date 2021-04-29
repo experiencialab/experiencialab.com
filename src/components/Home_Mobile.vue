@@ -231,22 +231,22 @@
     </v-row>
     <v-row
       class="ma-0 pa-0"
-      style="width:100vw;height:70px"
+      style="width:100vw;height:50px"
     >
     </v-row>
     <v-row
-      class="ma-0 ml-12 pa-0"
+      class="ma-0 ml-5 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 ml-8 pa-0 text-uppercase">Experiencias</p>
+      <p class="ma-0 pa-0 text-uppercase">Experiencias</p>
     </v-row>
     <v-row
-      class="ma-0 mt-12 pa-0 justify-end"
+      class="ma-0 mt-10 pa-0 justify-end"
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
     >
       <v-row
         class="ma-0 mr-3 pa-0"
-        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:33%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:25%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
         align="center"
         justify="center"
       >
@@ -289,25 +289,25 @@
             :show-arrows="false"
             continuos
             cycle
-            style="width:70%;height:56vh"
+            style="height:56vh"
           >
             <v-carousel-item
               class="ma-0 pa-0"
               transition="my-carousel"
               v-for="(item, index) in $store.state.testimonios" :key="index"
-              style="font-size:30px;font-family:Space Grotesk;font-weight:600;width:100vw"
+              style="font-size:20px;font-family:Space Grotesk;font-weight:600;width:90vw"
             >
               <v-row
-                class="ma-0 ml-16 pa-0"
+                class="ma-0 ml-5 pa-0"
                 style="width:100%;height:56vh"
-                align="center"
+
               >
                 <v-row
-                  class="ma-0 pa-0"
-                  style="max-width:100%;height:100%"
-                  align="center"
+                  class="ma-0 mt-16 pa-0"
+                  style="max-width:75%;height:100%"
+
                 >
-                  <p class="ma-0 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
+                  <p class="ma-0 pa-0 font-italic" style="max-width:90vw;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
@@ -321,7 +321,7 @@
         justify="center"
       >
         <v-row
-          class="ma-0 mt-3 mb-5 mx-12 pa-0 logo"
+          class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
           v-for="logo in $store.state.logos" :key="logo"
           justify="center"
         >
