@@ -243,7 +243,7 @@
     >
       <v-row
         class="ma-0 pa-0"
-        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:25%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
         align="center"
         justify="center"
       >
@@ -273,6 +273,7 @@
       <v-row
         class="ma-0 pa-0"
         style="width:100%;overflow:hidden;width:100vw"
+        justify="center"
       >
         <v-img
           class="ma-0 mt-8 pa-0"
@@ -295,12 +296,12 @@
               style="font-size:20px;font-family:Space Grotesk;font-weight:600;width:90vw"
             >
               <v-row
-                class="ma-0 ml-5 pa-0"
+                class="ma-0 pa-0"
                 style="width:100%;height:56vh"
-
+                justify="center"
               >
                 <v-row
-                  class="ma-0 mt-16 pa-0"
+                  class="ma-0 mt-8 pa-0"
                   style="max-width:75%;height:100%"
 
                 >
