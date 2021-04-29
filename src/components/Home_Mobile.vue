@@ -305,7 +305,7 @@
                   style="max-width:75%;height:100%"
 
                 >
-                  <p class="ma-0 pa-0 font-italic" style="max-width:90vw;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
+                  <p class="ma-0 pa-0 font-italic" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
