@@ -115,7 +115,7 @@
                 justify="center"
               >
                 <p class="ma-0 mt-1 pa-0" style="font-size:35px;height:40px">1000+</p>
-                <p class="ma-0 mt-2 pa-0" style="font-size:15px">Profesionales y Usuarios</p>
+                <p class="ma-0 mt-4 pa-0" style="font-size:15px;line-height:15px">Profesionales y Usuarios</p>
               </v-row>
             </v-row>
           </v-row>
