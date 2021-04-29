@@ -120,7 +120,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(10);position:absolute;opacity:.25">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(15);position:absolute;opacity:.25">$corazon</v-icon>
 
       </v-row>
     </v-row>
@@ -143,7 +143,7 @@
       >
         <v-img
           class="ma-0 pa-0"
-          max-height="40vh"
+          height="55vh"
           max-width="100%"
           style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
