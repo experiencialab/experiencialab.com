@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:70%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:75%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
         >
@@ -35,7 +35,6 @@
           <v-row
             class="ma-0 pa-0"
             style="z-index:1;position:absolute;width:100%"
-            align="center"
           >
             <v-carousel
               class="ma-0 pa-0"
@@ -49,22 +48,20 @@
                 class="ma-0 pa-0"
                 transition="my-carousel"
                 v-for="(item, index) in $store.state.titulares" :key="index"
-                style="font-size:30px;font-family:Space Grotesk;font-weight:700;width:100vw"
+                style="font-size:45px;font-family:Space Grotesk;font-weight:700;width:100vw"
                 :class="{'tlarge': $vuetify.breakpoint.md}"
-                align="center"
               >
                 <v-row
                   class="ma-0 pa-0"
                   style="width:100%;height:60vh"
-                  align="center"
                 >
                   <v-row
                     class="ma-0 ml-5 pa-0"
-                    style="max-width:100%;min-height:25vh;line-height:40px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
+                    style="min-height:25vh;line-height:43px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
                     align="center"
                   >
 
-                    <p class="highlight" v-html="item"></p>
+                    <p class="mt-n16 highlight" style="max-width:75%" v-html="item"></p>
                   </v-row>
                 </v-row>
               </v-carousel-item>
@@ -80,7 +77,7 @@
           <p class="ma-0 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
           <v-row
-            class="ma-0 mt-8 pa-0"
+            class="ma-0 mt-16 pa-0"
             style="z-index:2;width:100%;height:15vh"
             align="center"
           >
@@ -123,7 +120,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="z-index:1;top:140px;transform:scale(10);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(10);position:absolute;opacity:.3">$corazon</v-icon>
 
       </v-row>
     </v-row>
@@ -186,14 +183,14 @@
               </v-row>
               <v-row
                 class="ma-0 ml-6 pa-0"
-                style="font-size:17px;font-family:Space Grotesk;font-weight:700;max-width:92%"
+                style="font-size:18px;font-family:Space Grotesk;font-weight:700;max-width:92%"
               >
                 {{ $store.state.servicios[servicio.index].titulo }}
               </v-row>
             </v-row>
             <v-row
               class="my-3 mx-5 pa-0"
-              style="width:100%;font-size:12px;font-family:Space Grotesk;font-weight:400"
+              style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
               align="center"
             >
               <p>
@@ -336,23 +333,19 @@
         </v-row>
       </v-row>
     </v-row>
+
     <v-row
-      class="ma-0 pa-0"
-      style="width:100vw;height:130px"
-    >
-    </v-row>
-    <v-row
-      class="ma-0 ml-12 pa-0"
+      class="ma-0 mt-16 ml-5 pa-0 pt-8"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 ml-8 pa-0 text-uppercase">¿Quieres ser parte?</p>
+      <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
     <v-row
-      class="ma-0 mt-12 pa-0"
+      class="ma-0 mt-16 pa-0"
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
     >
       <v-row
-        class="ma-0 mx-5 mb-16 pa-0 pb-16"
+        class="ma-0 mt-16 mx-5 mb-16 pa-0 pb-16"
         style="overflow:hidden;width:100vw"
       >
         <v-img
@@ -367,12 +360,12 @@
             style="height:100%;width:100%;background-color:rgba(3, 247, 247,.3)"
           >
             <v-row
-              class="ma-0 mb-8 ml-16 pa-0"
-              style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
+              class="ma-0 mb-8 pa-0"
+              style="font-size:30px;line-height:30px;font-weight:500;max-width:700px"
             >
-              <p class="ma-0 mt-16 ml-5 pa-0 pt-16" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+              <p class="ma-0 mt-16 ml-5 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
             </v-row>
-            <v-icon class="ma-0 mb-8 pa-0 pt-0 pb-2 pl-11" style="transform:scale(10)">$bus</v-icon>
+            <v-icon class="ma-0 mb-8 pa-0 pt-0 pb-2 pl-11" style="transform:scale(8)">$bus</v-icon>
           </v-row>
         </v-img>
         <v-row
@@ -381,7 +374,7 @@
         >
           <v-spacer></v-spacer>
           <v-row
-            class="ma-0 mt-8 mr-16 pa-0 text-uppercase"
+            class="ma-0 mt-16 pa-0 text-uppercase"
             style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             justify="center"
             align="center"
