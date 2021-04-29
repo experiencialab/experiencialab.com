@@ -238,43 +238,42 @@
       <p class="ma-0 pa-0 text-uppercase">Experiencias</p>
     </v-row>
     <v-row
-      class="ma-0 mt-10 pa-0 justify-end"
+      class="ma-0 mt-10 pa-0"
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
     >
       <v-row
-        class="ma-0 pa-0"
-        style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
-        align="center"
-        justify="center"
-      >
-        <v-carousel
-          hide-delimiters
-          :show-arrows="false"
-          continuos
-          cycle
-        >
-          <v-carousel-item
-            class="ma-0 pa-0"
-            transition="my-carousel"
-            v-for="(item, index) in $store.state.testimonios" :key="index"
-            style="font-size:20px;font-family:Space Grotesk;font-weight:600"
-          >
-            <v-row
-              class="ma-0"
-              style="position:flex;width:100%"
-              align="center"
-            >
-              <p class="ma-0 ml-5 mt-3 pa-0" style="min-width:100%;color:black;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)">{{ item.autor }}</p>
-              <p class="ma-0 ml-5 pa-0" style="min-width:100%;color:black;font-size:10px">{{ item.cargo }}</p>
-            </v-row>
-          </v-carousel-item>
-        </v-carousel>
-      </v-row>
-      <v-row
-        class="ma-0 pa-0"
+        class="ma-0 pa-0 justify-end"
         style="width:100%;overflow:hidden;width:100vw"
-        justify="center"
       >
+        <v-row
+          class="ma-0 pa-0"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:black;color:black;z-index:1;top:25%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+          align="center"
+          justify="center"
+        >
+          <v-carousel
+            hide-delimiters
+            :show-arrows="false"
+            continuos
+            cycle
+          >
+            <v-carousel-item
+              class="ma-0 pa-0"
+              transition="my-carousel"
+              v-for="(item, index) in $store.state.testimonios" :key="index"
+              style="font-size:20px;font-family:Space Grotesk;font-weight:600"
+            >
+              <v-row
+                class="ma-0"
+                style="position:flex;width:100%"
+                align="center"
+              >
+                <p class="ma-0 ml-5 mt-3 pa-0" style="min-width:100%;color:white;text-shadow: 2px 2px 5px rgba(255,255,255,0.3)">{{ item.autor }}</p>
+                <p class="ma-0 ml-5 pa-0" style="min-width:100%;color:white;font-size:10px">{{ item.cargo }}</p>
+              </v-row>
+            </v-carousel-item>
+          </v-carousel>
+        </v-row>
         <v-img
           class="ma-0 mt-8 pa-0"
           max-width="100%"
