@@ -4,9 +4,9 @@
     style="position:fixed;width:100vw;height:8vh;background-color:white"
   >
     <v-img
-      class="ma-0 mt-2 ml-6 pa-0 d-sm-none"
-      max-height="100px"
-      max-width="180px"
+      class="ma-0 mt-1 mb-1 ml-6 pa-0 d-sm-none"
+      max-height="80px"
+      max-width="160px"
       src="logo-lab.png"
       :contain="true"/>
     <v-img
@@ -17,7 +17,7 @@
       :contain="true"/>
     <v-spacer></v-spacer>
     <v-spacer></v-spacer>
-    <v-app-bar-nav-icon x-large class="d-sm-none" color="#03F7F7" @click="drawer = true"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon x-large class="mt-2 d-sm-none" color="#03F7F7" @click="drawer = true"></v-app-bar-nav-icon>
     <v-spacer></v-spacer>
 
 

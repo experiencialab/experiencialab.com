@@ -78,7 +78,7 @@
       >
           <v-row
             class="ma-0 pa-0"
-            style="max-width:40%;height:20vh"
+            style="z-index:1;max-width:40%;height:20vh"
             align="center"
           >
             <v-row
@@ -119,8 +119,10 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
-          <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
+          <v-icon class="ma-0 pa-0 d-none" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
+          <v-icon class="ma-0 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:1">$corazon</v-icon>
+
+          <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="z-index:1;width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
       </v-row>
     </v-row>
@@ -150,6 +152,7 @@
         >
         </v-row>
         <v-img
+          eager
           class="mx-16 pa-0"
           style="min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"

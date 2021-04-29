@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header
-      style="z-index:3"
+      style="z-index:4"
     ></Header>
     <router-view/>
     <Footer/>
