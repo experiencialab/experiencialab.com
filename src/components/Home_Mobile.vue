@@ -357,7 +357,7 @@
         >
           <v-row
             class="ma-0 pa-0 align-end"
-            style="height:100%;width:100%;background-color:rgba(3, 247, 247,.3)"
+            style="height:100%;width:100%"
           >
             <v-row
               class="ma-0 mb-8 pa-0"
