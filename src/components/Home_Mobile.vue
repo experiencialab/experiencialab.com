@@ -242,7 +242,7 @@
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
     >
       <v-row
-        class="ma-0 mr-3 pa-0"
+        class="ma-0 pa-0"
         style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:25%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
         align="center"
         justify="center"
@@ -260,7 +260,7 @@
             style="font-size:20px;font-family:Space Grotesk;font-weight:600"
           >
             <v-row
-              class="ma-0 pr-3"
+              class="ma-0"
               style="position:flex;width:100%"
               align="center"
             >
@@ -271,7 +271,7 @@
         </v-carousel>
       </v-row>
       <v-row
-        class="ma-0 mx-5 pa-0"
+        class="ma-0 pa-0"
         style="width:100%;overflow:hidden;width:100vw"
       >
         <v-img
@@ -345,7 +345,7 @@
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
     >
       <v-row
-        class="ma-0 mt-16 mx-5 mb-16 pa-0 pb-16"
+        class="ma-0 mt-16 mb-16 pa-0 pb-16"
         style="overflow:hidden;width:100vw"
       >
         <v-img
@@ -374,7 +374,7 @@
         >
           <v-spacer></v-spacer>
           <v-row
-            class="ma-0 mt-16 pa-0 text-uppercase"
+            class="ma-0 mt-16 mr-5 pa-0 text-uppercase"
             style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             justify="center"
             align="center"
