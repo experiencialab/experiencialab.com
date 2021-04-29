@@ -56,7 +56,7 @@
                   style="width:100%;height:60vh"
                 >
                   <v-row
-                    class="ma-0 ml-5 pa-0"
+                    class="ma-0 ml-3 pa-0"
                     style="min-height:25vh;line-height:43px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
                     align="center"
                   >
@@ -70,11 +70,11 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mx-5 pa-0 justify-center"
+        class="ma-0 mx-8 pa-0 justify-center"
         style="position:relative;width:100vw;color:black;font-family:Space Grotesk;font-size:16px;font-weight:300"
         align="center"
       >
-          <p class="ma-0 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
+          <p class="ma-0 mt-8 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
           <v-row
             class="ma-0 mt-16 pa-0"
@@ -120,7 +120,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(10);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(10);position:absolute;opacity:.25">$corazon</v-icon>
 
       </v-row>
     </v-row>

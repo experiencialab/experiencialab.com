@@ -6,7 +6,7 @@
     <v-img
       class="ma-0 mt-1 mb-1 ml-6 pa-0 d-sm-none"
       max-height="80px"
-      max-width="160px"
+      max-width="150px"
       src="logo-lab.png"
       :contain="true"/>
     <v-img
