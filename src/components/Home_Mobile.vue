@@ -368,7 +368,7 @@
           >
             <v-row
               class="ma-0 mb-8 pa-0"
-              style="font-size:30px;line-height:30px;font-weight:500;max-width:700px"
+              style="font-size:30px;line-height:30px;font-weight:500;max-width:90%"
             >
               <p class="ma-0 mt-16 ml-5 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
             </v-row>
