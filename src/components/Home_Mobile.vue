@@ -329,7 +329,7 @@
       >
         <v-row
           class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
-          v-for="logo in $store.state.logos" :key="logo"
+          v-for="logo in this.logos" :key="logo"
           justify="center"
         >
 
@@ -400,8 +400,15 @@
 <script>
   import VideoParallax from 'vuetify-video-parallax';
   export default {
+    data: () => ({
+      logos: []
+    }),
     components: {
       VideoParallax
+    },
+    created() {
+      var logos = this.$store.state.logos;
+      this.logos = logos.sort(function() {return 0.5 - Math.random()});
     }
   }
 </script>
