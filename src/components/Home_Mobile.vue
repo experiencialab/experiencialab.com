@@ -70,11 +70,11 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mx-8 pa-0 justify-center"
+        class="ma-0 pa-0 justify-center"
         style="position:relative;width:100vw;color:black;font-family:Space Grotesk;font-size:16px;font-weight:300"
         align="center"
       >
-          <p class="ma-0 mt-8 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
+          <p class="ma-0 mx-8 mt-8 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
           <v-row
             class="ma-0 mt-16 pa-0"
@@ -86,7 +86,7 @@
               style="width:100%"
             >
               <v-row
-                class="ma-0 pa-0"
+                class="ma-0 mb-2 pa-0"
                 style="width:100%"
                 align="center"
                 justify="center"
@@ -95,7 +95,7 @@
               </v-row>
               <v-row
                 class="ma-0 pa-0 text-center"
-                style="width:33%"
+                style="width:33%;border-right:3px solid #03F7F7"
                 justify="center"
               >
                 <p style="font-size:40px;height:40px">20+</p>
@@ -103,7 +103,7 @@
               </v-row>
               <v-row
                 class="ma-0 pa-0 text-center"
-                style="width:33%"
+                style="width:33%;border-right:3px solid #03F7F7"
                 justify="center"
               >
                 <p style="font-size:40px;height:40px">30+</p>
@@ -145,7 +145,7 @@
           class="ma-0 pa-0"
           max-height="40vh"
           max-width="100%"
-          style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
+          style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
 
         >
@@ -203,9 +203,9 @@
               align="center"
               justify="center"
             >
-              <v-icon v-if="servicio.index == 0" style="transform:scale(2.5)">$barco</v-icon>
-              <v-icon class="ma-0 ml-16 pa-0" v-if="servicio.index == 1" style="transform:scale(3)">$cohete</v-icon>
-              <v-icon v-if="servicio.index == 2" style="transform:scale(3)">$avion</v-icon>
+              <v-icon v-if="servicio.index == 0" style="transform:scale(2)">$barco</v-icon>
+              <v-icon class="ma-0 ml-16 pa-0" v-if="servicio.index == 1" style="transform:scale(2.5)">$cohete</v-icon>
+              <v-icon v-if="servicio.index == 2" style="transform:scale(2)">$avion</v-icon>
 
             </v-row>
             <v-row
