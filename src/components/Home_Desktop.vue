@@ -13,12 +13,12 @@
       >
         <v-row
           class="ma-0 mr-3 pa-0 pod"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="spotify()"
         >
-          PODCAST <v-icon class="ma-0 ml-7 pa-0" style="transform:scale(1.5)">$camion</v-icon>
+          <p class="ma-0 ml-5 pa-0">PODCAST</p> <v-icon class="ma-0 ml-12 mr-5 pa-0" style="transform:scale(2)">$camion</v-icon>
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -121,7 +121,7 @@
           </v-row>
 
           <v-icon class="ma-0 pa-0 d-none" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
-          <v-icon class="ma-0 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:1">$corazon</v-icon>
+          <v-icon class="ma-0 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:.3">$corazon</v-icon>
 
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="z-index:1;width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
