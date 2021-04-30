@@ -262,6 +262,7 @@
             :show-arrows="false"
             continuos
             cycle
+            interval="8000"
             style="height:43vh"
           >
             <v-carousel-item
@@ -301,6 +302,7 @@
                 :show-arrows="false"
                 continuos
                 cycle
+                interval="8000"
               >
                 <v-carousel-item
                   class="ma-0 pa-0"
