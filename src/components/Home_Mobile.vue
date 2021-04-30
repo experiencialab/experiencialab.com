@@ -257,30 +257,31 @@
           style="color:white"
         >
           <v-carousel
+            height="42vh"
             hide-delimiters
             :show-arrows="false"
             continuos
             cycle
-            style="height:40vh"
+            style="height:43vh"
           >
             <v-carousel-item
               class="ma-0 pa-0"
               transition="my-carousel"
               v-for="(item, index) in $store.state.testimonios" :key="index"
-              style="font-size:20px;font-family:Space Grotesk;font-weight:600;height:40vh;width:100vw"
+              style="font-size:18px;font-family:Space Grotesk;font-weight:500;width:100vw;height:42vh"
             >
               <v-row
                 class="ma-0 pa-0"
-                style="width:100%;height:40vh"
+                style="width:100%;height:42vh"
                 justify="center"
                 align="center"
               >
                 <v-row
-                  class="ma-0 mt-8 pa-0"
-                  style="max-width:75%;height:100%"
+                  class="ma-0 pa-0"
+                  style="max-width:85%;height:42vh"
                   align="center"
                 >
-                  <p class="ma-0 pa-0 font-italic" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
+                  <p class="ma-0 pa-0 font-italic" style="line-height:20px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
@@ -289,11 +290,10 @@
             class="ma-0 pa-0"
             style="width:100vw;height:50px"
           >
-            <v-row>
-            </v-row>
+            <v-spacer></v-spacer>
             <v-row
               class="ma-0 pa-0"
-              style="font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:black;color:black;z-index:1;max-width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+              style="font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:black;color:black;z-index:1;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
               justify="center"
             >
               <v-carousel
