@@ -12,14 +12,24 @@ export default new Vuex.Store({
     ],
     testimonios: [
       {
-        cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de Experiencia Lab en este proyecto",
+        cita: "Estoy más que agradecido por lo que hemos hecho en conjunto, el desafío y la apuesta era gigante, después de 6 meses de arduo trabajo puedo decir que las soluciones digitales de i-Construye y Toc Toc se trabajan en agilidad, y lo más importante: la organización tiene una cultura digital donde los equipos y clientes están felices, nuestro time to market nos tiene optimistas y motivados",
+        autor: "Nicolas Errázuriz",
+        cargo: "Director Ejecutivo i-Construye - Toc Toc"
+      },
+      {
+        cita: "El equipo de LAB nos desafió a reconocer esta nueva realidad, desafío al management y nos indujo a considerar soluciones radicales",
         autor: "Pablo Turner",
         cargo: "Presidente Directorio AD Retail"
       },
       {
-        cita: "Fue una muy buena experiencia, una consultoria intensa, innovadora y de alto nivel",
+        cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de experiencia LAB en este proyecto",
         autor: "Marcos Kulka",
-        cargo: "Gerente General Fundación Chile"
+        cargo: "Gerente general Fundación Chile"
+      },
+      {
+        cita: "Agradecidos del aporte profesional y humano, el cual se tradujo en un plan de acción que funcionó",
+        autor: "César Oyarzo Mansilla",
+        cargo: "Gerente Áreas Ambulatorias UC-Christus"
       }
     ],
     servicios: [

@@ -12,10 +12,11 @@
         style="position:relative"
       >
         <v-row
-          class="ma-0 mr-3  pa-0"
+          class="ma-0 mr-3 pa-0 pod"
           style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
+          @click="spotify()"
         >
           PODCAST <v-icon class="ma-0 ml-7 pa-0" style="transform:scale(1.5)">$camion</v-icon>
         </v-row>
@@ -246,13 +247,14 @@
       <p class="ma-0 ml-8 pa-0 text-uppercase">Experiencias</p>
     </v-row>
     <v-row
-      class="ma-0 mt-12 pa-0 justify-end"
-      style="position:relative;width:100vw;font-size:40px;font-family:Space Grotesk;font-weight:300"
+      class="ma-0 pa-0 justify-end"
+      style="position:relative;width:100vw;font-size:30px;font-family:Space Grotesk;font-weight:300"
       align="center"
     >
       <v-row
         class="ma-0 mx-5 pa-0"
         style="position:relative;width:100%;overflow:hidden;width:100vw"
+        align="center"
       >
         <v-img
           class="ma-0 mt-8 pa-0"
@@ -266,22 +268,22 @@
             :show-arrows="false"
             continuos
             cycle
-            style="width:100%;max-height:70%"
+            style="width:100%;height:100%"
           >
             <v-carousel-item
-              class="ma-auto pa-0"
+              class="ma-0 pa-0"
               transition="my-carousel"
               v-for="(item, index) in $store.state.testimonios" :key="index"
-              style="font-size:30px;font-family:Space Grotesk;font-weight:600;width:100vw"
+              style="font-size:25px;line-height:35px;font-family:Space Grotesk;font-weight:600;width:100vw"
             >
               <v-row
-                class="ma-auto pa-0"
-                style="width:100%;height:46vh"
+                class="ma-0 pa-0"
+                style="width:100%;height:70%"
+                align="center"
               >
                 <v-row
-                  class="ma-auto pa-0"
+                  class="ma-0 pa-0"
                   style="max-width:100%"
-                  align="center"
                 >
                   <p class="ma-0 ml-16 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
@@ -292,31 +294,35 @@
       </v-row>
       <v-row
         class="ma-0 mr-3 pa-0"
-        style="top:300px;px;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:black;color:white;z-index:1;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
-        justify="center"
+        style="top:300px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
       >
-        <v-carousel
-          hide-delimiters
-          :show-arrows="false"
-          continuos
-          cycle
+        <v-row
+          class="ma-0 pa-0"
+          style="width:300px;height:100%;background-color:black"
+          justify="center"
         >
-          <v-carousel-item
-            class="ma-0 pa-0"
-            transition="my-carousel"
-            v-for="(item, index) in $store.state.testimonios" :key="index"
-            style="font-size:20px;font-family:Space Grotesk;font-weight:600"
+          <v-carousel
+            hide-delimiters
+            :show-arrows="false"
+            continuos
+            cycle
+            style="height:100%"
           >
-            <v-row
+            <v-carousel-item
               class="ma-0 pa-0"
-              style="width:100%"
-              align="center"
+              transition="my-carousel"
+              v-for="(item, index) in $store.state.testimonios" :key="index"
+              style="height:100%;font-size:20px;font-family:Space Grotesk;font-weight:600"
             >
-              <p class="ma-0 ml-5 mt-3 pa-0" style="min-width:100%;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)">{{ item.autor }}</p>
-              <p class="ma-0 ml-5 pa-0" style="min-width:100%;color:white;font-size:10px">{{ item.cargo }}</p>
-            </v-row>
-          </v-carousel-item>
-        </v-carousel>
+              <v-row
+                class="ma-0 pa-0"
+              >
+                <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)">{{ item.autor }}</p>
+                <p class="ma-0 ml-5 pa-0" style="color:white;font-size:10px">{{ item.cargo }}</p>
+              </v-row>
+            </v-carousel-item>
+          </v-carousel>
+        </v-row>
       </v-row>
       <v-row
         class="ma-0 mt-16 pa-0"
@@ -410,6 +416,11 @@
     created() {
       var logos = this.$store.state.logos;
       this.logos = logos.sort(function() {return 0.5 - Math.random()});
+    },
+    methods: {
+      spotify: function () {
+        window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
+      }
     }
   }
 </script>
@@ -420,4 +431,7 @@
     font-size: 1000px
   .highlight span
     color: #ADFFFF
+  .pod:hover
+    cursor: pointer
+
 </style>

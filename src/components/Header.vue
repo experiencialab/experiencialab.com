@@ -36,29 +36,45 @@
         </span>
       </a>
       <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item"
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
         @click="myFunction()"
-      >nosotros</a>
+      >
+        <span class="outer">
+          <span class="inner">nosotros</span>
+        </span>
+      </a>
       <a
         class="ma-0 pa-0 mx-4 text-uppercase menu-item"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+        @click="spotify()"
+      >
+        <span class="outer">
+          <span class="inner">podcast</span>
+        </span>
+      </a>
+      <a
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active"
+        style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
         @click="myFunction()"
-      >podcast</a>
+      >
+        <span class="outer">
+          <span class="inner">experiencias</span>
+        </span>
+      </a>
+      <a
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active"
+        style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+        @click="myFunction()"
+      >
+        <span class="outer">
+          <span class="inner">carreras</span>
+        </span>
+      </a>
       <a
         class="ma-0 pa-0 mx-4 text-uppercase menu-item"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
-      >experiencias</a>
-      <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item"
-        style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
-      >carreras</a>
-      <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item"
-        style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
+        @click="whatsapp()"
       >whatsapp</a>
       <v-spacer></v-spacer>
       <a
@@ -72,11 +88,15 @@
         </span></a>
         /
       <a
-        class="ma-0 pa-0 mr-12 text-decoration-none text-uppercase menu-item"
+        class="ma-0 pa-0 mr-12 text-decoration-none text-uppercase menu-item menu-active"
         :class="{ 'menu-active': !this.english }"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
         @click="myFunction()"
-      >en</a>
+      >
+        <span class="outer">
+          <span class="inner">en</span>
+        </span>
+      </a>
     </v-row>
   </v-row>
 </template>
@@ -85,7 +105,15 @@
   export default {
     data: () => ({
       english: false
-    })
+    }),
+    methods: {
+      whatsapp: function () {
+        window.open("https://wa.me/+56994998436", "_blank");
+      },
+      spotify: function () {
+        window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
+      }
+    }
   }
 </script>
 
