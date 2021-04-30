@@ -108,7 +108,7 @@
     }),
     methods: {
       whatsapp: function () {
-        window.open("https://wa.me/+56994998436", "_blank");
+        window.open("https://wa.me/+56994319115", "_blank");
       },
       spotify: function () {
         window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
