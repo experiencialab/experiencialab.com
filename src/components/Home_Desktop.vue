@@ -375,16 +375,22 @@
           style="color:white"
         >
           <v-row
-            class="ma-0 pa-0 align-end"
+            class="ma-0 pa-0"
             style="height:100%;width:100%"
+            align="end"
           >
             <v-row
-              class="ma-0 mb-8 ml-16 pa-0"
+              class="ma-0 ml-8 mb-16 pa-0"
               style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
             >
-              <p class="ma-0 mt-16 ml-5 pa-0 pt-16" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
             </v-row>
-            <v-icon class="ma-0 mb-8 pa-0 pt-0 pb-2 pl-11" style="transform:scale(10)">$bus</v-icon>
+            <v-row
+              class="ma-0 pa-0"
+            >
+              <v-spacer></v-spacer>
+              <v-icon class="ma-0 mr-16 pa-0" size="300">$bus</v-icon>
+            </v-row>
           </v-row>
         </v-img>
         <v-row
