@@ -380,7 +380,7 @@
             align="end"
           >
             <v-row
-              class="ma-0 ml-8 mb-16 pa-0"
+              class="ma-0 ml-8 mb-16 pa-0 pb-8"
               style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
             >
               <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
