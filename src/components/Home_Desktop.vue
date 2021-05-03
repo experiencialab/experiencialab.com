@@ -393,7 +393,7 @@
         >
           <v-spacer></v-spacer>
           <v-row
-            class="ma-0 mt-8 mr-16 pa-0 text-uppercase"
+            class="ma-0 mt-8 mr-16 pa-0 text-uppercase d-none"
             style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             justify="center"
             align="center"

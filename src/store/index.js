@@ -18,7 +18,7 @@ export default new Vuex.Store({
         cargo: "Director Ejecutivo i-Construye - Toc Toc"
       },
       {
-        cita: "El equipo de LAB nos desafió a reconocer esta nueva realidad, desafío al management y nos indujo a considerar soluciones radicales",
+        cita: "El equipo de LAB nos desafió a reconocer una nueva realidad, desafió al management y nos indujo a considerar soluciones radicales",
         autor: "Pablo Turner",
         cargo: "Presidente Directorio AD Retail"
       },
