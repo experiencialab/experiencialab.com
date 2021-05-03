@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="height:63vh;width:100vw"
+          style="height:max-63vh;width:100vw;overflow:hidden"
         >
           <VideoParallax class="ma-0 pa-0" style="width:100%;transform:scale(4);transform-origin:top center" src="videos/LAB_1920x600_color.mp4">
 
