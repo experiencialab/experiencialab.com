@@ -2,8 +2,8 @@
   <v-row
     class="ma-0 pa-0"
   >
-    <home-desktop v-if="!$vuetify.breakpoint.sm"></home-desktop>
-    <home-mobile v-if="$vuetify.breakpoint.sm"></home-mobile>
+    <home-desktop v-if="!$vuetify.breakpoint.md"></home-desktop>
+    <home-mobile v-if="$vuetify.breakpoint.md"></home-mobile>
   </v-row>
 </template>
 

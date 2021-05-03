@@ -28,6 +28,11 @@ export default new Vuex.Store({
         cargo: "Gerente general Fundación Chile"
       },
       {
+        cita: "Gracias a  experienciaLAB conocí una nueva forma de trabajar y desarrollar  proyectos! Lo que más valoro es lo muchísimo que aprendí en muy poco tiempo! Esta es una nueva forma de trabajar, de hacer las cosas, y de crear profesionales enfocados a proyectos 5.0 que son los que cambian la industria.",
+        autor: "Dunia Alangua",
+        cargo: "Gerente servicio al cliente Polpaico"
+      },
+      {
         cita: "Agradecidos del aporte profesional y humano, el cual se tradujo en un plan de acción que funcionó",
         autor: "César Oyarzo Mansilla",
         cargo: "Gerente Áreas Ambulatorias UC-Christus"
