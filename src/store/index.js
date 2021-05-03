@@ -59,7 +59,6 @@ export default new Vuex.Store({
     logos: [
       "logos/claro.png",
       "logos/ADretail.png",
-      "logos/consorcio.png",
       "logos/copeuch.png",
       "logos/despegar.png",
       "logos/Elecmental.png",
