@@ -182,14 +182,14 @@
             </p>
           </v-row>
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 ml-9 pa-0"
             style="height:60px"
             align="center"
-            justify="center"
+
           >
             <v-icon
               class="ma-0 mx-2 pa-0"
-              large
+
               color= "black"
               @click="site($store.state.equipo[member.index].linkedin)"
             >
@@ -198,7 +198,7 @@
             <v-icon
               v-if="$store.state.equipo[member.index].twitterlink"
               class="ma-0 mx-2 pa-0"
-              large
+
               color= "black"
               @click="site($store.state.equipo[member.index].twitterlink)"
             >
@@ -206,7 +206,7 @@
             </v-icon>
             <v-icon
               class="ma-0 mx-2 pa-0"
-              large
+
               color= "black"
               @click="site($store.state.equipo[member.index].instagram)"
             >
