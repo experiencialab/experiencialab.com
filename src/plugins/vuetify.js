@@ -6,6 +6,9 @@ import Camion from "@/components/iconos/camion.vue";
 import Cohete from "@/components/iconos/cohete.vue";
 import Barco from "@/components/iconos/barco.vue";
 import Avion from "@/components/iconos/avion.vue";
+import S from "@/components/iconos/s.vue";
+import M from "@/components/iconos/m.vue";
+import XL from "@/components/iconos/xl.vue";
 
 Vue.use(Vuetify);
 
@@ -30,6 +33,15 @@ export default new Vuetify({
       },
       avion: {
         component: Avion,
+      },
+      s: {
+        component: S,
+      },
+      m: {
+        component: M,
+      },
+      xl: {
+        component: XL,
       },
       corazon: {
         component: Corazon,
