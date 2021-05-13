@@ -16,7 +16,7 @@
       ></v-img>
     </v-row>
     <Header
-      style="z-index:40"
+      style="z-index:400"
     ></Header>
     <router-view v-if="!loading"></router-view>
   <Footer></Footer>
