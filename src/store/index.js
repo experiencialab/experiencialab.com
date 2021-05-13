@@ -90,7 +90,7 @@ export default new Vuex.Store({
         bio: [
           'Consultora, experta  en incubación, desarrollo acelerado de productos & nuevos negocios digitales.',
           '',
-          'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated.'
+          'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
         ],
         foto: 'fotos/ana_de_lara.jpg',
         nick: 'Ana',
