@@ -80,6 +80,7 @@
             <v-spacer></v-spacer>
 
             <v-img
+              eager
               style="z-index:10"
               class="ma-0 ml-12 pa-0"
               max-height="100"
@@ -92,6 +93,7 @@
             style="width:100%"
           >
             <v-img
+              eager
               position=""
               contain
               :src="experiencia.mock"
@@ -115,7 +117,7 @@
             <v-icon v-if="experiencia.index == 5" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
             <v-icon v-if="experiencia.index == 6" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
           </v-row>
-          <v-lazy
+          <v-row
             class="ma-0 ml-5 mr-12 pa-0"
             style="width:100%"
             v-for="text in experiencia.text"  :key="text"
@@ -123,7 +125,7 @@
             <p>
               <span v-html="text"></span>
             </p>
-          </v-lazy>
+          </v-row>
 
         </v-row>
       </v-row>
