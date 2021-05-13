@@ -56,7 +56,7 @@
                     class="ma-0 pa-0"
                     style="max-width:100%"
                   >
-                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier institución</p>
+                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización</p>
                   </v-row>
                 </v-row>
               </v-row>
@@ -115,7 +115,7 @@
             <v-icon v-if="experiencia.index == 5" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
             <v-icon v-if="experiencia.index == 6" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
           </v-row>
-          <v-row
+          <v-lazy
             class="ma-0 ml-5 mr-12 pa-0"
             style="width:100%"
             v-for="text in experiencia.text"  :key="text"
@@ -123,7 +123,7 @@
             <p>
               <span v-html="text"></span>
             </p>
-          </v-row>
+          </v-lazy>
 
         </v-row>
       </v-row>

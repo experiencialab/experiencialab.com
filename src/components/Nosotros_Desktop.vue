@@ -97,7 +97,7 @@
       class="ma-0 mt-16 ml-12 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 ml-8 pa-0 text-uppercase">Equipo</p>
+      <p class="ma-0 ml-8 pa-0 text-uppercase">Core Team</p>
     </v-row>
     <v-row
       v-for="member in $store.state.equipo"  :key="member.index"
