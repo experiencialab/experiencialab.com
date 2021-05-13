@@ -268,6 +268,7 @@
         align="center"
       >
         <v-img
+          eager
           class="ma-0 mt-16 pa-0"
           max-width="50%"
           max-height="100%"
@@ -322,6 +323,7 @@
         align="center"
       >
         <v-img
+          eager
           class="ma-0 mt-16 pa-0"
           max-width="65%"
           max-height="100%"
@@ -347,6 +349,7 @@
         align="center"
       >
         <v-img
+          eager
           class="ma-0 mt-16 pa-0"
           max-width="65%"
           max-height="100%"
@@ -375,6 +378,7 @@
         style="overflow:hidden;width:100vw"
       >
         <v-img
+          eager
           class="ma-0 mt-8 pa-0"
           max-width="100%"
           height="56vh"
