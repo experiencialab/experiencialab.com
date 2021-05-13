@@ -80,23 +80,27 @@
             <v-spacer></v-spacer>
 
             <v-img
+              style="z-index:10"
               class="ma-0 ml-12 pa-0"
               max-height="100"
               max-width="200"
               :src="experiencia.logo"
             ></v-img>
           </v-row>
-
-          <v-img
-            max-height="380px"
-            max-width="100%"
-            position="20px -80px"
-            :src="experiencia.mock"
-          ></v-img>
+          <v-row
+            class="ma-0 mt-n16 pa-0"
+            style="width:100%"
+          >
+            <v-img
+              position=""
+              contain
+              :src="experiencia.mock"
+            ></v-img>
+          </v-row>
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="width:45vw"
+          style="width:45vw;z-index:100;background-color:rgba(255,255,255,.5)"
         >
           <v-row
             class="ma-0 pa-0"
