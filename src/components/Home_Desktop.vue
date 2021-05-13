@@ -18,7 +18,7 @@
           justify="center"
           @click="spotify()"
         >
-          <p class="ma-0 ml-5 pa-0">PODCAST</p> <v-icon class="ma-0 ml-12 mr-5 pa-0" style="transform:scale(2)">$camion</v-icon>
+          <p class="ma-0 ml-5 pa-0">PODCAST</p> <v-icon class="ma-0 ml-12 mr-5 pa-0" size="40">$camion</v-icon>
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -54,14 +54,14 @@
                 align="center"
               >
                 <v-row
-                  class="ma-0 ml-10 pa-0"
-                  style="width:100%;height:60vh"
+                  class="ma-0 ml-10 mt-n4 pa-0"
+                  style="width:100%;height:56vh"
                   align="center"
                 >
                   <v-row
                     class="ma-0 pa-0"
-                    style="max-width:70%;min-height:25vh;line-height:70px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
-                    align="center"
+                    style="max-width:70%;line-height:70px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
+
                   >
 
                     <p class="highlight" v-html="item"></p>

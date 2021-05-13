@@ -2,46 +2,19 @@
   <v-row
     class="ma-0 pa-0"
   >
-    <home-desktop v-if="!$vuetify.breakpoint.xs"></home-desktop>
-    <home-mobile v-if="$vuetify.breakpoint.xs"></home-mobile>
+    <nosotros-desktop v-if="$vuetify.breakpoint.xl"></nosotros-desktop>
+    <nosotros-desktop v-if="$vuetify.breakpoint.lg"></nosotros-desktop>
+    <nosotros-desktop v-if="$vuetify.breakpoint.md"></nosotros-desktop>
+    <nosotros-mobile v-if="$vuetify.breakpoint.sm"></nosotros-mobile>
+    <nosotros-mobile v-if="$vuetify.breakpoint.xs"></nosotros-mobile>
   </v-row>
 </template>
 
 <script>
   export default {
     components: {
-      'home-desktop': require('@/components/Home_Desktop.vue').default,
-      'home-mobile': require('@/components/Home_Mobile.vue').default
+      'nosotros-desktop': require('@/components/Nosotros_Desktop.vue').default,
+      'nosotros-mobile': require('@/components/Nosotros_Mobile.vue').default
     }
   }
 </script>
-
-<style lang="sass">
-  .spany
-    font-weight: bold
-
-  .v-carousel .v-window-item
-    position: absolute
-    top: 0
-    width: 100%
-
-  .my-carousel-enter-active
-
-    transition: 2s ease
-  .my-carousel-leave-active
-
-    transition: 2s ease
-  .my-carousel-move
-
-    transition: transform 6s
-  .my-carousel-enter
-
-    transform: translate(-100%, 0)
-  .my-carousel-leave
-
-  .my-carousel-leave-to
-    position: absolute
-    top: 0
-    transform: translate(100%, 0)
-
-</style>

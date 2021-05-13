@@ -5,7 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    loading: false,
     bajada: 'Acompañamos a las organizaciones a adaptarse al entorno,  ser ágiles, acelerar su transformación digital y desarrollar productos digitales utilizando tecnologías emergentes en el ámbito de la creación de nuevas y valiosas formas en que personas y empresas se relacionan, trabajan y experimentan compras & servicios.',
+    historia: [
+      'Inquietos  por la lentitud del desarrollo de productos digitales,  frustrados del desarrollo de cascada,  cansados de que las organizaciones no incorporen a sus usuarios en el diseño y desarrollo de software....en marzo de 2017 nos propusimos cambiar la realidad:  nace experienciaLAB  impulsado la aceleración digital, desarrollo  ágil de ecosistemas digitales en base a tecnología emergente centrado en las necesidades de usuarios, orientando la  toma de decisiones en torno a datos y fomentando la adopción de metodologías ágiles al servicio de las organizaciones.' ,
+      '<span>Somos un equipo  100% ágil y digital</span>.' ,
+      'Trabajamos como un solo equipo con nuestros clientes, combinando nuestras capacidades, experiencia y conocimiento experto para co-crear el futuro de cualquier organización, habilitar el alineamiento organizacional, acelerar el  desarrollo de ecosistemas y productos digitales con funcionalidades atesoradas por sus usuarios.'
+    ],
     titulares: [
       "Desarrollar <span>productos digitales</span> es nuestro arte.",
       "Generamos delivery <span>siempre y antes</span> que cualquier competidor.",
@@ -61,6 +67,55 @@ export default new Vuex.Store({
         texto: '¿Quieres más delivery, mejor time to market, productos digitales más centrados en tus usuarios? Nos especializamos en hacer que equipos de desarrollo digital adopten metodologías ágiles a través de entrenamiento y acompañamiento por 4 sprints (8 semanas), logrando desarrollo de productos digitales sorprendentes!'
       }
     ],
+    equipo: [
+      {
+        index: 0,
+        nombre: 'Vivi Ponce',
+        cargo: 'CEO & Founder',
+        bio: ['Consultora senior experta en la concepción de la próxima generación de features para experiencia de usuarios y clientes , agilidad organizacional, aceleración digital y habilitadores tecnológicos. Articuladora de procesos de co-creación y diálogo organizacional.',
+        'Glutenfree, vegetariana, bike lover, inmigrante italiana en chile, hacer que las cosas pasen es mi súper poder.',
+        'Ingeniero Civil Industrial<br>Magister en Marketing<br>Design Thinker<br>Fundadora<br>Agile Coach<br>Scrum Master<br>Product Owner Senior certificated<br>Devops Certificated'
+        ],
+        foto: 'fotos/vivi_ponce.jpg',
+        nick: 'Vivi',
+        twitter: '@vivirlove',
+        twitterlink: 'https://twitter.com/VivirLove',
+        instagram: 'https://www.instagram.com/vivirlove/?hl=en',
+        linkedin: 'https://www.linkedin.com/in/vivi-ponce-serri-88210015/'
+      },
+      {
+        index: 1,
+        nombre: 'Ana de Lara',
+        cargo: 'Head UX/UI',
+        bio: [
+          'Consultora, experta  en incubación, desarrollo acelerado de productos & nuevos negocios digitales.',
+          '',
+          'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated.'
+        ],
+        foto: 'fotos/ana_de_lara.jpg',
+        nick: 'Ana',
+        twitter: '',
+        twitterlink: '',
+        instagram: 'https://www.instagram.com/anadelara/?hl=en',
+        linkedin: 'https://www.linkedin.com/in/anavdelara/'
+      },
+      {
+        index: 2,
+        nombre: 'Daniel Barrientos',
+        cargo: 'Head of Futures',
+        bio: [
+          'Consultor senior experto en diseño de productos digitales de futuro y modelos de negocio disruptivos.',
+          '',
+          'Lego® Serious Play ® certified facilitator<br>Lean Startup ® certified<br>Design-thinker<br>Customer-Driven Innovation<br>Business Model Canvas ® expert'
+        ],
+        foto: 'fotos/daniel_barrientos.jpg',
+        nick: 'Dani',
+        twitter: '',
+        twitterlink: '',
+        instagram: 'https://www.instagram.com/daniel_bl/?hl=en',
+        linkedin: 'https://www.linkedin.com/in/dbarrientos/'
+      }
+    ],
     logos: [
       "logos/claro.png",
       "logos/ADretail.png",
@@ -83,6 +138,9 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
+    loading(state, mode){
+      state.loading = mode;
+    }
   },
   actions: {
   },

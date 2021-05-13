@@ -26,24 +26,24 @@
       align="center"
     >
       <v-spacer></v-spacer>
-      <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
+      <router-link
+        to="/"
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
       >
         <span class="outer">
           <span class="inner">home</span>
         </span>
-      </a>
-      <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
+      </router-link>
+      <router-link
+        to="/nosotros"
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
       >
         <span class="outer">
           <span class="inner">nosotros</span>
         </span>
-      </a>
+      </router-link>
       <a
         class="ma-0 pa-0 mx-4 text-uppercase menu-item"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
@@ -53,15 +53,15 @@
           <span class="inner">podcast</span>
         </span>
       </a>
-      <a
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
+      <router-link
+        to="/experiencias"
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none d-none"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-        @click="myFunction()"
       >
         <span class="outer">
           <span class="inner">experiencias</span>
         </span>
-      </a>
+      </router-link>
       <a
         class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
@@ -86,7 +86,7 @@
         <span class="outer">
           <span class="inner">es</span>
         </span></a>
-        
+
       <a
         class="ma-0 pa-0 mr-12 text-decoration-none text-uppercase menu-item menu-active d-none"
         :class="{ 'menu-active': !this.english }"
