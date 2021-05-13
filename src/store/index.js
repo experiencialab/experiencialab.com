@@ -116,6 +116,22 @@ export default new Vuex.Store({
         linkedin: 'https://www.linkedin.com/in/dbarrientos/'
       }
     ],
+    experiencias: [
+      {
+        index: 0,
+        nombre: 'iConstruye',
+        logo: 'logos/iconstruye.png',
+        mock: 'mocks/iconstruye.jpg',
+        text: 'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para i-construye otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital para sus usuarios. Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile.'
+      },
+      {
+        index: 1,
+        nombre: 'TocToc.com',
+        logo: 'logos/tictoc.png',
+        mock: 'mocks/toctoc.jpg',
+        text: ''
+      }
+    ],
     logos: [
       "logos/claro.png",
       "logos/ADretail.png",

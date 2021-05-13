@@ -55,7 +55,7 @@
       </a>
       <router-link
         to="/experiencias"
-        class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none d-none"
+        class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
         style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
       >
         <span class="outer">
