@@ -184,7 +184,7 @@ export default new Vuex.Store({
         logo: 'logos/TeatroamilTV.png',
         mock: 'mocks/teatroamiltv.jpg',
         text: [
-          'Frente al desafío de digitalizar la interacción con los usuarios y clientes del festival de teatro Santiago a mil, en un ejercicio de co-creación bajo metodología ágil:<br><br>Dirigimos el desarrollamos una solución digital web, y sus aplicativos para transmisión de contenido en vivo y de suscripción tipo Netfilx en base a una estrategia de white label con Vimeo OTT.'
+          'Frente al desafío de digitalizar la interacción con los usuarios y clientes del festival de teatro Santiago a Mil, en un ejercicio de co-creación bajo metodología ágil:<br><br>Dirigimos el desarrollo de una solución digital web y sus aplicativos para la transmisión de contenido en vivo, y sistema de suscripción tipo Netfilx en base a una estrategia de white label con Vimeo OTT.'
         ]
       }
     ],

@@ -56,7 +56,7 @@
                     class="ma-0 pa-0"
                     style="max-width:100%"
                   >
-                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier empresa o institución</p>
+                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier institución</p>
                   </v-row>
                 </v-row>
               </v-row>
