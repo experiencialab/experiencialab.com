@@ -65,45 +65,56 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-16 pa-0"
+        class="ma-0 mt-16 mb-16 pa-0"
         style="width:100vw"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:55vw;height:100%;background-color:red"
+          style="width:55vw"
         >
           <v-row
             class="ma-0 pa-0"
-            style="width:100%;height:100px;background-color:blue"
+            style="width:100%;height:100px"
           >
+            <v-spacer></v-spacer>
 
+            <v-img
+              class="ma-0 ml-12 pa-0"
+              max-height="100"
+              max-width="200"
+              :src="experiencia.logo"
+            ></v-img>
           </v-row>
-          <v-spacer></v-spacer>
 
           <v-img
-            class="ma-0 ml-12 pa-0"
-            max-height="100"
-            max-width="200"
-            :src="experiencia.logo"
-          ></v-img>
-          <v-img
-            width="100%"
+            max-height="380px"
+            max-width="100%"
+            position="20px -80px"
             :src="experiencia.mock"
           ></v-img>
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="width:45vw;height:100px;background-color:yellow"
-          align="center"
+          style="width:45vw"
         >
-          <v-icon class="ma-0 ml-12 mr-5 pa-0" size="60">$camion</v-icon>
-        </v-row>
-        <v-row
-          class="ma-0 pa-0"
-          style="max-width:25vw;background-color:yellow"
-        >
-          {{ experiencia.text }}
+          <v-row
+            class="ma-0 pa-0"
+            style="width:100%;height:100px"
+            align="center"
+          >
+            <v-icon class="ma-0 ml-12 mr-5 pa-0" size="60">$camion</v-icon>
+          </v-row>
+          <v-row
+            class="ma-0 ml-5 mr-12 pa-0"
+            style="width:100%"
+            v-for="text in experiencia.text"  :key="text"
+          >
+            <p>
+              <span v-html="text"></span>
+            </p>
+          </v-row>
+
         </v-row>
       </v-row>
     </v-row>
