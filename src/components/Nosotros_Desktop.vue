@@ -188,7 +188,7 @@
 
           >
             <v-icon
-              class="ma-0 mx-1 pa-0"
+              class="ma-0 mr-2 pa-0"
 
               color= "black"
               @click="site($store.state.equipo[member.index].linkedin)"
@@ -197,7 +197,7 @@
             </v-icon>
             <v-icon
               v-if="$store.state.equipo[member.index].twitterlink"
-              class="ma-0 mx-1 pa-0"
+              class="ma-0 mr-2 pa-0"
 
               color= "black"
               @click="site($store.state.equipo[member.index].twitterlink)"
@@ -205,7 +205,7 @@
               mdi-twitter
             </v-icon>
             <v-icon
-              class="ma-0 mx-1 pa-0"
+              class="ma-0 mr-2 pa-0"
 
               color= "black"
               @click="site($store.state.equipo[member.index].instagram)"
