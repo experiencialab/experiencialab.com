@@ -120,7 +120,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0 d-none" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
           <v-icon class="ma-0 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:.3">$corazon</v-icon>
 
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="z-index:1;width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
