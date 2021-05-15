@@ -21,7 +21,7 @@
         :contain="true"/>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon x-large class="mt-2 mr-6 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon x-large class="mt-1 mr-6 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
 
       <v-row
