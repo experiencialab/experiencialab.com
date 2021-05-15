@@ -92,7 +92,7 @@
           ></v-img>
         </v-row>
         <v-row
-          class="ma-0 mx-5 pa-0"
+          class="ma-0 mt-10 mx-5 pa-0"
           style="width:100%;font-size:17px;font-family:Space Grotesk;font-weight:300"
           v-for="text in experiencia.text"  :key="text"
         >

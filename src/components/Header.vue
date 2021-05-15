@@ -124,6 +124,12 @@
     components: {
       'drawer': require('@/components/NavegationDrawer.vue').default
     },
+    created () {
+      this.$router.beforeEach( (to, from, next) => {
+        this.drawer = !this.drawer;
+        next()
+      });
+    },
     methods: {
       whatsapp: function () {
         window.open("https://wa.me/+56994319115", "_blank");

@@ -124,7 +124,7 @@
             </v-row>
           </v-row>
 
-          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(15);position:absolute;opacity:.25">$corazon</v-icon>
+          <v-icon class="ma-0 pa-0" style="z-index:1;top:190px;transform:scale(12);position:absolute;opacity:.25">$corazon</v-icon>
 
       </v-row>
     </v-row>

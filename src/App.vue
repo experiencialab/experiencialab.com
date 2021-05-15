@@ -3,7 +3,7 @@
     <v-row
       v-if="loading"
       class="ma-0 pa-0 ma-auto"
-      style="width:100vw;height:100vh;position:absolute;z-index:99;background-color:white"
+      style="width:100vw;height:100vh;position:absolute;z-index:1199;background-color:white"
       align="center"
       justify="center"
     >
