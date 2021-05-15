@@ -130,16 +130,16 @@
                   style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
                   align="center"
                 >
-                  <p>
+                  <p style="width:100%">
                     <span v-html="$store.state.equipo[member.index].bio[0]"></span>
                   </p>
-                  <p>
+                  <p style="width:100%">
                     <span v-html="$store.state.equipo[member.index].bio[1]"></span>
                   </p>
-                  <p>
+                  <p style="width:100%">
                     <span v-html="$store.state.equipo[member.index].bio[2]"></span>
                   </p>
-                  <p style="font-size:10px">
+                  <p style="font-size:10px;width:100%">
                     <span v-html="$store.state.equipo[member.index].bio[3]"></span>
                   </p>
                 </v-row>

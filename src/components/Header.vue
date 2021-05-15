@@ -105,7 +105,7 @@
 
       <v-row
         :class="{ 'drawer': drawer }"
-        class="ma-0 pa-0"
+        class="ma-0 pa-0 d-sm-none"
         style="width:100vw;height:0px;background-color:white;transition: height 0.2s;overflow:hidden"
       >
         <drawer></drawer>
