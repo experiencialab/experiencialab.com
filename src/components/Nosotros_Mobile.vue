@@ -378,6 +378,9 @@
     methods: {
       spotify: function () {
         window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
+      },
+      site: function (link) {
+        window.open(link, "_blank");
       }
     }
   }
