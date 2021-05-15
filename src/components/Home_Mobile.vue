@@ -34,7 +34,7 @@
 
           </VideoParallax>
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 mt-n5 pa-0"
             style="z-index:1;position:absolute;width:100%"
           >
             <v-carousel
@@ -131,7 +131,7 @@
 
     <v-row
       class="ma-0 mt-16 ml-5 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">Servicios</p>
     </v-row>
@@ -237,7 +237,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-5 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">Experiencias</p>
     </v-row>
@@ -349,7 +349,7 @@
 
     <v-row
       class="ma-0 mt-16 ml-5 pa-0 pt-8"
-      style="width:100vw;height:70px;font-size:40px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>

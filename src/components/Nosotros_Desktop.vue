@@ -177,8 +177,11 @@
             <p>
               <span v-html="$store.state.equipo[member.index].bio[1]"></span>
             </p>
-            <p style="font-size:10px">
+            <p>
               <span v-html="$store.state.equipo[member.index].bio[2]"></span>
+            </p>
+            <p style="font-size:10px">
+              <span v-html="$store.state.equipo[member.index].bio[3]"></span>
             </p>
           </v-row>
           <v-row

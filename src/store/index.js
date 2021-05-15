@@ -74,6 +74,7 @@ export default new Vuex.Store({
         cargo: 'CEO & Founder',
         bio: ['Consultora senior experta en la concepción de la próxima generación de features para experiencia de usuarios y clientes , agilidad organizacional, aceleración digital y habilitadores tecnológicos. Articuladora de procesos de co-creación y diálogo organizacional.',
         'Glutenfree, vegetariana, bike lover, inmigrante italiana en chile, hacer que las cosas pasen es mi súper poder.',
+        '',
         'Ingeniero Civil Industrial<br>Magister en Marketing<br>Design Thinker<br>Fundadora<br>Agile Coach<br>Scrum Master<br>Product Owner Senior certificated<br>Devops Certificated'
         ],
         foto: 'fotos/vivi_ponce.jpg',
@@ -88,8 +89,9 @@ export default new Vuex.Store({
         nombre: 'Ana de Lara',
         cargo: 'Head UX/UI',
         bio: [
-          'Consultora, experta  en incubación, desarrollo acelerado de productos & nuevos negocios digitales.',
-          '',
+          'Consultora experta en la concepción e incubación de experiencias digitales atesorables a través de la identificación de las necesidades actuales y futuras de los usuario & clientes  y el uso de metodologías de diseño participativo. Desarrollo acelerado de productos con y para el usuario.',
+          'Camaleónica, resiliente, ciudadana del mundo, dance lover, obsesionada con todas las ramas del diseño.',
+          'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
           'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
         ],
         foto: 'fotos/ana_de_lara.jpg',
@@ -104,8 +106,9 @@ export default new Vuex.Store({
         nombre: 'Daniel Barrientos',
         cargo: 'Head of Futures',
         bio: [
-          'Consultor senior experto en diseño de productos digitales de futuro y modelos de negocio disruptivos.',
-          '',
+          'Experto en diseño e implementación de estrategias de digitalización y aceleración en equipos tecnológicos. Acompañamiento a directivos y equipos digitales en la visualización de escenarios futuros, co-construcción de modelos de negocio disruptivos y rutas de desarrollo digital evolutivas y escalables.',
+          'Sibarita, parrillero, ciclista furioso y nerd orgulloso.',
+          'Superpoder: “Impulsar a las organizaciones a mirar el futuro y llevarlo a cabo”.',
           'Lego® Serious Play ® certified facilitator<br>Lean Startup ® certified<br>Design-thinker<br>Customer-Driven Innovation<br>Business Model Canvas ® expert'
         ],
         foto: 'fotos/daniel_barrientos.jpg',
