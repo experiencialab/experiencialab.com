@@ -90,44 +90,31 @@
         <v-row
           class="ma-0 pa-0 justify-center"
           style="width:100vw"
-          align="center"
         >
           <v-row
             class="ma-0 mt-n16 pa-0"
-            style="font-family:Space Grotesk;font-weight:400;background-color:white;color:black;z-index:1;max-width:90vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
-            align="center"
+            style="font-family:Space Grotesk;font-weight:400;background-color:white;color:black;z-index:1;max-width:90vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);overflow:hidden"
+
           >
             <v-row
               class="ma-0 pa-0"
-              style="width:100%;height:10vh"
-              align="center"
+              style="width:100%;height:10vh;border-left:5px solid #03F7F7;font-size:18px;font-family:Space Grotesk;font-weight:700"
             >
-              <v-row
-                class="ma-0 pa-0"
-                style="background-color:#03F7F7;min-width:5px;max-width:5px;min-height:100%"
-                align="center"
-              >
 
-              </v-row>
-              <v-row
-                class="ma-0 ml-6 pa-0"
-                style="font-size:18px;font-family:Space Grotesk;font-weight:700;height:100%"
-              >
                 <v-row
-                  class="ma-0 pa-0"
-                  style="width:100%;font-size:20px"
+                  class="ma-0 ml-5 pa-0"
+                  style="width:100%;font-size:25px;min-height:70%;max-height:70%"
                   align="center"
                 >
-                  {{ $store.state.equipo[member.index].nombre }}<p v-if="$store.state.equipo[member.index].twitterlink" @click="site($store.state.equipo[member.index].twitterlink)" class="ma-0 ml-2 pa-0" style="font-size:14px">{{ $store.state.equipo[member.index].twitter }}</p>
+                  <p class="ma-0 mt-1 pa-0" tyle="background-color:red">{{ $store.state.equipo[member.index].nombre }}</p><a @click="site($store.state.equipo[member.index].twitterlink)" class="ma-0 mt-2 ml-2 pa-0" style="font-size:14px;color:black">{{ $store.state.equipo[member.index].twitter }}</a>
                 </v-row>
                 <v-row
-                  class="ma-0 mt-n3 pa-0"
-                  style="width:100%;font-weight:500;max-height:30%"
-                  align="top"
+                  class="ma-0 ml-5 pa-0"
+                  style="max-width:100%;font-weight:500;min-height:30%;max-height:30%"
                 >
-                  {{ $store.state.equipo[member.index].cargo }}
+                  <p class="ma-0 mt-n3 pa-0">{{ $store.state.equipo[member.index].cargo }}</p>
                 </v-row>
-              </v-row>
+
             </v-row>
             <v-row
               class="ma-0 pa-0"
@@ -288,7 +275,7 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mt-5 pa-0"
+      class="ma-0 mt-10 pa-0"
       style="width:100vw"
       justify="center"
       align="center"
@@ -325,7 +312,7 @@
     </v-row>
     <v-row
       class="ma-0 mt-16 ml-5 pa-0 pt-8"
-      style="width:100vw;height:70px;font-size:40px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
@@ -339,7 +326,7 @@
       >
         <v-img
           eager
-          class="ma-0 mt-8 pa-0"
+          class="ma-0 pa-0"
           max-width="100%"
           height="56vh"
           src="fotos/trabaja-con-nosotros.jpg"
