@@ -48,8 +48,9 @@
         });
       }
     },
-    mounted() {
-      this.sleep(2);
+    async mounted() {
+      await this.sleep(1000);
+      this.loading = false;
       document.onreadystatechange = () => {
         console.log(document.readyState)
         if (document.readyState == "complete") {
