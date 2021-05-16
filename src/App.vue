@@ -49,11 +49,10 @@
       }
     },
     async mounted() {
-      await this.sleep(1000);
-      this.loading = false;
-      document.onreadystatechange = () => {
+      document.onreadystatechange = async () => {
         console.log(document.readyState)
         if (document.readyState == "complete") {
+          await this.sleep(2000);
           this.loading = false;
         }
       }
