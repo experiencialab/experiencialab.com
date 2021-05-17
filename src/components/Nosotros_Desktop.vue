@@ -40,7 +40,7 @@
               height="56vh"
               src="fotos/nosotros.jpg"
               style="color:white"
-              position="center top 30%"
+              position="-40px"
             >
 
             </v-img>
@@ -222,17 +222,18 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mb-10 pa-0"
+      class="ma-0 mt-16 mb-10 pa-0"
       style="width:100vw"
+      align="center"
     >
       <v-row
-        class="ma-0 mt-16 ml-12 pa-0"
+        class="ma-0 mt-16 ml-12 pa-0 pt-8"
         style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
       >
         <p class="ma-0 ml-8 pa-0 text-uppercase">Metodología</p>
       </v-row>
       <v-row
-        class="ma-0 mt-16 pa-0"
+        class="ma-0 mt-16 pa-0 pt-8"
         style=";width:100%;height:10vh"
         justify="center"
       >
@@ -268,13 +269,14 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-5 pa-0"
+        class="ma-0 mt-16 mx-16 pa-0"
+        style="border-radius:5px"
         justify="center"
         align="center"
       >
         <v-img
           eager
-          class="ma-0 mt-16 pa-0"
+          class="ma-0 my-16 pa-0"
           max-width="50%"
           max-height="100%"
           src="fotos/metodologia.png"
