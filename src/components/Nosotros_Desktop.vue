@@ -83,7 +83,7 @@
           </v-row>
 
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 mt-2 pa-0"
             style="width:68%;z-index:1;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"
             align="center"
           >
@@ -98,11 +98,11 @@
       class="ma-0 mt-16 ml-12 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 ml-8 pa-0 text-uppercase">Core Team</p>
+      <p class="ma-0 mt-10 ml-8 pa-0 text-uppercase">Core Team</p>
     </v-row>
     <v-row
       v-for="member in $store.state.equipo"  :key="member.index"
-      class="ma-0 mt-8 mb-8 pa-0 pb-16"
+      class="ma-0 mt-16 mb-8 pa-0 pt-16 pb-16"
       style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
       align="center"
     >
@@ -115,8 +115,9 @@
 
         <v-img
           eager
+          position="-80px"
           class="ma-0 pa-0"
-          style="min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+          style="min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
           :src="$store.state.equipo[member.index].foto"
 
         >
@@ -168,25 +169,25 @@
             </v-row>
           </v-row>
           <v-row
-            class="mt-5 mx-12 pa-0"
+            class="mt-8 mb-5 mx-12 pa-0"
             style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
             align="center"
           >
-            <p>
+            <p class="ma-0 pa-0" style="width:100%">
               <span v-html="$store.state.equipo[member.index].bio[0]"></span>
             </p>
-            <p>
+            <p class="ma-0 mt-3 pa-0" style="width:100%">
               <span v-html="$store.state.equipo[member.index].bio[1]"></span>
             </p>
-            <p>
+            <p class="ma-0 mt-3 pa-0" style="width:100%">
               <span v-html="$store.state.equipo[member.index].bio[2]"></span>
             </p>
-            <p style="font-size:10px">
+            <p class="ma-0 mt-3 pa-0" style="font-size:10px">
               <span v-html="$store.state.equipo[member.index].bio[3]"></span>
             </p>
           </v-row>
           <v-row
-            class="ma-0 ml-11 pa-0"
+            class="ma-0 mb-5 ml-11 pa-0"
             style="height:60px"
             align="center"
 

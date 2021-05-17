@@ -29,6 +29,11 @@ export default new Vuex.Store({
         cargo: "Presidente Directorio AD Retail"
       },
       {
+        cita: "Trabajar con Experiencia LAB nos empujó a tomar decisiones, desafiarnos y pensar definitivamente fuera de la caja.... Hemos logrado avances reales y poner sobre los productos que diseñamos en conjunto, experiencias superadoras para nuestros clientes.",
+        autor: "Andrés Pérez Algarra",
+        cargo: "Director Comercial Corporativo Cementos Polpaico"
+      },
+      {
         cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de experiencia LAB en este proyecto",
         autor: "Marcos Kulka",
         cargo: "Gerente general Fundación Chile"
@@ -72,10 +77,10 @@ export default new Vuex.Store({
         index: 0,
         nombre: 'Vivi Ponce',
         cargo: 'CEO & Founder',
-        bio: ['Consultora senior experta en la concepción de la próxima generación de features para experiencia de usuarios y clientes , agilidad organizacional, aceleración digital y habilitadores tecnológicos. Articuladora de procesos de co-creación y diálogo organizacional.',
-        'Glutenfree, vegetariana, bike lover, inmigrante italiana en chile, hacer que las cosas pasen es mi súper poder.',
+        bio: ['Consultora experta en la concepción de la próxima generación de features en la experiencia digital de usuarios para ecosistemas y productos digitales basados en tecnología emergente. Agilista articuladora de procesos de co-creación e intervenciones de shock en organizaciones.',
+        'Gluten free, vegetariana, bike lover, inmigrante italiana en Chile, hacer que las cosas pasen y honestidad brutal son mis superpoderes.',
         '',
-        'Ingeniero Civil Industrial<br>Magister en Marketing<br>Design Thinker<br>Fundadora<br>Agile Coach<br>Scrum Master<br>Product Owner Senior certificated<br>Devops Certificated'
+        'Ingeniero Civil Industrial<br>Marketing in a Digital Environment<br>Agile Coach<br>Scrum Master certificated<br>Product Owner certificated<br>Devops Certificated<br>Yoga teacher'
         ],
         foto: 'fotos/vivi_ponce.jpg',
         nick: 'Vivi',
