@@ -115,7 +115,7 @@
 
         <v-img
           eager
-          position="-80px"
+          position="-130px"
           class="ma-0 pa-0"
           style="min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
           :src="$store.state.equipo[member.index].foto"
