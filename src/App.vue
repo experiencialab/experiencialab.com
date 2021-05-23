@@ -4,7 +4,7 @@
       v-if="loading"
       class="ma-0 pa-0 ma-auto"
       style="width:100vw;height:100vh;position:absolute;z-index:1199;background-color:white"
-      aling="center"
+      align="center"
       justify="center"
     >
       <v-img
