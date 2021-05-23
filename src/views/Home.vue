@@ -20,8 +20,6 @@
 </script>
 
 <style lang="sass">
-  .spany
-    font-weight: bold
 
   .v-carousel .v-window-item
     position: absolute

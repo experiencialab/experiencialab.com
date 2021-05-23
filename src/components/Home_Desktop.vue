@@ -262,6 +262,7 @@
           height="56vh"
           src="fotos/testimonios.jpg"
           style="color:white"
+          eager
         >
           <v-carousel
             hide-delimiters
@@ -339,7 +340,7 @@
         >
 
             <v-img
-
+              eager
               max-height="100"
               max-width="100"
               :src="logo"
@@ -368,6 +369,7 @@
         style="overflow:hidden;width:100vw"
       >
         <v-img
+          eager
           class="ma-0 mt-8 pa-0"
           max-width="100%"
           height="56vh"
