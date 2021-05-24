@@ -183,7 +183,12 @@ export default new Vuex.Store({
         logo: 'logos/polpaico.png',
         mock: 'mocks/polpaico.jpg',
         text: [
-          'Step 1:<br><br>Frente al desafío de acelerar la transformación digital y del negocio hemos orquestado un ejercicio de co-creación y diseño digital que involucró c-level, segundas líneas, clientes, no clientes, maestros y ferreteros, el cual permitió: Visualizar futuros y realidades de evolución posibles para Polpaico, que se tradujeron en líneas de desarrollo digital centrados en sus usuarios actuales y potenciales, alineados a su evolución estratégica y priorizadas en términos de importancia para el negocio.<br><br>En esta asesoría orquestamos alrededor de 60 personas y usuarios.<br><br>Step 2:<br><br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:<br><br>Desarrollamos el portafolio de los principales productos digitales de Polpaico<br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
+          'Step 1:',
+          'Frente al desafío de acelerar la transformación digital y del negocio hemos orquestado un ejercicio de co-creación y diseño digital que involucró c-level, segundas líneas, clientes, no clientes, maestros y ferreteros, el cual permitió: Visualizar futuros y realidades de evolución posibles para Polpaico, que se tradujeron en líneas de desarrollo digital centrados en sus usuarios actuales y potenciales, alineados a su evolución estratégica y priorizadas en términos de importancia para el negocio.',
+          'En esta asesoría orquestamos alrededor de 60 personas y usuarios.',
+          'Step 2:',
+          'Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
+          'Desarrollamos el portafolio de los principales productos digitales de Polpaico<br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
         ]
       },
       {

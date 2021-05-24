@@ -33,36 +33,49 @@
           to="/"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
           style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          :class="{ 'menu-active': check('home') }"
+          tag="button"
+          :disabled="check('home')"
         >
           <span class="outer">
             <span class="inner">home</span>
           </span>
         </router-link>
         <router-link
-          to="/nosotros"
+          to="/experiencias"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
           style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          :class="{ 'menu-active': check('experiencias') }"
+          tag="button"
+          :disabled="check('experiencias')"
         >
           <span class="outer">
-            <span class="inner">nosotros</span>
+            <span class="inner">experiencias</span>
           </span>
         </router-link>
         <a
           class="ma-0 pa-0 mx-4 text-uppercase menu-item"
           style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
           @click="spotify()"
+          :class="{ 'menu-active': check('podcast') }"
+          tag="button"
+          :disabled="check('podcast')"
         >
           <span class="outer">
             <span class="inner">podcast</span>
           </span>
         </a>
+
         <router-link
-          to="/experiencias"
+          to="/nosotros"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
           style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          :class="{ 'menu-active': check('nosotros') }"
+          tag="button"
+          :disabled="check('nosotros')"
         >
           <span class="outer">
-            <span class="inner">experiencias</span>
+            <span class="inner">nosotros</span>
           </span>
         </router-link>
         <a
@@ -130,12 +143,29 @@
         next()
       });
     },
+    mounted () {
+
+    },
     methods: {
       whatsapp: function () {
         window.open("https://wa.me/+56994319115", "_blank");
       },
       spotify: function () {
         window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
+      },
+      check: function (item) {
+        if (item == 'home') {
+          return this.$router.options.routes[0].meta.active
+        }
+        else if (item == 'nosotros') {
+          return this.$router.options.routes[2].meta.active
+        }
+        else if (item == 'podcast') {
+          return this.$router.options.routes[3].meta.active
+        }
+        else if (item == 'experiencias') {
+          return this.$router.options.routes[1].meta.active
+        }
       }
     }
   }

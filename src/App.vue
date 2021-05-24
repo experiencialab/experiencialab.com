@@ -18,7 +18,9 @@
     <Header
       style="z-index:400"
     ></Header>
-    <router-view v-if="!loading"></router-view>
+    <transition :name='name'>
+      <router-view v-if="!loading"></router-view>
+    </transition>
   <Footer></Footer>
   </v-app>
 </template>
@@ -26,6 +28,7 @@
 <script>
   export default {
     data: () => ({
+      name: 'fade',
       loading: true
     }),
     components: {
@@ -50,10 +53,11 @@
     },
     async mounted() {
       document.onreadystatechange = async () => {
-        console.log(document.readyState)
         if (document.readyState == "complete") {
           await this.sleep(2000);
           this.loading = false;
+          await this.sleep(2000);
+          this.name = null
         }
       }
 
@@ -76,5 +80,10 @@
     -ms-user-select: none
     user-select: none
 
+  .fade-enter-active, .fade-leave-active
+    transition: opacity 2s
+
+  .fade-enter, .fade-leave-to
+    opacity: 0
 
 </style>

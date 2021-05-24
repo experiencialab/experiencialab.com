@@ -247,7 +247,7 @@
       <p class="ma-0 ml-8 pa-0 text-uppercase">Experiencias</p>
     </v-row>
     <v-row
-      class="ma-0 pa-0 justify-end"
+      class="ma-0 mt-8 pa-0 justify-end"
       style="position:relative;width:100vw;font-size:30px;font-family:Space Grotesk;font-weight:300"
       align="center"
     >
@@ -333,20 +333,18 @@
         align="center"
         justify="center"
       >
-        <v-row
-          class="ma-0 mb-5 mx-12 pa-5 logo"
-          v-for="logo in this.logos" :key="logo"
-          justify="center"
-        >
+
 
             <v-img
+              style=""
+              class="ma-0 mt-3 mx-8 pa-0"
+              v-for="logo in this.logos" :key="logo"
               eager
-              max-height="100"
-              max-width="100"
+              max-height="110"
+              max-width="7%"
               :src="logo"
             ></v-img>
 
-        </v-row>
       </v-row>
     </v-row>
     <v-row

@@ -118,15 +118,20 @@
             <v-icon v-if="experiencia.index == 6" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
           </v-row>
           <v-row
-            class="ma-0 ml-5 mr-12 pa-0"
-            style="width:100%"
-            v-for="text in experiencia.text"  :key="text"
+            class="ma-0 pa-0"
+            style="overflow:hidden"
           >
-            <p>
-              <span v-html="text"></span>
-            </p>
+            <v-row
+              class="ma-0 ml-5 mr-12 pa-0"
+              style="width:100%;font-family:Space Grotesk"
+              v-for="dex in 2"  :key="dex"
+            >
+                <span v-html="experiencia.text[dex - 1]"></span>
+            </v-row>
+            <v-spacer></v-spacer>
+            <v-icon color="black" large class="ma-0 mr-12 pa-0" v-if="experiencia.text.length > 2">mdi-plus</v-icon>
+            <v-icon color="black" large class="ma-0 mr-12 pa-0" v-if="experiencia.text.length > 2">mdi-minus</v-icon>
           </v-row>
-
         </v-row>
       </v-row>
     </v-row>

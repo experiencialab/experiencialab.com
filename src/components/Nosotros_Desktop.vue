@@ -340,7 +340,7 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mb-10 pa-0"
+      class="ma-0 mt-16 mb-10 pa-0"
       style="width:100vw"
     >
       <v-row
