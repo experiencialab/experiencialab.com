@@ -130,13 +130,11 @@
               <span v-html="experiencia.text[dex - 1]"></span>
             </v-row>
             <v-row
-              v-if="experiencia.extend"
               class="ma-0 ml-5 mr-12 pa-0"
               style="width:100%;font-family:Space Grotesk"
               v-for="dex in $store.state.experiencias.length"  :key="dex"
             >
-              <span v-html="experiencia.text[dex + 1]"></span>
-              <v-spacer vertical></v-spacer>
+              <span v-if="experiencia.extend" v-html="experiencia.text[dex + 1]"></span>
             </v-row>
             <v-row
               class="ma-0 pa-0"
