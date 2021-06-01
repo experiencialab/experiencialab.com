@@ -15,7 +15,7 @@
         src="logo-lab.png"
         :contain="true"/>
       <v-img
-        class="ma-0 ml-16 pa-0"
+        class="ma-0 ml-16 pa-0 d-none d-sm-flex"
         eager
         max-height="8vh"
         max-width="150px"
@@ -212,6 +212,7 @@
     span.outer
       color: #03F7F7
       text-decoration: line-through
+      text-decoration-thickness: 2px
   .menu-active:hover
     font-size: 13px
     font-weight: 400

@@ -328,20 +328,23 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-16 pa-0"
+        class="ma-0 mt-8 mx-16 pa-0"
         style="width:100vw"
         align="center"
       >
         <v-row
-          class="ma-0 mx-12 pa-0"
+          v-for="logo in this.logos" :key="logo"
+          class="ma-0 mx-6 mt-5 pa-0"
+          style=""
+          align="center"
+          justify="center"
         >
           <v-img
             style=""
-            class="ma-0 mt-3 mx-8 pa-0"
-            v-for="logo in this.logos" :key="logo"
+            class="ma-0 mt-3 pa-0"
             eager
             max-height="110"
-            max-width="7%"
+            max-width="80px"
             :src="logo"
           ></v-img>
         </v-row>
@@ -399,22 +402,53 @@
           align="center"
         >
           <v-spacer></v-spacer>
-          <router-link
-            to="/podcast"
-            class="ma-0 mt-8 mr-16 pa-0 text-uppercase text-decoration-none"
-            style="background-color:#03F7F7;width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
-            justify="center"
-            align="center"
+          <v-dialog
+            v-model="dialog"
+            width="500"
+            style="z-index:100000"
           >
-            <v-row
-              class="ma-0 pa-0"
-              style="width:100%;height:100%"
-              justify="center"
-              align="center"
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                class="ma-0 mt-8 mr-16 pa-0"
+                style="background-color:#03F7F7;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
+                width="350px"
+                height="60px"
+                :ripple="false"
+                tile
+                plain
+                v-bind="attrs"
+                v-on="on"
+              >
+                ¡Trabaja con nosotros!
+              </v-btn>
+            </template>
+
+            <v-card
+              style="background-color:#03F7F7"
+              tile
             >
-              ¡Trabaja con nosotros!
-            </v-row>
-          </router-link>
+              <v-card-title>
+                Privacy Policy
+              </v-card-title>
+
+              <v-card-text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </v-card-text>
+
+              <v-divider></v-divider>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="primary"
+                  text
+                  @click="dialog = false"
+                >
+                  I accept
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </v-row>
       </v-row>
     </v-row>
@@ -451,5 +485,10 @@
     color: #ADFFFF
   .pod:hover
     cursor: pointer
+
+  .v-btn:hover:before
+    color: red
+  .v-btn:focus:before
+    color: yellow
 
 </style>

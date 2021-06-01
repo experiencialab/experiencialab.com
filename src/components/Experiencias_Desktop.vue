@@ -65,7 +65,29 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-16 mb-16 pa-0"
+        class="ma-0 mt-8 mx-16 pa-0"
+        style="width:100vw"
+        align="center"
+      >
+        <v-row
+          v-for="logo in this.logos" :key="logo"
+          class="ma-0 mx-6 mt-5 pa-0"
+          style=""
+          align="center"
+          justify="center"
+        >
+          <v-img
+            style=""
+            class="ma-0 mt-3 pa-0"
+            eager
+            max-height="110"
+            max-width="80px"
+            :src="logo"
+          ></v-img>
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 mt-16 mb-16 pa-0 pt-16"
         style="width:100vw"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
       >
