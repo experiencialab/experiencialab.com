@@ -147,7 +147,7 @@ export default new Vuex.Store({
           'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para Toc-Toc otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital de cara a sus usuarios generando delivery continuo constituyéndose en un lab digital.<br><br>',
           'Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile, para el desarrollo de:<br><br>',
           'Primer mínimo producto viable digital para tasación on-line en base inteligencia artificial.<br><br>',
-          'www.retasalo.com<br><br>',
+          '<a href="https://www.retasalo.com" target="_blank">www.retasalo.com</a><br><br>',
           'En esta asesoría orquestamos alrededor de 40 personas y usuarios.'
         ],
         extend: false
@@ -193,7 +193,7 @@ export default new Vuex.Store({
           '<br>En esta asesoría orquestamos alrededor de 60 personas y usuarios.',
           '<br>Step 2:',
           '<br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
-          '<br>Desarrollamos el portafolio de los principales productos digitales de Polpaico<br><br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
+          '<br>Desarrollamos el portafolio de los principales productos digitales de Polpaico.<br><br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
         ],
         extend: false
       },

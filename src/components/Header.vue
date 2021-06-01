@@ -15,12 +15,18 @@
         src="logo-lab.png"
         :contain="true"/>
       <v-img
-        class="ma-0 pa-0"
+        class="ma-0 ml-16 pa-0"
         eager
         max-height="8vh"
-        max-width="220px"
-        src="animation.gif"
+        max-width="150px"
+        src="logo-lab.png"
       ></v-img>
+      <v-row
+        class="ma-0 ml-16 pa-0 d-none"
+        style="height:8vh;width:220px;z-index:66666666"
+      >
+        <video style="transform:scale(.23);transform-origin:left top" autoplay muted><source src="LAB_logo_Animate Crop_1.mp4" type='video/mp4'></video>
+      </v-row>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon x-large class="mt-1 mr-6 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
