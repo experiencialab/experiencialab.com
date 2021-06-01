@@ -329,22 +329,22 @@
       </v-row>
       <v-row
         class="ma-0 mt-16 pa-0"
-        style="width:100vw;background-color:white"
+        style="width:100vw"
         align="center"
-        justify="center"
       >
-
-
-            <v-img
-              style=""
-              class="ma-0 mt-3 mx-8 pa-0"
-              v-for="logo in this.logos" :key="logo"
-              eager
-              max-height="110"
-              max-width="7%"
-              :src="logo"
-            ></v-img>
-
+        <v-row
+          class="ma-0 mx-12 pa-0"
+        >
+          <v-img
+            style=""
+            class="ma-0 mt-3 mx-8 pa-0"
+            v-for="logo in this.logos" :key="logo"
+            eager
+            max-height="110"
+            max-width="7%"
+            :src="logo"
+          ></v-img>
+        </v-row>
       </v-row>
     </v-row>
     <v-row
@@ -396,16 +396,25 @@
         <v-row
           class="ma-0 pa-0"
           style="height:100px;width:100%"
+          align="center"
         >
           <v-spacer></v-spacer>
-          <v-row
-            class="ma-0 mt-8 mr-16 pa-0 text-uppercase d-none"
-            style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+          <router-link
+            to="/podcast"
+            class="ma-0 mt-8 mr-16 pa-0 text-uppercase text-decoration-none"
+            style="background-color:#03F7F7;width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             justify="center"
             align="center"
           >
-            ¡Trabaja con nosotros!
-          </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:100%;height:100%"
+              justify="center"
+              align="center"
+            >
+              ¡Trabaja con nosotros!
+            </v-row>
+          </router-link>
         </v-row>
       </v-row>
     </v-row>
@@ -414,6 +423,7 @@
 
 <script>
   import VideoParallax from 'vuetify-video-parallax';
+
   export default {
     data: () => ({
       logos: []

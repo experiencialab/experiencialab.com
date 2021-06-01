@@ -9,15 +9,18 @@
     >
       <v-img
         eager
-        max-height="330px"
-        max-width="330px"
+        max-height="200px"
+        max-width="300px"
         src="animation.gif"
 
       ></v-img>
     </v-row>
-    <Header
-      style="z-index:400"
-    ></Header>
+    <transition :name='name'>
+      <Header
+        v-if="!loading"
+        style="z-index:400"
+      ></Header>
+    </transition>
     <transition :name='name'>
       <router-view v-if="!loading"></router-view>
     </transition>
@@ -26,14 +29,17 @@
 </template>
 
 <script>
+  import Header from '@/components/Header.vue'
+  import Footer from '@/components/Footer.vue'
+
   export default {
     data: () => ({
       name: 'fade',
       loading: true
     }),
     components: {
-      'Header': require('@/components/Header.vue').default,
-      'Footer': require('@/components/Footer.vue').default
+      Header,
+      Footer
     },
     methods: {
       toggleBodyClass(addRemoveClass, className) {
@@ -54,7 +60,7 @@
     async mounted() {
       document.onreadystatechange = async () => {
         if (document.readyState == "complete") {
-          await this.sleep(2000);
+
           this.loading = false;
           await this.sleep(2000);
           this.name = null

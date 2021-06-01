@@ -132,10 +132,11 @@ export default new Vuex.Store({
         mock: 'mocks/iconstruye.jpg',
         text: [
           'Step 1',
-          'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para i-construye otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital para sus usuarios. Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile.',
-          'Step 2',
-          'Acompañamos a los equipos durante 12 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework, desarrollo escalable:<br>Producto digital marketplace.<br>Producto digital automatización procesos interacción clientes.<br>Arquitectura e Integraciones.<br>En esta asesoría orquestamos alrededor de 50 personas y usuarios.'
-        ]
+          '<br>Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para i-construye otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital para sus usuarios. <br><br>Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile.',
+          '<br><br>Step 2',
+          '<br><br>Acompañamos a los equipos durante 12 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework, desarrollo escalable:<br><br>Producto digital marketplace.<br><br>Producto digital automatización procesos interacción clientes.<br><br>Arquitectura e Integraciones.<br><br>En esta asesoría orquestamos alrededor de 50 personas y usuarios.'
+        ],
+        extend: false
       },
       {
         index: 1,
@@ -143,12 +144,13 @@ export default new Vuex.Store({
         logo: 'logos/tictoc.png',
         mock: 'mocks/toctoc.jpg',
         text: [
-          'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para Toc-Toc otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital de cara a sus usuarios generando delivery continuo constituyéndose en un lab digital.',
-          'Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile, para el desarrollo de:',
-          'Primer mínimo producto viable digital para tasación on-line en base inteligencia artificial.',
-          'www.retasalo.com',
+          'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para Toc-Toc otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital de cara a sus usuarios generando delivery continuo constituyéndose en un lab digital.<br><br>',
+          'Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile, para el desarrollo de:<br><br>',
+          'Primer mínimo producto viable digital para tasación on-line en base inteligencia artificial.<br><br>',
+          'www.retasalo.com<br><br>',
           'En esta asesoría orquestamos alrededor de 40 personas y usuarios.'
-        ]
+        ],
+        extend: false
       },
       {
         index: 2,
@@ -157,7 +159,8 @@ export default new Vuex.Store({
         mock: 'mocks/elecmetal.jpg',
         text: [
           'Frente al desafío de digitalizar la interacción sus principales usuarios de la Minería , en un ejercicio de co-creación bajo metodología ágil, desarrollamos los prototipos del primer portafolio digital de Elecmetal para su oferta be to be hacia el sector industrial minería.'
-        ]
+        ],
+        extend: false
       },
       {
         index: 3,
@@ -165,8 +168,9 @@ export default new Vuex.Store({
         logo: 'logos/vtrcom.png',
         mock: 'mocks/vtr.jpg',
         text: [
-          'Enfrentados a un players predominante como Netflix, asumimos el desafío de conectar a VTR las expectativas emergentes de su nueva generación de usuarios, articulando un proceso de diseño colaborativo de su plataforma digital legacy para televisión, resultando en un prototipo que captura todas las tendencias e insights de usuarios con una evolución sustantiva en su usabilidad, interacción, sorpresa en contenidos y funcionalidades. <br>En esta asesoría orquestámos el trabajo colaborativo alrededor de 40 personas y usuarios.'
-        ]
+          'Enfrentados a un players predominante como Netflix, asumimos el desafío de conectar a VTR las expectativas emergentes de su nueva generación de usuarios, articulando un proceso de diseño colaborativo de su plataforma digital legacy para televisión, resultando en un prototipo que captura todas las tendencias e insights de usuarios con una evolución sustantiva en su usabilidad, interacción, sorpresa en contenidos y funcionalidades. <br><br>En esta asesoría orquestámos el trabajo colaborativo alrededor de 40 personas y usuarios.'
+        ],
+        extend: false
       },
       {
         index: 4,
@@ -174,8 +178,9 @@ export default new Vuex.Store({
         logo: 'logos/talento digital.png',
         mock: 'mocks/talentodigital.jpg',
         text: [
-          'Frente al desafío de visibilizar los nuevos talentos digitales productos de procesos de reconversión a campos de la tecnología. Hemos desarrollado los productos digitales para empresas usuarias de la iniciativa Talento Digital, a través de un proceso de co-creación ágil que incorpora a más de 50 organizaciones (empresas core tech, no core tech, empresas estatales), cuyo resultado da lugar a la oferta soportada en plataformas digitales que incorporan atributos, aspectos y diferenciadores claves en una lógica de mínimos productos viables.<br>En esta asesoría orquestamos alrededor de 300 personas y usuarios.'
-        ]
+          'Frente al desafío de visibilizar los nuevos talentos digitales productos de procesos de reconversión a campos de la tecnología. Hemos desarrollado los productos digitales para empresas usuarias de la iniciativa Talento Digital, a través de un proceso de co-creación ágil que incorpora a más de 50 organizaciones (empresas core tech, no core tech, empresas estatales), cuyo resultado da lugar a la oferta soportada en plataformas digitales que incorporan atributos, aspectos y diferenciadores claves en una lógica de mínimos productos viables.<br><br>En esta asesoría orquestamos alrededor de 300 personas y usuarios.'
+        ],
+        extend: false
       },
       {
         index: 5,
@@ -184,12 +189,13 @@ export default new Vuex.Store({
         mock: 'mocks/polpaico.jpg',
         text: [
           'Step 1:',
-          'Frente al desafío de acelerar la transformación digital y del negocio hemos orquestado un ejercicio de co-creación y diseño digital que involucró c-level, segundas líneas, clientes, no clientes, maestros y ferreteros, el cual permitió: Visualizar futuros y realidades de evolución posibles para Polpaico, que se tradujeron en líneas de desarrollo digital centrados en sus usuarios actuales y potenciales, alineados a su evolución estratégica y priorizadas en términos de importancia para el negocio.',
-          'En esta asesoría orquestamos alrededor de 60 personas y usuarios.',
-          'Step 2:',
-          'Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
-          'Desarrollamos el portafolio de los principales productos digitales de Polpaico<br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
-        ]
+          '<br>Frente al desafío de acelerar la transformación digital y del negocio hemos orquestado un ejercicio de co-creación y diseño digital que involucró c-level, segundas líneas, clientes, no clientes, maestros y ferreteros, el cual permitió: Visualizar futuros y realidades de evolución posibles para Polpaico, que se tradujeron en líneas de desarrollo digital centrados en sus usuarios actuales y potenciales, alineados a su evolución estratégica y priorizadas en términos de importancia para el negocio.',
+          '<br>En esta asesoría orquestamos alrededor de 60 personas y usuarios.',
+          '<br>Step 2:',
+          '<br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
+          '<br>Desarrollamos el portafolio de los principales productos digitales de Polpaico<br><br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
+        ],
+        extend: false
       },
       {
         index: 6,
@@ -198,7 +204,8 @@ export default new Vuex.Store({
         mock: 'mocks/teatroamiltv.jpg',
         text: [
           'Frente al desafío de digitalizar la interacción con los usuarios y clientes del festival de teatro Santiago a Mil, en un ejercicio de co-creación bajo metodología ágil:<br><br>Dirigimos el desarrollo de una solución digital web y sus aplicativos para la transmisión de contenido en vivo, y sistema de suscripción tipo Netfilx en base a una estrategia de white label con Vimeo OTT.'
-        ]
+        ],
+        extend: false
       }
     ],
     logos: [
@@ -225,6 +232,9 @@ export default new Vuex.Store({
   mutations: {
     loading(state, mode){
       state.loading = mode;
+    },
+    extending(state, index){
+      state.experiencias[index].extend = !state.experiencias[index].extend
     }
   },
   actions: {

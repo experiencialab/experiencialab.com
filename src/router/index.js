@@ -21,7 +21,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Experiencias.vue'),
+    component: () => import(/* webpackChunkName: "experiencias" */ '../views/Experiencias.vue'),
     props: {},
     meta: { active: false }
   },
@@ -31,7 +31,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Nosotros.vue'),
+    component: () => import(/* webpackChunkName: "nosotros" */ '../views/Nosotros.vue'),
     props: {},
     meta: { active: false }
   },
@@ -41,7 +41,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Experiencias.vue'),
+    component: () => import(/* webpackChunkName: "podcast" */ '../views/Podcast.vue'),
     props: {},
     meta: { active: false }
   },
@@ -59,7 +59,6 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   from.meta.active = false;
   to.meta.active = true;
-  console.log(to.meta.active);
   next()
 })
 

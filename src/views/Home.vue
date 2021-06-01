@@ -2,19 +2,22 @@
   <v-row
     class="ma-0 pa-0"
   >
-    <home-desktop v-if="$vuetify.breakpoint.xl"></home-desktop>
-    <home-desktop v-if="$vuetify.breakpoint.lg"></home-desktop>
-    <home-desktop v-if="$vuetify.breakpoint.md"></home-desktop>
-    <home-mobile v-if="$vuetify.breakpoint.sm"></home-mobile>
-    <home-mobile v-if="$vuetify.breakpoint.xs"></home-mobile>
+    <homedesktop v-if="$vuetify.breakpoint.xl"></homedesktop>
+    <homedesktop v-if="$vuetify.breakpoint.lg"></homedesktop>
+    <homedesktop v-if="$vuetify.breakpoint.md"></homedesktop>
+    <homemobile v-if="$vuetify.breakpoint.sm"></homemobile>
+    <homemobile v-if="$vuetify.breakpoint.xs"></homemobile>
   </v-row>
 </template>
 
 <script>
+  import homedesktop from '@/components/Home_Desktop.vue'
+  import homemobile from '@/components/Home_Mobile.vue'
+
   export default {
     components: {
-      'home-desktop': require('@/components/Home_Desktop.vue').default,
-      'home-mobile': require('@/components/Home_Mobile.vue').default
+      homedesktop,
+      homemobile
     }
   }
 </script>

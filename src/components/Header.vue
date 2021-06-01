@@ -6,6 +6,7 @@
     <v-row
       class="ma-0 pa-0"
       style="width:100vw;height:8vh"
+      align="center"
     >
       <v-img
         class="ma-0 mt-1 mb-1 ml-6 pa-0 d-sm-none"
@@ -14,25 +15,26 @@
         src="logo-lab.png"
         :contain="true"/>
       <v-img
-        class="ma-0 mt-1 mb-1 ml-12 pl-16 pa-0 d-none d-sm-flex"
-        max-height="50px"
-        max-width="160px"
-        src="logo-lab.png"
-        :contain="true"/>
+        class="ma-0 pa-0"
+        eager
+        max-height="8vh"
+        max-width="220px"
+        src="animation.gif"
+      ></v-img>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon x-large class="mt-1 mr-6 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
 
       <v-row
-        class="ma-0 mt-1 mr-6 pa-0 d-none d-sm-flex"
-        align="center"
+        class="ma-0 mr-6 pa-0 d-none d-sm-flex"
+        style="max-height:13px"
       >
         <v-spacer></v-spacer>
-        <router-link
-          to="/"
+        <a
+          :href="ref('home')"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           :class="{ 'menu-active': check('home') }"
           tag="button"
           :disabled="check('home')"
@@ -40,11 +42,11 @@
           <span class="outer">
             <span class="inner">home</span>
           </span>
-        </router-link>
-        <router-link
-          to="/experiencias"
+        </a>
+        <a
+          :href="ref('experiencias')"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           :class="{ 'menu-active': check('experiencias') }"
           tag="button"
           :disabled="check('experiencias')"
@@ -52,11 +54,11 @@
           <span class="outer">
             <span class="inner">experiencias</span>
           </span>
-        </router-link>
+        </a>
         <a
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
-          @click="spotify()"
+          :href="ref('podcast')"
+          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px"
           :class="{ 'menu-active': check('podcast') }"
           tag="button"
           :disabled="check('podcast')"
@@ -66,10 +68,10 @@
           </span>
         </a>
 
-        <router-link
-          to="/nosotros"
+        <a
+          :href="ref('nosotros')"
           class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           :class="{ 'menu-active': check('nosotros') }"
           tag="button"
           :disabled="check('nosotros')"
@@ -77,10 +79,10 @@
           <span class="outer">
             <span class="inner">nosotros</span>
           </span>
-        </router-link>
+        </a>
         <a
           class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           @click="myFunction()"
         >
           <span class="outer">
@@ -88,15 +90,15 @@
           </span>
         </a>
         <a
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px"
           @click="whatsapp()"
         >whatsapp</a>
         <v-spacer></v-spacer>
         <a
           class="ma-0 pa-0 text-uppercase menu-item d-none"
           :class="{ 'menu-active': !this.english }"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           @click="myFunction()"
         >
           <span class="outer">
@@ -106,7 +108,7 @@
         <a
           class="ma-0 pa-0 mr-12 text-decoration-none text-uppercase menu-item menu-active d-none"
           :class="{ 'menu-active': !this.english }"
-          style="color:black;font-size:13px;letter-spacing:0px;font-weight:500"
+          style="color:black;letter-spacing:0px"
           @click="myFunction()"
         >
           <span class="outer">
@@ -129,13 +131,15 @@
 </template>
 
 <script>
+  import drawer from '@/components/NavegationDrawer.vue'
+
   export default {
     data: () => ({
       english: false,
       drawer: false
     }),
     components: {
-      'drawer': require('@/components/NavegationDrawer.vue').default
+      drawer
     },
     created () {
       this.$router.beforeEach( (to, from, next) => {
@@ -166,6 +170,20 @@
         else if (item == 'experiencias') {
           return this.$router.options.routes[1].meta.active
         }
+      },
+      ref: function (item) {
+        if (item == 'home' && this.check('home') == false) {
+          return this.$router.options.routes[0].path
+        }
+        else if (item == 'nosotros' && this.check('nosotros') == false) {
+          return this.$router.options.routes[2].path
+        }
+        else if (item == 'podcast' && this.check('podcast') == false) {
+          return this.$router.options.routes[3].path
+        }
+        else if (item == 'experiencias' && this.check('experiencias') == false) {
+          return this.$router.options.routes[1].path
+        }
       }
     }
   }
@@ -173,15 +191,25 @@
 
 <style lang="sass">
   .menu-item
+    font-weight: 400
+    font-size: 13px
     font-family: Space Grotesk
-
+    transition: ease .3s
+  .menu-item:hover
+    font-size: 14px
+    font-weight: 500
+    cursor: pointer
   .menu-active
+    font-weight: 400
     span.inner
       color: black
     span.outer
       color: #03F7F7
       text-decoration: line-through
-
+  .menu-active:hover
+    font-size: 13px
+    font-weight: 400
+    cursor: auto
   .drawer
     height: 205px !important
 
