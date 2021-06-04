@@ -39,11 +39,13 @@
         <v-spacer></v-spacer>
         <a
           :href="ref('home')"
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           :class="{ 'menu-active': check('home') }"
           tag="button"
           :disabled="check('home')"
+          align="center"
+          justify="center"
         >
           <span class="outer">
             <span class="inner">home</span>
@@ -51,11 +53,13 @@
         </a>
         <a
           :href="ref('experiencias')"
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           :class="{ 'menu-active': check('experiencias') }"
           tag="button"
           :disabled="check('experiencias')"
+          align="center"
+          justify="center"
         >
           <span class="outer">
             <span class="inner">experiencias</span>
@@ -63,11 +67,13 @@
         </a>
         <a
           :href="ref('podcast')"
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           :class="{ 'menu-active': check('podcast') }"
           tag="button"
           :disabled="check('podcast')"
+          align="center"
+          justify="center"
         >
           <span class="outer">
             <span class="inner">podcast</span>
@@ -76,19 +82,21 @@
 
         <a
           :href="ref('nosotros')"
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           :class="{ 'menu-active': check('nosotros') }"
           tag="button"
           :disabled="check('nosotros')"
+          align="center"
+          justify="center"
         >
           <span class="outer">
             <span class="inner">nosotros</span>
           </span>
         </a>
         <a
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item menu-active d-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-4 text-uppercase menu-item menu-active d-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           @click="myFunction()"
         >
           <span class="outer">
@@ -96,9 +104,11 @@
           </span>
         </a>
         <a
-          class="ma-0 pa-0 mx-4 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px"
+          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
           @click="whatsapp()"
+          align="center"
+          justify="center"
         >whatsapp</a>
         <v-spacer></v-spacer>
         <a

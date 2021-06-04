@@ -342,7 +342,7 @@
           <v-img
             style=""
             class="ma-0 mt-3 pa-0"
-            eager
+            eagesr
             max-height="110"
             max-width="80px"
             :src="logo"
