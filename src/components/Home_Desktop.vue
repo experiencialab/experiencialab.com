@@ -157,7 +157,7 @@
           class="mx-16 pa-0"
           style="min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
-
+          contain
         >
           <v-row
             class="ma-0 mb-4 pb-8 pa-0"
@@ -408,43 +408,52 @@
             style="z-index:100000"
           >
             <template v-slot:activator="{ on, attrs }">
-              <v-btn
-                class="ma-0 mt-8 mr-16 pa-0"
-                style="background-color:#03F7F7;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
-                width="350px"
-                height="60px"
+              <v-row
+                class="ma-0 mt-8 mr-16 pa-0 text-uppercase trabaja"
+                style="max-width:350px;height:60px;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
                 :ripple="false"
                 tile
                 plain
                 v-bind="attrs"
                 v-on="on"
+                align="center"
+                justify="center"
               >
                 ¡Trabaja con nosotros!
-              </v-btn>
+              </v-row>
             </template>
 
             <v-card
-              style="background-color:#03F7F7"
+              class="ma-0 pa-0"
+              style="background-color:white;font-family:Space Grotesk"
               tile
             >
-              <v-card-title>
-                Privacy Policy
+              <v-card-title
+                class="ma-0 mx-5 pa-0 text-uppercase"
+              >
+                Trabaja con nosotros
+                <v-spacer></v-spacer>
+
+                <v-icon class="ma-0 pa-0" size="60">$bus</v-icon>
               </v-card-title>
 
               <v-card-text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Si tienes talento digital y sientes que puedes mejorar l.
               </v-card-text>
+              <Form
+                class="ma-0 pa-0"
+              ></Form>
 
               <v-divider></v-divider>
 
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn
-                  color="primary"
+                  color="black"
                   text
                   @click="dialog = false"
                 >
-                  I accept
+                  Enviar
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -457,13 +466,15 @@
 
 <script>
   import VideoParallax from 'vuetify-video-parallax';
+  import Form from '@/components/Form.vue'
 
   export default {
     data: () => ({
       logos: []
     }),
     components: {
-      VideoParallax
+      VideoParallax,
+      Form
     },
     created() {
       var logos = this.$store.state.logos;
@@ -485,10 +496,8 @@
     color: #ADFFFF
   .pod:hover
     cursor: pointer
+  .trabaja
+    background-color: #03F7F7
 
-  .v-btn:hover:before
-    color: red
-  .v-btn:focus:before
-    color: yellow
 
 </style>

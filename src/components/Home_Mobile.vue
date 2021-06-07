@@ -152,7 +152,6 @@
           max-width="100%"
           style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
-
         >
           <v-row
             class="ma-0 mb-4 pb-8 pa-0"

@@ -40,7 +40,7 @@
         <a
           :href="ref('home')"
           class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
           :class="{ 'menu-active': check('home') }"
           tag="button"
           :disabled="check('home')"
@@ -54,7 +54,7 @@
         <a
           :href="ref('experiencias')"
           class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
           :class="{ 'menu-active': check('experiencias') }"
           tag="button"
           :disabled="check('experiencias')"
@@ -68,7 +68,7 @@
         <a
           :href="ref('podcast')"
           class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
           :class="{ 'menu-active': check('podcast') }"
           tag="button"
           :disabled="check('podcast')"
@@ -83,7 +83,7 @@
         <a
           :href="ref('nosotros')"
           class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
           :class="{ 'menu-active': check('nosotros') }"
           tag="button"
           :disabled="check('nosotros')"
@@ -96,7 +96,7 @@
         </a>
         <a
           class="ma-0 pa-4 text-uppercase menu-item menu-active d-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origip center"
           @click="myFunction()"
         >
           <span class="outer">
@@ -105,7 +105,7 @@
         </a>
         <a
           class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:top center"
+          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
           @click="whatsapp()"
           align="center"
           justify="center"
@@ -211,8 +211,9 @@
     font-size: 13px
     font-family: Space Grotesk
     transition: ease .3s
+    transform-origin: center center
   .menu-item:hover
-    font-size: 14px
+    transform: scale(1.03)
     font-weight: 500
     cursor: pointer
   .menu-active
@@ -224,7 +225,7 @@
       text-decoration: line-through
       text-decoration-thickness: 2px
   .menu-active:hover
-    font-size: 13px
+    transform: scale(1)
     font-weight: 400
     cursor: auto
   .drawer
