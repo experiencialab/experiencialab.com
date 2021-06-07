@@ -344,7 +344,7 @@
             class="ma-0 mt-3 pa-0"
             eagesr
             max-height="110"
-            max-width="80px"
+            max-width="79px"
             :src="logo"
           ></v-img>
         </v-row>
@@ -427,18 +427,22 @@
               class="ma-0 pa-0"
               style="background-color:white;font-family:Space Grotesk"
               tile
+              align="center"
             >
               <v-card-title
                 class="ma-0 mx-5 pa-0 text-uppercase"
+                style="height:13vh"
               >
                 Trabaja con nosotros
                 <v-spacer></v-spacer>
 
-                <v-icon class="ma-0 pa-0" size="60">$bus</v-icon>
+                <v-icon class="ma-0 mr-8 pa-0" size="60">$bus</v-icon>
               </v-card-title>
 
-              <v-card-text>
-                Si tienes talento digital y sientes que puedes mejorar l.
+              <v-card-text
+                class="text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </v-card-text>
               <Form
                 class="ma-0 pa-0"

@@ -7,47 +7,63 @@
   >
     <v-row
       class="ma-0 pa-0"
-      style="max-width:97%;max-height:40px"
+      style="max-width:97%"
       align="center"
     >
       <v-text-field
         :disabled="this.disable"
         :rules="[rules.required, rules.email]"
-        class="nombre"
+        dark
+        class="nombre text"
         label="Nombre"
-        color="#707070"
         outlined
-        background-color="#03F7F7"
+        background-color="#ADFFFF"
+        width="100%"
+        solo
+        dense
+        flat
+        v-model="name"
+        align="center"
+      ></v-text-field>
+      <v-text-field
+        :disabled="this.disable"
+        :rules="[rules.required, rules.email]"
+        dark
+        dense
+        class="linkedin text"
+        label="Linkedin"
+        outlined
+        background-color="#ADFFFF"
         width="100%"
         solo
         flat
-        v-model="email"
+        v-model="linkedin"
         align="center"
       ></v-text-field>
     </v-row>
     <v-row
       class="ma-0 pa-0"
-      style="width:100%"
+      style="max-width:97%"
       align="center"
     >
       <v-textarea
         :disabled="this.disable"
         :rules="[rules.required]"
         v-model="message"
-        label="Comentario"
+        label="Mensaje"
         no-resize
         outlined
-        color="#707070"
-        background-color="#EDEDED"
+        color="red"
+        background-color="#ADFFFF"
         solo
-        rows="8"
+        rows="4"
         row-height="15"
         flat
       ></v-textarea>
     </v-row>
 
     <v-row
-      class="ma-0 pa-0"
+      class="ma-0 pa-0 d-none"
       style="width:100%"
     >
       <v-spacer></v-spacer>
@@ -182,9 +198,21 @@
     font-family: Space Grotesk
     letter-spacing: 0px
 
+  .text input
+    color: black !important
+
+  .v-messages__message
+    color: black !important
+
+  .v-card__text
+    color: black !important
+
+  .v-input label
+    animation: none !important
+
 
   .v-input
-    color: red !important
+    color: black !important
     font-family: Space Grotesk !important
     font-size: 20px !important
     border-radius: 0px !important
@@ -196,7 +224,7 @@
     opacity: .6 !important
 
   .v-text-field--outlined textarea
-    color: #707070 !important
+    color: black !important
     border-radius: 0px !important
 
 
