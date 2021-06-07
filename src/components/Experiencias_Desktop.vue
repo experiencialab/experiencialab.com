@@ -87,8 +87,8 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-16 mb-16 pa-0 pt-16"
-        style="width:100vw"
+        class="ma-0 mt-8 mb-16 pa-0 pt-16"
+        style="width:100vw;transform:scale(0.85)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
       >
         <v-row
