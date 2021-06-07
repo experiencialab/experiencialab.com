@@ -39,7 +39,7 @@
         <v-spacer></v-spacer>
         <v-row
           class="ma-0 pa-0"
-          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
+          style="color:black;letter-spacing:0px;width:60px;transform-origin:center"
           align="center"
           justify="center"
         >
@@ -58,7 +58,7 @@
         </v-row>
         <v-row
           class="ma-0 mx-3 pa-0"
-          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
+          style="color:black;letter-spacing:0px;width:80px;transform-origin:center"
           align="center"
           justify="center"
         >
