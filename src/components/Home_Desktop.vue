@@ -436,13 +436,15 @@
                 Trabaja con nosotros
                 <v-spacer></v-spacer>
 
-                <v-icon class="ma-0 mr-8 pa-0" size="60">$bus</v-icon>
+                <v-icon class="ma-0 pa-0" size="60">$bus</v-icon>
               </v-card-title>
 
               <v-card-text
                 class="text-left"
+                align="center"
+                justify="center"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </v-card-text>
               <Form
                 class="ma-0 pa-0"
