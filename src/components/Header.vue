@@ -37,63 +37,83 @@
         style="max-height:13px"
       >
         <v-spacer></v-spacer>
-        <a
-          :href="ref('home')"
-          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
-          :class="{ 'menu-active': check('home') }"
-          tag="button"
-          :disabled="check('home')"
+        <v-row
+          class="ma-0 mx-1 pa-0"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
-          <span class="outer">
-            <span class="inner">home</span>
-          </span>
-        </a>
-        <a
-          :href="ref('experiencias')"
-          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
-          :class="{ 'menu-active': check('experiencias') }"
-          tag="button"
-          :disabled="check('experiencias')"
+          <a
+            :href="ref('home')"
+            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('home') }"
+            tag="button"
+            :disabled="check('home')"
+          >
+            <span class="outer">
+              <span class="inner">home</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 mx-1 pa-0"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
-          <span class="outer">
-            <span class="inner">experiencias</span>
-          </span>
-        </a>
-        <a
-          :href="ref('podcast')"
-          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
-          :class="{ 'menu-active': check('podcast') }"
-          tag="button"
-          :disabled="check('podcast')"
+          <a
+            :href="ref('experiencias')"
+            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('experiencias') }"
+            tag="button"
+            :disabled="check('experiencias')"
+          >
+            <span class="outer">
+              <span class="inner">experiencias</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 mx-1 pa-0"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
-          <span class="outer">
-            <span class="inner">podcast</span>
-          </span>
-        </a>
-
-        <a
+          <a
+            :href="ref('podcast')"
+            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('podcast') }"
+            tag="button"
+            :disabled="check('podcast')"
+          >
+            <span class="outer">
+              <span class="inner">podcast</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
           :href="ref('nosotros')"
-          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
-          :class="{ 'menu-active': check('nosotros') }"
-          tag="button"
-          :disabled="check('nosotros')"
+          class="ma-0 mx-1 pa-0"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
-          <span class="outer">
-            <span class="inner">nosotros</span>
-          </span>
-        </a>
+          <a
+            :href="ref('nosotros')"
+            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('nosotros') }"
+            tag="button"
+            :disabled="check('nosotros')"
+          >
+            <span class="outer">
+              <span class="inner">nosotros</span>
+            </span>
+          </a>
+        </v-row>
         <a
           class="ma-0 pa-4 text-uppercase menu-item menu-active d-none"
           style="color:black;letter-spacing:0px;width:100px;transform-origip center"
@@ -103,13 +123,22 @@
             <span class="inner">carreras</span>
           </span>
         </a>
-        <a
-          class="ma-0 pa-0 text-uppercase menu-item text-decoration-none"
-          style="color:black;letter-spacing:0px;width:100px;transform-origin:center"
-          @click="whatsapp()"
+        <v-row
+          class="ma-0 mx-1 pa-0"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
-        >whatsapp</a>
+        >
+          <a
+            @click="whatsapp()"
+            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+          >
+            <span class="outer">
+              <span class="inner">whatsapp</span>
+            </span>
+          </a>
+        </v-row>
         <v-spacer></v-spacer>
         <a
           class="ma-0 pa-0 text-uppercase menu-item d-none"
