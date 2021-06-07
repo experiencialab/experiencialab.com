@@ -38,7 +38,7 @@
       >
         <v-spacer></v-spacer>
         <v-row
-          class="ma-0 mx-1 pa-0"
+          class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
@@ -57,7 +57,7 @@
           </a>
         </v-row>
         <v-row
-          class="ma-0 mx-4 pa-0"
+          class="ma-0 mx-3 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
@@ -76,7 +76,7 @@
           </a>
         </v-row>
         <v-row
-          class="ma-0 mx-1 pa-0"
+          class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
@@ -96,7 +96,7 @@
         </v-row>
         <v-row
           :href="ref('nosotros')"
-          class="ma-0 mx-1 pa-0"
+          class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
@@ -124,7 +124,7 @@
           </span>
         </a>
         <v-row
-          class="ma-0 mx-1 pa-0"
+          class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
