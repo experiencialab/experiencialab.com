@@ -425,7 +425,7 @@
 
             <v-card
               class="ma-0 pa-0"
-              style="background-color:white;font-family:Space Grotesk"
+              style="border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >

@@ -12,19 +12,42 @@
     >
       <v-text-field
         :disabled="this.disable"
-        :rules="[rules.required, rules.email]"
+        :rules="[rules.required, rules.nombre]"
         dark
         class="nombre text"
         label="Nombre"
         outlined
         background-color="#ADFFFF"
-        width="100%"
+        style="max-width:49.5%"
         solo
         dense
         flat
         v-model="name"
         align="center"
       ></v-text-field>
+      <v-spacer></v-spacer>
+
+      <v-text-field
+        :disabled="this.disable"
+        :rules="[rules.required, rules.email]"
+        dark
+        dense
+        class="email text"
+        label="Email"
+        outlined
+        background-color="#ADFFFF"
+        style="max-width:49.5%"
+        solo
+        flat
+        v-model="email"
+        align="center"
+      ></v-text-field>
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
+      style="max-width:97%"
+      align="center"
+    >
       <v-text-field
         :disabled="this.disable"
         :rules="[rules.required, rules.email]"
@@ -53,7 +76,7 @@
         label="Mensaje"
         no-resize
         outlined
-        color="red"
+        color="black"
         background-color="#ADFFFF"
         solo
         rows="4"
