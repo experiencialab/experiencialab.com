@@ -103,7 +103,7 @@
     <v-row
       v-for="member in $store.state.equipo"  :key="member.index"
       class="ma-0 mt-16 mb-8 pa-0 pt-16 pb-16"
-      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
+      style="transform:scale(0.8);position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
       align="center"
     >
       <v-row
