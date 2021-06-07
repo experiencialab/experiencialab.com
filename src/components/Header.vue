@@ -57,7 +57,7 @@
           </a>
         </v-row>
         <v-row
-          class="ma-0 mr-3 pa-0"
+          class="ma-0 mx-3 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"

@@ -226,6 +226,7 @@
 
   .v-messages__message
     color: black !important
+    opacity: .6
 
   .v-card__text
     color: black !important
@@ -258,6 +259,6 @@
   .v-label
     color: black !important
     font-family: Space Grotesk !important
-    opacity: .6 !important
+    opacity: .4 !important
 
 </style>
