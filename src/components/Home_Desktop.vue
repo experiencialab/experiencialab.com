@@ -141,7 +141,7 @@
     <v-row
       v-for="servicio in $store.state.servicios"  :key="servicio.index"
       class="ma-0 mb-16 pa-0 pb-16"
-      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
+      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block;transform:scale(0.95)"
     >
       <v-row
         class="ma-0 pa-0"
