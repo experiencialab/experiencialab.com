@@ -406,6 +406,8 @@
             v-model="dialog"
             width="500"
             style="z-index:100000"
+            eager
+            @click:outside="onCancel"
           >
             <template v-slot:activator="{ on, attrs }">
               <v-row
@@ -422,10 +424,98 @@
                 ¡Trabaja con nosotros!
               </v-row>
             </template>
-
             <v-card
+              :class="{'d-none': !step0}"
               class="ma-0 pa-0"
-              style="border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              tile
+              align="center"
+            >
+              <v-row
+                class="ma-0 pa-0"
+                style="height:100%;z-index:1199;background-color:white"
+                align="center"
+                justify="center"
+              >
+                <v-img
+                  :class="{'d-none': !step1}"
+                  eager
+                  max-height="200px"
+                  max-width="300px"
+                  src="animation.gif"
+
+                ></v-img>
+                <v-row
+                  :class="{'d-none': step1}"
+                  class="ma-0 pa-0"
+                >
+                  <v-row
+                    :class="{'d-none': step2}"
+                    class="ma-0 pa-0"
+                    style="width:100%;height:100%"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-row
+                      class="ma-0 pa-0"
+                      style="height:300px"
+                      align="center"
+                    >
+                      <v-icon
+                        class="ma-0 pa-0"
+                        style="width:100%;transform:scale(5);transform-origin:center"
+                        color= "#03F7F7"
+                        x-large
+                      >
+                        mdi-check
+                      </v-icon>
+                      <p
+                        class="ma-0 pa-0"
+                        style="width:100%;color:#03F7F7;font-size:30px;line-height:30px"
+                      >Mensaje enviado</p>
+                    </v-row>
+                    <p
+                      class="ma-0 pa-0"
+                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                    >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
+                  </v-row>
+                  <v-row
+                    :class="{'d-none': !step2}"
+                    class="ma-0 pa-0"
+                    style="width:100%;height:100%"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-row
+                      class="ma-0 pa-0"
+                      style="height:300px"
+                      align="center"
+                    >
+                      <v-icon
+                        class="ma-0 pa-0"
+                        style="width:100%;transform:scale(5);transform-origin:center"
+                        color= "red"
+                        x-large
+                      >
+                        mdi-close-circle-outline
+                      </v-icon>
+                      <p
+                        class="ma-0 pa-0"
+                        style="width:100%;color:red;font-size:30px;line-height:30px;opacity:.4"
+                      >Un error ha ocurrido</p>
+                    </v-row>
+                    <p
+                      class="ma-0 pa-0"
+                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                    >Por favor intenta otra vez.</p>
+                  </v-row>
+                </v-row>
+              </v-row>
+            </v-card>
+            <v-card
+              :class="{'d-none': step0}"
+              class="ma-0 pa-0"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >
@@ -446,22 +536,142 @@
               >
                 <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </v-card-text>
-              <Form
+              <v-row
                 class="ma-0 pa-0"
-              ></Form>
+                style="position:relative;width:100%;font-family:Space Grotesk"
+                align="center"
+                justify="center"
+              >
+                <v-form ref="entryForm" lazy-validation eager>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-text-field
+                      required
+                      :rules="rules.name"
+                      dark
+                      class="nombre text"
+                      label="Nombre"
+                      background-color="#ADFFFF"
+                      style="max-width:49.5%"
+                      solo
+                      dense
+                      flat
+                      v-model="name"
+                      align="center"
+                    ></v-text-field>
+                    <v-spacer></v-spacer>
 
-              <v-divider></v-divider>
+                    <v-text-field
+                      required
+                      :rules="rules.email"
+                      dark
+                      dense
+                      class="email text"
+                      label="Email"
+                      outlined
+                      background-color="#ADFFFF"
+                      style="max-width:49.5%"
+                      solo
+                      flat
+                      v-model="email"
+                      align="center"
+                    ></v-text-field>
+                  </v-row>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-text-field
+                      required
+                      :rules="rules.linkedin"
+                      dark
+                      dense
+                      class="text"
+                      label="Linkedin"
+                      outlined
+                      background-color="#ADFFFF"
+                      width="100%"
+                      solo
+                      flat
+                      v-model="linkedin"
+                      align="center"
+                    ></v-text-field>
+                  </v-row>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-textarea
+                      counter="500"
+                      :rules="rules.msj"
+                      v-model="message"
+                      label="Mensaje"
+                      no-resize
+                      outlined
+                      color="black"
+                      background-color="#ADFFFF"
+                      solo
+                      rows="4"
+                      row-height="15"
+                      flat
+                    ></v-textarea>
+                  </v-row>
 
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn
-                  color="black"
-                  text
-                  @click="dialog = false"
-                >
-                  Enviar
-                </v-btn>
-              </v-card-actions>
+                  <v-row
+                    class="ma-0 pa-0 d-none"
+                    style="width:100%"
+                  >
+                    <v-spacer></v-spacer>
+                      <v-btn
+                        type="submit"
+                        v-bind:style="{ color: computedColor }"
+                        style="text-transform:none;font-size:20px;font-family:Montserrat;letter-spacing: 0px;transition: ease .5s"
+                        :text="this.text"
+                        color="#EDEDED"
+                        @click="sendEmail()"
+                        depressed
+                        tile
+                        v-ripple="false"
+                      >
+                        {{this.boton}}
+                      </v-btn>
+
+                  </v-row>
+                  <v-divider></v-divider>
+                  <v-card-actions>
+                    <v-btn
+
+                      @click="onCancel"
+                      color="black"
+                      text
+                      depressed
+                      tile
+                      v-ripple="false"
+                      plain
+                    >
+                      Cancelar
+                    </v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+
+                      @click="onSubmit"
+                      color="black"
+                      text
+                      depressed
+                      tile
+                      v-ripple="false"
+                      plain
+                    >
+                      Enviar
+                    </v-btn>
+                  </v-card-actions>
+                </v-form>
+              </v-row>
             </v-card>
           </v-dialog>
         </v-row>
@@ -470,17 +680,52 @@
   </v-row>
 </template>
 
+
 <script>
   import VideoParallax from 'vuetify-video-parallax';
-  import Form from '@/components/Form.vue'
+  import emailjs from 'emailjs-com';
+  import{ init } from 'emailjs-com';
+  init("user_uRTEJMp7CqTbbwVm6yYMz");
 
   export default {
-    data: () => ({
-      logos: []
-    }),
+    data: function() {
+        return {
+          rules: {},
+          step0: false,
+          step1: true,
+          step2: true,
+          logos: [],
+          dialog: false,
+          disable: false,
+          text: false,
+          open: true,
+          boton: "Enviar",
+          email: '',
+          name: '',
+          linkedin: '',
+          message: ''
+        }
+    },
     components: {
-      VideoParallax,
-      Form
+      VideoParallax
+    },
+    computed: {
+      computedColor: function () {
+        return this.color;
+      }
+    },
+    watch: {
+      dialog: function (val) {
+        if (val == false) {
+          this.step0 = false,
+          this.step1 = true,
+          this.rules = {},
+          this.name = '',
+          this.email = '',
+          this.linkedin = '',
+          this.message = ''
+        }
+      }
     },
     created() {
       var logos = this.$store.state.logos;
@@ -489,6 +734,85 @@
     methods: {
       spotify: function () {
         window.open("https://open.spotify.com/show/50FARDnK33AjV42wtNbq38?si=V-8U9kkiQuSI54pq2tOAbg&dl_branch=1", "_blank");
+      },
+      isURL(str) {
+        let url;
+
+        try {
+          url = new URL(str);
+        } catch (_) {
+          return false;
+        }
+
+        return url.protocol === "http:" || url.protocol === "https:";
+      },
+      onCancel() {
+        this.step0 = false,
+        this.step1 = true,
+        this.dialog = false
+      },
+      onSubmit() {
+          //replace empty rules with real rules
+          this.rules = {
+              name: [
+                v => !!v || 'Requerido',
+                v => v.length >= 8 || 'Nombre muy corto',
+              ],
+              email: [
+                v => !!v || 'Requerido',
+                v => /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()\\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || 'Email inválido',
+              ],
+              linkedin: [
+                v => !!v || "Requerido",
+                v => this.isURL(v) || "URL inválido",
+              ],
+              msj: [
+                v => !!v || 'Requerido',
+                v => v.length <= 500 || 'Máximo 500 caracteres',
+              ]
+          }
+          this.$nextTick(() => {
+              if(this.$refs.entryForm.validate()) {
+                this.step0 = !this.step0
+                this.sendEmail()
+              }
+          })
+      },
+      sleep(sec) {
+        return new Promise((resolve) => {
+          setTimeout(resolve, sec);
+        });
+      },
+      async tantan(templateParams) {
+        var r = await emailjs.send('service_8etpp5j', 'template_h955ycq', templateParams)
+          .then(function(response) {
+            return true
+          }, function(error) {
+            console.log(error)
+            return false
+          });
+        return r
+      },
+      async sendEmail () {
+        var templateParams = {
+          name: this.name,
+          email: this.email,
+          linkedin: this.linkedin,
+          message: this.message
+        };
+        var results = await this.tantan(templateParams);
+        this.step1 = !this.step1
+
+        if (results == true) {
+          this.step2 = false
+          await this.sleep(5000)
+          this.dialog = false
+        } else {
+          this.step2 = true
+          await this.sleep(5000)
+          this.step0 = !this.step0
+          this.step1 = !this.step1
+        }
       }
     }
   }
@@ -496,6 +820,60 @@
 
 
 <style lang="sass">
+
+  .submit
+    text-transform: none
+    font-size: 20px
+    font-family: Space Grotesk
+    letter-spacing: 0px
+
+  .text input
+    color: black !important
+
+  .v-messages__message
+    color: red !important
+    opacity: .4
+
+  .v-card__text
+    color: black !important
+
+  .v-input label
+    animation: none !important
+
+
+  .v-input
+    color: black !important
+    font-family: Space Grotesk !important
+    font-size: 20px !important
+    border-radius: 0px !important
+
+  .v-text-field--outlined fieldset
+    display: none !important
+    border-radius: 0px !important
+    opacity: .6 !important
+
+  .v-text-field--outlined textarea
+    color: black !important
+    border-radius: 0px !important
+
+  .v-text-area--outlined textarea
+    color: black !important
+    border-radius: 0px !important
+
+  input:focus
+    color: black
+
+  .cafe
+    margin-left: 40px
+
+  .v-counter
+    opacity: .4 !important
+
+  .v-label
+    color: black !important
+    font-family: Space Grotesk !important
+    opacity: .4 !important
+
   .tlarge
     font-size: 1000px
   .highlight span
@@ -504,6 +882,9 @@
     cursor: pointer
   .trabaja
     background-color: #03F7F7
+
+  .v-btn__content
+    opacity: 1 !important
 
 
 </style>

@@ -269,8 +269,8 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-16 mx-16 pa-0"
-        style="border-radius:5px"
+        class="ma-0 mt-16 pa-0"
+        style="width:100%;border-radius:5px"
         justify="center"
         align="center"
       >
