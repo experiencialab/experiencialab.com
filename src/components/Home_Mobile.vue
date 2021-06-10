@@ -49,7 +49,7 @@
                 class="ma-0 pa-0"
                 transition="my-carousel"
                 v-for="(item, index) in $store.state.titulares" :key="index"
-                style="font-size:45px;font-family:Space Grotesk;font-weight:700;width:100vw"
+                style="font-size:36px;font-family:Space Grotesk;font-weight:700;width:100vw"
                 :class="{'tlarge': $vuetify.breakpoint.md}"
               >
                 <v-row
@@ -58,11 +58,11 @@
                 >
                   <v-row
                     class="ma-0 ml-3 pa-0"
-                    style="min-height:25vh;line-height:43px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
+                    style="min-height:25vh;line-height:35px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
                     align="center"
                   >
 
-                    <p class="mt-n16 highlight" style="max-width:75%" v-html="item"></p>
+                    <p class="mt-n16 highlight" style="max-width:80%" v-html="item"></p>
                   </v-row>
                 </v-row>
               </v-carousel-item>

@@ -1,15 +1,15 @@
 <template>
   <v-row
     class="ma-0 pa-0"
-    style="position:fixed;background-color:white"
+    style="position:fixed;background-color:white;overflow:hidden"
   >
     <v-row
       class="ma-0 pa-0"
-      style="width:100vw;height:8vh"
+      style="width:100vw;min-height:8vh"
       align="center"
     >
       <v-img
-        class="ma-0 mt-1 mb-1 ml-6 pa-0 d-sm-none"
+        class="ma-0 mt-1 mb-1 ml-6 pa-0 d-none"
         max-height="80px"
         max-width="150px"
         src="logo-lab.png"
@@ -21,7 +21,22 @@
         max-width="150px"
         src="logo-lab.png"
       ></v-img>
-      <a :href="ref('home')">
+      <a
+        :href="ref('home')"
+        class="ma-0 mt-n1 pa-0 d-sm-none"
+      >
+        <v-img
+          class="ma-0 ml-8 pa-0"
+          eager
+          max-height="80px"
+          max-width="160px"
+          src="LAB.gif"
+        ></v-img>
+      </a>
+      <a
+        :href="ref('home')"
+        class="ma-0 pa-0 d-none d-sm-flex"
+      >
         <v-img
           href="ref('home')"
           class="ma-0 ml-16 pa-0"
@@ -33,7 +48,7 @@
       </a>
       <v-row
         class="ma-0 ml-16 pa-0 d-none"
-        style="height:8vh;width:220px;z-index:66666666"
+        style="height:8vh;width:220px;z-index:55555555"
       >
         <video style="transform:scale(.23);transform-origin:left top" autoplay muted><source src="LAB.mp4" type='video/mp4'></video>
       </v-row>
@@ -49,7 +64,7 @@
         <v-spacer></v-spacer>
         <v-row
           class="ma-0 pa-0"
-          style="color:black;letter-spacing:0px;width:max-100px;transform-origin:center"
+          style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
@@ -173,20 +188,119 @@
       </v-row>
     </v-row>
 
+    <v-row
+      :class="{ 'drawer': drawer }"
+      class="ma-0 pa-0 d-sm-none"
+      style="background-color:white;width:100vw;height:0px;transition: height 0.2s;overflow:hidden"
+      align="center"
+    >
       <v-row
-        :class="{ 'drawer': drawer }"
-        class="ma-0 pa-0 d-sm-none"
-        style="width:100vw;height:0px;background-color:white;transition: height 0.2s;overflow:hidden"
+        class="ma-0 pa-0"
+        align="center"
       >
-        <drawer></drawer>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          align="center"
+        >
+          <v-spacer></v-spacer>
+          <a
+            :href="ref('home')"
+            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('home') }"
+            tag="button"
+            :disabled="check('home')"
+          >
+            <span class="outer">
+              <span class="inner">home</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          align="center"
+          justify="center"
+        >
+          <v-spacer></v-spacer>
+          <a
+            :href="ref('experiencias')"
+            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('experiencias') }"
+            tag="button"
+            :disabled="check('experiencias')"
+          >
+            <span class="outer">
+              <span class="inner">experiencias</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          align="center"
+        >
+          <v-spacer></v-spacer>
+          <a
+            :href="ref('podcast')"
+            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('podcast') }"
+            tag="button"
+            :disabled="check('podcast')"
+          >
+            <span class="outer">
+              <span class="inner">podcast</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          align="center"
+        >
+          <v-spacer></v-spacer>
+          <a
+            :href="ref('nosotros')"
+            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            :class="{ 'menu-active': check('nosotros') }"
+            tag="button"
+            :disabled="check('nosotros')"
+          >
+            <span class="outer">
+              <span class="inner">nosotros</span>
+            </span>
+          </a>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          align="center"
+        >
+          <v-spacer></v-spacer>
+          <a
+            @click="whatsapp()"
+            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;transform-origin:center"
+            tag="button"
+          >
+            <span class="outer">
+              <span class="inner">whatsapp</span>
+            </span>
+          </a>
+        </v-row>
       </v-row>
+    </v-row>
 
   </v-row>
 
 </template>
 
 <script>
-  import drawer from '@/components/NavegationDrawer.vue'
+
 
   export default {
     data: () => ({
@@ -194,7 +308,7 @@
       drawer: false
     }),
     components: {
-      drawer
+
     },
     created () {
       this.$router.beforeEach( (to, from, next) => {
@@ -268,6 +382,6 @@
     font-weight: 400
     cursor: auto
   .drawer
-    height: 205px !important
+    height: 160px !important
 
 </style>

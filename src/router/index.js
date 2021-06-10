@@ -11,9 +11,23 @@ const routes = [
   {
     path: '/',
     name: 'Home',
+    title: 'Experiencia LAB - Consultoría y Delivery',
     component: Home,
     props: {},
-    meta: { active: false }
+    meta: {
+      active: false,
+      title: 'Experiencia LAB - Consultoría boutique',
+      metaTags: [
+          {
+            name: 'description',
+            content: 'Experiencia Lab - Consultoría boutique'
+          },
+          {
+            property: 'og:description',
+            content: 'Somos Experiencia LAB'
+          }
+        ]
+    },
   },
   {
     path: '/experiencias',
@@ -23,7 +37,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "experiencias" */ '../views/Experiencias.vue'),
     props: {},
-    meta: { active: false }
+    meta: {
+      active: false,
+      title: 'Experiencia LAB - Desarrollo ágil de productos digitales',
+    }
   },
   {
     path: '/nosotros',
@@ -33,7 +50,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "nosotros" */ '../views/Nosotros.vue'),
     props: {},
-    meta: { active: false }
+    meta: {
+      active: false,
+      title: 'Experiencia LAB - Podcast',
+    }
   },
   {
     path: '/podcast',
