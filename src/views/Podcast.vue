@@ -13,7 +13,7 @@
         eager
         max-height="200px"
         max-width="300px"
-        src="animation.gif"
+        src="LAB.gif"
 
       ></v-img>
     </v-row>

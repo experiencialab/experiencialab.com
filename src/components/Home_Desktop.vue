@@ -440,7 +440,7 @@
                 <v-img
                   :class="{'d-none': !step1}"
                   eager
-                  max-height="200px"
+                  max-height="150px"
                   max-width="300px"
                   src="animation.gif"
 

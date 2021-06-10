@@ -15,17 +15,24 @@
         src="logo-lab.png"
         :contain="true"/>
       <v-img
-        class="ma-0 ml-16 pa-0 d-none d-sm-flex"
+        class="ma-0 ml-16 pa-0 d-none"
         eager
         max-height="8vh"
         max-width="150px"
         src="logo-lab.png"
       ></v-img>
+      <v-img
+        class="ma-0 ml-16 pa-0"
+        eager
+        max-height="9vh"
+        max-width="140px"
+        src="LAB.gif"
+      ></v-img>
       <v-row
         class="ma-0 ml-16 pa-0 d-none"
         style="height:8vh;width:220px;z-index:66666666"
       >
-        <video style="transform:scale(.23);transform-origin:left top" autoplay muted><source src="LAB_logo_Animate Crop_1.mp4" type='video/mp4'></video>
+        <video style="transform:scale(.23);transform-origin:left top" autoplay muted><source src="LAB.mp4" type='video/mp4'></video>
       </v-row>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
