@@ -54,7 +54,7 @@
       </v-row>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon x-large class="mt-1 mr-6 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon x-large class="mt-1 mr-3 d-sm-none" color="#03F7F7" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
 
       <v-row
@@ -188,6 +188,10 @@
       </v-row>
     </v-row>
 
+
+
+
+
     <v-row
       :class="{ 'drawer': drawer }"
       class="ma-0 pa-0 d-sm-none"
@@ -206,7 +210,7 @@
           <v-spacer></v-spacer>
           <a
             :href="ref('home')"
-            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('home') }"
             tag="button"
@@ -226,7 +230,7 @@
           <v-spacer></v-spacer>
           <a
             :href="ref('experiencias')"
-            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('experiencias') }"
             tag="button"
@@ -245,7 +249,7 @@
           <v-spacer></v-spacer>
           <a
             :href="ref('podcast')"
-            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('podcast') }"
             tag="button"
@@ -264,7 +268,7 @@
           <v-spacer></v-spacer>
           <a
             :href="ref('nosotros')"
-            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('nosotros') }"
             tag="button"
@@ -283,7 +287,7 @@
           <v-spacer></v-spacer>
           <a
             @click="whatsapp()"
-            class="ma-0 mr-3 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             tag="button"
           >
@@ -382,6 +386,6 @@
     font-weight: 400
     cursor: auto
   .drawer
-    height: 160px !important
+    height: 150px !important
 
 </style>
