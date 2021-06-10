@@ -21,13 +21,16 @@
         max-width="150px"
         src="logo-lab.png"
       ></v-img>
-      <v-img
-        class="ma-0 ml-16 pa-0"
-        eager
-        max-height="9vh"
-        max-width="140px"
-        src="LAB.gif"
-      ></v-img>
+      <a :href="ref('home')">
+        <v-img
+          href="ref('home')"
+          class="ma-0 ml-16 pa-0"
+          eager
+          max-height="9vh"
+          max-width="140px"
+          src="LAB.gif"
+        ></v-img>
+      </a>
       <v-row
         class="ma-0 ml-16 pa-0 d-none"
         style="height:8vh;width:220px;z-index:66666666"
