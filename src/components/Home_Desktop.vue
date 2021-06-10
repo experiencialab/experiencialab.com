@@ -786,7 +786,11 @@
       async tantan(templateParams) {
         var r = await emailjs.send('service_8etpp5j', 'template_h955ycq', templateParams)
           .then(function(response) {
-            return true
+            if (response) {
+              return true
+            } else {
+              return false
+            }
           }, function(error) {
             console.log(error)
             return false
