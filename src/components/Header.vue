@@ -386,6 +386,6 @@
     font-weight: 400
     cursor: auto
   .drawer
-    height: 150px !important
+    height: 160px !important
 
 </style>

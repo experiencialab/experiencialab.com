@@ -24,7 +24,7 @@
           class="ma-0 mt-1 pa-0"
           style="height:max-63vh;width:100vw;overflow:hidden"
         >
-          <VideoParallax class="ma-0 pa-0" style="width:100%;transform:scale(4);transform-origin:top center" src="videos/LAB_1920x600_color.mp4">
+          <VideoParallax class="ma-0 pa-0" style="width:100%;transform-origin:top center" src="videos/LAB_chico.mp4">
 
             <v-row
               class="ma-0 pa-0"
