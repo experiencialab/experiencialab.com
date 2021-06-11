@@ -211,7 +211,7 @@
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          style="height:40px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
           align="center"
           justify="center"
         >
@@ -231,7 +231,7 @@
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          style="height:40px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
           align="center"
         >
           <v-spacer></v-spacer>
@@ -250,7 +250,7 @@
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          style="height:40px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
           align="center"
         >
           <v-spacer></v-spacer>
@@ -269,7 +269,7 @@
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="height:30px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
+          style="height:40px;color:black;letter-spacing:0px;width:100%;transform-origin:center"
           align="center"
         >
           <v-spacer></v-spacer>
@@ -377,6 +377,6 @@
     font-weight: 400
     cursor: auto
   .drawer
-    height: 160px !important
+    height: 200px !important
 
 </style>
