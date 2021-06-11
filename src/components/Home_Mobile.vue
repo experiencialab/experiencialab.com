@@ -422,7 +422,7 @@
             <v-card
               :class="{'d-none': !step0}"
               class="ma-0 pa-0"
-              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >
@@ -510,7 +510,7 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >
@@ -528,7 +528,7 @@
                 align="center"
                 justify="center"
               >
-                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </v-card-text>
               <v-row
                 class="ma-0 pa-0"
