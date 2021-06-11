@@ -38,8 +38,8 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mt-16 pa-0"
-      style="width:100vw;background-color:white"
+      class="ma-0 mt-16 mx-2 pa-0"
+      style="background-color:white;width:100vw"
       align="center"
     >
       <v-row
