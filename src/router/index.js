@@ -52,7 +52,7 @@ const routes = [
     props: {},
     meta: {
       active: false,
-      title: 'Experiencia LAB - Podcast',
+      title: 'Experiencia LAB - Quienes somos',
     }
   },
   {
@@ -63,7 +63,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "podcast" */ '../views/Podcast.vue'),
     props: {},
-    meta: { active: false }
+    meta: {
+      active: false,
+      title: 'Experiencia LAB - Podcast',
+    }
   },
 ]
 

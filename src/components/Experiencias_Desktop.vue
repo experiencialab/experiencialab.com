@@ -30,6 +30,7 @@
             style="overflow:hidden;height:56vh"
           >
             <v-img
+              eager
               class="ma-0 pa-0"
               max-width="100vw"
               height="56vh"

@@ -8,19 +8,6 @@
       style="width:100vw;min-height:8vh"
       align="center"
     >
-      <v-img
-        class="ma-0 mt-1 mb-1 ml-6 pa-0 d-none"
-        max-height="80px"
-        max-width="150px"
-        src="logo-lab.png"
-        :contain="true"/>
-      <v-img
-        class="ma-0 ml-16 pa-0 d-none"
-        eager
-        max-height="8vh"
-        max-width="150px"
-        src="logo-lab.png"
-      ></v-img>
       <a
         :href="ref('home')"
 
