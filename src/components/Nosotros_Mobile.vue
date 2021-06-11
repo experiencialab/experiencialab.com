@@ -354,7 +354,7 @@
         >
           <v-dialog
             v-model="dialog"
-            width="500"
+            width="550"
             style="z-index:100000"
             eager
             @click:outside="onCancel"
@@ -377,7 +377,7 @@
             <v-card
               :class="{'d-none': !step0}"
               class="ma-0 pa-0"
-              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >
@@ -465,18 +465,17 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
               tile
               align="center"
             >
               <v-card-title
                 class="ma-0 mx-5 pa-0 text-uppercase"
-                style="height:13vh"
+                style="height:13vh;font-size:19px"
               >
                 Trabaja con nosotros
-                <v-spacer></v-spacer>
 
-                <v-icon class="ma-0 pa-0" size="30">$bus</v-icon>
+                <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
               </v-card-title>
 
               <v-card-text
@@ -484,7 +483,7 @@
                 align="center"
                 justify="center"
               >
-                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </v-card-text>
               <v-row
                 class="ma-0 pa-0"
