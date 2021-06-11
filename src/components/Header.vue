@@ -209,8 +209,8 @@
           align="center"
         >
           <v-spacer></v-spacer>
-          <a
-            :href="ref('home')"
+          <router-link
+            to="/"
             class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('home') }"
@@ -220,7 +220,7 @@
             <span class="outer">
               <span class="inner">home</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -229,8 +229,8 @@
           justify="center"
         >
           <v-spacer></v-spacer>
-          <a
-            :href="ref('experiencias')"
+          <router-link
+            to="/experiencias"
             class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('experiencias') }"
@@ -240,7 +240,7 @@
             <span class="outer">
               <span class="inner">experiencias</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -248,8 +248,8 @@
           align="center"
         >
           <v-spacer></v-spacer>
-          <a
-            :href="ref('podcast')"
+          <router-link
+            to="/podcast"
             class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('podcast') }"
@@ -259,7 +259,7 @@
             <span class="outer">
               <span class="inner">podcast</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -267,8 +267,8 @@
           align="center"
         >
           <v-spacer></v-spacer>
-          <a
-            :href="ref('nosotros')"
+          <router-link
+            to="/nosotros"
             class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('nosotros') }"
@@ -278,7 +278,7 @@
             <span class="outer">
               <span class="inner">nosotros</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
           class="ma-0 pa-0"
