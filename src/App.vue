@@ -9,8 +9,8 @@
     >
       <v-img
         eager
-        max-height="200px"
-        max-width="300px"
+        max-height="100px"
+        max-width="150px"
         src="LAB.gif"
 
       ></v-img>
@@ -18,7 +18,7 @@
     <transition :name='name'>
       <Header
         v-if="!loading"
-        style="z-index:400"
+        style="position:fixed;z-index:400"
       ></Header>
     </transition>
     <transition :name='name'>

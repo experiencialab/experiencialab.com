@@ -304,9 +304,9 @@
       <v-img
         contain
         eager
-        max-width="90%"
+        min-width="690%"
         class="ma-0 mt-16 pa-0"
-        src="fotos/ciclo_desarrollo_incremental.png"
+        src="fotos/ciclo_desarrollo_incremental_mobile.png"
       >
       </v-img>
     </v-row>
