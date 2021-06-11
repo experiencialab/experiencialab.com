@@ -11,7 +11,7 @@
       <a
         :href="ref('home')"
 
-        class="ma-0 mt-n1 pa-0 d-sm-none"
+        class="ma-0 pa-0 d-sm-none"
       >
         <v-img
           class="ma-0 ml-8 pa-0"
