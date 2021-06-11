@@ -399,7 +399,7 @@
         >
           <v-dialog
             v-model="dialog"
-            width="500"
+            width="550"
             style="z-index:100000"
             eager
             @click:outside="onCancel"
@@ -516,12 +516,11 @@
             >
               <v-card-title
                 class="ma-0 mx-5 pa-0 text-uppercase"
-                style="height:13vh"
+                style="height:13vh;font-size:19px"
               >
                 Trabaja con nosotros
-                <v-spacer></v-spacer>
 
-                <v-icon class="ma-0 pa-0" size="30">$bus</v-icon>
+                <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
               </v-card-title>
 
               <v-card-text
