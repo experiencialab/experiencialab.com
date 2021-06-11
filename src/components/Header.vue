@@ -23,6 +23,7 @@
       ></v-img>
       <a
         :href="ref('home')"
+
         class="ma-0 mt-n1 pa-0 d-sm-none"
       >
         <v-img
@@ -30,11 +31,12 @@
           eager
           max-height="80px"
           max-width="160px"
-          src="LAB.gif"
+          :src="this.logo"
         ></v-img>
       </a>
       <a
         :href="ref('home')"
+
         class="ma-0 pa-0 d-none d-sm-flex"
       >
         <v-img
@@ -43,7 +45,7 @@
           eager
           max-height="9vh"
           max-width="140px"
-          src="LAB.gif"
+          :src="this.logo"
         ></v-img>
       </a>
       <v-row
@@ -68,8 +70,8 @@
           align="center"
           justify="center"
         >
-          <a
-            :href="ref('home')"
+          <router-link
+            to="/"
             class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('home') }"
@@ -79,7 +81,7 @@
             <span class="outer">
               <span class="inner">home</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
           class="ma-0 mx-3 pa-0"
@@ -87,8 +89,8 @@
           align="center"
           justify="center"
         >
-          <a
-            :href="ref('experiencias')"
+          <router-link
+            to="/experiencias"
             class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('experiencias') }"
@@ -98,7 +100,7 @@
             <span class="outer">
               <span class="inner">experiencias</span>
             </span>
-          </a>
+          </router-link >
         </v-row>
         <v-row
           class="ma-0 pa-0"
@@ -106,8 +108,8 @@
           align="center"
           justify="center"
         >
-          <a
-            :href="ref('podcast')"
+          <router-link
+            to="/podcast"
             class="ma-0 mr-1 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('podcast') }"
@@ -117,17 +119,16 @@
             <span class="outer">
               <span class="inner">podcast</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <v-row
-          :href="ref('nosotros')"
           class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
-          <a
-            :href="ref('nosotros')"
+          <router-link
+            to="/nosotros"
             class="ma-0 mr-1 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('nosotros') }"
@@ -137,7 +138,7 @@
             <span class="outer">
               <span class="inner">nosotros</span>
             </span>
-          </a>
+          </router-link>
         </v-row>
         <a
           class="ma-0 pa-4 text-uppercase menu-item menu-active d-none"
@@ -309,21 +310,24 @@
   export default {
     data: () => ({
       english: false,
-      drawer: false
+      drawer: false,
+      logo: 'LAB.gif'
     }),
     components: {
 
     },
-    created () {
+    async created () {
       this.$router.beforeEach( (to, from, next) => {
         this.drawer = !this.drawer;
         next()
       });
     },
-    mounted () {
-
-    },
     methods: {
+      sleep(sec) {
+        return new Promise((resolve) => {
+          setTimeout(resolve, sec);
+        });
+      },
       whatsapp: function () {
         window.open("https://wa.me/+56994319115", "_blank");
       },

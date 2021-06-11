@@ -15,12 +15,12 @@
 
       ></v-img>
     </v-row>
-    <transition :name='name'>
+    <keep-alive>
       <Header
         v-if="!loading"
         style="position:fixed;z-index:400"
       ></Header>
-    </transition>
+    </keep-alive>
     <transition :name='name'>
       <router-view v-if="!loading"></router-view>
     </transition>

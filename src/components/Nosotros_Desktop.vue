@@ -636,27 +636,6 @@
                       flat
                     ></v-textarea>
                   </v-row>
-
-                  <v-row
-                    class="ma-0 pa-0 d-none"
-                    style="width:100%"
-                  >
-                    <v-spacer></v-spacer>
-                      <v-btn
-                        type="submit"
-                        v-bind:style="{ color: computedColor }"
-                        style="text-transform:none;font-size:20px;font-family:Montserrat;letter-spacing: 0px;transition: ease .5s"
-                        :text="this.text"
-                        color="#EDEDED"
-                        @click="sendEmail()"
-                        depressed
-                        tile
-                        v-ripple="false"
-                      >
-                        {{this.boton}}
-                      </v-btn>
-
-                  </v-row>
                   <v-divider></v-divider>
                   <v-card-actions>
                     <v-btn
