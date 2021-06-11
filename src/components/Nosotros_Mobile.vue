@@ -304,7 +304,8 @@
       <v-img
         contain
         eager
-        min-width="690%"
+        min-width="90%"
+        max-width="90%"
         class="ma-0 mt-16 pa-0"
         src="fotos/ciclo_desarrollo_incremental_mobile.png"
       >
@@ -348,16 +349,260 @@
         <v-row
           class="ma-0 pa-0"
           style="height:100px;width:100%"
+          align="center"
+          justify="center"
         >
-          <v-spacer></v-spacer>
-          <v-row
-            class="ma-0 mt-16 mr-5 pa-0 text-uppercase d-none"
-            style="background-color:#03F7F7;max-width:350px;height:60px;font-size:20px;font-weight:600;color:black;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
-            justify="center"
-            align="center"
+          <v-dialog
+            v-model="dialog"
+            width="500"
+            style="z-index:100000"
+            eager
+            @click:outside="onCancel"
           >
-            ¡Trabaja con nosotros!
-          </v-row>
+            <template v-slot:activator="{ on, attrs }">
+              <v-row
+                class="ma-0 mt-8 pa-0 text-uppercase trabaja"
+                style="max-width:350px;height:60px;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
+                :ripple="false"
+                tile
+                plain
+                v-bind="attrs"
+                v-on="on"
+                align="center"
+                justify="center"
+              >
+                ¡Trabaja con nosotros!
+              </v-row>
+            </template>
+            <v-card
+              :class="{'d-none': !step0}"
+              class="ma-0 pa-0"
+              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              tile
+              align="center"
+            >
+              <v-row
+                class="ma-0 pa-0"
+                style="height:100%;z-index:99119999;background-color:white"
+                align="center"
+                justify="center"
+              >
+                <v-img
+                  :class="{'d-none': !step1}"
+                  eager
+                  max-height="150px"
+                  max-width="300px"
+                  src="animation.gif"
+
+                ></v-img>
+                <v-row
+                  :class="{'d-none': step1}"
+                  class="ma-0 pa-0"
+                >
+                  <v-row
+                    :class="{'d-none': step2}"
+                    class="ma-0 pa-0"
+                    style="width:100%;height:100%"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-row
+                      class="ma-0 pa-0"
+                      style="height:300px"
+                      align="center"
+                    >
+                      <v-icon
+                        class="ma-0 pa-0"
+                        style="width:100%;transform:scale(5);transform-origin:center"
+                        color= "#03F7F7"
+                        x-large
+                      >
+                        mdi-check
+                      </v-icon>
+                      <p
+                        class="ma-0 pa-0"
+                        style="width:100%;color:#03F7F7;font-size:30px;line-height:30px"
+                      >Mensaje enviado</p>
+                    </v-row>
+                    <p
+                      class="ma-0 pa-0"
+                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                    >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
+                  </v-row>
+                  <v-row
+                    :class="{'d-none': !step2}"
+                    class="ma-0 pa-0"
+                    style="width:100%;height:100%"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-row
+                      class="ma-0 pa-0"
+                      style="height:300px"
+                      align="center"
+                    >
+                      <v-icon
+                        class="ma-0 pa-0"
+                        style="width:100%;transform:scale(5);transform-origin:center"
+                        color= "red"
+                        x-large
+                      >
+                        mdi-close-circle-outline
+                      </v-icon>
+                      <p
+                        class="ma-0 pa-0"
+                        style="width:100%;color:red;font-size:30px;line-height:30px;opacity:.4"
+                      >Un error ha ocurrido</p>
+                    </v-row>
+                    <p
+                      class="ma-0 pa-0"
+                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                    >Por favor intenta otra vez.</p>
+                  </v-row>
+                </v-row>
+              </v-row>
+            </v-card>
+            <v-card
+              :class="{'d-none': step0}"
+              class="ma-0 pa-0"
+              style="height:600px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              tile
+              align="center"
+            >
+              <v-card-title
+                class="ma-0 mx-5 pa-0 text-uppercase"
+                style="height:13vh"
+              >
+                Trabaja con nosotros
+                <v-spacer></v-spacer>
+
+                <v-icon class="ma-0 pa-0" size="30">$bus</v-icon>
+              </v-card-title>
+
+              <v-card-text
+                class="text-left"
+                align="center"
+                justify="center"
+              >
+                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </v-card-text>
+              <v-row
+                class="ma-0 pa-0"
+                style="position:relative;width:100%;font-family:Space Grotesk"
+                align="center"
+                justify="center"
+              >
+                <v-form ref="entryForm" lazy-validation eager>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-text-field
+                      required
+                      :rules="rules.name"
+                      dark
+                      class="nombre text"
+                      label="Nombre"
+                      background-color="#ADFFFF"
+                      style="max-width:49.5%"
+                      solo
+                      dense
+                      flat
+                      v-model="name"
+                      align="center"
+                    ></v-text-field>
+                    <v-spacer></v-spacer>
+
+                    <v-text-field
+                      required
+                      :rules="rules.email"
+                      dark
+                      dense
+                      class="email text"
+                      label="Email"
+                      outlined
+                      background-color="#ADFFFF"
+                      style="max-width:49.5%"
+                      solo
+                      flat
+                      v-model="email"
+                      align="center"
+                    ></v-text-field>
+                  </v-row>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-text-field
+                      required
+                      :rules="rules.linkedin"
+                      dark
+                      dense
+                      class="text"
+                      label="Linkedin"
+                      outlined
+                      background-color="#ADFFFF"
+                      width="100%"
+                      solo
+                      flat
+                      v-model="linkedin"
+                      align="center"
+                    ></v-text-field>
+                  </v-row>
+                  <v-row
+                    class="ma-0 pa-0"
+                    style="max-width:97%"
+                    align="center"
+                  >
+                    <v-textarea
+                      counter="500"
+                      :rules="rules.msj"
+                      v-model="message"
+                      label="Mensaje"
+                      no-resize
+                      outlined
+                      color="black"
+                      background-color="#ADFFFF"
+                      solo
+                      rows="4"
+                      row-height="15"
+                      flat
+                    ></v-textarea>
+                  </v-row>
+                  <v-divider></v-divider>
+                  <v-card-actions>
+                    <v-btn
+
+                      @click="onCancel"
+                      color="black"
+                      text
+                      depressed
+                      tile
+                      v-ripple="false"
+                      plain
+                    >
+                      Cancelar
+                    </v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+
+                      @click="onSubmit"
+                      color="black"
+                      text
+                      depressed
+                      tile
+                      v-ripple="false"
+                      plain
+                    >
+                      Enviar
+                    </v-btn>
+                  </v-card-actions>
+                </v-form>
+              </v-row>
+            </v-card>
+          </v-dialog>
         </v-row>
       </v-row>
     </v-row>
@@ -365,11 +610,41 @@
 </template>
 
 <script>
+  import emailjs from 'emailjs-com';
+  import{ init } from 'emailjs-com';
+  init("user_uRTEJMp7CqTbbwVm6yYMz");
+
   export default {
     data: () => ({
-      logos: []
+      rules: {},
+      step0: false,
+      step1: true,
+      step2: true,
+      logos: [],
+      dialog: false,
+      disable: false,
+      text: false,
+      open: true,
+      boton: "Enviar",
+      email: '',
+      name: '',
+      linkedin: '',
+      message: ''
     }),
     components: {
+    },
+    watch: {
+      dialog: function (val) {
+        if (val == false) {
+          this.step0 = false,
+          this.step1 = true,
+          this.rules = {},
+          this.name = '',
+          this.email = '',
+          this.linkedin = '',
+          this.message = ''
+        }
+      }
     },
     created() {
       var logos = this.$store.state.logos;
@@ -384,6 +659,89 @@
       },
       site: function (link) {
         window.open(link, "_blank");
+      },
+      isURL(str) {
+        let url;
+
+        try {
+          url = new URL(str);
+        } catch (_) {
+          return false;
+        }
+
+        return url.protocol === "http:" || url.protocol === "https:";
+      },
+      onCancel() {
+        this.step0 = false,
+        this.step1 = true,
+        this.dialog = false
+      },
+      onSubmit() {
+          //replace empty rules with real rules
+          this.rules = {
+              name: [
+                v => !!v || 'Requerido',
+                v => v.length >= 8 || 'Nombre muy corto',
+              ],
+              email: [
+                v => !!v || 'Requerido',
+                v => /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()\\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || 'Email inválido',
+              ],
+              linkedin: [
+                v => !!v || "Requerido",
+                v => this.isURL(v) || "URL inválido",
+              ],
+              msj: [
+                v => !!v || 'Requerido',
+                v => v.length <= 500 || 'Máximo 500 caracteres',
+              ]
+          }
+          this.$nextTick(() => {
+              if(this.$refs.entryForm.validate()) {
+                this.step0 = !this.step0
+                this.sendEmail()
+              }
+          })
+      },
+      sleep(sec) {
+        return new Promise((resolve) => {
+          setTimeout(resolve, sec);
+        });
+      },
+      async tantan(templateParams) {
+        var r = await emailjs.send('service_8etpp5j', 'template_h955ycq', templateParams)
+          .then(function(response) {
+            if (response) {
+              return true
+            } else {
+              return false
+            }
+          }, function(error) {
+            console.log(error)
+            return false
+          });
+        return r
+      },
+      async sendEmail () {
+        var templateParams = {
+          name: this.name,
+          email: this.email,
+          linkedin: this.linkedin,
+          message: this.message
+        };
+        var results = await this.tantan(templateParams);
+        this.step1 = !this.step1
+
+        if (results == true) {
+          this.step2 = false
+          await this.sleep(5000)
+          this.dialog = false
+        } else {
+          this.step2 = true
+          await this.sleep(5000)
+          this.step0 = !this.step0
+          this.step1 = !this.step1
+        }
       }
     }
   }
