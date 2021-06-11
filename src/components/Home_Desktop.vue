@@ -212,7 +212,7 @@
               align="center"
               justify="center"
             >
-              <v-icon v-if="servicio.index == 0" style="transform:scale(2.5)">$barco</v-icon>
+              <v-icon v-if="servicio.index == 0" style="transform:scale(3.5)">$barco</v-icon>
               <v-icon class="ma-0 ml-16 pa-0" v-if="servicio.index == 1" style="transform:scale(3)">$cohete</v-icon>
               <v-icon v-if="servicio.index == 2" style="transform:scale(3)">$avion</v-icon>
 
