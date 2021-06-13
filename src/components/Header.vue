@@ -8,9 +8,9 @@
       style="width:100vw;min-height:8vh"
       align="center"
     >
-      <a
-        :href="ref('home')"
-
+      <router-link
+        to="/"
+        :disabled="check('home')"
         class="ma-0 pa-0 d-sm-none"
       >
         <v-img
@@ -20,10 +20,10 @@
           max-width="160px"
           :src="this.logo"
         ></v-img>
-      </a>
-      <a
-        :href="ref('home')"
-
+      </router-link>
+      <router-link
+        to="/"
+        :disabled="check('home')"
         class="ma-0 pa-0 d-none d-sm-flex"
       >
         <v-img
@@ -34,7 +34,7 @@
           max-width="140px"
           :src="this.logo"
         ></v-img>
-      </a>
+      </router-link>
       <v-row
         class="ma-0 ml-16 pa-0 d-none"
         style="height:8vh;width:220px;z-index:55555555"
@@ -305,7 +305,7 @@
     },
     async created () {
       this.$router.beforeEach( (to, from, next) => {
-        this.drawer = !this.drawer;
+        this.drawer = false;
         next()
       });
     },
