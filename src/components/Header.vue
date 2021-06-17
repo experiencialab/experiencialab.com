@@ -47,7 +47,7 @@
 
 
       <v-row
-        class="ma-0 mr-6 pa-0 d-none d-sm-flex"
+        class="ma-0 pa-0 d-none d-sm-flex"
         style="max-height:13px"
       >
         <v-spacer></v-spacer>
@@ -59,11 +59,12 @@
         >
           <router-link
             to="/"
-            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
-            style="color:black;letter-spacing:0px;transform-origin:center"
-            :class="{ 'menu-active': check('home') }"
+            exact
+            class="ma-0 mx-2 pa-0 menu-item text-uppercase text-decoration-none"
+            style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
             tag="button"
-            :disabled="check('home')"
+            :class="{ 'menu-active': check('home') }"
+
           >
             <span class="outer">
               <span class="inner">home</span>
@@ -71,18 +72,18 @@
           </router-link>
         </v-row>
         <v-row
-          class="ma-0 mx-3 pa-0"
+          class="ma-0 pa-0"
           style="color:black;letter-spacing:0px;max-width:100px;transform-origin:center"
           align="center"
           justify="center"
         >
           <router-link
             to="/experiencias"
-            class="ma-0 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mx-3 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('experiencias') }"
             tag="button"
-            :disabled="check('experiencias')"
+
           >
             <span class="outer">
               <span class="inner">experiencias</span>
@@ -97,11 +98,11 @@
         >
           <router-link
             to="/podcast"
-            class="ma-0 mr-1 pa-0 menu-item text-uppercase text-decoration-none"
+            class="ma-0 mx-3 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('podcast') }"
             tag="button"
-            :disabled="check('podcast')"
+
           >
             <span class="outer">
               <span class="inner">podcast</span>
@@ -118,9 +119,8 @@
             to="/nosotros"
             class="ma-0 mr-1 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
-            :class="{ 'menu-active': check('nosotros') }"
             tag="button"
-            :disabled="check('nosotros')"
+            :class="{ 'menu-active': check('nosotros') }"
           >
             <span class="outer">
               <span class="inner">nosotros</span>
@@ -198,6 +198,7 @@
           <v-spacer></v-spacer>
           <router-link
             to="/"
+            exact
             class="ma-0 mr-6 pa-0 menu-item text-uppercase text-decoration-none"
             style="color:black;letter-spacing:0px;transform-origin:center"
             :class="{ 'menu-active': check('home') }"
@@ -364,7 +365,7 @@
     transform: scale(1.03)
     font-weight: 500
     cursor: pointer
-  .menu-active
+  .router-link-active
     font-weight: 400
     span.inner
       color: black
@@ -372,7 +373,7 @@
       color: #03F7F7
       text-decoration: line-through
       text-decoration-thickness: 2px
-  .menu-active:hover
+  .router-link-active:hover
     transform: scale(1)
     font-weight: 400
     cursor: auto

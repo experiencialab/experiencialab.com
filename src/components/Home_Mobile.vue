@@ -560,18 +560,20 @@
 
                     <v-text-field
                       required
-                      :rules="rules.email"
+                      :rules="rules.whats"
                       dark
                       dense
-                      class="email text"
-                      label="Email"
+                      class="whats text"
+                      label="Whatsapp"
                       outlined
                       background-color="#ADFFFF"
                       style="max-width:49.5%"
                       solo
                       flat
-                      v-model="email"
+                      v-model="whats"
                       align="center"
+                      type="number"
+                      min="10000000"
                     ></v-text-field>
                   </v-row>
                   <v-row
@@ -671,7 +673,7 @@
       text: false,
       open: true,
       boton: "Enviar",
-      email: '',
+      whats: '',
       name: '',
       linkedin: '',
       message: ''
@@ -686,7 +688,7 @@
           this.step1 = true,
           this.rules = {},
           this.name = '',
-          this.email = '',
+          this.whats = '',
           this.linkedin = '',
           this.message = ''
         }
@@ -723,9 +725,9 @@
                 v => !!v || 'Requerido',
                 v => v.length >= 8 || 'Nombre muy corto',
               ],
-              email: [
+              whats: [
                 v => !!v || 'Requerido',
-                v => /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()\\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || 'Email inválido',
+                v => v.length >= 8 || 'Verifica tu número',
               ],
               linkedin: [
                 v => !!v || "Requerido",
@@ -765,7 +767,7 @@
       async sendEmail () {
         var templateParams = {
           name: this.name,
-          email: this.email,
+          whats: this.whats,
           linkedin: this.linkedin,
           message: this.message
         };

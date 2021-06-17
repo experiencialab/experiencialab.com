@@ -208,6 +208,7 @@ export default new Vuex.Store({
         extend: false
       }
     ],
+    trabaja: "En LAB queremos más talento digital! Quieres ser parte?<br>Preséntanos los tres productos digitales más atesorables en que hayas participado. Por favor especifica tu rol y el desafío que enfrentaron.",
     logos: [
       "logos/claro.png",
       "logos/ADretail.png",
