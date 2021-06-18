@@ -516,7 +516,7 @@
             >
               <v-card-title
                 class="ma-0 mx-5 pa-0 text-uppercase"
-                style="height:13vh;font-size:19px"
+                style="height:7vh;font-size:19px"
               >
                 Trabaja con nosotros
 
