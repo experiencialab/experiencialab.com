@@ -162,7 +162,7 @@
               <v-row
                 class="ma-0 mt-n3 pa-0"
                 style="width:100%;font-weight:500;max-height:30%"
-            
+
               >
                 {{ $store.state.equipo[member.index].cargo }}
               </v-row>
@@ -549,7 +549,7 @@
                 align="center"
                 justify="center"
               >
-                <p class="ma-0 pa-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="ma-0 pa-0" v-html="$store.state.trabaja"></p>
               </v-card-text>
               <v-row
                 class="ma-0 pa-0"
