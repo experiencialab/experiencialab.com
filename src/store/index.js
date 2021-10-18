@@ -89,40 +89,40 @@ export default new Vuex.Store({
         instagram: 'https://www.instagram.com/vivirlove/?hl=en',
         linkedin: 'https://www.linkedin.com/in/vivi-ponce-serri-88210015/'
       },
-      // {
-      //   index: 1,
-      //   nombre: 'Ana de Lara',
-      //   cargo: 'Head UX/UI',
-      //   bio: [
-      //     'Consultora experta en la concepción e incubación de experiencias digitales atesorables a través de la identificación de las necesidades actuales y futuras de los usuario & clientes  y el uso de metodologías de diseño participativo. Desarrollo acelerado de productos con y para el usuario.',
-      //     'Camaleónica, resiliente, ciudadana del mundo, dance lover, obsesionada con todas las ramas del diseño.',
-      //     'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
-      //     'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
-      //   ],
-      //   foto: 'fotos/ana_de_lara.jpg',
-      //   nick: 'Ana',
-      //   twitter: '',
-      //   twitterlink: '',
-      //   instagram: 'https://www.instagram.com/anadelara/?hl=en',
-      //   linkedin: 'https://www.linkedin.com/in/anavdelara/'
-      // },
       {
         index: 1,
-        nombre: 'Daniel Barrientos',
-        cargo: 'Head of Futures',
+        nombre: 'Ana de Lara',
+        cargo: 'Head UX/UI',
         bio: [
-          'Experto en diseño e implementación de estrategias de digitalización y aceleración en equipos tecnológicos. Acompañamiento a directivos y equipos digitales en la visualización de escenarios futuros, co-construcción de modelos de negocio disruptivos y rutas de desarrollo digital evolutivas y escalables.',
-          'Sibarita, parrillero, ciclista furioso y nerd orgulloso.',
-          'Superpoder: “Impulsar a las organizaciones a mirar el futuro y llevarlo a cabo”.',
-          'Lego® Serious Play ® certified facilitator<br>Lean Startup ® certified<br>Design-thinker<br>Customer-Driven Innovation<br>Business Model Canvas ® expert'
+          'Consultora experta en la concepción e incubación de experiencias digitales atesorables a través de la identificación de las necesidades actuales y futuras de los usuario & clientes  y el uso de metodologías de diseño participativo. Desarrollo acelerado de productos con y para el usuario.',
+          'Camaleónica, resiliente, ciudadana del mundo, dance lover, obsesionada con todas las ramas del diseño.',
+          'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
+          'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
         ],
-        foto: 'fotos/daniel_barrientos.jpg',
-        nick: 'Dani',
+        foto: 'fotos/ana_de_lara.jpg',
+        nick: 'Ana',
         twitter: '',
         twitterlink: '',
-        instagram: 'https://www.instagram.com/daniel_bl/?hl=en',
-        linkedin: 'https://www.linkedin.com/in/dbarrientos/'
+        instagram: 'https://www.instagram.com/anadelara/?hl=en',
+        linkedin: 'https://www.linkedin.com/in/anavdelara/'
       }
+      // {
+      //   index: 1,
+      //   nombre: 'Daniel Barrientos',
+      //   cargo: 'Head of Futures',
+      //   bio: [
+      //     'Experto en diseño e implementación de estrategias de digitalización y aceleración en equipos tecnológicos. Acompañamiento a directivos y equipos digitales en la visualización de escenarios futuros, co-construcción de modelos de negocio disruptivos y rutas de desarrollo digital evolutivas y escalables.',
+      //     'Sibarita, parrillero, ciclista furioso y nerd orgulloso.',
+      //     'Superpoder: “Impulsar a las organizaciones a mirar el futuro y llevarlo a cabo”.',
+      //     'Lego® Serious Play ® certified facilitator<br>Lean Startup ® certified<br>Design-thinker<br>Customer-Driven Innovation<br>Business Model Canvas ® expert'
+      //   ],
+      //   foto: 'fotos/daniel_barrientos.jpg',
+      //   nick: 'Dani',
+      //   twitter: '',
+      //   twitterlink: '',
+      //   instagram: 'https://www.instagram.com/daniel_bl/?hl=en',
+      //   linkedin: 'https://www.linkedin.com/in/dbarrientos/'
+      // }
     ],
     experiencias: [
       {
