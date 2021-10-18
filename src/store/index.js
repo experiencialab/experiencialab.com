@@ -76,7 +76,7 @@ export default new Vuex.Store({
       {
         index: 0,
         nombre: 'Vivi Ponce',
-        cargo: 'CEO & Founder',
+        cargo: 'CEO, CTO & Founder',
         bio: ['Consultora experta en la concepción de la próxima generación de features en la experiencia digital de usuarios para ecosistemas y productos digitales basados en tecnología emergente. Agilista articuladora de procesos de co-creación e intervenciones de shock en organizaciones.',
         'Gluten free, vegetariana, bike lover, inmigrante italiana en Chile, hacer que las cosas pasen y honestidad brutal son mis superpoderes.',
         '',
@@ -89,25 +89,25 @@ export default new Vuex.Store({
         instagram: 'https://www.instagram.com/vivirlove/?hl=en',
         linkedin: 'https://www.linkedin.com/in/vivi-ponce-serri-88210015/'
       },
+      // {
+      //   index: 1,
+      //   nombre: 'Ana de Lara',
+      //   cargo: 'Head UX/UI',
+      //   bio: [
+      //     'Consultora experta en la concepción e incubación de experiencias digitales atesorables a través de la identificación de las necesidades actuales y futuras de los usuario & clientes  y el uso de metodologías de diseño participativo. Desarrollo acelerado de productos con y para el usuario.',
+      //     'Camaleónica, resiliente, ciudadana del mundo, dance lover, obsesionada con todas las ramas del diseño.',
+      //     'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
+      //     'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
+      //   ],
+      //   foto: 'fotos/ana_de_lara.jpg',
+      //   nick: 'Ana',
+      //   twitter: '',
+      //   twitterlink: '',
+      //   instagram: 'https://www.instagram.com/anadelara/?hl=en',
+      //   linkedin: 'https://www.linkedin.com/in/anavdelara/'
+      // },
       {
         index: 1,
-        nombre: 'Ana de Lara',
-        cargo: 'Head UX/UI',
-        bio: [
-          'Consultora experta en la concepción e incubación de experiencias digitales atesorables a través de la identificación de las necesidades actuales y futuras de los usuario & clientes  y el uso de metodologías de diseño participativo. Desarrollo acelerado de productos con y para el usuario.',
-          'Camaleónica, resiliente, ciudadana del mundo, dance lover, obsesionada con todas las ramas del diseño.',
-          'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
-          'Diseñadora<br>Abogado<br>Máster en Diseño Avanzado<br>UX/UI Senior<br>Scrum Master / Product Owner Certificated'
-        ],
-        foto: 'fotos/ana_de_lara.jpg',
-        nick: 'Ana',
-        twitter: '',
-        twitterlink: '',
-        instagram: 'https://www.instagram.com/anadelara/?hl=en',
-        linkedin: 'https://www.linkedin.com/in/anavdelara/'
-      },
-      {
-        index: 2,
         nombre: 'Daniel Barrientos',
         cargo: 'Head of Futures',
         bio: [
