@@ -65,9 +65,22 @@ const routes = [
     props: {},
     meta: {
       active: false,
-      title: 'Experiencia LAB - Podcast',
+      title: 'Experiencia LAB - Podcast'
     }
   },
+  {
+    path: '/terminos-y-condiciones',
+    name: 'Terminosycondiciones',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "podcast" */ '../views/Terminosycondiciones.vue'),
+    props: {},
+    meta: {
+      active: false,
+      title: 'Experiencia LAB - Términos y condiciones'
+    }
+  }
 ]
 
 const router = new VueRouter({

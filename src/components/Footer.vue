@@ -11,6 +11,19 @@
       justify="center"
     >
       <v-row
+        class="ma-0 mt-5 pa-0"
+        style="width:100vw"
+        justify="center"
+      >
+        <a
+          href="/terminos-y-condiciones"
+          class="ma-0 pa-0 text-decoration-none"
+          style="color:black"
+        >
+          Términos y condiciones
+        </a>
+      </v-row>
+      <v-row
         class="ma-0 pa-0"
         style="height:60px"
         align="center"
