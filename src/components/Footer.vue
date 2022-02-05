@@ -15,13 +15,13 @@
         style="width:100vw"
         justify="center"
       >
-        <a
-          href="/terminos-y-condiciones"
+        <router-link
+          to="/terminos-y-condiciones"
           class="ma-0 pa-0 text-decoration-none"
           style="color:black"
         >
           Términos y condiciones
-        </a>
+        </router-link>
       </v-row>
       <v-row
         class="ma-0 pa-0"

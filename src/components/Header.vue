@@ -28,7 +28,7 @@
       >
         <v-img
           href="ref('home')"
-          class="ma-0 ml-16 pa-0"
+          class="ma-0 ml-16 pa-0 logo"
           eager
           max-height="9vh"
           max-width="140px"
@@ -364,6 +364,8 @@
   .menu-item:hover
     transform: scale(1.03)
     font-weight: 500
+    cursor: pointer
+  .logo:hover
     cursor: pointer
   .router-link-active
     font-weight: 400

@@ -374,25 +374,27 @@
           class="ma-0 mt-8 pa-0"
           max-width="100%"
           height="56vh"
-          src="fotos/trabaja-con-nosotros.jpg"
+          src="fotos/LAB_team.png"
           style="color:white"
+          position=""
         >
           <v-row
             class="ma-0 pa-0"
-            style="height:100%;width:100%"
-            align="end"
+            style="height:100%;width:100%;font-weight:500"
+            justify="center"
+            align="center"
           >
-            <v-row
-              class="ma-0 ml-8 mb-16 pa-0 pb-8"
-              style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
-            >
-              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
-            </v-row>
+
+
+
             <v-row
               class="ma-0 pa-0"
+              justify="center"
+              align="center"
             >
-              <v-spacer></v-spacer>
-              <v-icon class="ma-0 mr-16 pa-0" size="300">$bus</v-icon>
+              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+
+              <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
             </v-row>
           </v-row>
         </v-img>
@@ -427,7 +429,7 @@
             <v-card
               :class="{'d-none': !step0}"
               class="ma-0 pa-0"
-              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >
@@ -515,7 +517,7 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >

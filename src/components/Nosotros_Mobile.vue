@@ -25,11 +25,12 @@
           style="height:max-63vh;width:100vw;overflow:hidden"
         >
           <v-img
+            contain
             eager
             class="ma-0 pa-0"
             max-width="100vw"
-            height="56vh"
-            src="fotos/nosotros.jpg"
+
+            src="fotos/footer_team.png"
             style="color:white"
             position="center top 30%"
           >
@@ -38,9 +39,21 @@
         </v-row>
       </v-row>
     </v-row>
+    <v-row
+      class="ma-0 ml-5 mt-5 pa-0"
+      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+    >
+      <p class="ma-0 pa-0 text-uppercase">En LAB creemos que</p>
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
+      style="width:100vw"
+    >
+      <p class="ma-0 mb-5 ml-10 mr-5 pa-0 pl-6 historia" v-html="$store.state.creemos"></p><br>
+    </v-row>
 
     <v-row
-      class="ma-0 mt-10 ml-5 pa-0"
+      class="ma-0 ml-5 pa-0"
       style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">Nuestra historia</p>
@@ -54,14 +67,14 @@
       <p class="ma-0 mb-5 ml-10 mr-5 pa-0 pl-6 historia" v-html="$store.state.historia[2]"></p>
     </v-row>
     <v-row
-      class="ma-0 mt-16 ml-5 pa-0"
+      class="ma-0 mt-8 ml-5 pa-0"
       style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">Core team</p>
     </v-row>
     <v-row
       v-for="member in $store.state.equipo"  :key="member.index"
-      class="ma-0 mt-8 pa-0"
+      class="ma-0 mt-0 pa-0"
       style="max-width:100vw"
     >
       <v-row
@@ -75,15 +88,15 @@
           height="55vh"
           max-width="100%"
           style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:40px;font-family:Space Grotesk;font-weight:700;color:white"
-          :src="$store.state.equipo[member.index].foto"
+          :src="$store.state.equipo[member.index - 1].foto"
 
         >
           <v-row
-            class="ma-0 mb-4 mr-5 pb-8 pa-0"
+            class="ma-0 mb-4 ml-5 pb-8 pa-0"
             style="height:100%"
-            justify="end"
+
           >
-            {{ $store.state.equipo[member.index].nick }}
+            {{ $store.state.equipo[member.index - 1].nick }}
 
           </v-row>
         </v-img>
@@ -103,16 +116,16 @@
 
                 <v-row
                   class="ma-0 ml-5 pa-0"
-                  style="width:100%;font-size:25px;min-height:70%;max-height:70%"
+                  style="width:100%;font-size:20px;min-height:70%;max-height:70%"
                   align="center"
                 >
-                  <p class="ma-0 mt-1 pa-0" tyle="background-color:red">{{ $store.state.equipo[member.index].nombre }}</p><a @click="site($store.state.equipo[member.index].twitterlink)" class="ma-0 mt-2 ml-2 pa-0" style="font-size:14px;color:black">{{ $store.state.equipo[member.index].twitter }}</a>
+                  <p class="ma-0 mt-1 pa-0" tyle="background-color:red">{{ $store.state.equipo[member.index - 1].nombre }}</p><a @click="site($store.state.equipo[member.index - 1].twitterlink)" class="ma-0 mt-2 ml-2 pa-0" style="font-size:14px;color:black">{{ $store.state.equipo[member.index -1 ].twitter }}</a>
                 </v-row>
                 <v-row
-                  class="ma-0 ml-5 pa-0"
-                  style="max-width:100%;font-weight:500;min-height:30%;max-height:30%"
+                  class="ma-0 ml-5 mt-1 pa-0"
+                  style="max-width:100%;font-size:12px;font-weight:400;min-height:30%;max-height:30%;line-height:12px"
                 >
-                  <p class="ma-0 mt-n3 pa-0">{{ $store.state.equipo[member.index].cargo }}</p>
+                  <p class="ma-0 mt-n3 pa-0">{{ $store.state.equipo[member.index - 1].cargo }}</p>
                 </v-row>
 
             </v-row>
@@ -131,16 +144,16 @@
                   align="center"
                 >
                   <p style="width:100%">
-                    <span v-html="$store.state.equipo[member.index].bio[0]"></span>
+                    <span v-html="$store.state.equipo[member.index - 1].bio[0]"></span>
                   </p>
-                  <p style="width:100%">
-                    <span v-html="$store.state.equipo[member.index].bio[1]"></span>
+                  <p v-if="$store.state.equipo[member.index - 1].bio[1]" style="width:100%">
+                    <span v-html="$store.state.equipo[member.index - 1].bio[1]"></span>
                   </p>
-                  <p style="width:100%">
-                    <span v-html="$store.state.equipo[member.index].bio[2]"></span>
+                  <p v-if="$store.state.equipo[member.index - 1].bio[2]" style="width:100%">
+                    <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
                   </p>
                   <p style="font-size:10px;width:100%">
-                    <span v-html="$store.state.equipo[member.index].bio[3]"></span>
+                    <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
                   </p>
                 </v-row>
                 <v-row
@@ -153,16 +166,16 @@
                     class="ma-0 mr-2 pa-0"
 
                     color= "black"
-                    @click="site($store.state.equipo[member.index].linkedin)"
+                    @click="site($store.state.equipo[member.index - 1].linkedin)"
                   >
                     mdi-linkedin
                   </v-icon>
                   <v-icon
-                    v-if="$store.state.equipo[member.index].twitterlink"
+                    v-if="$store.state.equipo[member.index - 1].twitterlink"
                     class="ma-0 mr-2 pa-0"
 
                     color= "black"
-                    @click="site($store.state.equipo[member.index].twitterlink)"
+                    @click="site($store.state.equipo[member.index - 1].twitterlink)"
                   >
                     mdi-twitter
                   </v-icon>
@@ -170,7 +183,7 @@
                     class="ma-0 mr-2 pa-0"
 
                     color= "black"
-                    @click="site($store.state.equipo[member.index].instagram)"
+                    @click="site($store.state.equipo[member.index - 1].instagram)"
                   >
                     mdi-instagram
                   </v-icon>
@@ -187,6 +200,14 @@
       style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
       <p class="ma-0 pa-0 text-uppercase">Metodología</p>
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
+      style="width:100vw"
+    >
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[0]"></p><br>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[1]"></p><br>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p>
     </v-row>
     <v-row
       class="ma-0 mt-8 pa-0"
@@ -246,6 +267,15 @@
       <p class="ma-0 pa-0 text-uppercase">Dream team</p>
     </v-row>
     <v-row
+      class="ma-0 pa-0"
+      style="width:100%"
+      align="center"
+    >
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[0]"></p>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[1]"></p>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[2]"></p>
+    </v-row>
+    <v-row
       class="ma-0 mt-8 pa-0"
       style="width:100%;height:10vh"
     >
@@ -275,7 +305,7 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mt-10 pa-0"
+      class="ma-0 mt-16 pa-0"
       style="width:100vw"
       justify="center"
       align="center"
@@ -296,7 +326,16 @@
       <p class="ma-0 pa-0 text-uppercase">Ciclo de Desarrollo Incremental</p>
     </v-row>
     <v-row
-      class="ma-0 mt-5 pa-0"
+      class="ma-0 mt-16 pa-0"
+      style="width:100%"
+      align="center"
+    >
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[0]"></p>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[1]"></p>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[2]"></p>
+    </v-row>
+    <v-row
+      class="ma-0 pa-0"
       style="width:100vw"
       justify="center"
       align="center"
@@ -312,300 +351,294 @@
       </v-img>
     </v-row>
     <v-row
-      class="ma-0 mt-16 ml-5 pa-0 pt-8"
-      style="width:100vw;height:70px;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      class="ma-0 mt-16 pa-0 pt-8"
+      style="width:100vw;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
     >
-      <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
+      <p class="ma-0 ml-5 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
-    <v-row
-      class="ma-0 mt-16 pa-0"
-      style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
+
+    <v-img
+      contain
+      eager
+      class="ma-0 mt-5 pa-0"
+      src="fotos/LAB_team.png"
+      style="color:white"
     >
       <v-row
-        class="ma-0 mt-16 mb-16 pa-0 pb-16"
-        style="overflow:hidden;width:100vw"
+        class="ma-0 pa-0 align-end"
+        style="height:100%;width:100%"
+        justify="center"
+        align="center"
       >
-        <v-img
-          eager
-          class="ma-0 pa-0"
-          max-width="100%"
-          height="56vh"
-          src="fotos/trabaja-con-nosotros.jpg"
-          style="color:white"
-        >
-          <v-row
-            class="ma-0 pa-0 align-end"
-            style="height:100%;width:100%"
-          >
-            <v-row
-              class="ma-0 mb-8 pa-0"
-              style="font-size:30px;line-height:30px;font-weight:500;max-width:90%"
-            >
-              <p class="ma-0 mt-16 ml-5 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
-            </v-row>
-            <v-icon class="ma-0 mb-8 pa-0 pt-0 pb-2 pl-11" style="transform:scale(8)">$bus</v-icon>
-          </v-row>
-        </v-img>
         <v-row
           class="ma-0 pa-0"
-          style="height:100px;width:100%"
-          align="center"
+          style="width:100%;font-size:15px;line-height:30px;font-weight:500"
           justify="center"
+          align="center"
         >
-          <v-dialog
-            v-model="dialog"
-            width="550"
-            style="z-index:100000"
-            eager
-            @click:outside="onCancel"
-          >
-            <template v-slot:activator="{ on, attrs }">
-              <v-row
-                class="ma-0 mt-8 pa-0 text-uppercase trabaja"
-                style="max-width:350px;height:60px;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
-                :ripple="false"
-                tile
-                plain
-                v-bind="attrs"
-                v-on="on"
-                align="center"
-                justify="center"
-              >
-                ¡Trabaja con nosotros!
-              </v-row>
-            </template>
-            <v-card
-              :class="{'d-none': !step0}"
-              class="ma-0 pa-0"
-              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
-              tile
-              align="center"
-            >
-              <v-row
-                class="ma-0 pa-0"
-                style="height:100%;z-index:99119999;background-color:white"
-                align="center"
-                justify="center"
-              >
-                <v-img
-                  :class="{'d-none': !step1}"
-                  eager
-                  max-height="150px"
-                  max-width="300px"
-                  src="animation.gif"
-
-                ></v-img>
-                <v-row
-                  :class="{'d-none': step1}"
-                  class="ma-0 pa-0"
-                >
-                  <v-row
-                    :class="{'d-none': step2}"
-                    class="ma-0 pa-0"
-                    style="width:100%;height:100%"
-                    align="center"
-                    justify="center"
-                  >
-                    <v-row
-                      class="ma-0 pa-0"
-                      style="height:300px"
-                      align="center"
-                    >
-                      <v-icon
-                        class="ma-0 pa-0"
-                        style="width:100%;transform:scale(5);transform-origin:center"
-                        color= "#03F7F7"
-                        x-large
-                      >
-                        mdi-check
-                      </v-icon>
-                      <p
-                        class="ma-0 pa-0"
-                        style="width:100%;color:#03F7F7;font-size:30px;line-height:30px"
-                      >Mensaje enviado</p>
-                    </v-row>
-                    <p
-                      class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
-                    >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
-                  </v-row>
-                  <v-row
-                    :class="{'d-none': !step2}"
-                    class="ma-0 pa-0"
-                    style="width:100%;height:100%"
-                    align="center"
-                    justify="center"
-                  >
-                    <v-row
-                      class="ma-0 pa-0"
-                      style="height:300px"
-                      align="center"
-                    >
-                      <v-icon
-                        class="ma-0 pa-0"
-                        style="width:100%;transform:scale(5);transform-origin:center"
-                        color= "red"
-                        x-large
-                      >
-                        mdi-close-circle-outline
-                      </v-icon>
-                      <p
-                        class="ma-0 pa-0"
-                        style="width:100%;color:red;font-size:30px;line-height:30px;opacity:.4"
-                      >Un error ha ocurrido</p>
-                    </v-row>
-                    <p
-                      class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
-                    >Por favor intenta otra vez.</p>
-                  </v-row>
-                </v-row>
-              </v-row>
-            </v-card>
-            <v-card
-              :class="{'d-none': step0}"
-              class="ma-0 pa-0"
-              style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
-              tile
-              align="center"
-            >
-              <v-card-title
-                class="ma-0 mx-5 pa-0 text-uppercase"
-                style="height:7vh;font-size:19px"
-              >
-                Trabaja con nosotros
-
-                <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
-              </v-card-title>
-
-              <v-card-text
-                class="text-left"
-                align="center"
-                justify="center"
-              >
-                <p class="ma-0 pa-0" v-html="$store.state.trabaja"></p>
-              </v-card-text>
-              <v-row
-                class="ma-0 pa-0"
-                style="position:relative;width:100%;font-family:Space Grotesk"
-                align="center"
-                justify="center"
-              >
-                <v-form ref="entryForm" lazy-validation eager>
-                  <v-row
-                    class="ma-0 pa-0"
-                    style="max-width:97%"
-                    align="center"
-                  >
-                    <v-text-field
-                      required
-                      :rules="rules.name"
-                      dark
-                      class="nombre text"
-                      label="Nombre"
-                      background-color="#ADFFFF"
-                      style="max-width:49.5%"
-                      solo
-                      dense
-                      flat
-                      v-model="name"
-                      align="center"
-                    ></v-text-field>
-                    <v-spacer></v-spacer>
-
-                    <v-text-field
-                      required
-                      :rules="rules.whats"
-                      dark
-                      dense
-                      class="whats text"
-                      label="Whatsapp"
-                      outlined
-                      background-color="#ADFFFF"
-                      style="max-width:49.5%"
-                      solo
-                      flat
-                      v-model="whats"
-                      align="center"
-                      type="number"
-                      min="10000000"
-                    ></v-text-field>
-                  </v-row>
-                  <v-row
-                    class="ma-0 pa-0"
-                    style="max-width:97%"
-                    align="center"
-                  >
-                    <v-text-field
-                      required
-                      :rules="rules.linkedin"
-                      dark
-                      dense
-                      class="text"
-                      label="Linkedin"
-                      outlined
-                      background-color="#ADFFFF"
-                      width="100%"
-                      solo
-                      flat
-                      v-model="linkedin"
-                      align="center"
-                    ></v-text-field>
-                  </v-row>
-                  <v-row
-                    class="ma-0 pa-0"
-                    style="max-width:97%"
-                    align="center"
-                  >
-                    <v-textarea
-                      counter="500"
-                      :rules="rules.msj"
-                      v-model="message"
-                      label="Mensaje"
-                      no-resize
-                      outlined
-                      color="black"
-                      background-color="#ADFFFF"
-                      solo
-                      rows="4"
-                      row-height="15"
-                      flat
-                    ></v-textarea>
-                  </v-row>
-                  <v-divider></v-divider>
-                  <v-card-actions>
-                    <v-btn
-
-                      @click="onCancel"
-                      color="black"
-                      text
-                      depressed
-                      tile
-                      v-ripple="false"
-                      plain
-                    >
-                      Cancelar
-                    </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn
-
-                      @click="onSubmit"
-                      color="black"
-                      text
-                      depressed
-                      tile
-                      v-ripple="false"
-                      plain
-                    >
-                      Enviar
-                    </v-btn>
-                  </v-card-actions>
-                </v-form>
-              </v-row>
-            </v-card>
-          </v-dialog>
+          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+          <v-icon x-large class="ma-0 ml-5 pa-0" style="scaleX(2)">$bus</v-icon>
         </v-row>
       </v-row>
+    </v-img>
+    <v-row
+      class="ma-0 mb-16 pa-0"
+      style="height:100px;width:100%"
+      align="center"
+      justify="center"
+    >
+      <v-dialog
+        v-model="dialog"
+        width="550"
+        style="z-index:100000"
+        eager
+        @click:outside="onCancel"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-row
+            class="ma-0 mt-8 pa-0 text-uppercase trabaja"
+            style="max-width:350px;height:60px;font-weight:600;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);font-size:20px;font-family:Space Grotesk"
+            :ripple="false"
+            tile
+            plain
+            v-bind="attrs"
+            v-on="on"
+            align="center"
+            justify="center"
+          >
+            ¡Trabaja con nosotros!
+          </v-row>
+        </template>
+        <v-card
+          :class="{'d-none': !step0}"
+          class="ma-0 pa-0"
+          style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+          tile
+          align="center"
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="height:100%;z-index:99119999;background-color:white"
+            align="center"
+            justify="center"
+          >
+            <v-img
+              :class="{'d-none': !step1}"
+              eager
+              max-height="150px"
+              max-width="300px"
+              src="animation.gif"
+
+            ></v-img>
+            <v-row
+              :class="{'d-none': step1}"
+              class="ma-0 pa-0"
+            >
+              <v-row
+                :class="{'d-none': step2}"
+                class="ma-0 pa-0"
+                style="width:100%;height:100%"
+                align="center"
+                justify="center"
+              >
+                <v-row
+                  class="ma-0 pa-0"
+                  style="height:300px"
+                  align="center"
+                >
+                  <v-icon
+                    class="ma-0 pa-0"
+                    style="width:100%;transform:scale(5);transform-origin:center"
+                    color= "#03F7F7"
+                    x-large
+                  >
+                    mdi-check
+                  </v-icon>
+                  <p
+                    class="ma-0 pa-0"
+                    style="width:100%;color:#03F7F7;font-size:30px;line-height:30px"
+                  >Mensaje enviado</p>
+                </v-row>
+                <p
+                  class="ma-0 pa-0"
+                  style="width:100%;color:black;font-size:15px;line-height:20px"
+                >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
+              </v-row>
+              <v-row
+                :class="{'d-none': !step2}"
+                class="ma-0 pa-0"
+                style="width:100%;height:100%"
+                align="center"
+                justify="center"
+              >
+                <v-row
+                  class="ma-0 pa-0"
+                  style="height:300px"
+                  align="center"
+                >
+                  <v-icon
+                    class="ma-0 pa-0"
+                    style="width:100%;transform:scale(5);transform-origin:center"
+                    color= "red"
+                    x-large
+                  >
+                    mdi-close-circle-outline
+                  </v-icon>
+                  <p
+                    class="ma-0 pa-0"
+                    style="width:100%;color:red;font-size:30px;line-height:30px;opacity:.4"
+                  >Un error ha ocurrido</p>
+                </v-row>
+                <p
+                  class="ma-0 pa-0"
+                  style="width:100%;color:black;font-size:15px;line-height:20px"
+                >Por favor intenta otra vez.</p>
+              </v-row>
+            </v-row>
+          </v-row>
+        </v-card>
+        <v-card
+          :class="{'d-none': step0}"
+          class="ma-0 pa-0"
+          style="height:550px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
+          tile
+          align="center"
+        >
+          <v-card-title
+            class="ma-0 mx-5 pa-0 text-uppercase"
+            style="height:7vh;font-size:19px"
+          >
+            Trabaja con nosotros
+
+            <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
+          </v-card-title>
+
+          <v-card-text
+            class="text-left"
+            align="center"
+            justify="center"
+          >
+            <p class="ma-0 pa-0" v-html="$store.state.trabaja"></p>
+          </v-card-text>
+          <v-row
+            class="ma-0 pa-0"
+            style="position:relative;width:100%;font-family:Space Grotesk"
+            align="center"
+            justify="center"
+          >
+            <v-form ref="entryForm" lazy-validation eager>
+              <v-row
+                class="ma-0 pa-0"
+                style="max-width:97%"
+                align="center"
+              >
+                <v-text-field
+                  required
+                  :rules="rules.name"
+                  dark
+                  class="nombre text"
+                  label="Nombre"
+                  background-color="#ADFFFF"
+                  style="max-width:49.5%"
+                  solo
+                  dense
+                  flat
+                  v-model="name"
+                  align="center"
+                ></v-text-field>
+                <v-spacer></v-spacer>
+
+                <v-text-field
+                  required
+                  :rules="rules.whats"
+                  dark
+                  dense
+                  class="whats text"
+                  label="Whatsapp"
+                  outlined
+                  background-color="#ADFFFF"
+                  style="max-width:49.5%"
+                  solo
+                  flat
+                  v-model="whats"
+                  align="center"
+                  type="number"
+                  min="10000000"
+                ></v-text-field>
+              </v-row>
+              <v-row
+                class="ma-0 pa-0"
+                style="max-width:97%"
+                align="center"
+              >
+                <v-text-field
+                  required
+                  :rules="rules.linkedin"
+                  dark
+                  dense
+                  class="text"
+                  label="Linkedin"
+                  outlined
+                  background-color="#ADFFFF"
+                  width="100%"
+                  solo
+                  flat
+                  v-model="linkedin"
+                  align="center"
+                ></v-text-field>
+              </v-row>
+              <v-row
+                class="ma-0 pa-0"
+                style="max-width:97%"
+                align="center"
+              >
+                <v-textarea
+                  counter="500"
+                  :rules="rules.msj"
+                  v-model="message"
+                  label="Mensaje"
+                  no-resize
+                  outlined
+                  color="black"
+                  background-color="#ADFFFF"
+                  solo
+                  rows="4"
+                  row-height="15"
+                  flat
+                ></v-textarea>
+              </v-row>
+              <v-divider></v-divider>
+              <v-card-actions>
+                <v-btn
+
+                  @click="onCancel"
+                  color="black"
+                  text
+                  depressed
+                  tile
+                  v-ripple="false"
+                  plain
+                >
+                  Cancelar
+                </v-btn>
+                <v-spacer></v-spacer>
+                <v-btn
+
+                  @click="onSubmit"
+                  color="black"
+                  text
+                  depressed
+                  tile
+                  v-ripple="false"
+                  plain
+                >
+                  Enviar
+                </v-btn>
+              </v-card-actions>
+            </v-form>
+          </v-row>
+        </v-card>
+      </v-dialog>
     </v-row>
   </v-row>
 </template>

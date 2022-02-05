@@ -38,7 +38,7 @@
               class="ma-0 pa-0"
               max-width="100vw"
               height="56vh"
-              src="fotos/nosotros.jpg"
+              src="fotos/LAB_team.png"
               style="color:white"
               position="-40px"
             >
@@ -77,7 +77,28 @@
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
-            style="z-index:1;font-size:40px;font-weight:300"
+            style="width:25%;z-index:1;font-size:35px;font-weight:300"
+          >
+            <p>EN LAB CREEMOS QUE</p>
+          </v-row>
+
+          <v-row
+            class="ma-0 mt-2 pa-0"
+            style="width:68%;z-index:1;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"
+            align="center"
+          >
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.creemos"></p>
+          </v-row>
+      </v-row>
+
+
+      <v-row
+        class="ma-0 mt-15 ml-12 pa-0"
+        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+      >
+          <v-row
+            class="ma-0 mt-5 ml-8 pa-0"
+            style="width:25%;z-index:1;font-size:35px;font-weight:300"
           >
             <p>NUESTRA HISTORIA</p>
           </v-row>
@@ -95,143 +116,293 @@
     </v-row>
 
     <v-row
-      class="ma-0 mt-16 ml-12 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      class="ma-0 mt-15 ml-12 pa-0"
+      style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
     >
-      <p class="ma-0 mt-10 ml-8 pa-0 text-uppercase">Core Team</p>
+        <v-row
+          class="ma-0 mt-5 ml-8 pa-0"
+          style="width:25%;z-index:1;font-size:35px;font-weight:300"
+        >
+          <p>CORE TEAM</p>
+        </v-row>
     </v-row>
+
+
     <v-row
+      class="ma-0 pa-0"
       v-for="member in $store.state.equipo"  :key="member.index"
-      class="ma-0 mt-16 mb-8 pa-0 pt-16 pb-16"
-      style="transform:scale(0.85);position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
-      align="center"
     >
       <v-row
-        class="ma-0 pa-0"
-        style="width:100vw"
+        v-if="member.index % 2 == 1"
+        class="ma-0 mt-6 mb-8 pa-0 pt-16 pb-16"
+        style="transform:scale(0.85);position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
         align="center"
       >
-        <v-spacer></v-spacer>
-
-        <v-img
-          eager
-          position="-130px"
-          class="ma-0 pa-0"
-          style="min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
-          :src="$store.state.equipo[member.index].foto"
-
-        >
-          <v-row
-            class="ma-0 mb-4 mr-5 pb-8 pa-0"
-            style="height:100%"
-            justify="end"
-          >
-            {{ $store.state.equipo[member.index].nick }}
-
-          </v-row>
-        </v-img>
-
         <v-row
-          class="ma-0 mr-16 pa-0"
-          style="left:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+          class="ma-0 pa-0"
+          style="width:100vw"
           align="center"
         >
-          <v-row
+          <v-spacer></v-spacer>
+
+          <v-img
+            eager
+            position="0px"
             class="ma-0 pa-0"
-            style="width:100%;height:10vh"
+            style="min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+            :src="$store.state.equipo[member.index - 1].foto"
+
+          >
+            <v-row
+              class="ma-0 mb-4 mr-10 pb-8 pa-0"
+              style="height:100%"
+              justify="end"
+            >
+              {{ $store.state.equipo[member.index - 1].nick }}
+
+            </v-row>
+          </v-img>
+
+          <v-row
+            class="ma-0 mr-16 pa-0"
+            style="left:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:black;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
               class="ma-0 pa-0"
-              style="background-color:#03F7F7;max-width:5px;min-height:100%"
+              style="width:100%;height:10vh"
               align="center"
-            >
-
-            </v-row>
-            <v-row
-              class="ma-0 ml-6 pa-0"
-              style="font-size:18px;font-family:Space Grotesk;font-weight:700;height:100%"
             >
               <v-row
                 class="ma-0 pa-0"
-                style="width:100%;font-size:30px"
+                style="background-color:#03F7F7;max-width:5px;min-height:100%"
                 align="center"
               >
-                {{ $store.state.equipo[member.index].nombre }}<p v-if="$store.state.equipo[member.index].twitterlink" @click="site($store.state.equipo[member.index].twitterlink)" class="ma-0 ml-2 pa-0" style="font-size:20px">{{ $store.state.equipo[member.index].twitter }}</p>
+
               </v-row>
               <v-row
-                class="ma-0 mt-n3 pa-0"
-                style="width:100%;font-weight:500;max-height:30%"
-
+                class="ma-0 ml-6 pa-0"
+                style="font-size:18px;font-family:Space Grotesk;font-weight:700;height:100%;width:20px"
               >
-                {{ $store.state.equipo[member.index].cargo }}
+                <v-row
+                  class="ma-0 pa-0"
+                  style="width:100%;font-size:30px"
+                  align="center"
+                >
+                  {{ $store.state.equipo[member.index - 1].nombre }}<p v-if="$store.state.equipo[member.index - 1].twitterlink" @click="site($store.state.equipo[member.index - 1].twitterlink)" class="ma-0 ml-2 pa-0" style="font-size:20px">{{ $store.state.equipo[member.index - 1].twitter }}</p>
+                </v-row>
+                <v-row
+                  class="ma-0 mt-n3 pa-0"
+                  style="width:100%;font-weight:500;max-height:30%"
+
+                >
+                  {{ $store.state.equipo[member.index - 1].cargo }}
+                </v-row>
               </v-row>
             </v-row>
+            <v-row
+              class="mb-5 mx-12 pa-0"
+              style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
+              align="center"
+            >
+              <p class="ma-0 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[0]"></span>
+              </p>
+              <p v-if="$store.state.equipo[member.index - 1].bio[1]" class="ma-0 mt-3 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[1]"></span>
+              </p>
+              <p v-if="$store.state.equipo[member.index - 1].bio[2]" class="ma-0 mt-3 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
+              </p>
+              <p class="ma-0 mt-3 pa-0" style="font-size:10px">
+                <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
+              </p>
+            </v-row>
+            <v-row
+              class="ma-0 mb-5 ml-11 pa-0"
+              style="height:60px"
+              align="center"
+
+            >
+              <v-icon
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].linkedin)"
+              >
+                mdi-linkedin
+              </v-icon>
+              <v-icon
+                v-if="$store.state.equipo[member.index - 1].twitterlink"
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].twitterlink)"
+              >
+                mdi-twitter
+              </v-icon>
+              <v-icon
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].instagram)"
+              >
+                mdi-instagram
+              </v-icon>
+            </v-row>
           </v-row>
+        </v-row>
+      </v-row>
+      <v-row
+        v-if="member.index % 2 == 0"
+        class="ma-0 mt-16 mb-8 pa-0 pt-16 pb-16"
+        style="transform:scale(0.85);position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block"
+        align="center"
+      >
+        <v-row
+          class="ma-0 pa-0"
+          style="width:100vw"
+          align="center"
+        >
+
+
+          <v-img
+            eager
+            position="0px"
+            class="ma-0 pa-0"
+            style="transform:scaleX(-1);min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+            :src="$store.state.equipo[member.index - 1].foto"
+
+          >
+            <v-row
+              class="ma-0 mb-4 mr-10 pb-8 pa-0"
+              style="transform:scaleX(-1);height:100%"
+              justify="start"
+            >
+              {{ $store.state.equipo[member.index - 1].nick }}
+
+            </v-row>
+          </v-img>
+
           <v-row
-            class="mt-8 mb-5 mx-12 pa-0"
-            style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
+            class="ma-0 mr-16 pa-0"
+            style="right:-0;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:black;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
-            <p class="ma-0 pa-0" style="width:100%">
-              <span v-html="$store.state.equipo[member.index].bio[0]"></span>
-            </p>
-            <p class="ma-0 mt-3 pa-0" style="width:100%">
-              <span v-html="$store.state.equipo[member.index].bio[1]"></span>
-            </p>
-            <p class="ma-0 mt-3 pa-0" style="width:100%">
-              <span v-html="$store.state.equipo[member.index].bio[2]"></span>
-            </p>
-            <p class="ma-0 mt-3 pa-0" style="font-size:10px">
-              <span v-html="$store.state.equipo[member.index].bio[3]"></span>
-            </p>
-          </v-row>
-          <v-row
-            class="ma-0 mb-5 ml-11 pa-0"
-            style="height:60px"
-            align="center"
-
-          >
-            <v-icon
-              class="ma-0 mr-2 pa-0"
-
-              color= "black"
-              @click="site($store.state.equipo[member.index].linkedin)"
+            <v-row
+              class="ma-0 pa-0"
+              style="width:100%;height:10vh"
+              align="center"
             >
-              mdi-linkedin
-            </v-icon>
-            <v-icon
-              v-if="$store.state.equipo[member.index].twitterlink"
-              class="ma-0 mr-2 pa-0"
+              <v-row
+                class="ma-0 pa-0"
+                style="background-color:#03F7F7;max-width:5px;min-height:100%"
+                align="center"
+              >
 
-              color= "black"
-              @click="site($store.state.equipo[member.index].twitterlink)"
-            >
-              mdi-twitter
-            </v-icon>
-            <v-icon
-              class="ma-0 mr-2 pa-0"
+              </v-row>
+              <v-row
+                class="ma-0 ml-6 pa-0"
+                style="font-size:18px;font-family:Space Grotesk;font-weight:700;height:100%;width:20px"
+              >
+                <v-row
+                  class="ma-0 pa-0"
+                  style="width:100%;font-size:30px"
+                  align="center"
+                >
+                  {{ $store.state.equipo[member.index - 1].nombre }}<p v-if="$store.state.equipo[member.index - 1].twitterlink" @click="site($store.state.equipo[member.index - 1].twitterlink)" class="ma-0 ml-2 pa-0" style="font-size:20px">{{ $store.state.equipo[member.index - 1].twitter }}</p>
+                </v-row>
+                <v-row
+                  class="ma-0 mt-n3 pa-0"
+                  style="width:100%;font-weight:500;max-height:30%"
 
-              color= "black"
-              @click="site($store.state.equipo[member.index].instagram)"
+                >
+                  {{ $store.state.equipo[member.index - 1].cargo }}
+                </v-row>
+              </v-row>
+            </v-row>
+            <v-row
+              class="mb-5 mx-12 pa-0"
+              style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
+              align="center"
             >
-              mdi-instagram
-            </v-icon>
+              <p class="ma-0 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[0]"></span>
+              </p>
+              <p v-if="$store.state.equipo[member.index - 1].bio[1]" class="ma-0 mt-3 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[1]"></span>
+              </p>
+              <p v-if="$store.state.equipo[member.index - 1].bio[2]" class="ma-0 mt-3 pa-0" style="width:100%">
+                <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
+              </p>
+              <p class="ma-0 mt-3 pa-0" style="font-size:10px">
+                <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
+              </p>
+            </v-row>
+            <v-row
+              class="ma-0 mb-5 ml-11 pa-0"
+              style="height:60px"
+              align="center"
+
+            >
+              <v-icon
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].linkedin)"
+              >
+                mdi-linkedin
+              </v-icon>
+              <v-icon
+                v-if="$store.state.equipo[member.index - 1].twitterlink"
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].twitterlink)"
+              >
+                mdi-twitter
+              </v-icon>
+              <v-icon
+                class="ma-0 mr-2 pa-0"
+
+                color= "black"
+                @click="site($store.state.equipo[member.index - 1].instagram)"
+              >
+                mdi-instagram
+              </v-icon>
+            </v-row>
           </v-row>
         </v-row>
       </v-row>
     </v-row>
+
     <v-row
       class="ma-0 mt-16 mb-10 pa-0"
       style="width:100vw"
       align="center"
     >
       <v-row
-        class="ma-0 mt-16 ml-12 pa-0 pt-8"
-        style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+        class="ma-0 mt-5 ml-12 pa-0"
+        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
-        <p class="ma-0 ml-8 pa-0 text-uppercase">Metodología</p>
+          <v-row
+            class="ma-0 mt-5 ml-8 pa-0"
+            style="width:25%;z-index:1;font-size:35px;font-weight:300"
+          >
+            <p>METODOLOGÍA</p>
+          </v-row>
+
+          <v-row
+            class="ma-0 mt-2 pa-0"
+            style="width:68%;z-index:1;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"
+            align="center"
+          >
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[0]"></p><br>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[1]"></p><br>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p>
+          </v-row>
       </v-row>
+
       <v-row
         class="ma-0 mt-16 pa-0 pt-8"
         style=";width:100%;height:10vh"
@@ -289,10 +460,25 @@
       style="width:100vw"
     >
       <v-row
-        class="ma-0 mt-16 ml-12 pa-0"
-        style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+        class="ma-0 mt-15 mb-15 ml-12 pa-0"
+        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
-        <p class="ma-0 ml-8 pa-0 text-uppercase">Dream Team</p>
+          <v-row
+            class="ma-0 mt-5 ml-8 pa-0"
+            style="width:25%;z-index:1;font-size:35px;font-weight:300"
+          >
+            <p>DREAM TEAM</p>
+          </v-row>
+
+          <v-row
+            class="ma-0 mt-2 pa-0"
+            style="width:68%;z-index:1;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"
+            align="center"
+          >
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[0]"></p>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[1]"></p>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[2]"></p>
+          </v-row>
       </v-row>
       <v-row
         class="ma-0 mt-16 pa-0"
@@ -344,10 +530,25 @@
       style="width:100vw"
     >
       <v-row
-        class="ma-0 mt-16 ml-12 pa-0"
-        style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+        class="ma-0 mt-15 mb-15 ml-12 pa-0"
+        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
-        <p class="ma-0 ml-8 pa-0 text-uppercase">Ciclo de Desarrollo Incremental</p>
+          <v-row
+            class="ma-0 mt-5 ml-8 pa-0"
+            style="width:25%;z-index:1;font-size:35px;font-weight:300"
+          >
+            <p>CICLO DE DESARROLLO INCREMENTAL</p>
+          </v-row>
+
+          <v-row
+            class="ma-0 mt-2 pa-0"
+            style="width:68%;z-index:1;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"
+            align="center"
+          >
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[0]"></p>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[1]"></p>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.ciclo[2]"></p>
+          </v-row>
       </v-row>
       <v-row
         class="ma-0 mt-5 pa-0"
@@ -389,25 +590,27 @@
           class="ma-0 mt-8 pa-0"
           max-width="100%"
           height="56vh"
-          src="fotos/trabaja-con-nosotros.jpg"
+          src="fotos/LAB_team.png"
           style="color:white"
+          position=""
         >
           <v-row
             class="ma-0 pa-0"
-            style="height:100%;width:100%"
-            align="end"
+            style="height:100%;width:100%;font-weight:500"
+            justify="center"
+            align="center"
           >
-            <v-row
-              class="ma-0 ml-8 mb-16 pa-0 pb-8"
-              style="font-size:60px;line-height:60px;font-weight:500;max-width:700px"
-            >
-              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
-            </v-row>
+
+
+
             <v-row
               class="ma-0 pa-0"
+              justify="center"
+              align="center"
             >
-              <v-spacer></v-spacer>
-              <v-icon class="ma-0 mr-16 pa-0" size="300">$bus</v-icon>
+              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+
+              <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
             </v-row>
           </v-row>
         </v-img>
