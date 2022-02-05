@@ -143,7 +143,7 @@
                   style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
                   align="center"
                 >
-                  <p style="width:100%">
+                  <p v-if="$store.state.equipo[member.index - 1].bio[0]" style="width:100%">
                     <span v-html="$store.state.equipo[member.index - 1].bio[0]"></span>
                   </p>
                   <p v-if="$store.state.equipo[member.index - 1].bio[1]" style="width:100%">
@@ -210,7 +210,7 @@
       <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p>
     </v-row>
     <v-row
-      class="ma-0 mt-8 pa-0"
+      class="ma-0 mt-16 pa-0"
       style="width:100%;height:10vh"
     >
       <v-row
@@ -276,7 +276,7 @@
       <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.dream[2]"></p>
     </v-row>
     <v-row
-      class="ma-0 mt-8 pa-0"
+      class="ma-0 mt-16 pa-0"
       style="width:100%;height:10vh"
     >
       <v-row

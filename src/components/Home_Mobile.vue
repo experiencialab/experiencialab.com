@@ -24,7 +24,10 @@
           class="ma-0 mt-1 pa-0"
           style="height:max-63vh;width:100vw;overflow:hidden"
         >
-          <VideoParallax class="ma-0 pa-0" style="width:100%;transform-origin:top center" src="videos/LAB_chico.mp4">
+          <video playsinline autoplay muted loop>
+            <source src='videos/LAB_chico.mp4' type='video/mp4'>
+          </video>
+          <!-- <VideoParallax class="ma-0 pa-0" style="width:100%;transform-origin:top center" src="videos/LAB_chico.mp4">
 
             <v-row
               class="ma-0 pa-0"
@@ -32,7 +35,7 @@
             >
             </v-row>
 
-          </VideoParallax>
+          </VideoParallax> -->
           <v-row
             class="ma-0 mt-n5 pa-0"
             style="z-index:1;position:absolute;width:100%"
@@ -651,7 +654,7 @@
   import emailjs from 'emailjs-com';
   import{ init } from 'emailjs-com';
   init("user_uRTEJMp7CqTbbwVm6yYMz");
-  import VideoParallax from 'vuetify-video-parallax';
+  // import VideoParallax from 'vuetify-video-parallax';
 
   export default {
     data: () => ({
@@ -671,7 +674,7 @@
       message: ''
     }),
     components: {
-      VideoParallax
+      // VideoParallax
     },
     watch: {
       dialog: function (val) {
