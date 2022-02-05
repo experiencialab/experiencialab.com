@@ -155,6 +155,7 @@ export default new Vuex.Store({
         instagram: 'https://www.instagram.com/laubrenes3/?hl=en',
         linkedin: 'https://cl.linkedin.com/in/laurabrenes'
       }
+      
       // {
       //   index: 1,
       //   nombre: 'Daniel Barrientos',
