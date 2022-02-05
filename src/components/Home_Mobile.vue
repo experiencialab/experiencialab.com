@@ -22,9 +22,11 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="height:max-63vh;width:100vw;overflow:hidden"
+          style="max-height:63vh;width:100vw;overflow:hidden"
         >
-          <video playsinline autoplay muted loop>
+          <video
+            class="ma-0 pa-0"
+            playsinline autoplay muted loop>
             <source src='videos/LAB_chico.mp4' type='video/mp4'>
           </video>
           <!-- <VideoParallax class="ma-0 pa-0" style="width:100%;transform-origin:top center" src="videos/LAB_chico.mp4">
