@@ -143,9 +143,9 @@ export default new Vuex.Store({
         nombre: 'Laura Brenes',
         cargo: 'Consultor Diseño de experiencia digital Senior Asociado',
         bio: [
-          '',
-          '',
           'Costaricense en Chile, aficionada de la cocina, emprendedora en diseño Interno y mobiliario, fan de caminatas citadinas y un buen té.',
+          '',
+          '',
           'Profesora Diseño Espacios y Servicios, Universidad de Los Andes<br>Arquitecta, Universidad Veristas, Costa Rica<br>Magister en Diseño Avanzado, Pontificia Universidad Católica de Chile<br>Diplomado Docencia Arquitectura, Universidad de Chile'
         ],
         foto: 'fotos/LAB_profile_03.png',

@@ -38,7 +38,7 @@
               class="ma-0 pa-0"
               max-width="100vw"
               height="56vh"
-              src="fotos/LAB_team.png"
+              src="fotos/footer_team.png"
               style="color:white"
               position="-40px"
             >
