@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 mr-3 pa-0 pod"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:63%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="spotify()"
@@ -32,7 +32,7 @@
               class="ma-0 pa-0"
               width="100%"
               style="height:56vh"
-              playsinline autoplay muted loop controls>
+              playsinline autoplay muted loop>
               <source src='videos/LAB_1920x600_color_SATURADO_1.mp4' type='video/mp4'>
             </video>
           </v-row>
