@@ -21,9 +21,23 @@
           <p class="ma-0 ml-5 pa-0">PODCAST</p> <v-icon class="ma-0 ml-12 mr-5 pa-0" size="40">$camion</v-icon>
         </v-row>
         <v-row
-          class="ma-0 pa-0"
+          class="ma-0 mx-5 pa-0"
+          style="max-width:100%;overflow:hidden"
         >
-          <VideoParallax class="ma-0 mx-5 pa-0" style="width:100%" src="videos/LAB_1920x600_color_SATURADO_1.mp4">
+          <v-row
+            class="ma-0 pa-0"
+            style="transform:scale(1.1)"
+          >
+            <video
+              class="ma-0 pa-0"
+              width="100%"
+              style="height:56vh"
+              playsinline autoplay muted loop controls>
+              <source src='videos/LAB_1920x600_color_SATURADO_1.mp4' type='video/mp4'>
+            </video>
+          </v-row>
+
+          <!-- <VideoParallax class="ma-0 mx-5 pa-0" style="width:100%" src="videos/LAB_1920x600_color_SATURADO_1.mp4">
 
             <v-row
               class="ma-0 pa-0"
@@ -31,14 +45,14 @@
             >
             </v-row>
 
-          </VideoParallax>
+          </VideoParallax> -->
           <v-row
             class="ma-0 pa-0"
-            style="z-index:1;position:absolute;width:100%"
+            style="z-index:1;position:absolute;width:97%"
             align="center"
           >
             <v-carousel
-              class="ma-0 mx-5 pa-0"
+              class="ma-0 pa-0"
               hide-delimiters
               :show-arrows="false"
               continuos
@@ -687,7 +701,7 @@
 
 
 <script>
-  import VideoParallax from 'vuetify-video-parallax';
+  // import VideoParallax from 'vuetify-video-parallax';
   import emailjs from 'emailjs-com';
   import{ init } from 'emailjs-com';
   init("user_uRTEJMp7CqTbbwVm6yYMz");
@@ -712,7 +726,7 @@
         }
     },
     components: {
-      VideoParallax
+      // VideoParallax
     },
     computed: {
       computedColor: function () {
