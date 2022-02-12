@@ -24,18 +24,12 @@
           class="ma-0 mt-1 pa-0"
           style="height:max-63vh;width:100vw;overflow:hidden"
         >
-          <v-img
-            contain
-            eager
+          <img
             class="ma-0 pa-0"
-            max-width="100vw"
-
+            style="width:100%"
             src="fotos/footer_team.png"
-            style="color:white"
-            position="center top 30%"
-          >
 
-          </v-img>
+          />
         </v-row>
       </v-row>
     </v-row>
@@ -152,7 +146,7 @@
                   <p v-if="$store.state.equipo[member.index - 1].bio[2]" style="width:100%">
                     <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
                   </p>
-                  <p style="font-size:10px;width:100%">
+                  <p style="font-size:11px;width:100%">
                     <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
                   </p>
                 </v-row>
@@ -207,7 +201,9 @@
     >
       <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[0]"></p><br>
       <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[1]"></p><br>
-      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p><br>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[3]"></p><br>
+      <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[4]"></p>
     </v-row>
     <v-row
       class="ma-0 mt-16 pa-0"
@@ -311,13 +307,9 @@
       align="center"
     >
       <v-img
-        contain
-        eager
-        max-width="90%"
         class="ma-0 mt-16 pa-0"
-        src="fotos/dream_team.png"
-      >
-      </v-img>
+        src="fotos/foto.png"
+      />
     </v-row>
     <v-row
       class="ma-0 mt-16 ml-5 pa-0"

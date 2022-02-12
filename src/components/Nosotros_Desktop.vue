@@ -33,17 +33,15 @@
             class="ma-0 mx-5 pa-0"
             style="overflow:hidden;height:56vh"
           >
-            <v-img
-              eager
+            <img
               class="ma-0 pa-0"
-              max-width="100vw"
-              height="56vh"
               src="fotos/footer_team.png"
-              style="color:white"
-              position="-40px"
-            >
 
-            </v-img>
+              position="0px"
+              style="height:auto;width:100%"
+
+
+            />
             <v-row
               class="ma-0 pa-0 pb-8"
               style="z-index:1;position:absolute;max-width:75%;height:56vh"
@@ -214,7 +212,7 @@
               <p v-if="$store.state.equipo[member.index - 1].bio[2]" class="ma-0 mt-3 pa-0" style="width:100%">
                 <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
               </p>
-              <p class="ma-0 mt-3 pa-0" style="font-size:10px">
+              <p class="ma-0 mt-3 pa-0" style="font-size:11px">
                 <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
               </p>
             </v-row>
@@ -335,7 +333,7 @@
               <p v-if="$store.state.equipo[member.index - 1].bio[2]" class="ma-0 mt-3 pa-0" style="width:100%">
                 <span v-html="$store.state.equipo[member.index - 1].bio[2]"></span>
               </p>
-              <p class="ma-0 mt-3 pa-0" style="font-size:10px">
+              <p class="ma-0 mt-3 pa-0" style="font-size:11px">
                 <span v-html="$store.state.equipo[member.index - 1].bio[3]"></span>
               </p>
             </v-row>
@@ -399,7 +397,9 @@
           >
             <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[0]"></p><br>
             <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[1]"></p><br>
-            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[2]"></p><br>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[3]"></p><br>
+            <p class="ma-0 mt-5 ml-16 mr-10 pa-0 pl-6 historia" v-html="$store.state.metodologia[4]"></p>
           </v-row>
       </v-row>
 

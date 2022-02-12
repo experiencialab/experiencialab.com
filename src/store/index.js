@@ -10,8 +10,10 @@ export default new Vuex.Store({
     creemos: 'Las Organizaciones  tendrán éxito si tienen un enfoque implacable en torno al cuidado/reparación del medioambiente, adaptación al cambio climático y en el uso de la tecnología: para aumentar el valor agregado a usuarios/clientes y crear nuevos productos y/o  plataformas digitales que respondan a nuevos contextos y necesidades emergentes.',
     metodologia: [
       'Nuestra metodología de trabajo se centra en el diseño y facilitación de labs/talleres que combinan valores, herramientas y técnicas del design thinking, diseño centrado en el usuario, agile, y desarrollo de productos/plataformas digitales usando marco de trabajo scrum.',
-      'Nuestro proceso de trabajo involucra a nuestras consultoras asociadas y al equipo que representa a nuestro cliente, partimos generalmente por una etapa de exploración  y descubrimiento que nos permite una estrecha vinculación con los usuarios y sus necesidades latentes también con nuevas e impensables soluciones digitales  que se validan en de forma rápida a través de distintos experimentos de prototipado.',
-      'En conjunto con nuestros clientes acordaremos un cronograma de trabajo basado en la colaboración, transparencia y mejores prácticas, en cada hito clave se realizará una presentación o SHOWCASE  abierta y voluntaria para todos los colaboradores  de la organización, stakeholders relevantes, usuarios , con el objetivo de socializar resultados incrementales del proyecto y su secuencia.'
+      'Nuestro proceso de trabajo se desarrolla en ciclos de tiempo incrementales, generalmente  comienza con un ciclo de exploración  y descubrimiento que facilita la vinculación estrecha con usuarios y sus necesidades latentes en el contexto de la organización que asesoramos.',
+      'Luego damos vida a nuevas e impensables soluciones digitales  que se validan de forma rápida a través de distintos experimentos y testeos con usuarios que desafían la categoría  en el ciclo de prototipado.',
+      'Posteriormente emprendemos un viaje de co-creación para refinar nuevos productos o plataformas digitales caracterizados por funcionalidades sorprendentes y una experiencia digital simple, inteligible y atesorable para los usuarios.',
+      'Finalmente entramos a un ciclo de desarrollo de software ágil para hacer realidad de manera incremental nuevas y maravillosas soluciones digitales.'
     ],
     dream: [
       'Creemos que las person@s y su talento son el mayor activo de cualquier organización.',
@@ -95,9 +97,9 @@ export default new Vuex.Store({
         bio: ['Consultora experta en la concepción de la próxima generación de features en la experiencia digital de usuarios para ecosistemas y productos digitales basados en tecnología emergente. Agilista articuladora de procesos de co-creación e intervenciones de shock en organizaciones.',
         'Gluten free, vegetariana, bike lover, inmigrante italiana en Chile, hacer que las cosas pasen y honestidad brutal son mis superpoderes.',
         'Profesora para Diplomado Equipos Ágiles, eclass. Profesora Invitada Diplomado desarrollo y gestión ágil de proyectos.',
-        'Ingeniero Civil Industrial, Universidad de Concepción, Chile<br>Transformación Digital de Negocios a Gran Escala, executive degree, MIT, USA<br>Master en Marketing in a Digital Environment, Universidad Ramon Lull, Barcelona, España<br>Agile Coach, scrum master, product owner, scrum.org certificated<br>Profesora de Yoga, YogaShala Chile'
+        'Ingeniero Civil Industrial, Universidad de Concepción, Chile<br>Transformación Digital de Negocios a Gran Escala, executive degree, MIT, USA<br>Master en Marketing in a Digital Environment, Universidad Ramon Lull, Barcelona, España<br>Agile Coach, scrum master, product owner, scrum.org certificated<br>Profesora de Yoga, YogaShala Chile<br>Profesora para Diplomado Equipos Ágiles, eclass<br>Profesora Invitada Diplomado desarrollo y gestión ágil de proyectos'
         ],
-        foto: 'fotos/LAB_profile_01.png',
+        foto: 'fotos/LAB_profile_01_2.png',
         nick: 'Vivi',
         twitter: '@vivirlove',
         twitterlink: 'https://twitter.com/VivirLove',
@@ -124,14 +126,14 @@ export default new Vuex.Store({
       {
         index: 3,
         nombre: 'Taira Sedini Viancos',
-        cargo: 'Consultor Diseño de experiencia digital Senior Asociado',
+        cargo: 'Consultora Diseño de experiencia digital Senior Asociado',
         bio: [
           'Vegana, feminista, amante de los gatos, la naturaleza y la literatura . Fanática del movimiento, la agilidad y el deporte. ',
           '',
           '',
           'Cofundadora de Autoras Librería Digital<br>Diseñadora estratégica, Pontificia Universidad Católica de Chile<br>Master en diseño gráfico, Elisava, Barcelona<br>Diplomada en creatividad e innovación en el diseño y los negocios, Pontificia Universidad Católica de Chile<br>Profesora de vinyasa yoga'
         ],
-        foto: 'fotos/LAB_profile_04.png',
+        foto: 'fotos/LAB_profile_03.png',
         nick: 'Tai',
         twitter: '',
         twitterlink: '',
@@ -141,21 +143,21 @@ export default new Vuex.Store({
       {
         index: 4,
         nombre: 'Laura Brenes',
-        cargo: 'Consultor Diseño de experiencia digital Senior Asociado',
+        cargo: 'Consultora Diseño de experiencia digital Senior Asociado',
         bio: [
           'Costaricense en Chile, aficionada de la cocina, emprendedora en diseño Interno y mobiliario, fan de caminatas citadinas y un buen té.',
           '',
           '',
           'Profesora Diseño Espacios y Servicios, Universidad de Los Andes<br>Arquitecta, Universidad Veristas, Costa Rica<br>Magister en Diseño Avanzado, Pontificia Universidad Católica de Chile<br>Diplomado Docencia Arquitectura, Universidad de Chile'
         ],
-        foto: 'fotos/LAB_profile_03.png',
+        foto: 'fotos/LAB_profile_04.png',
         nick: 'Lau',
         twitter: '',
         twitterlink: '',
         instagram: 'https://www.instagram.com/laubrenes3/?hl=en',
         linkedin: 'https://cl.linkedin.com/in/laurabrenes'
       }
-      
+
       // {
       //   index: 1,
       //   nombre: 'Daniel Barrientos',
