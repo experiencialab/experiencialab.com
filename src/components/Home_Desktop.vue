@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mx-5 pa-0"
-          style="max-width:100%;overflow:hidden"
+          style="max-width:100%;height:56vh;overflow:hidden"
         >
           <v-row
             class="ma-0 pa-0"
