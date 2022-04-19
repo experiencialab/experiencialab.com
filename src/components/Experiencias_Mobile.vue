@@ -39,7 +39,7 @@
     </v-row>
     <v-row
       class="ma-0 mt-16 pa-0"
-      style="background-color:white;width:100vw"
+      style="width:100vw"
       align="center"
     >
       <v-row
@@ -154,7 +154,7 @@
     </v-row>
     <v-row
       class="ma-0 mt-8 pa-0"
-      style="transform:scale(1);margin-bottom:200px !important"
+      style="transform:scale(1)"
       justify="center"
     >
       <v-row
