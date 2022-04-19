@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="height:max-63vh;width:100vw;overflow:hidden"
+          style="width:100vw;overflow:hidden"
         >
           <v-img
             contain
@@ -114,8 +114,8 @@
           style="width:45vw;z-index:100"
         >
           <v-row
-            class="d-flex ma-0 pa-0 align-stretch"
-            style="min-height:350px"
+            class="ma-0 pa-0 align-stretch"
+
           >
             <v-row
               class="ma-0 ml-5 mr-12 pa-0"
@@ -149,6 +149,141 @@
           <p>
             <span v-html="text"></span>
           </p>
+        </v-row>
+      </v-row>
+    </v-row>
+    <v-row
+      class="ma-0 mt-8 pa-0"
+      style="transform:scale(1);margin-bottom:200px !important"
+      justify="center"
+    >
+      <v-row
+        class="ma-0 ml-16 pa-0"
+        style="width:100%;font-size:35px;font-weight:300;color:black"
+      >
+        ON GOING
+      </v-row>
+      <v-row
+        class="ma-0 pa-0"
+        style="width:100%"
+      >
+        <v-row
+          class="ma-0 pa-0"
+          style="width:40%"
+          justify="center"
+          align="center"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10;min-width:100%"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            max-width="100vw"
+            src="mocks/LAB_HDC.png"
+          ></v-img>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:60%"
+          justify="center"
+          align="center"
+        >
+          <p
+            style="max-width:80%"
+          ><span style="font-weight:bold" class="ma-0 pa-0">
+            Hogar de Cristo, Dirección Social
+          </span>
+            <br>Diseño de experiencia personas en situación de calle.
+            <br>Transformación digital gestión personas en situación de calle.
+
+          </p>
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 pa-0"
+        style="width:100%"
+      >
+        <v-row
+          class="ma-0 pa-0"
+          style="width:40%"
+          justify="center"
+          align="center"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10;min-width:100%"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            max-width="50vw"
+            src="mocks/hkhumancapital mockup.png"
+          ></v-img>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:60%"
+          justify="center"
+          align="center"
+        >
+          <v-row
+            class="ma-0 pa-0 text-center"
+            style="width:100%"
+            justify="center"
+          >
+            <a href="https://www.hkhumancapital.cl/">https://www.hkhumancapital.cl/</a>
+            <p
+              style="max-width:80%"
+            ><span style="font-weight:bold" class="ma-0 pa-0">
+              HK Human Capital, Executive Search
+            </span>
+              <br>Consultoría para la aceleración de su transformación digital.
+            </p>
+          </v-row>
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 pa-0"
+        style="width:100%"
+      >
+        <v-row
+          class="ma-0 pa-0"
+          style="width:40%"
+          justify="center"
+          align="center"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            max-width="100vw"
+            src="mocks/LAB-Copeuch.png"
+          ></v-img>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:60%"
+          justify="center"
+          align="center"
+        >
+          <v-row
+            class="ma-0 pa-0 text-center"
+            style="width:100%"
+            justify="center"
+          >
+            <p
+              style="max-width:80%"
+            ><span style="font-weight:bold" class="ma-0 pa-0">
+              Coopeuch
+            </span>
+              <br>Estrategia Aceleración Digital.
+            </p>
+          </v-row>
         </v-row>
       </v-row>
     </v-row>
