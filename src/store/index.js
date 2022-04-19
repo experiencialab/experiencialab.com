@@ -156,6 +156,40 @@ export default new Vuex.Store({
         twitterlink: '',
         instagram: 'https://www.instagram.com/laubrenes3/?hl=en',
         linkedin: 'https://cl.linkedin.com/in/laurabrenes'
+      },
+      {
+        index: 5,
+        nombre: 'Solange Morello',
+        cargo: 'Diseñadora UX/UI Trainee',
+        bio: [
+          'Observadora, comprometida y entusiasta | Dog lover 🖤 | Aficionada a la cocina y las plantas.',
+          'Fan de disciplinas orientales como el Kintsugi y Katazome.',
+          'Reto diario: entender el mundo desde distintas perspectivas.',
+          'Egresada del Bootcamp de Diseño UX/UI por Talento Digital para Chile<br>Graduada en Arte y Diseño, Escuela Massana, Universidad Autónoma de Barcelona, España<br>Bachiller en Diseño Universidad Mayor'
+        ],
+        foto: 'fotos/_01.png',
+        nick: 'Sol',
+        twitter: '',
+        twitterlink: '',
+        instagram: '',
+        linkedin: ''
+      },
+      {
+        index: 6,
+        nombre: 'María José Valenzuela',
+        cargo: 'Data Scientist',
+        bio: [
+          'Gen Z, dog lover, scout, feminista e intento de chef vegetariana. Apasionada por los datos y las soluciones tecnológicas que tienen el poder de responder a los desafíos actuales y generar un impacto en el día a día de las personas.',
+          'Consultora experta en ciencia de datos, agilidad e incubación de startups y spin-offs.',
+          '',
+          'Ingeniera Civil Industrial Universidad Adolfo Ibáñez<br>Magister en Data Science Universidad Adolfo Ibañez<br>Profesora Ayudante en Diplomado Liderazgo Ágil/ Equipos Ágiles Eclass'
+        ],
+        foto: 'fotos/_02.png',
+        nick: 'Cote',
+        twitter: '',
+        twitterlink: '',
+        instagram: '',
+        linkedin: ''
       }
 
       // {
@@ -238,14 +272,15 @@ export default new Vuex.Store({
         index: 5,
         nombre: 'polpaico',
         logo: 'logos/polpaico.png',
-        mock: 'mocks/polpaico.jpg',
+        mock: 'mocks/LAB_polpaico.png',
         text: [
-          'Step 1:',
+          '<a href="https://www.comprapolpaico.cl/ecommerce/home">https://www.comprapolpaico.cl/ecommerce/home</a>',
+          '<br>Step 1:<br><br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
+          '<br>Desarrollamos en tecnología ágil el portafolio de los principales productos digitales de Polpaico.',
+          '<br>Desarrollamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Desarrollamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.',
+          '<br>Step 2:',
           '<br>Frente al desafío de acelerar la transformación digital y del negocio hemos orquestado un ejercicio de co-creación y diseño digital que involucró c-level, segundas líneas, clientes, no clientes, maestros y ferreteros, el cual permitió: Visualizar futuros y realidades de evolución posibles para Polpaico, que se tradujeron en líneas de desarrollo digital centrados en sus usuarios actuales y potenciales, alineados a su evolución estratégica y priorizadas en términos de importancia para el negocio.',
           '<br>En esta asesoría orquestamos alrededor de 60 personas y usuarios.',
-          '<br>Step 2:',
-          '<br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
-          '<br>Desarrollamos el portafolio de los principales productos digitales de Polpaico.<br><br>Generamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Generamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.'
         ],
         extend: false
       },
@@ -256,6 +291,29 @@ export default new Vuex.Store({
         mock: 'mocks/teatroamiltv.jpg',
         text: [
           'Frente al desafío de digitalizar la interacción con los usuarios y clientes del festival de teatro Santiago a Mil, en un ejercicio de co-creación bajo metodología ágil:<br><br>Dirigimos el desarrollo de una solución digital web y sus aplicativos para la transmisión de contenido en vivo, y sistema de suscripción tipo Netfilx en base a una estrategia de white label con Vimeo OTT.'
+        ],
+        extend: false
+      },
+      {
+        index: 7,
+        nombre: 'sumate',
+        logo: 'logos/sumate-logo.png',
+        mock: 'mocks/LAB_sumate.png',
+        text: [
+          '<br>En plena pandemia, durante el año 2021, trabajamos con jóvenes en vulnerabilidad social que estudian en escuelas de la red Sumate, con la finalidad de co-diseñar junto a ellos la plataforma digital que les facilite adquirir habilidades requeridas para acceder a trabajos o estudios de continuidad.',
+          '<br>Tuvimos la maravillosa oportunidad de co-crear con más de 50 jóvenes distintas realidades de vulnerabilidad social.',
+          '<br>El resultado es una plataforma digital  que  a través de una dinámica de gaming prepara a los jóvenes para su siguiente paso y pone a su disposición información y oportunidades concretas en base a sus intereses y habilidades : trabajos, continuación de estudios, becas, etc.',
+          '<br><br><a href="https://xd.adobe.com/view/25cb9544-9638-4234-88da-c8f251e718da-7098/?fullscreen" target="_blank">https://xd.adobe.com/view/25cb9544-9638-4234-88da-c8f251e718da-7098/?fullscreen</a>'
+        ],
+        extend: false
+      },
+      {
+        index: 8,
+        nombre: 'kodea',
+        logo: 'logos/kodea_logo.png',
+        mock: 'mocks/LAB_kodea.png',
+        text: [
+          'Desde Diciembre de 2021 a Marzo de 2022, trabajamos con alrededor de 100 microemprendedoras de subsistencia para co-crear la plataforma digital que les facilitará: colaborar, adquirir destrezas, manejar herramientas digitales y metodologías de trabajo que eleven el nivel de rentabilidad de sus negocios y potencien nuevos negocios conjuntos entre emprendedores de la comunidad.'
         ],
         extend: false
       }
@@ -269,7 +327,7 @@ export default new Vuex.Store({
       "logos/Elecmental.png",
       "logos/eocean.png",
       "logos/fundacion chile.png",
-      "logos/hogar de cristo.png",
+      "logos/sumate-logo.png",
       "logos/iconstruye.png",
       "logos/polpaico.png",
       "logos/uc.png",
@@ -279,6 +337,7 @@ export default new Vuex.Store({
       "logos/TeatroamilTV.png",
       "logos/tictoc.png",
       "logos/tranoceanica.png",
+      "logos/kodea_logo.png",
       "logos/vtrcom.png"
     ]
   },

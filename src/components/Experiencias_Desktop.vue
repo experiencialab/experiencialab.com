@@ -35,7 +35,7 @@
               max-width="100vw"
               height="56vh"
               src="fotos/experiencias.jpg"
-              style="color:white"
+              style="color:white;opacity:0.85"
               position="center top 30%"
             >
 
@@ -47,7 +47,7 @@
             >
               <v-row
                 class="ma-0 pa-0"
-                style="font-size:60px;line-height:65px;font-family:Space Grotesk;font-weight:600;width:100vw"
+                style="font-size:50px;line-height:65px;font-family:Space Grotesk;font-weight:600;width:100vw"
               >
                 <v-row
                   class="ma-0 pa-0"
@@ -56,8 +56,9 @@
                   <v-row
                     class="ma-0 pa-0"
                     style="max-width:100%"
+                    justify="center"
                   >
-                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización</p>
+                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:1200px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización</p>
                   </v-row>
                 </v-row>
               </v-row>
@@ -66,19 +67,20 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-8 mx-16 pa-0"
+        class="ma-0 mt-16 mx-16 pa-0"
         style="width:100vw"
         align="center"
+        justify="center"
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 mx-6 mt-5 pa-0"
-          style=""
+          style="max-width:8%;min-width:6%"
           align="center"
           justify="center"
         >
           <v-img
-            style=""
+            style="opacity:0.5"
             class="ma-0 mt-3 pa-0"
             eager
             max-height="110"
@@ -89,8 +91,9 @@
       </v-row>
       <v-row
         class="ma-0 mt-16 mb-8 pa-0"
-        style="width:100vw;transform:scale(0.85)"
+        style="margin-top:200px!important;min-height:80vh;width:100vw;transform:scale(.9)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
+        align="center"
       >
         <v-row
           class="ma-0 pa-0"
@@ -119,54 +122,164 @@
         <v-row
           class="ma-0 pa-0"
           style="width:45vw;z-index:100"
+          align="center"
         >
           <v-row
             class="ma-0 pa-0"
-            style="width:100%;height:120px"
-            align="center"
-          >
-            <v-img
-              eager
-              style="z-index:10"
-              class="ma-0 pa-0"
-              max-height="100"
-              max-width="200"
-              :src="experiencia.logo"
-            ></v-img>
-            <v-icon v-if="experiencia.index == 0" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-            <v-icon v-if="experiencia.index == 1" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-            <v-icon v-if="experiencia.index == 2" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-            <v-icon v-if="experiencia.index == 3" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-            <v-icon v-if="experiencia.index == 4" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-            <v-icon v-if="experiencia.index == 5" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-            <v-icon v-if="experiencia.index == 6" class="ma-0 ml-12 mr-5 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          </v-row>
-          <v-row
-            class="d-flex ma-0 pa-0 align-stretch"
-            style="min-height:350px"
           >
             <v-row
-              class="ma-0 ml-5 mr-12 pa-0"
-              style="width:100%;font-family:Space Grotesk"
-              v-for="dex in 2" :key="dex"
-            >
-              <span v-html="experiencia.text[dex - 1]"></span>
-            </v-row>
-            <v-row
-              class="ma-0 ml-5 mr-12 pa-0"
-              style="width:100%;font-family:Space Grotesk"
-              v-for="dex in $store.state.experiencias.length"  :key="dex + 100"
-            >
-              <span v-if="experiencia.extend" v-html="experiencia.text[dex + 1]"></span>
-            </v-row>
-            <v-row
               class="ma-0 pa-0"
+              style="width:100%;height:120px"
               align="center"
             >
+              <v-img
+                contain
+                eager
+                style="z-index:10"
+                class="ma-0 pa-0"
+                max-height="100"
+                max-width="200"
+                :src="experiencia.logo"
+              ></v-img>
               <v-spacer></v-spacer>
-              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
-              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>
+              <v-icon v-if="experiencia.index == 0" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+              <v-icon v-if="experiencia.index == 1" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+              <v-icon v-if="experiencia.index == 2" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+              <v-icon v-if="experiencia.index == 3" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+              <v-icon v-if="experiencia.index == 4" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+              <v-icon v-if="experiencia.index == 5" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+              <v-icon v-if="experiencia.index == 6" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+              <v-icon v-if="experiencia.index == 7" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+              <v-icon v-if="experiencia.index == 8" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
             </v-row>
+            <v-row
+              class="d-flex mt-6 ma-0 pa-0 align-stretch"
+              style="min-height:250px"
+              align="center"
+            >
+              <v-row
+                class="ma-0 ml-5 mr-12 pa-0"
+                style="width:100%;font-family:Space Grotesk"
+                v-for="dex in 2" :key="dex"
+                align="center"
+              >
+                <span v-html="experiencia.text[dex - 1]"></span>
+              </v-row>
+              <v-row
+                class="ma-0 ml-5 mr-12 pa-0"
+                style="width:100%;font-family:Space Grotesk"
+                v-for="dex in $store.state.experiencias.length"  :key="dex + 100"
+              >
+                <span v-if="experiencia.extend" v-html="experiencia.text[dex + 1]"></span>
+              </v-row>
+              <v-row
+                class="ma-0 mt-8 pa-0"
+                align="center"
+              >
+                <v-spacer></v-spacer>
+                <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
+                <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>
+              </v-row>
+            </v-row>
+          </v-row>
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 mt-8 mb-16 pa-0"
+        style="transform:scale(.9);margin-bottom:200px !important"
+        justify="center"
+      >
+        <v-row
+          class="ma-0 ml-16 pa-0"
+          style="width:100%;font-size:35px;font-weight:300;color:black"
+        >
+          ON GOING
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:33%"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10;min-width:100%"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            width="33vw"
+            src="mocks/LAB_HDC.png"
+          ></v-img>
+          <v-row
+            class="ma-0 pa-0 text-center"
+            style="width:100%"
+            justify="center"
+          >
+            <p
+              style="max-width:80%"
+            ><span style="font-weight:bold" class="ma-0 pa-0">
+              Hogar de Cristo, Dirección Social
+            </span>
+              <br>Diseño de experiencia personas en situación de calle.
+              <br>Transformación digital gestión personas en situación de calle.
+
+            </p>
+          </v-row>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:34%"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10;min-width:100%"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            max-width="34vw"
+            src="mocks/hkhumancapital mockup.png"
+          ></v-img>
+          <v-row
+            class="ma-0 pa-0 text-center"
+            style="width:100%"
+            justify="center"
+          >
+            <a href="https://www.hkhumancapital.cl/">https://www.hkhumancapital.cl/</a>
+            <p
+              style="max-width:80%"
+            ><span style="font-weight:bold" class="ma-0 pa-0">
+              HK Human Capital, Executive Search
+            </span>
+              <br>Consultoría para la aceleración de su transformación digital.
+            </p>
+          </v-row>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:33%"
+        >
+          <v-img
+            contain
+            eager
+            style="z-index:10"
+            class="ma-0 pa-0"
+            min-height="400px"
+            max-height="400px"
+            max-width="33vw"
+            src="mocks/LAB-Copeuch.png"
+          ></v-img>
+          <v-row
+            class="ma-0 pa-0 text-center"
+            style="width:100%"
+            justify="center"
+          >
+            <p
+              style="max-width:80%"
+            ><span style="font-weight:bold" class="ma-0 pa-0">
+              Coopeuch
+            </span>
+              <br>Estrategia Aceleración Digital.
+            </p>
           </v-row>
         </v-row>
       </v-row>
