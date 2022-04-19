@@ -76,7 +76,9 @@
           justify="center"
           align="center"
         >
+          <v-spacer></v-spacer>
           <v-img
+            contain
             eager
             style="z-index:10"
             class="ma-0 pa-0"
@@ -85,17 +87,19 @@
             :src="experiencia.logo"
           >
           </v-img>
-          <v-icon v-if="experiencia.index == 0" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-          <v-icon v-if="experiencia.index == 1" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-          <v-icon v-if="experiencia.index == 2" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-          <v-icon v-if="experiencia.index == 3" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 4" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 5" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-          <v-icon v-if="experiencia.index == 6" class="ma-0 ml-5 pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-
+          <v-spacer></v-spacer>
+          <v-icon v-if="experiencia.index == 0" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+          <v-icon v-if="experiencia.index == 1" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 2" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 3" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 4" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 5" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+          <v-icon v-if="experiencia.index == 6" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 7" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 8" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
         </v-row>
         <v-row
-          class="ma-0 mt-n5 pa-0"
+          class="ma-0 mt-5 pa-0"
           style="width:100%"
         >
           <v-img
@@ -128,7 +132,7 @@
               <span v-if="experiencia.extend" v-html="experiencia.text[dex + 1]"></span>
             </v-row>
             <v-row
-              class="ma-0 pa-0"
+              class="ma-0 mt-10 pa-0"
               align="center"
             >
               <v-spacer></v-spacer>
