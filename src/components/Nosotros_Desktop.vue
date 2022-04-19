@@ -5,7 +5,7 @@
   >
     <v-row
       class="ma-0 mt-16 pa-0"
-      style="width:100%"
+      style="max-width:100%"
     >
       <v-row
         class="ma-0 pa-0 justify-end"
@@ -31,14 +31,15 @@
         >
           <v-row
             class="ma-0 mx-5 pa-0"
-            style="overflow:hidden;height:56vh"
+            style="overflow:hidden"
           >
             <img
+              contain
               class="ma-0 pa-0"
               src="fotos/footer_team.png"
 
               position="0px"
-              style="height:auto;width:100%"
+              style="height:auto;max-width:100%"
 
 
             />

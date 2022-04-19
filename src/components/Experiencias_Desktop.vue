@@ -30,6 +30,7 @@
             style="overflow:hidden;height:56vh"
           >
             <v-img
+              contain
               eager
               class="ma-0 pa-0"
               max-width="100vw"
@@ -80,7 +81,7 @@
           justify="center"
         >
           <v-img
-            style="opacity:0.5"
+            style="opacity:0.7"
             class="ma-0 mt-3 pa-0"
             eager
             max-height="110"

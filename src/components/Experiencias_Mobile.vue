@@ -50,6 +50,7 @@
       >
 
           <v-img
+            style="opacity:0.7"
             eager
             max-height="111"
             max-width="79"
@@ -164,7 +165,7 @@
         ON GOING
       </v-row>
       <v-row
-        class="ma-0 pa-0"
+        class="ma-0 my-10 pa-0"
         style="width:100%"
       >
         <v-row
@@ -178,7 +179,6 @@
             eager
             style="z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            min-height="400px"
             max-height="400px"
             max-width="100vw"
             src="mocks/LAB_HDC.png"
@@ -202,7 +202,7 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 pa-0"
+        class="ma-0 my-10 pa-0"
         style="width:100%"
       >
         <v-row
@@ -216,7 +216,6 @@
             eager
             style="z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            min-height="400px"
             max-height="400px"
             max-width="50vw"
             src="mocks/hkhumancapital mockup.png"
@@ -245,7 +244,7 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 pa-0"
+        class="ma-0 my-10 pa-0"
         style="width:100%"
       >
         <v-row
@@ -259,7 +258,6 @@
             eager
             style="z-index:10"
             class="ma-0 pa-0"
-            min-height="400px"
             max-height="400px"
             max-width="100vw"
             src="mocks/LAB-Copeuch.png"
