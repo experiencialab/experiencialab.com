@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mx-5 pa-0"
-          style="max-width:100%;height:56vh;overflow:hidden"
+          style="max-width:100%;height:66vh;overflow:hidden"
         >
           <v-row
             class="ma-0 pa-0"
@@ -31,28 +31,18 @@
             <video
               class="ma-0 pa-0"
               width="100%"
-              style="height:56vh"
+              style="height:66vh"
               playsinline autoplay muted loop>
               <source src='videos/LAB_1920x600_color_SATURADO_1.mp4' type='video/mp4'>
             </video>
           </v-row>
-
-          <!-- <VideoParallax class="ma-0 mx-5 pa-0" style="width:100%" src="videos/LAB_1920x600_color_SATURADO_1.mp4">
-
-            <v-row
-              class="ma-0 pa-0"
-              style="width:100%;height:56vh"
-            >
-            </v-row>
-
-          </VideoParallax> -->
           <v-row
             class="ma-0 pa-0"
             style="z-index:1;position:absolute;width:97%"
             align="center"
           >
             <v-carousel
-              class="ma-0 pa-0"
+              class="ma-0 mt-10 pa-0"
               hide-delimiters
               :show-arrows="false"
               continuos
@@ -135,7 +125,7 @@
           </v-row>
 
           <v-icon class="ma-0 pa-0 d-none" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
-          <v-icon class="ma-0 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 mt-2 pr-5 pa-0" style="z-index:0;top:80px;transform:scale(7);position:absolute;opacity:.3">$corazon</v-icon>
 
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="z-index:1;width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 

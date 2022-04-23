@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="max-height:63vh;width:100vw;overflow:hidden"
+          style="min-height:63vh;max-height:63vh;width:100vw;overflow:hidden"
         >
           <video
             class="ma-0 pa-0"
@@ -207,9 +207,9 @@
             <v-row
               class="my-3 mx-5 pa-0"
               style="width:100%;font-size:15px;font-family:Space Grotesk;font-weight:400"
-              align="center"
+
             >
-              <p>
+              <p class="ma-0 mb-10 pa-0">
                 <span v-html="$store.state.servicios[servicio.index].texto"></span>
               </p>
             </v-row>
@@ -219,19 +219,36 @@
               align="center"
               justify="center"
             >
-              <v-icon v-if="servicio.index == 0" style="transform:scale(3)">$barco</v-icon>
-              <v-icon class="ma-0 ml-16 pa-0" v-if="servicio.index == 1" style="transform:scale(2.5)">$cohete</v-icon>
-              <v-icon v-if="servicio.index == 2" style="transform:scale(2)">$avion</v-icon>
-
+              <video
+                v-if="servicio.index == 0"
+                class="ma-0 mt-n16 pa-0"
+                style="height:150px;margin-top:-100px !important"
+                playsinline autoplay muted loop>
+                <source src='iconos/lancha.webm' type='video/webm'>
+              </video>
+              <video
+                v-if="servicio.index == 1"
+                class="ma-0 mt-n16 pa-0"
+                style="height:150px"
+                playsinline autoplay muted loop>
+                <source src='iconos/cohete.webm' type='video/webm'>
+              </video>
+              <video
+                v-if="servicio.index == 2"
+                class="ma-0 mt-n14 pa-0"
+                style="height:150px"
+                playsinline autoplay muted loop>
+                <source src='iconos/avion.webm' type='video/webm'>
+              </video>
             </v-row>
             <v-row
               v-if="servicio.index == 1"
-              class="ma-0 pa-0"
+              class="d-none ma-0 pa-0"
               style="max-width:70px;height:40px"
             >
               <v-icon
                 style="width:50px"
-                class="mt-1 mr-1 mb-1 d-none"
+                class="mt-1 mr-1 mb-1"
 
                 color= "black"
               >
