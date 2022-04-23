@@ -31,6 +31,18 @@
 
         <iframe class="ma-0 mt-n10 mb-n5 mx-1 pa-0" src="https://open.spotify.com/embed/show/50FARDnK33AjV42wtNbq38" width="100%" height="302" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <v-spacer></v-spacer>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/3ESgj7fsqxnvIFqGugZnrk" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/3yoVJLbwu4fkZHt2ATLX7l" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/2rWEBRjxyyIqqwadwOzTT3" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/5HeLXB2mdUBD6sofP3nFnN" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/20MfKcy5ViXI2X7ijo4gu8" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/5K7SayMllvlo9cYrHtnzDK" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
         <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/5IHX4pbuT9hzibevRQwmwq" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <iframe class="ma-0 mt-n10 mx-1 pa-0" src="https://open.spotify.com/embed/episode/6Th3j4QbertSqEwr4S90bW" width="49%" height="202" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <v-spacer></v-spacer>

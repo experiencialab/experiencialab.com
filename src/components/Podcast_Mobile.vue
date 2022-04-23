@@ -30,6 +30,36 @@
       <v-row
         class="ma-0 mx-5 mb-n5 pa-0"
       >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/3ESgj7fsqxnvIFqGugZnrk" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/3yoVJLbwu4fkZHt2ATLX7l" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/2rWEBRjxyyIqqwadwOzTT3" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/5HeLXB2mdUBD6sofP3nFnN" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/20MfKcy5ViXI2X7ijo4gu8" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
+        <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/5K7SayMllvlo9cYrHtnzDK" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </v-row>
+      <v-row
+        class="ma-0 mx-5 mb-n5 pa-0"
+      >
         <iframe class="ma-0 pa-0" src="https://open.spotify.com/embed/episode/5IHX4pbuT9hzibevRQwmwq" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </v-row>
       <v-row
