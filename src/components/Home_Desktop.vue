@@ -222,23 +222,40 @@
             </v-row>
             <v-row
               class="ma-0 mb-5 pa-0"
-              style="height:60px"
+              style="height:100px"
               align="center"
               justify="center"
             >
-              <v-icon v-if="servicio.index == 0" style="transform:scale(3.5)">$barco</v-icon>
-              <v-icon class="ma-0 ml-16 pa-0" v-if="servicio.index == 1" style="transform:scale(3)">$cohete</v-icon>
-              <v-icon v-if="servicio.index == 2" style="transform:scale(3)">$avion</v-icon>
-
+              <video
+                v-if="servicio.index == 0"
+                class="ma-0 mt-n10 pa-0"
+                style="height:150px"
+                playsinline autoplay muted loop>
+                <source src='iconos/lancha.webm' type='video/webm'>
+              </video>
+              <video
+                v-if="servicio.index == 1"
+                class="ma-0 mt-n10 pa-0"
+                style="height:150px"
+                playsinline autoplay muted loop>
+                <source src='iconos/cohete.webm' type='video/webm'>
+              </video>
+              <video
+                v-if="servicio.index == 2"
+                class="ma-0 mt-n10 pa-0"
+                style="height:150px"
+                playsinline autoplay muted loop>
+                <source src='iconos/avion.webm' type='video/webm'>
+              </video>
             </v-row>
             <v-row
               v-if="servicio.index == 1"
-              class="ma-0 pa-0"
+              class="ma-0 pa-0 d-none"
               style="max-width:70px;height:40px"
             >
               <v-icon
                 style="width:50px"
-                class="mt-1 mr-1 mb-1 d-none"
+                class="mt-1 mr-1 mb-1"
 
                 color= "black"
               >
@@ -345,11 +362,12 @@
         class="ma-0 mt-8 mx-16 pa-0"
         style="width:100vw"
         align="center"
+        justify="center"
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 mx-6 mt-5 pa-0"
-          style=""
+          style="max-width:8%;min-width:6%"
           align="center"
           justify="center"
         >
