@@ -31,7 +31,7 @@
             <video
               class="ma-0 pa-0"
               width="100%"
-              style="height:66vh"
+              style="height:66vh;opacity:.85"
               playsinline autoplay muted loop>
               <source src='videos/LAB_1920x600_color_SATURADO_1.mp4' type='video/mp4'>
             </video>
@@ -159,7 +159,7 @@
         <v-img
           eager
           class="mx-16 pa-0"
-          style="min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
+          style="opacity:.85;min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
           contain
         >
@@ -196,7 +196,7 @@
               </v-row>
               <v-row
                 class="ma-0 ml-6 pa-0"
-                style="font-size:18px;font-family:Space Grotesk;font-weight:700"
+                style="font-size:22px;font-family:Space Grotesk;font-weight:700"
               >
                 {{ $store.state.servicios[servicio.index].titulo }}
               </v-row>
@@ -282,7 +282,6 @@
           max-width="100%"
           height="56vh"
           src="fotos/testimonios.jpg"
-          style="color:white"
           eager
         >
           <v-carousel
@@ -297,18 +296,18 @@
               class="ma-0 pa-0"
               transition="my-carousel"
               v-for="(item, index) in $store.state.testimonios" :key="index"
-              style="font-size:25px;line-height:35px;font-family:Space Grotesk;font-weight:600;width:100vw"
+              style="font-size:25px;line-height:35px;font-family:Space Grotesk;font-weight:600;width:100vw;background-color:transparent"
             >
               <v-row
                 class="ma-0 pa-0"
-                style="width:100%;height:70%"
+                style="width:100%;height:100%"
                 align="center"
               >
                 <v-row
                   class="ma-0 pa-0"
                   style="max-width:100%"
                 >
-                  <p class="ma-0 ml-16 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
+                  <p class="ma-0 ml-16 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3);background-color:transparent">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
@@ -317,7 +316,7 @@
       </v-row>
       <v-row
         class="ma-0 mr-3 pa-0"
-        style="top:300px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        style="top:400px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
       >
         <v-row
           class="ma-0 pa-0"
@@ -397,7 +396,7 @@
           max-width="100%"
           height="56vh"
           src="fotos/LAB_team.png"
-          style="color:white"
+          style="color:white;opacity:.8"
           position=""
         >
           <v-row
