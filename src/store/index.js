@@ -167,7 +167,7 @@ export default new Vuex.Store({
           'Reto diario: entender el mundo desde distintas perspectivas.',
           'Egresada del Bootcamp de Diseño UX/UI por Talento Digital para Chile<br>Graduada en Arte y Diseño, Escuela Massana, Universidad Autónoma de Barcelona, España<br>Bachiller en Diseño Universidad Mayor'
         ],
-        foto: 'fotos/_01.png',
+        foto: 'fotos/_02.png',
         nick: 'Sol',
         twitter: '',
         twitterlink: '',
@@ -184,7 +184,7 @@ export default new Vuex.Store({
           '',
           'Ingeniera Civil Industrial Universidad Adolfo Ibáñez<br>Magister en Data Science Universidad Adolfo Ibañez<br>Profesora Ayudante en Diplomado Liderazgo Ágil/ Equipos Ágiles Eclass'
         ],
-        foto: 'fotos/_02.png',
+        foto: 'fotos/_01.png',
         nick: 'Cote',
         twitter: '',
         twitterlink: '',

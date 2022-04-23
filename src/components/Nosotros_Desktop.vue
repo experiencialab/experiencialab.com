@@ -145,6 +145,7 @@
           <v-spacer></v-spacer>
 
           <v-img
+            contain
             eager
             position="0px"
             class="ma-0 pa-0"
@@ -265,6 +266,7 @@
 
 
           <v-img
+            contain
             eager
             position="0px"
             class="ma-0 pa-0"
