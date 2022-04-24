@@ -39,7 +39,7 @@
               src="fotos/footer_team.png"
 
               position="0px"
-              style="opacity:.85;max-width:100%;opacity:.85"
+              style="max-width:100%;opacity:.85"
 
 
             />
