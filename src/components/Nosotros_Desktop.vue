@@ -376,7 +376,7 @@
     </v-row>
 
     <v-row
-      class="ma-0 mt-16 mb-10 pa-0"
+      class="ma-0 mt-16 pa-0"
       style="width:100vw"
       align="center"
     >
@@ -405,12 +405,12 @@
       </v-row>
 
       <v-row
-        class="ma-0 mt-16 pa-0 pt-8"
+        class="ma-0 mt-16 pa-0 pt-16"
         style=";width:100%;height:10vh"
         justify="center"
       >
         <v-row
-          class="ma-0 pa-0"
+          class="ma-0 mt-16 pa-0"
           style="max-width:45%"
         >
           <v-row
@@ -458,7 +458,7 @@
       </v-row>
     </v-row>
     <v-row
-      class="ma-0 mb-10 pa-0"
+      class="ma-0 mt-16 mb-10 pa-0"
       style="width:100vw"
     >
       <v-row
@@ -488,7 +488,7 @@
         justify="center"
       >
         <v-row
-          class="ma-0 pa-0"
+          class="ma-0 mt-16 pa-0"
           style="max-width:55%"
         >
           <v-row
