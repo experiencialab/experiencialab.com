@@ -146,8 +146,7 @@
           <v-row
             class="ma-0 pa-0"
             data-aos="fade-left"
-            data-aos-duration="2500"
-            data-aos-delay="500"
+            data-aos-duration="3000"
             data-aos-once="false"
             data-aos-offset="500"
             style="right:5vw;min-height:580px;min-width:60%;max-width:60%"
@@ -277,8 +276,7 @@
           <v-row
             class="ma-0 pa-0"
             data-aos="fade-right"
-            data-aos-duration="2500"
-            data-aos-delay="500"
+            data-aos-duration="3000"
             data-aos-once="false"
             style="left:5vw;min-height:580px;min-width:60%;max-width:60%;"
           >
