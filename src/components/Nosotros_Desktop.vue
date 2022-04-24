@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 mr-3 pa-0 pod d-none"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
         >
@@ -39,7 +39,7 @@
               src="fotos/footer_team.png"
 
               position="0px"
-              style="height:auto;max-width:100%"
+              style="max-width:100%;opacity:.85"
 
 
             />
@@ -72,7 +72,7 @@
       </v-row>
       <v-row
         class="ma-0 mt-5 ml-12 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+        style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
@@ -93,7 +93,7 @@
 
       <v-row
         class="ma-0 mt-15 ml-12 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+        style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
@@ -116,7 +116,7 @@
 
     <v-row
       class="ma-0 mt-15 ml-12 pa-0"
-      style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+      style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
     >
         <v-row
           class="ma-0 mt-5 ml-8 pa-0"
@@ -149,7 +149,7 @@
             eager
             position="0px"
             class="ma-0 pa-0"
-            style="min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+            style="opacity:.85;min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
             :src="$store.state.equipo[member.index - 1].foto"
 
           >
@@ -165,7 +165,7 @@
 
           <v-row
             class="ma-0 mr-16 pa-0"
-            style="left:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:black;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="left:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:#101010;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
@@ -227,7 +227,7 @@
               <v-icon
                 class="ma-0 mr-2 pa-0"
                 v-if="$store.state.equipo[member.index - 1].linkedin"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].linkedin)"
               >
                 mdi-linkedin
@@ -235,7 +235,7 @@
               <v-icon
                 v-if="$store.state.equipo[member.index - 1].twitterlink"
                 class="ma-0 mr-2 pa-0"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].twitterlink)"
               >
                 mdi-twitter
@@ -243,7 +243,7 @@
               <v-icon
                 class="ma-0 mr-2 pa-0"
                 v-if="$store.state.equipo[member.index - 1].instagram"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].instagram)"
               >
                 mdi-instagram
@@ -270,7 +270,7 @@
             eager
             position="0px"
             class="ma-0 pa-0"
-            style="transform:scaleX(-1);min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+            style="opacity:.85;transform:scaleX(-1);min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
             :src="$store.state.equipo[member.index - 1].foto"
 
           >
@@ -286,7 +286,7 @@
 
           <v-row
             class="ma-0 mr-16 pa-0"
-            style="right:-0;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:black;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="right:-0;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#F4F4F4;color:#101010;z-index:1;width:42vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
@@ -348,7 +348,7 @@
               <v-icon
                 class="ma-0 mr-2 pa-0"
                 v-if="$store.state.equipo[member.index - 1].linkedin"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].linkedin)"
               >
                 mdi-linkedin
@@ -356,7 +356,7 @@
               <v-icon
                 v-if="$store.state.equipo[member.index - 1].twitterlink"
                 class="ma-0 mr-2 pa-0"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].twitterlink)"
               >
                 mdi-twitter
@@ -364,7 +364,7 @@
               <v-icon
                 class="ma-0 mr-2 pa-0"
                 v-if="$store.state.equipo[member.index - 1].instagram"
-                color= "black"
+                color= "#101010"
                 @click="site($store.state.equipo[member.index - 1].instagram)"
               >
                 mdi-instagram
@@ -382,7 +382,7 @@
     >
       <v-row
         class="ma-0 mt-5 ml-12 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+        style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
@@ -452,6 +452,7 @@
           max-width="50%"
           max-height="100%"
           src="fotos/metodologia.png"
+          style="opacity:.8"
         >
         </v-img>
       </v-row>
@@ -462,7 +463,7 @@
     >
       <v-row
         class="ma-0 mt-15 mb-15 ml-12 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+        style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
@@ -522,6 +523,7 @@
           max-width="65%"
           max-height="100%"
           src="fotos/dream_team.png"
+          style="opacity:.8"
         >
         </v-img>
       </v-row>
@@ -532,7 +534,7 @@
     >
       <v-row
         class="ma-0 mt-15 mb-15 ml-12 pa-0"
-        style="width:100vw;color:black;font-family:Space Grotesk;font-size:44px;font-weight:300"
+        style="width:100vw;color:#101010;font-family:Space Grotesk;font-size:44px;font-weight:300"
       >
           <v-row
             class="ma-0 mt-5 ml-8 pa-0"
@@ -563,6 +565,7 @@
           max-width="65%"
           max-height="100%"
           src="fotos/ciclo_desarrollo_incremental.png"
+          style="opacity:.8"
         >
         </v-img>
       </v-row>
@@ -574,7 +577,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-12 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
@@ -592,7 +595,7 @@
           max-width="100%"
           height="56vh"
           src="fotos/LAB_team.png"
-          style="color:white"
+          style="color:white;opacity:.85"
           position=""
         >
           <v-row
@@ -695,7 +698,7 @@
                     </v-row>
                     <p
                       class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                      style="width:100%;color:#101010;font-size:15px;line-height:20px"
                     >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
                   </v-row>
                   <v-row
@@ -725,7 +728,7 @@
                     </v-row>
                     <p
                       class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                      style="width:100%;color:#101010;font-size:15px;line-height:20px"
                     >Por favor intenta otra vez.</p>
                   </v-row>
                 </v-row>
@@ -834,7 +837,7 @@
                       label="Mensaje"
                       no-resize
                       outlined
-                      color="black"
+                      color="#101010"
                       background-color="#ADFFFF"
                       solo
                       rows="4"
@@ -847,7 +850,7 @@
                     <v-btn
 
                       @click="onCancel"
-                      color="black"
+                      color="#101010"
                       text
                       depressed
                       tile
@@ -860,7 +863,7 @@
                     <v-btn
 
                       @click="onSubmit"
-                      color="black"
+                      color="#101010"
                       text
                       depressed
                       tile

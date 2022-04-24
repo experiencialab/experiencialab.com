@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 mr-3 pa-0 pod"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:63%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:63%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="spotify()"
@@ -78,7 +78,7 @@
       </v-row>
       <v-row
         class="ma-0 mx-5 pa-0 justify-center"
-        style="position:relative;width:100vw;height:25vh;color:black;font-family:Space Grotesk;font-size:16px;font-weight:300"
+        style="position:relative;width:100vw;height:25vh;color:#101010;font-family:Space Grotesk;font-size:16px;font-weight:300"
         align="center"
       >
           <v-row
@@ -138,7 +138,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-12 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">Servicios</p>
     </v-row>
@@ -179,7 +179,7 @@
         >
           <v-row
             class="ma-0 mr-16 pa-0"
-            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;width:40vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;width:40vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
@@ -247,7 +247,7 @@
                 style="width:50px"
                 class="mt-1 mr-1 mb-1"
 
-                color= "black"
+                color= "#101010"
               >
                 mdi-plus-thick
               </v-icon>
@@ -263,7 +263,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-12 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">Experiencias</p>
     </v-row>
@@ -320,7 +320,7 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:300px;height:100%;background-color:black"
+          style="width:300px;height:100%;background-color:#101010"
           justify="center"
         >
           <v-carousel
@@ -356,7 +356,7 @@
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 mx-6 mt-5 pa-0"
-          style="max-width:8%;min-width:6%"
+          style="max-width:8%;min-width:6%;opacity:.8"
           align="center"
           justify="center"
         >
@@ -378,7 +378,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-12 pa-0"
-      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
@@ -499,7 +499,7 @@
                     </v-row>
                     <p
                       class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                      style="width:100%;color:#101010;font-size:15px;line-height:20px"
                     >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
                   </v-row>
                   <v-row
@@ -529,7 +529,7 @@
                     </v-row>
                     <p
                       class="ma-0 pa-0"
-                      style="width:100%;color:black;font-size:15px;line-height:20px"
+                      style="width:100%;color:#101010;font-size:15px;line-height:20px"
                     >Por favor intenta otra vez.</p>
                   </v-row>
                 </v-row>
@@ -639,7 +639,7 @@
                       label="Mensaje"
                       no-resize
                       outlined
-                      color="black"
+                      color="#101010"
                       background-color="#ADFFFF"
                       solo
                       rows="4"
@@ -673,7 +673,7 @@
                     <v-btn
 
                       @click="onCancel"
-                      color="black"
+                      color="#101010"
                       text
                       depressed
                       tile
@@ -686,7 +686,7 @@
                     <v-btn
 
                       @click="onSubmit"
-                      color="black"
+                      color="#101010"
                       text
                       depressed
                       tile
@@ -863,21 +863,21 @@
     letter-spacing: 0px
 
   .text input
-    color: black !important
+    color: #101010 !important
 
   .v-messages__message
     color: red !important
     opacity: .4
 
   .v-card__text
-    color: black !important
+    color: #101010 !important
 
   .v-input label
     animation: none !important
 
 
   .v-input
-    color: black !important
+    color: #101010 !important
     font-family: Space Grotesk !important
     font-size: 20px !important
     border-radius: 0px !important
@@ -888,15 +888,15 @@
     opacity: .6 !important
 
   .v-text-field--outlined textarea
-    color: black !important
+    color: #101010 !important
     border-radius: 0px !important
 
   .v-text-area--outlined textarea
-    color: black !important
+    color: #101010 !important
     border-radius: 0px !important
 
   input:focus
-    color: black
+    color: #101010
 
   .cafe
     margin-left: 40px
@@ -905,7 +905,7 @@
     opacity: .4 !important
 
   .v-label
-    color: black !important
+    color: #101010 !important
     font-family: Space Grotesk !important
     opacity: .4 !important
 

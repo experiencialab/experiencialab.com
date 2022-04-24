@@ -27,6 +27,7 @@
       <v-row
         class="ma-0 pa-0"
         justify="left"
+        style="opacity:.8"
       >
 
         <iframe class="ma-0 mt-n10 mb-n5 mx-1 pa-0" src="https://open.spotify.com/embed/show/50FARDnK33AjV42wtNbq38" width="100%" height="302" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
