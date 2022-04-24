@@ -9,7 +9,7 @@
     >
       <v-row
         class="ma-0 pa-0 justify-end"
-        style="position:relative"
+        style="position:relative;min-height:500px"
       >
         <v-row
           class="ma-0 pa-0"
@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="opacity:.85;width:100vw;overflow:hidden"
+          style="opacity:.85;width:100vw;overflow:hidden;height:500px"
         >
           <video
             class="ma-0 pa-0"
@@ -154,7 +154,6 @@
           class="ma-0 pa-0"
           data-aos="fade-up"
           data-aos-duration="2000"
-          data-aos-delay="300"
           data-aos-once="false"
           style="height:55vh;width:100%"
         >
