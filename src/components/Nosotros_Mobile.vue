@@ -76,24 +76,32 @@
         style="overflow:hidden;height:100%"
         align="center"
       >
-        <v-img
-          eager
+        <v-row
           class="ma-0 pa-0"
-          height="55vh"
-          max-width="100%"
-          style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:40px;font-family:Space Grotesk;font-weight:700;color:white"
-          :src="$store.state.equipo[member.index - 1].foto"
-
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-once="false"
+          style="height:55vh;width:100%"
         >
-          <v-row
-            class="ma-0 mb-4 ml-5 pb-8 pa-0"
-            style="height:100%"
+          <v-img
+            eager
+            class="ma-0 pa-0"
+            height="55vh"
+            max-width="100%"
+            style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:40px;font-family:Space Grotesk;font-weight:700;color:white"
+            :src="$store.state.equipo[member.index - 1].foto"
 
           >
-            {{ $store.state.equipo[member.index - 1].nick }}
+            <v-row
+              class="ma-0 mb-4 ml-5 pb-8 pa-0"
+              style="height:100%"
 
-          </v-row>
-        </v-img>
+            >
+              {{ $store.state.equipo[member.index - 1].nick }}
+
+            </v-row>
+          </v-img>
+        </v-row>
         <v-row
           class="ma-0 pa-0 justify-center"
           style="width:100vw"

@@ -156,23 +156,31 @@
           style="width:100vw;height:12vh"
         >
         </v-row>
-        <v-img
-          eager
-          class="mx-16 pa-0"
-          style="opacity:.85;min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
-          :src="$store.state.servicios[servicio.index].foto"
-          contain
+        <v-row
+          class="ma-0 pa-0"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
-          <v-row
-            class="ma-0 mb-4 pb-8 pa-0"
-            style="height:100%"
-            align="center"
-            justify="center"
+          <v-img
+            eager
+            class="mx-16 pa-0"
+            style="opacity:.85;min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
+            :src="$store.state.servicios[servicio.index].foto"
+            contain
           >
-            {{ $store.state.servicios[servicio.index].letra }}
+            <v-row
+              class="ma-0 mb-4 pb-8 pa-0"
+              style="height:100%"
+              align="center"
+              justify="center"
+            >
+              {{ $store.state.servicios[servicio.index].letra }}
 
-          </v-row>
-        </v-img>
+            </v-row>
+          </v-img>
+        </v-row>
         <v-row
           class="ma-0 pa-0 justify-end"
           align="center"

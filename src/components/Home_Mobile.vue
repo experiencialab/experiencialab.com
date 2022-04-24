@@ -150,25 +150,34 @@
         style="overflow:hidden;height:100%"
         align="center"
       >
-        <v-img
-          eager
+        <v-row
           class="ma-0 pa-0"
-          height="55vh"
-          max-width="100%"
-          style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
-          :src="$store.state.servicios[servicio.index].foto"
-          position="0px"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="300"
+          data-aos-once="false"
+          style="height:55vh;width:100%"
         >
-          <v-row
-            class="ma-0 mb-4 pb-8 pa-0"
-            style="height:100%"
-            align="center"
-            justify="center"
+          <v-img
+            eager
+            class="ma-0 pa-0"
+            height="55vh"
+            max-width="100%"
+            style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
+            :src="$store.state.servicios[servicio.index].foto"
+            position="0px"
           >
-            {{ $store.state.servicios[servicio.index].letra }}
+            <v-row
+              class="ma-0 mb-4 pb-8 pa-0"
+              style="height:100%"
+              align="center"
+              justify="center"
+            >
+              {{ $store.state.servicios[servicio.index].letra }}
 
-          </v-row>
-        </v-img>
+            </v-row>
+          </v-img>
+        </v-row>
         <v-row
           class="ma-0 pa-0 justify-center"
           style="width:100vw"

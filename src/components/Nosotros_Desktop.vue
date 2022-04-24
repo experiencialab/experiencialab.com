@@ -143,25 +143,35 @@
           align="center"
         >
           <v-spacer></v-spacer>
-
-          <v-img
-            contain
-            eager
-            position="0px"
+          <v-row
             class="ma-0 pa-0"
-            style="opacity:.85;min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);right:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
-            :src="$store.state.equipo[member.index - 1].foto"
-
+            data-aos="fade-left"
+            data-aos-duration="2500"
+            data-aos-delay="500"
+            data-aos-once="false"
+            data-aos-offset="500"
+            style="right:5vw;min-height:580px;min-width:60%;max-width:60%"
           >
-            <v-row
-              class="ma-0 mb-4 mr-10 pb-8 pa-0"
-              style="height:100%"
-              justify="end"
-            >
-              {{ $store.state.equipo[member.index - 1].nick }}
+            <v-img
+              contain
+              eager
+              position="0px"
+              class="ma-0 pa-0"
+              style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+              :src="$store.state.equipo[member.index - 1].foto"
 
-            </v-row>
-          </v-img>
+            >
+              <v-row
+                class="ma-0 mb-4 mr-10 pb-8 pa-0"
+                style="height:100%"
+                justify="end"
+              >
+                {{ $store.state.equipo[member.index - 1].nick }}
+
+              </v-row>
+            </v-img>
+          </v-row>
+
 
           <v-row
             class="ma-0 mr-16 pa-0"
@@ -264,25 +274,33 @@
           align="center"
         >
 
-
-          <v-img
-            contain
-            eager
-            position="0px"
+          <v-row
             class="ma-0 pa-0"
-            style="opacity:.85;transform:scaleX(-1);min-height:580px;min-width:60%;max-width:60%;text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
-            :src="$store.state.equipo[member.index - 1].foto"
-
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            data-aos-delay="500"
+            data-aos-once="false"
+            style="left:5vw;min-height:580px;min-width:60%;max-width:60%;"
           >
-            <v-row
-              class="ma-0 mb-4 mr-10 pb-8 pa-0"
-              style="transform:scaleX(-1);height:100%"
-              justify="start"
-            >
-              {{ $store.state.equipo[member.index - 1].nick }}
+            <v-img
+              contain
+              eager
+              position="0px"
+              class="ma-0 pa-0"
+              style="opacity:.85;transform:scaleX(-1);text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:75px;font-family:Space Grotesk;font-weight:500;color:white"
+              :src="$store.state.equipo[member.index - 1].foto"
 
-            </v-row>
-          </v-img>
+            >
+              <v-row
+                class="ma-0 mb-4 mr-10 pb-8 pa-0"
+                style="transform:scaleX(-1);height:100%"
+                justify="start"
+              >
+                {{ $store.state.equipo[member.index - 1].nick }}
+
+              </v-row>
+            </v-img>
+          </v-row>
 
           <v-row
             class="ma-0 mr-16 pa-0"
