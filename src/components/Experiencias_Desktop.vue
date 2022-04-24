@@ -12,7 +12,7 @@
         style="position:relative"
       >
         <v-row
-          class="ma-0 mr-3 pa-0 pod"
+          class="ma-0 mr-3 mt-16 pa-0 pod"
           style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
@@ -27,16 +27,16 @@
         >
           <v-row
             class="ma-0 mx-5 pa-0"
-            style="overflow:hidden;height:56vh"
+            style="overflow:hidden;height:66vh"
           >
             <v-img
 
               eager
               class="ma-0 pa-0"
               max-width="100vw"
-              height="56vh"
+              height="66vh"
               src="fotos/experiencias.jpg"
-              style="color:white;opacity:0.85"
+              style="color:white;opacity:0.8"
               position="center top 30%"
             >
 
@@ -49,13 +49,15 @@
               <v-row
                 class="ma-0 pa-0"
                 style="font-size:60px;line-height:65px;font-family:Space Grotesk;font-weight:600;width:100vw"
+                align="center"
               >
                 <v-row
                   class="ma-0 pa-0"
                   style="width:100%;height:70%"
+                  align="center"
                 >
                   <v-row
-                    class="ma-0 pa-0"
+                    class="ma-0 mt-16 pa-0"
                     style="max-width:100%"
                     justify="center"
                   >
@@ -68,14 +70,13 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 my-10 mx-16 pa-0"
-        style="width:100vw;height:25vh"
-        align="center"
+        class="ma-0 mt-4 mx-16 pa-0"
+        style="width:100vw;height:20vh"
         justify="center"
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
-          class="ma-0 mx-6 mt-5 pa-0"
+          class="ma-0 mx-6 pa-0"
           style="max-width:8%;min-width:6%"
           align="center"
           justify="center"
@@ -199,7 +200,7 @@
       </v-row>
       <v-row
         class="ma-0 mb-8 pa-0"
-        style="margin-top:200px!important;min-height:80vh;width:100vw;transform:scale(.9)"
+        style="min-height:80vh;max-height:80vh;width:100vw;transform:scale(.9)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
         align="center"
       >
@@ -224,6 +225,7 @@
               position=""
               contain
               :src="experiencia.mock"
+              style="opacity:.85"
             ></v-img>
           </v-row>
         </v-row>
