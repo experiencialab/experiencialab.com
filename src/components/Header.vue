@@ -362,8 +362,8 @@
     transition: ease .3s
     transform-origin: center center
   .menu-item:hover
-    transform: scale(1.03)
-    font-weight: 500
+    transform: scale(1.2)
+    // font-weight: 500
     cursor: pointer
   .logo:hover
     cursor: pointer

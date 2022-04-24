@@ -12,8 +12,8 @@
         style="position:relative"
       >
         <v-row
-          class="ma-0 mr-3 mt-16 pa-0 pod"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:50%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          class="ma-0 mr-3 mt-5 pa-0 pod"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:60%;width:250px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="whatsapp"
@@ -52,16 +52,15 @@
                 align="center"
               >
                 <v-row
-                  class="ma-0 pa-0"
+                  class="ma-0 mt-12 ml-12 pa-0"
                   style="width:100%;height:70%"
                   align="center"
                 >
                   <v-row
                     class="ma-0 mt-16 pa-0"
                     style="max-width:100%"
-                    justify="center"
                   >
-                    <p class="ma-0 ml-16 pa-0" style="color:white;max-width:1200px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización.</p>
+                    <p class="ma-0 pa-0" style="color:white;max-width:1200px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización.</p>
                   </v-row>
                 </v-row>
               </v-row>
