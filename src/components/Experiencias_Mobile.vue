@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:75%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:75%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="whatsapp()"
@@ -30,7 +30,7 @@
             class="ma-0 pa-0"
 
             src="fotos/experiencias.jpg"
-            style="color:white"
+            style="opacity:.85;color:white"
           >
 
           </v-img>
@@ -50,7 +50,7 @@
       >
 
           <v-img
-            style="opacity:0.7"
+            style="opacity:0.8"
             eager
             max-height="111"
             max-width="79"
@@ -66,7 +66,7 @@
     >
       <v-row
         class="ma-0 mt-8 ml-16 pa-0"
-        style="width:100%;font-size:35px;font-weight:300;color:black"
+        style="width:100%;font-size:35px;font-weight:300;color:#101010"
       >
         ON GOING
       </v-row>
@@ -83,7 +83,7 @@
           <v-img
             contain
             eager
-            style="z-index:10;min-width:100%"
+            style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
             max-height="100px"
             max-width="100px"
@@ -120,7 +120,7 @@
           <v-img
             contain
             eager
-            style="z-index:10;min-width:100%"
+            style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
             max-height="100px"
             max-width="100px"
@@ -162,7 +162,7 @@
           <v-img
             contain
             eager
-            style="z-index:10"
+            style="opacity:.85;z-index:10"
             class="ma-0 pa-0"
             max-height="100px"
             max-width="100px"
@@ -213,7 +213,7 @@
           <v-img
             contain
             eager
-            style="z-index:10"
+            style="opacity:.85;z-index:10"
             class="ma-0 pa-0"
             max-height="100"
             max-width="200"
@@ -238,6 +238,7 @@
           <v-img
             eager
             position=""
+            style="opacity:.85"
             contain
             :src="experiencia.mock"
           ></v-img>
@@ -269,8 +270,8 @@
               align="center"
             >
               <v-spacer></v-spacer>
-              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
-              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="black" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>
+              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
+              <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>
             </v-row>
           </v-row>
         </v-row>

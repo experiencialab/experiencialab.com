@@ -13,7 +13,7 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:black;z-index:1;top:75%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
+          style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;top:75%;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);z-index:2"
           align="center"
           justify="center"
           @click="spotify()"
@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="min-height:63vh;max-height:63vh;width:100vw;overflow:hidden"
+          style="opacity:.85;min-height:63vh;max-height:63vh;width:100vw;overflow:hidden"
         >
           <video
             class="ma-0 pa-0"
@@ -77,7 +77,7 @@
       </v-row>
       <v-row
         class="ma-0 pa-0 justify-center"
-        style="position:relative;width:100vw;color:black;font-family:Space Grotesk;font-size:16px;font-weight:300"
+        style="position:relative;width:100vw;color:#101010;font-family:Space Grotesk;font-size:16px;font-weight:300"
         align="center"
       >
           <p class="ma-0 mx-8 mt-8 pa-0" style="z-index:2;width:100%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
@@ -136,7 +136,7 @@
 
     <v-row
       class="ma-0 mt-16 ml-5 pa-0"
-      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 pa-0 text-uppercase">Servicios</p>
     </v-row>
@@ -155,7 +155,7 @@
           class="ma-0 pa-0"
           height="55vh"
           max-width="100%"
-          style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
+          style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:130px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.servicios[servicio.index].foto"
           position="0px"
         >
@@ -176,7 +176,7 @@
         >
           <v-row
             class="ma-0 mt-n16 pa-0"
-            style="font-family:Space Grotesk;font-weight:400;background-color:white;color:black;z-index:1;max-width:90vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            style="font-family:Space Grotesk;font-weight:400;background-color:white;color:#101010;z-index:1;max-width:90vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
@@ -250,7 +250,7 @@
                 style="width:50px"
                 class="mt-1 mr-1 mb-1"
 
-                color= "black"
+                color= "#101010"
               >
                 mdi-plus-thick
               </v-icon>
@@ -266,7 +266,7 @@
     </v-row>
     <v-row
       class="ma-0 ml-5 pa-0"
-      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 pa-0 text-uppercase">Experiencias</p>
     </v-row>
@@ -284,7 +284,7 @@
           max-width="100vw"
           height="56vh"
           src="fotos/testimonios.jpg"
-          style="color:white"
+          style="opacity:.85;color:white"
         >
           <v-carousel
             height="42vh"
@@ -324,7 +324,7 @@
             <v-spacer></v-spacer>
             <v-row
               class="ma-0 pa-0"
-              style="font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:black;color:black;z-index:1;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+              style="font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:#101010;color:#101010;z-index:1;width:200px;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
               justify="center"
             >
               <v-carousel
@@ -371,6 +371,7 @@
               max-height="111"
               max-width="79"
               :src="logo"
+              style="opacity:.8"
             ></v-img>
 
         </v-row>
@@ -379,7 +380,7 @@
 
     <v-row
       class="ma-0 mt-16 ml-5 pa-0 pt-12"
-      style="width:100vw;height:70px;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:black"
+      style="width:100vw;height:70px;font-size:30px;line-height:48px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 pa-0 text-uppercase">¿Quieres ser parte?</p>
     </v-row>
@@ -388,7 +389,7 @@
       eager
       class="ma-0 mt-12 pa-0"
       src="fotos/LAB_team.png"
-      style="color:white"
+      style="opacity:.85;color:white"
     >
       <v-row
         class="ma-0 pa-0"
@@ -487,7 +488,7 @@
                 </v-row>
                 <p
                   class="ma-0 pa-0"
-                  style="width:100%;color:black;font-size:15px;line-height:20px"
+                  style="width:100%;color:#101010;font-size:15px;line-height:20px"
                 >Gracias por tu interés.<br>Nos pondremos en contacto contigo.</p>
               </v-row>
               <v-row
@@ -517,7 +518,7 @@
                 </v-row>
                 <p
                   class="ma-0 pa-0"
-                  style="width:100%;color:black;font-size:15px;line-height:20px"
+                  style="width:100%;color:#101010;font-size:15px;line-height:20px"
                 >Por favor intenta otra vez.</p>
               </v-row>
             </v-row>
@@ -625,7 +626,7 @@
                   label="Mensaje"
                   no-resize
                   outlined
-                  color="black"
+                  color="#101010"
                   background-color="#ADFFFF"
                   solo
                   rows="4"
@@ -638,7 +639,7 @@
                 <v-btn
 
                   @click="onCancel"
-                  color="black"
+                  color="#101010"
                   text
                   depressed
                   tile
@@ -651,7 +652,7 @@
                 <v-btn
 
                   @click="onSubmit"
-                  color="black"
+                  color="#101010"
                   text
                   depressed
                   tile

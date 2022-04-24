@@ -26,7 +26,7 @@
         >
           <img
             class="ma-0 pa-0"
-            style="width:100%"
+            style="opacity:.85;width:100%"
             src="fotos/footer_team.png"
 
           />
@@ -81,7 +81,7 @@
           class="ma-0 pa-0"
           height="55vh"
           max-width="100%"
-          style="text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:40px;font-family:Space Grotesk;font-weight:700;color:white"
+          style="opacity:.85;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-size:40px;font-family:Space Grotesk;font-weight:700;color:white"
           :src="$store.state.equipo[member.index - 1].foto"
 
         >
@@ -253,6 +253,7 @@
         max-width="90%"
         class="ma-0 mt-16 pa-0"
         src="fotos/metodologia.png"
+        style="opacity:.85"
       >
       </v-img>
     </v-row>
@@ -309,6 +310,7 @@
       <v-img
         class="ma-0 mt-16 pa-0"
         src="fotos/foto.png"
+        style="opacity:.85"
       />
     </v-row>
     <v-row
@@ -339,6 +341,7 @@
         max-width="90%"
         class="ma-0 mt-16 pa-0"
         src="fotos/ciclo_desarrollo_incremental_mobile.png"
+        style="opacity:.85"
       >
       </v-img>
     </v-row>
@@ -354,7 +357,7 @@
       eager
       class="ma-0 mt-5 pa-0"
       src="fotos/LAB_team.png"
-      style="color:white"
+      style="opacity:.85;color:white"
     >
       <v-row
         class="ma-0 pa-0 align-end"
