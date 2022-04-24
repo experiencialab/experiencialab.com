@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="opacity:.85;width:100vw;overflow:hidden;height:500px"
+          style="opacity:.85;width:100vw;overflow:hidden"
         >
           <video
             class="ma-0 pa-0"
