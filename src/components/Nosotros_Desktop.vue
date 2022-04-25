@@ -148,7 +148,7 @@
             data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-once="false"
-            data-aos-offset="500"
+            data-aos-offset="200"
             style="right:5vw;min-height:580px;min-width:60%;max-width:60%"
           >
             <v-img
