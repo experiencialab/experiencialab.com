@@ -379,7 +379,7 @@
           justify="center"
           align="center"
         >
-          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
           <v-icon x-large class="ma-0 ml-5 pa-0" style="scaleX(2)">$bus</v-icon>
         </v-row>
       </v-row>

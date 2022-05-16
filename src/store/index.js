@@ -337,7 +337,7 @@ export default new Vuex.Store({
       "logos/TeatroamilTV.png",
       "logos/tictoc.png",
       "logos/tranoceanica.png",
-      "logos/kodea_logo.png",
+      "logos/kodea_logo.webp",
       "logos/vtrcom.png"
     ]
   },

@@ -628,7 +628,7 @@
               justify="center"
               align="center"
             >
-              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
 
               <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
             </v-row>
@@ -659,7 +659,7 @@
                 align="center"
                 justify="center"
               >
-                ¡Trabaja con nosotros!
+                ¡Trabaja con nosotras!
               </v-row>
             </template>
             <v-card
@@ -761,7 +761,7 @@
                 class="ma-0 mx-5 pa-0 text-uppercase"
                 style="height:13vh"
               >
-                Trabaja con nosotros
+                Trabaja con nosotras
                 <v-spacer></v-spacer>
 
                 <v-icon class="ma-0 pa-0" size="60">$bus</v-icon>

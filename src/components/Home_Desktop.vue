@@ -328,7 +328,7 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:300px;height:100%;background-color:#101010"
+          style="width:340px;height:100%;background-color:#101010"
           justify="center"
         >
           <v-carousel
@@ -348,8 +348,8 @@
               <v-row
                 class="ma-0 pa-0"
               >
-                <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)">{{ item.autor }}</p>
-                <p class="ma-0 ml-5 pa-0" style="color:white;font-size:12px">{{ item.cargo }}</p>
+                <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3);width:100%">{{ item.autor }}</p>
+                <p class="ma-0 ml-5 pa-0" style="color:white;font-size:12px;width:100%">{{ item.cargo }}</p>
               </v-row>
             </v-carousel-item>
           </v-carousel>
@@ -373,7 +373,7 @@
             class="ma-0 mt-3 pa-0"
             eager
             max-height="110"
-            max-width="79px"
+            max-width="95px"
             :src="logo"
           ></v-img>
         </v-row>
@@ -421,7 +421,7 @@
               justify="center"
               align="center"
             >
-              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotros</p>
+              <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
 
               <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
             </v-row>
@@ -452,7 +452,7 @@
                 align="center"
                 justify="center"
               >
-                ¡Trabaja con nosotros!
+                ¡Trabaja con nosotras!
               </v-row>
             </template>
             <v-card
@@ -554,7 +554,7 @@
                 class="ma-0 mx-5 pa-0 text-uppercase"
                 style="height:13vh"
               >
-                Trabaja con nosotros
+                Trabaja con nosotras
                 <v-spacer></v-spacer>
 
                 <v-icon class="ma-0 pa-0" size="60">$bus</v-icon>
