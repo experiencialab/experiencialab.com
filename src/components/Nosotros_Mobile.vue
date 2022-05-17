@@ -368,19 +368,35 @@
       style="opacity:.85;color:white"
     >
       <v-row
-        class="ma-0 pa-0 align-end"
+        class="ma-0 pa-0"
         style="height:100%;width:100%"
         justify="center"
         align="center"
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:100%;font-size:15px;line-height:30px;font-weight:500"
-          justify="center"
-          align="center"
+          style="width:75%"
+          justify="end"
         >
-          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
-          <v-icon x-large class="ma-0 ml-5 pa-0" style="scaleX(2)">$bus</v-icon>
+          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras
+          </p>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:25%"
+          justify="start"
+        >
+          <v-img
+            contain
+            eagerpx
+            style="margin-top:-25px !important"
+            class="ma-0 ml-n5 pa-0"
+            min-height="55px"
+            max-height="55px"
+            src="iconos/LAB-Bus.gif"
+            ></v-img>
+            <v-spacer></v-spacer>
+
         </v-row>
       </v-row>
     </v-img>
@@ -409,7 +425,7 @@
             align="center"
             justify="center"
           >
-            ¡Trabaja con nosotros!
+            ¡Trabaja con nosotras!
           </v-row>
         </template>
         <v-card
@@ -511,7 +527,7 @@
             class="ma-0 mx-5 pa-0 text-uppercase"
             style="height:7vh;font-size:19px"
           >
-            Trabaja con nosotros
+            Trabaja con nosotras
 
             <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
           </v-card-title>

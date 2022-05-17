@@ -99,7 +99,7 @@ export default new Vuex.Store({
         'Profesora para Diplomado Equipos Ágiles, eclass. Profesora Invitada Diplomado desarrollo y gestión ágil de proyectos.',
         'Ingeniero Civil Industrial, Universidad de Concepción, Chile<br>Transformación Digital de Negocios a Gran Escala, executive degree, MIT, USA<br>Master en Marketing in a Digital Environment, Universidad Ramon Lull, Barcelona, España<br>Agile Coach, scrum master, product owner, scrum.org certificated<br>Profesora de Yoga, YogaShala Chile<br>Profesora para Diplomado Equipos Ágiles, eclass<br>Profesora Invitada Diplomado desarrollo y gestión ágil de proyectos'
         ],
-        foto: 'fotos/LAB_profile_01_2.png',
+        foto: 'fotos/LAB_profile_01.webp',
         nick: 'Vivi',
         twitter: '@vivirlove',
         twitterlink: 'https://twitter.com/VivirLove',
@@ -116,7 +116,7 @@ export default new Vuex.Store({
           'Superpoder: “tangibilizar las experiencias, hacerlas realidad”.',
           'Master en Diseño Avanzado, Pontificia Universidad Católica de Chile<br>Abogada, Universidad de Buenos Aires<br>Diseñadora Fashion & Textile,  Escuela Argentina de Moda<br>Product owner, scrum.org certificated'
         ],
-        foto: 'fotos/LAB_profile_02.png',
+        foto: 'fotos/LAB_profile_02.webp',
         nick: 'Ana',
         twitter: '',
         twitterlink: '',
@@ -133,7 +133,7 @@ export default new Vuex.Store({
           '',
           'Cofundadora de Autoras Librería Digital<br>Diseñadora estratégica, Pontificia Universidad Católica de Chile<br>Master en diseño gráfico, Elisava, Barcelona<br>Diplomada en creatividad e innovación en el diseño y los negocios, Pontificia Universidad Católica de Chile<br>Profesora de vinyasa yoga'
         ],
-        foto: 'fotos/LAB_profile_03.png',
+        foto: 'fotos/LAB_profile_03.webp',
         nick: 'Tai',
         twitter: '',
         twitterlink: '',
@@ -150,7 +150,7 @@ export default new Vuex.Store({
           '',
           'Profesora Diseño Espacios y Servicios, Universidad de Los Andes<br>Arquitecta, Universidad Veristas, Costa Rica<br>Magister en Diseño Avanzado, Pontificia Universidad Católica de Chile<br>Diplomado Docencia Arquitectura, Universidad de Chile'
         ],
-        foto: 'fotos/LAB_profile_04.png',
+        foto: 'fotos/LAB_profile_04.webp',
         nick: 'Lau',
         twitter: '',
         twitterlink: '',
@@ -167,7 +167,7 @@ export default new Vuex.Store({
           'Reto diario: entender el mundo desde distintas perspectivas.',
           'Egresada del Bootcamp de Diseño UX/UI por Talento Digital para Chile<br>Graduada en Arte y Diseño, Escuela Massana, Universidad Autónoma de Barcelona, España<br>Bachiller en Diseño Universidad Mayor'
         ],
-        foto: 'fotos/_02.png',
+        foto: 'fotos/LAB_profile_06.webp',
         nick: 'Sol',
         twitter: '',
         twitterlink: '',
@@ -184,7 +184,7 @@ export default new Vuex.Store({
           '',
           'Ingeniera Civil Industrial Universidad Adolfo Ibáñez<br>Magister en Data Science Universidad Adolfo Ibañez<br>Profesora Ayudante en Diplomado Liderazgo Ágil/ Equipos Ágiles Eclass'
         ],
-        foto: 'fotos/_01.png',
+        foto: 'fotos/LAB_profile_05.webp',
         nick: 'Cote',
         twitter: '',
         twitterlink: '',
@@ -311,7 +311,7 @@ export default new Vuex.Store({
         index: 8,
         nombre: 'kodea',
         logo: "logos/kodea_logo.webp",
-        mock: 'mocks/LAB_kodea.avif',
+        mock: 'mocks/LAB-kodea.webp',
         text: [
           'Desde Diciembre de 2021 a Marzo de 2022, trabajamos con alrededor de 100 microemprendedoras de subsistencia para co-crear la plataforma digital que les facilitará: colaborar, adquirir destrezas, manejar herramientas digitales y metodologías de trabajo que eleven el nivel de rentabilidad de sus negocios y potencien nuevos negocios conjuntos entre emprendedores de la comunidad.'
         ],

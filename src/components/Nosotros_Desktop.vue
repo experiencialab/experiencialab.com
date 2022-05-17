@@ -588,7 +588,7 @@
     </v-row>
     <v-row
       class="ma-0 pa-0"
-      style="width:100vw;height:130px"
+      style="width:100vw;height:200px"
     >
     </v-row>
     <v-row
@@ -611,7 +611,7 @@
           max-width="100%"
           height="56vh"
           src="fotos/LAB_team.png"
-          style="color:white;opacity:.85"
+          style="color:white;opacity:.8"
           position=""
         >
           <v-row
@@ -629,8 +629,15 @@
               align="center"
             >
               <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
-
-              <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
+              <v-img
+                contain
+                eager
+                style="max-width:180px;margin-top:-80px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="180px"
+                max-height="180px"
+                src="iconos/LAB-Bus.gif"
+              ></v-img>
             </v-row>
           </v-row>
         </v-img>
@@ -665,7 +672,7 @@
             <v-card
               :class="{'d-none': !step0}"
               class="ma-0 pa-0"
-              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >
@@ -753,7 +760,7 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk"
+              style="height:570px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >
@@ -819,6 +826,7 @@
                       type="number"
                       min="10000000"
                     ></v-text-field>
+
                   </v-row>
                   <v-row
                     class="ma-0 pa-0"
@@ -860,6 +868,27 @@
                       row-height="15"
                       flat
                     ></v-textarea>
+                  </v-row>
+
+                  <v-row
+                    class="ma-0 pa-0 d-none"
+                    style="width:100%"
+                  >
+                    <v-spacer></v-spacer>
+                      <v-btn
+                        type="submit"
+                        v-bind:style="{ color: computedColor }"
+                        style="text-transform:none;font-size:20px;font-family:Montserrat;letter-spacing: 0px;transition: ease .5s"
+                        :text="this.text"
+                        color="#EDEDED"
+                        @click="sendEmail()"
+                        depressed
+                        tile
+                        v-ripple="false"
+                      >
+                        {{this.boton}}
+                      </v-btn>
+
                   </v-row>
                   <v-divider></v-divider>
                   <v-card-actions>

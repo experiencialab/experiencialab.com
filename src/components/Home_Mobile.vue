@@ -407,13 +407,30 @@
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:100%;font-size:15px;line-height:30px;font-weight:500"
-          justify="center"
-          align="center"
+          style="width:75%"
+          justify="end"
         >
-          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
-          <v-icon x-large class="ma-0 ml-5 pa-0" style="scaleX(2)">$bus</v-icon>
+          <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras
+          </p>
         </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:25%"
+          justify="start"
+        >
+          <v-img
+            contain
+            eagerpx
+            style="margin-top:-25px !important"
+            class="ma-0 ml-n5 pa-0"
+            min-height="55px"
+            max-height="55px"
+            src="iconos/LAB-Bus.gif"
+            ></v-img>
+            <v-spacer></v-spacer>
+
+        </v-row>
+
       </v-row>
     </v-img>
     <v-row
