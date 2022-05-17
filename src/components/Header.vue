@@ -123,7 +123,7 @@
             :class="{ 'menu-active': check('nosotros') }"
           >
             <span class="outer">
-              <span class="inner">nosotros</span>
+              <span class="inner">nosotras</span>
             </span>
           </router-link>
         </v-row>

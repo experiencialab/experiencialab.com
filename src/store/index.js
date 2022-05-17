@@ -176,7 +176,7 @@ export default new Vuex.Store({
       },
       {
         index: 6,
-        nombre: 'María José Valenzuela',
+        nombre: 'María-José Valenzuela',
         cargo: 'Data Scientist',
         bio: [
           'Gen Z, dog lover, scout, feminista e intento de chef vegetariana. Apasionada por los datos y las soluciones tecnológicas que tienen el poder de responder a los desafíos actuales y generar un impacto en el día a día de las personas.',
@@ -215,7 +215,7 @@ export default new Vuex.Store({
         index: 0,
         nombre: 'iConstruye',
         logo: 'logos/iconstruye.png',
-        mock: 'mocks/iconstruye.jpg',
+        mock: 'mocks/iconstruye.webp',
         text: [
           'Step 1',
           '<br>Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para i-construye otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital para sus usuarios. <br><br>Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile.',
@@ -228,12 +228,12 @@ export default new Vuex.Store({
         index: 1,
         nombre: 'TocToc.com',
         logo: 'logos/tictoc.png',
-        mock: 'mocks/toctoc.jpg',
+        mock: 'mocks/toctoc.webp',
         text: [
+          '<a href="https://www.retasalo.com" target="_blank">www.retasalo.com</a><br><br>',
           'Frente al desafío de lograr mayor impacto en las soluciones digitales a mercado en menor tiempo, hemos articulado y desarrollado la estrategia de adopción de agilidad para Toc-Toc otorgando una base metodológica e instalando prácticas que sustentan la forma en que los equipos colaboran, interactúan y articulan su trabajo diario para responder a los desafíos de desarrollo digital de cara a sus usuarios generando delivery continuo constituyéndose en un lab digital.<br><br>',
           'Acompañamos a los equipos durante 4 sprints en su adherencia a SCRUM, desde la preparación de los desafíos, entrenamiento, staffing de las células, shadow & prácticas hand on en todas las ceremonias del framework y coaching agile, para el desarrollo de:<br><br>',
           'Primer mínimo producto viable digital para tasación on-line en base inteligencia artificial.<br><br>',
-          '<a href="https://www.retasalo.com" target="_blank">www.retasalo.com</a><br><br>',
           'En esta asesoría orquestamos alrededor de 40 personas y usuarios.'
         ],
         extend: false
@@ -242,7 +242,7 @@ export default new Vuex.Store({
         index: 2,
         nombre: 'elecmetal',
         logo: 'logos/Elecmental.png',
-        mock: 'mocks/elecmetal.jpg',
+        mock: 'mocks/elecmetal.webp',
         text: [
           'Frente al desafío de digitalizar la interacción sus principales usuarios de la Minería , en un ejercicio de co-creación bajo metodología ágil, desarrollamos los prototipos del primer portafolio digital de Elecmetal para su oferta be to be hacia el sector industrial minería.'
         ],
@@ -252,7 +252,7 @@ export default new Vuex.Store({
         index: 3,
         nombre: 'vtr',
         logo: 'logos/vtrcom.png',
-        mock: 'mocks/vtr.jpg',
+        mock: 'mocks/vtr.webp',
         text: [
           'Enfrentados a un players predominante como Netflix, asumimos el desafío de conectar a VTR las expectativas emergentes de su nueva generación de usuarios, articulando un proceso de diseño colaborativo de su plataforma digital legacy para televisión, resultando en un prototipo que captura todas las tendencias e insights de usuarios con una evolución sustantiva en su usabilidad, interacción, sorpresa en contenidos y funcionalidades. <br><br>En esta asesoría orquestámos el trabajo colaborativo alrededor de 40 personas y usuarios.'
         ],
@@ -262,7 +262,7 @@ export default new Vuex.Store({
         index: 4,
         nombre: 'talento',
         logo: 'logos/talento digital.png',
-        mock: 'mocks/talentodigital.jpg',
+        mock: 'mocks/talentodigital.webp',
         text: [
           'Frente al desafío de visibilizar los nuevos talentos digitales productos de procesos de reconversión a campos de la tecnología. Hemos desarrollado los productos digitales para empresas usuarias de la iniciativa Talento Digital, a través de un proceso de co-creación ágil que incorpora a más de 50 organizaciones (empresas core tech, no core tech, empresas estatales), cuyo resultado da lugar a la oferta soportada en plataformas digitales que incorporan atributos, aspectos y diferenciadores claves en una lógica de mínimos productos viables.<br><br>En esta asesoría orquestamos alrededor de 300 personas y usuarios.'
         ],
@@ -272,9 +272,9 @@ export default new Vuex.Store({
         index: 5,
         nombre: 'polpaico',
         logo: 'logos/polpaico.png',
-        mock: 'mocks/LAB_polpaico.png',
+        mock: 'mocks/LAB_polpaico.webp',
         text: [
-          '<a href="https://www.comprapolpaico.cl/ecommerce/home">https://www.comprapolpaico.cl/ecommerce/home</a>',
+          '<a href="https://www.comprapolpaico.cl/ecommerce/home">www.comprapolpaico.cl</a>',
           '<br>Step 1:<br><br>Frente al desafio de digitalizar la interacción con clientes B2B Y B2C de la compañia, en un ejercicio de co-creación bajo metodología ágil:',
           '<br>Desarrollamos en tecnología ágil el portafolio de los principales productos digitales de Polpaico.',
           '<br>Desarrollamos en 7 sprints el primer ecommerce para la venta de Hormigón.<br><br>Desarrollamos en 8 sprints la primera webapp para la atención de las interacciones más relevantes con clientes B2B.',
@@ -288,7 +288,7 @@ export default new Vuex.Store({
         index: 6,
         nombre: 'teatroamil',
         logo: 'logos/TeatroamilTV.png',
-        mock: 'mocks/teatroamiltv.jpg',
+        mock: 'mocks/teatroamiltv.webp',
         text: [
           'Frente al desafío de digitalizar la interacción con los usuarios y clientes del festival de teatro Santiago a Mil, en un ejercicio de co-creación bajo metodología ágil:<br><br>Dirigimos el desarrollo de una solución digital web y sus aplicativos para la transmisión de contenido en vivo, y sistema de suscripción tipo Netfilx en base a una estrategia de white label con Vimeo OTT.'
         ],
@@ -298,20 +298,20 @@ export default new Vuex.Store({
         index: 7,
         nombre: 'sumate',
         logo: 'logos/sumate-logo.png',
-        mock: 'mocks/LAB_sumate.png',
+        mock: 'mocks/LAB_sumate.webp',
         text: [
+          '<br><br><a href="https://xd.adobe.com/view/25cb9544-9638-4234-88da-c8f251e718da-7098/?fullscreen" target="_blank">Ver plataforma digital</a>',
           '<br>En plena pandemia, durante el año 2021, trabajamos con jóvenes en vulnerabilidad social que estudian en escuelas de la red Sumate, con la finalidad de co-diseñar junto a ellos la plataforma digital que les facilite adquirir habilidades requeridas para acceder a trabajos o estudios de continuidad.',
           '<br>Tuvimos la maravillosa oportunidad de co-crear con más de 50 jóvenes distintas realidades de vulnerabilidad social.',
-          '<br>El resultado es una plataforma digital  que  a través de una dinámica de gaming prepara a los jóvenes para su siguiente paso y pone a su disposición información y oportunidades concretas en base a sus intereses y habilidades : trabajos, continuación de estudios, becas, etc.',
-          '<br><br><a href="https://xd.adobe.com/view/25cb9544-9638-4234-88da-c8f251e718da-7098/?fullscreen" target="_blank">https://xd.adobe.com/view/25cb9544-9638-4234-88da-c8f251e718da-7098/?fullscreen</a>'
+          '<br>El resultado es una plataforma digital  que  a través de una dinámica de gaming prepara a los jóvenes para su siguiente paso y pone a su disposición información y oportunidades concretas en base a sus intereses y habilidades : trabajos, continuación de estudios, becas, etc.'
         ],
         extend: false
       },
       {
         index: 8,
         nombre: 'kodea',
-        logo: 'logos/kodea_logo.png',
-        mock: 'mocks/LAB_kodea.png',
+        logo: "logos/kodea_logo.webp",
+        mock: 'mocks/LAB_kodea.avif',
         text: [
           'Desde Diciembre de 2021 a Marzo de 2022, trabajamos con alrededor de 100 microemprendedoras de subsistencia para co-crear la plataforma digital que les facilitará: colaborar, adquirir destrezas, manejar herramientas digitales y metodologías de trabajo que eleven el nivel de rentabilidad de sus negocios y potencien nuevos negocios conjuntos entre emprendedores de la comunidad.'
         ],

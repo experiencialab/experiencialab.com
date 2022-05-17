@@ -6,7 +6,9 @@ import vuetify from './plugins/vuetify';
 import VueTelInputVuetify from 'vue-tel-input-vuetify/lib';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import * as VueAos from 'vue-aos'
 
+Vue.use(VueAos)
 Vue.use(VueTelInputVuetify, {
   vuetify,
 });

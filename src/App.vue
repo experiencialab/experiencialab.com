@@ -21,9 +21,7 @@
         style="position:fixed;z-index:400"
       ></Header>
     </keep-alive>
-    <transition :name='name'>
-      <router-view v-if="!loading"></router-view>
-    </transition>
+    <router-view v-if="!loading"></router-view>
   <Footer></Footer>
   </v-app>
 </template>

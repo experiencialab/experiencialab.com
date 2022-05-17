@@ -64,7 +64,7 @@
                 >
                   <v-row
                     class="ma-0 pa-0"
-                    style="max-width:70%;line-height:70px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
+                    style="max-width:60%;line-height:70px;color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3)"
 
                   >
 
@@ -104,21 +104,45 @@
                 style="width:33%"
 
               >
-                <p style="width:100%;font-size:50px;height:50px">20+</p>
+                <v-row
+                  class="ma-0 pa-0"
+                  data-aos="fade-left"
+                  data-aos-duration="1300"
+                  data-aos-delay="300"
+                  data-aos-once="false"
+                >
+                  <p style="width:100%;font-size:50px;height:50px">20+</p>
+                </v-row>
                 <p style="width:100%;font-size:15px">Experiencias</p>
               </v-row>
               <v-row
                 class="ma-0 pa-0 text-center"
                 style="width:33%"
               >
+              <v-row
+                class="ma-0 pa-0"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+                data-aos-delay="600"
+                data-aos-once="false"
+              >
                 <p style="width:100%;font-size:50px;height:50px">30+</p>
+              </v-row>
                 <p style="width:100%;font-size:15px">Equipos</p>
               </v-row>
               <v-row
                 class="ma-0 pa-0 text-center"
                 style="width:34%"
               >
-                <p style="width:100%;font-size:50px;height:50px">1000+</p>
+              <v-row
+                class="ma-0 pa-0"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+                data-aos-delay="1000"
+                data-aos-once="false"
+              >
+                <p style="width:100%;font-size:50px;height:50px">2000+</p>
+              </v-row>
                 <p style="width:100%;font-size:15px">Profesionales y Usuarios</p>
               </v-row>
             </v-row>
@@ -160,7 +184,6 @@
           class="ma-0 pa-0"
           data-aos="fade-left"
           data-aos-duration="1500"
-          data-aos-mirror="true"
           data-aos-once="false"
         >
           <v-img
@@ -356,7 +379,7 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-8 mx-16 pa-0"
+        class="ma-0 mt-16 mx-16 pa-0"
         style="width:100vw"
         align="center"
         justify="center"
@@ -364,7 +387,7 @@
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 mx-6 mt-5 pa-0"
-          style="max-width:8%;min-width:6%;opacity:.8"
+          style="height:80px;max-width:100%;min-width:7%;opacity:.75"
           align="center"
           justify="center"
         >
@@ -373,7 +396,7 @@
             class="ma-0 mt-3 pa-0"
             eager
             max-height="110"
-            max-width="95px"
+            max-width="90px"
             :src="logo"
           ></v-img>
         </v-row>
@@ -381,7 +404,7 @@
     </v-row>
     <v-row
       class="ma-0 pa-0"
-      style="width:100vw;height:130px"
+      style="width:100vw;height:200px"
     >
     </v-row>
     <v-row
@@ -422,8 +445,15 @@
               align="center"
             >
               <p class="ma-0 pa-0" style="text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Desarrolla tus talentos con nosotras</p>
-
-              <v-icon class="ma-0 ml-5 pa-0" size="100">$bus</v-icon>
+              <v-img
+                contain
+                eager
+                style="max-width:180px;margin-top:-80px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="180px"
+                max-height="180px"
+                src="iconos/LAB-Bus.gif"
+              ></v-img>
             </v-row>
           </v-row>
         </v-img>
@@ -546,7 +576,7 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
+              style="height:570px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >
@@ -928,6 +958,9 @@
 
   .v-btn__content
     opacity: 1 !important
+
+  .trabaja:hover
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3) !important
 
 
 </style>

@@ -69,23 +69,23 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-4 mx-16 pa-0"
+        class="ma-0 mt-8 mx-16 pa-0"
         style="width:100vw;height:20vh"
         justify="center"
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 mx-6 pa-0"
-          style="max-width:8%;min-width:6%"
+          style="height:80px;max-width:100%;min-width:7%"
           align="center"
           justify="center"
         >
           <v-img
-            style="opacity:0.7"
+            style="opacity:0.75"
             class="ma-0 mt-3 pa-0"
             eager
             max-height="110"
-            max-width="80px"
+            max-width="90px"
             :src="logo"
           ></v-img>
         </v-row>
@@ -106,16 +106,16 @@
             class="ma-0 ml-16 pa-0"
             style="width:100%;font-size:35px;font-weight:300;color:#101010"
           >
-            ON GOING
+            EN QUÉ ESTAMOS
           </v-row>
           <v-row
             class="ma-0 pa-0"
-            style="width:33%"
+            style="width:33%;height:100%"
           >
             <v-img
               contain
               eager
-              style="z-index:10;min-width:100%;opacity:.85"
+              style="max-height:40%;z-index:10;min-width:100%;opacity:.85"
               class="ma-0 pa-0"
               min-height="300px"
               max-height="300px"
@@ -129,12 +129,10 @@
             >
               <p
                 style="max-width:80%"
-              ><span style="font-weight:bold" class="ma-0 pa-0">
-                Hogar de Cristo, Dirección Social
-              </span>
-                <br>Diseño de experiencia personas en situación de calle.
-                <br>Transformación digital gestión personas en situación de calle.
-
+              ><span style="font-weight:bold;width:80%" class="ma-0 pa-0">
+                Hogar de Cristo - Dirección Social
+              </span><br>
+              El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
               </p>
             </v-row>
           </v-row>
@@ -157,19 +155,19 @@
               style="width:100%"
               justify="center"
             >
-              <a href="https://www.hkhumancapital.cl/">https://www.hkhumancapital.cl/</a>
               <p
                 style="max-width:80%"
               ><span style="font-weight:bold" class="ma-0 pa-0">
-                HK Human Capital, Executive Search
-              </span>
-                <br>Consultoría para la aceleración de su transformación digital.
+                HK Human Capital – Executive Search
+              </span><br>
+              Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
               </p>
+              <a href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
             </v-row>
           </v-row>
           <v-row
             class="ma-0 pa-0"
-            style="width:33%"
+            style="width:33%;background-color:red"
           >
             <v-img
               contain
@@ -189,9 +187,9 @@
               <p
                 style="max-width:80%"
               ><span style="font-weight:bold" class="ma-0 pa-0">
-                Coopeuch
-              </span>
-                <br>Estrategia Aceleración Digital.
+                Coopeuch – Institución Financiera Cooperativa
+              </span><br>
+              Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
               </p>
             </v-row>
           </v-row>
@@ -206,6 +204,10 @@
         <v-row
           class="ma-0 pa-0"
           style="width:55vw"
+          data-aos="fade-right"
+          data-aos-duration="1300"
+          data-aos-delay="300"
+          data-aos-once="false"
         >
           <v-row
             class="ma-0 pa-0 d-none"
@@ -230,8 +232,11 @@
         </v-row>
         <v-row
           class="ma-0 pa-0"
-          style="width:45vw;z-index:100"
+          style="width:40vw;z-index:100"
           align="center"
+          data-aos="fade-left"
+          data-aos-duration="1300"
+          data-aos-once="false"
         >
           <v-row
             class="ma-0 pa-0"
@@ -249,6 +254,10 @@
                 max-height="100"
                 max-width="200"
                 :src="experiencia.logo"
+                data-aos="zoom-out"
+                data-aos-duration="1300"
+                data-aos-delay="800"
+                data-aos-once="false"
               ></v-img>
               <v-spacer></v-spacer>
               <v-icon v-if="experiencia.index == 0" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
@@ -291,6 +300,12 @@
               </v-row>
             </v-row>
           </v-row>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:5vw"
+        >
+
         </v-row>
       </v-row>
     </v-row>
