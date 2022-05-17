@@ -98,101 +98,165 @@
       >
         <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="background-color:#F2F2F2;height:600px"
+          style="background-color:#F2F2F2"
           justify="center"
           align="center"
         >
           <v-row
-            class="ma-0 ml-16 pa-0"
+            class="ma-0 mt-10 ml-16 pa-0"
             style="width:100%;font-size:35px;font-weight:300;color:#101010"
           >
             EN QUÉ ESTAMOS
           </v-row>
           <v-row
-            class="ma-0 pa-0"
-            style="width:33%;height:100%"
+            class="ma-0 mt-5 pa-0"
+            style="width:100%;height:300px"
           >
-            <v-img
-              contain
-              eager
-              style="max-height:40%;z-index:10;min-width:100%;opacity:.85"
-              class="ma-0 pa-0"
-              min-height="300px"
-              max-height="300px"
-              width="33vw"
-              src="mocks/LAB_HDC.png"
-            ></v-img>
             <v-row
-              class="ma-0 mt-12 pa-0 text-center"
-              style="width:100%"
+              class="ma-0 pa-0"
+              style="height:300px;width:33%"
+            >
+              <v-img
+                contain
+                eager
+                style="max-height:40%;z-index:10;opacity:.85"
+                class="ma-0 pa-0"
+                min-height="300px"
+                max-height="300px"
+                width="33vw"
+                src="mocks/LAB_HDC.png"
+              ></v-img>
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:34%"
+            >
+              <v-img
+                contain
+                eager
+                style="z-index:10;opacity:.85"
+                class="ma-0 mt-1 pa-0"
+                min-height="290px"
+                max-height="290px"
+                max-width="34vw"
+                src="mocks/hkhumancapital mockup.png"
+              ></v-img>
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:33%"
+            >
+              <v-img
+                contain
+                eager
+                style="z-index:10;opacity:.85"
+                class="ma-0 mt-1 pa-0"
+                min-height="290px"
+                max-height="290px"
+                max-width="33vw"
+                src="mocks/LAB-Copeuch.png"
+              ></v-img>
+            </v-row>
+          </v-row>
+          <v-row
+            class="ma-0 mt-5 pa-0"
+            style="width:100%;height:0px"
+          >
+            <v-row
+              class="ma-0 pa-0"
+              style="width:33%"
               justify="center"
             >
               <p
-                style="max-width:80%"
-              ><span style="font-weight:bold;width:80%" class="ma-0 pa-0">
+                style="font-weight:bold"
+                class="ma-0 pa-0 text-center"
+              >
                 Hogar de Cristo - Dirección Social
-              </span><br>
-              El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
               </p>
             </v-row>
-          </v-row>
-          <v-row
-            class="ma-0 pa-0"
-            style="width:34%"
-          >
-            <v-img
-              contain
-              eager
-              style="z-index:10;min-width:100%;opacity:.85"
-              class="ma-0 pa-0"
-              min-height="300px"
-              max-height="300px"
-              max-width="34vw"
-              src="mocks/hkhumancapital mockup.png"
-            ></v-img>
             <v-row
-              class="ma-0 mt-12 pa-0 text-center"
-              style="width:100%"
+              class="ma-0 pa-0"
+              style="width:34%"
               justify="center"
             >
               <p
-                style="max-width:80%"
-              ><span style="font-weight:bold" class="ma-0 pa-0">
+                style="font-weight:bold"
+                class="ma-0 pa-0 text-center"
+              >
                 HK Human Capital – Executive Search
-              </span><br>
-              Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
               </p>
-              <a href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:33%"
+              justify="center"
+            >
+              <p
+                style="font-weight:bold"
+                class="ma-0 pa-0 text-center"
+              >
+                Coopeuch – Institución Financiera Cooperativa
+              </p>
             </v-row>
           </v-row>
           <v-row
             class="ma-0 pa-0"
-            style="width:33%;background-color:red"
+            style=""
           >
-            <v-img
-              contain
-              eager
-              style="z-index:10;min-width:100%;opacity:.85"
-              class="ma-0 pa-0"
-              min-height="300px"
-              max-height="300px"
-              max-width="33vw"
-              src="mocks/LAB-Copeuch.png"
-            ></v-img>
             <v-row
-              class="ma-0 mt-12 pa-0 text-center"
-              style="width:100%"
-              justify="center"
+              class="ma-0 pa-0"
+              style="width:33%"
             >
-              <p
-                style="max-width:80%"
-              ><span style="font-weight:bold" class="ma-0 pa-0">
-                Coopeuch – Institución Financiera Cooperativa
-              </span><br>
-              Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
-              </p>
+              <v-row
+                class="ma-0 mt-12 pa-0 text-center"
+                style="width:100%"
+                justify="center"
+              >
+                <p
+                  class="ma-0 pa-0 text-justify"
+                  style="max-width:80%;height:120px"
+                >
+                El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
+                </p>
+              </v-row>
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:34%"
+            >
+              <v-row
+                class="ma-0 mt-12 pa-0 text-center"
+                style="width:100%"
+                justify="center"
+              >
+                <p
+                  class="ma-0 pa-0 text-justify"
+                  style="max-width:80%"
+                >
+                Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
+                </p>
+                <a class="ma-0 mt-1 mb-8 pa-0" href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
+              </v-row>
+            </v-row>
+            <v-row
+              class="ma-0 pa-0"
+              style="width:33%"
+            >
+              <v-row
+                class="ma-0 mt-12 pa-0 text-center"
+                style="width:100%"
+                justify="center"
+              >
+                <p
+                  class="ma-0 pa-0 text-justify"
+                  style="max-width:80%"
+                >
+                Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
+                </p>
+              </v-row>
             </v-row>
           </v-row>
+
         </v-row>
       </v-row>
       <v-row
