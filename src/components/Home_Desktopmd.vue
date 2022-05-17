@@ -4,7 +4,7 @@
     style="max-width:100vw;min-width:100vw"
   >
     <v-row
-      class="ma-0 mt-16 pa-0"
+      class="ma-0 mt-12 pa-0"
       style="width:100%;height:90vh"
     >
       <v-row
@@ -149,7 +149,7 @@
           </v-row>
 
           <v-icon class="ma-0 pa-0 d-none" style="top:-200px;transform:scale(35);position:absolute;opacity:.2">$corazon</v-icon>
-          <v-icon class="ma-0 mt-2 pr-7 pa-0" style="z-index:0;top:100px;transform:scale(9);position:absolute;opacity:.3">$corazon</v-icon>
+          <v-icon class="ma-0 mt-2 pr-5 pa-0" style="z-index:0;top:65px;transform:scale(7);position:absolute;opacity:.3">$corazon</v-icon>
 
           <p class="ma-0 ml-16 mr-5 pa-0 pl-6" style="z-index:1;width:50%;font-size:16px;font-family:Space Grotesk;font-weight:400;line-height:24px"> {{ $store.state.bajada }} </p>
 
@@ -161,15 +161,15 @@
     >
     </v-row>
     <v-row
-      class="ma-0 ml-12 pa-0"
+      class="ma-0 mt-16 mb-n16 ml-12 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">Servicios</p>
     </v-row>
     <v-row
       v-for="servicio in $store.state.servicios"  :key="servicio.index"
-      class="ma-0 mb-16 pa-0 pb-16"
-      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block;transform:scale(0.95)"
+      class="ma-0 my-16 pa-0 pb-16"
+      style="position:relative;width:100vw;height:calc( 100vh - 70px );overflow:block;transform:scale(1)"
     >
       <v-row
         class="ma-0 pa-0"
@@ -188,7 +188,7 @@
         >
           <v-img
             eager
-            class="mx-16 pa-0"
+            class="ma-0 pa-0"
             style="opacity:.85;min-width:60%;max-width:60%;max-heigth:calc( 100vh - 70px );text-shadow:2px 2px 2px rgba(0,0,0,0.3);left:5vw;font-size:200px;font-family:Space Grotesk;font-weight:700;color:white"
             :src="$store.state.servicios[servicio.index].foto"
             contain
@@ -213,8 +213,8 @@
           align="center"
         >
           <v-row
-            class="ma-0 mr-16 pa-0"
-            style="right:5vw;position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;width:40vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+            class="ma-0 mr-16 my-auto pa-0"
+            style="position:absolute;font-size:17px;font-family:Space Grotesk;font-weight:600;background-color:white;color:#101010;z-index:1;width:50vw;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
             align="center"
           >
             <v-row
@@ -297,25 +297,23 @@
     >
     </v-row>
     <v-row
-      class="ma-0 ml-12 pa-0"
+      class="ma-0 mb-8 ml-12 pa-0"
       style="width:100vw;height:70px;font-size:40px;font-family:Space Grotesk;font-weight:300;background-color:white;color:#101010"
     >
       <p class="ma-0 ml-8 pa-0 text-uppercase">Experiencias</p>
     </v-row>
     <v-row
-      class="ma-0 mt-8 pa-0 justify-end"
+      class="ma-0 pa-0 justify-end"
       style="position:relative;width:100vw;font-size:30px;font-family:Space Grotesk;font-weight:300"
-      align="center"
     >
       <v-row
         class="ma-0 mx-5 pa-0"
-        style="position:relative;width:100%;overflow:hidden;width:100vw"
-        align="center"
+        style="width:100%;overflow:hidden;width:100vw"
       >
         <v-img
           class="ma-0 mt-8 pa-0"
           max-width="100%"
-          height="56vh"
+          height="65vh"
           src="fotos/testimonios.jpg"
           eager
         >
@@ -325,7 +323,7 @@
             continuos
             cycle
             interval="8000"
-            style="width:100%;height:100%"
+            style="width:100%;height:65vh"
           >
             <v-carousel-item
               class="ma-0 pa-0"
@@ -339,10 +337,11 @@
                 align="center"
               >
                 <v-row
-                  class="ma-0 pa-0"
-                  style="max-width:100%"
+                  class="ma-0 mt-n10 pa-0"
+                  style="max-width:100%;height:65vh"
+                  align="center"
                 >
-                  <p class="ma-0 ml-16 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3);background-color:transparent">"{{ item.cita }}".</p>
+                  <p class="ma-0 mt-n16 ml-16 pa-0 font-italic" style="max-width:800px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">"{{ item.cita }}".</p>
                 </v-row>
               </v-row>
             </v-carousel-item>
@@ -351,7 +350,7 @@
       </v-row>
       <v-row
         class="ma-0 mr-3 pa-0"
-        style="top:400px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        style="top:350px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
       >
         <v-row
           class="ma-0 pa-0"
@@ -390,8 +389,8 @@
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
-          class="ma-0 mx-6 mt-5 pa-0"
-          style="height:80px;max-width:100%;min-width:7%;opacity:.75"
+          class="ma-0 mx-6 pa-0"
+          style="height:60px;max-width:100%;min-width:10%;opacity:.75"
           align="center"
           justify="center"
         >
@@ -580,7 +579,7 @@
             <v-card
               :class="{'d-none': step0}"
               class="ma-0 pa-0"
-              style="height:570px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
+              style="height:540px;border-radius:0px !important;background-color:white;font-family:Space Grotesk;overflow:hidden"
               tile
               align="center"
             >

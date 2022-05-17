@@ -3,8 +3,8 @@
     class="ma-0 pa-0"
   >
     <homedesktop v-if="$vuetify.breakpoint.xl"></homedesktop>
-    <homedesktop v-if="$vuetify.breakpoint.lg"></homedesktop>
-    <homedesktop v-if="$vuetify.breakpoint.md"></homedesktop>
+    <homedesktopmd v-if="$vuetify.breakpoint.lg"></homedesktopmd>
+    <homedesktopmd v-if="$vuetify.breakpoint.md"></homedesktopmd>
     <homemobile v-if="$vuetify.breakpoint.sm"></homemobile>
     <homemobile v-if="$vuetify.breakpoint.xs"></homemobile>
   </v-row>
@@ -12,11 +12,13 @@
 
 <script>
   import homedesktop from '@/components/Home_Desktop.vue'
+  import homedesktopmd from '@/components/Home_Desktopmd.vue'
   import homemobile from '@/components/Home_Mobile.vue'
 
   export default {
     components: {
       homedesktop,
+      homedesktopmd,
       homemobile
     }
   }
