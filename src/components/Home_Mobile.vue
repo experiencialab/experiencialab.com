@@ -236,21 +236,21 @@
                 class="ma-0 mt-n16 pa-0"
                 style="height:150px;margin-top:-100px !important"
                 playsinline autoplay muted loop>
-                <source src='iconos/lancha.webm' type='video/webm'>
+                <source src='iconos/LAB-Lancha.mp4' type='video/mp4'>
               </video>
               <video
                 v-if="servicio.index == 1"
                 class="ma-0 mt-n16 pa-0"
-                style="height:150px"
+                style="height:100px"
                 playsinline autoplay muted loop>
-                <source src='iconos/cohete.webm' type='video/webm'>
+                <source src='iconos/LAB-Cohete.mp4' type='video/mp4'>
               </video>
               <video
                 v-if="servicio.index == 2"
                 class="ma-0 mt-n14 pa-0"
-                style="height:150px"
+                style="height:100px"
                 playsinline autoplay muted loop>
-                <source src='iconos/avion.webm' type='video/webm'>
+                <source src='iconos/LAB-Avion.mp4' type='video/mp4'>
               </video>
             </v-row>
             <v-row
@@ -566,7 +566,7 @@
           >
             Trabaja con nosotras
             <v-spacer></v-spacer>
-            
+
             <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
           </v-card-title>
 

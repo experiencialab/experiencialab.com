@@ -201,7 +201,7 @@
         <v-row
           class="ma-0 mt-5 pa-0"
           style="width:100%"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay="0"
           data-aos-once="false"
@@ -240,6 +240,12 @@
               class="ma-0 mt-10 pa-0"
               align="center"
             >
+              <v-row
+                v-if="experiencia.web"
+                class="ma-0 ml-5 pa-0"
+              >
+                <a style="text-decoration:none;font-weight:bold" :href="experiencia.web" target="_blank">Ver plataforma digital</a><br><br>
+              </v-row>
               <v-spacer></v-spacer>
               <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
               <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>

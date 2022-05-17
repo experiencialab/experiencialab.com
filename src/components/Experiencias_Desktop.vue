@@ -235,7 +235,7 @@
                 >
                 Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
                 </p>
-                <a class="ma-0 mt-1 mb-8 pa-0" href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
+                <a class="ma-0 mt-4 mb-8 pa-0" style="text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
               </v-row>
             </v-row>
             <v-row
@@ -345,7 +345,7 @@
                 v-for="dex in 2" :key="dex"
                 align="center"
               >
-                <span v-html="experiencia.text[dex - 1]"></span>
+                <span style="text-decoration:none !important" v-html="experiencia.text[dex - 1]"></span>
               </v-row>
               <v-row
                 class="ma-0 ml-5 mr-12 pa-0"
@@ -358,6 +358,12 @@
                 class="ma-0 mt-8 pa-0"
                 align="center"
               >
+                <v-row
+                  v-if="experiencia.web"
+                  class="ma-0 ml-5 pa-0"
+                >
+                  <a style="text-decoration:none;font-weight:bold" :href="experiencia.web" target="_blank">Ver plataforma digital</a><br><br>
+                </v-row>
                 <v-spacer></v-spacer>
                 <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>
                 <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-minus</v-icon>
