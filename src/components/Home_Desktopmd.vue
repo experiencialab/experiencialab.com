@@ -389,8 +389,8 @@
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
-          class="ma-0 mx-6 pa-0"
-          style="height:60px;max-width:100%;min-width:10%;opacity:.75"
+          class="ma-0 pa-0"
+          style="height:80px;max-width:12%;min-width:10%;opacity:0.75"
           align="center"
           justify="center"
         >
@@ -407,7 +407,7 @@
     </v-row>
     <v-row
       class="ma-0 pa-0"
-      style="width:100vw;height:200px"
+      style="width:100vw;height:100px"
     >
     </v-row>
     <v-row

@@ -4,7 +4,7 @@
     style="max-width:100vw;min-width:100vw"
   >
     <v-row
-      class="ma-0 mt-16 pa-0"
+      class="ma-0 mt-12 pa-0"
       style="width:100%"
     >
       <v-row
@@ -47,8 +47,8 @@
               align="center"
             >
               <v-row
-                class="ma-0 pa-0"
-                style="font-size:60px;line-height:65px;font-family:Space Grotesk;font-weight:600;width:100vw"
+                class="ma-0 mt-n5 pa-0"
+                style="font-size:50px;line-height:50px;font-family:Space Grotesk;font-weight:600;width:100vw"
                 align="center"
               >
                 <v-row
@@ -58,7 +58,7 @@
                 >
                   <v-row
                     class="ma-0 mt-16 pa-0"
-                    style="max-width:100%"
+                    style="max-width:80%"
                   >
                     <p class="ma-0 pa-0" style="color:white;max-width:1200px;text-shadow: 2px 2px 5px rgba(0,0,0,.3)">Adaptamos la experiencia al tamaño de las necesidades de cualquier organización.</p>
                   </v-row>
@@ -68,30 +68,9 @@
           </v-row>
         </v-row>
       </v-row>
+
       <v-row
-        class="ma-0 mt-8 mx-16 pa-0"
-        style="width:100vw;height:20vh"
-        justify="center"
-      >
-        <v-row
-          v-for="logo in this.logos" :key="logo"
-          class="ma-0 mx-6 pa-0"
-          style="height:80px;max-width:100%;min-width:7%"
-          align="center"
-          justify="center"
-        >
-          <v-img
-            style="opacity:0.75"
-            class="ma-0 mt-3 pa-0"
-            eager
-            max-height="110"
-            max-width="90px"
-            :src="logo"
-          ></v-img>
-        </v-row>
-      </v-row>
-      <v-row
-        class="ma-0 mt-8 pa-0"
+        class="ma-0 mt-16 pa-0"
         style="height:100vh"
         justify="center"
         align="center"
@@ -121,8 +100,8 @@
                 eager
                 style="max-height:40%;z-index:10;opacity:.85"
                 class="ma-0 pa-0"
-                min-height="300px"
-                max-height="300px"
+                min-height="260px"
+                max-height="260px"
                 width="33vw"
                 src="mocks/LAB_HDC.webp"
               ></v-img>
@@ -136,8 +115,8 @@
                 eager
                 style="z-index:10;opacity:.85"
                 class="ma-0 mt-1 pa-0"
-                min-height="290px"
-                max-height="290px"
+                min-height="260px"
+                max-height="260px"
                 max-width="34vw"
                 src="mocks/hkhumancapital mockup.webp"
               ></v-img>
@@ -151,8 +130,8 @@
                 eager
                 style="z-index:10;opacity:.85"
                 class="ma-0 mt-1 pa-0"
-                min-height="290px"
-                max-height="290px"
+                min-height="260px"
+                max-height="260px"
                 max-width="33vw"
                 src="mocks/LAB-Copeuch.webp"
               ></v-img>
@@ -200,7 +179,7 @@
             </v-row>
           </v-row>
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 mb-8 pa-0"
             style="font-size:15px"
           >
             <v-row
@@ -256,12 +235,11 @@
               </v-row>
             </v-row>
           </v-row>
-
         </v-row>
       </v-row>
       <v-row
         class="ma-0 mb-8 pa-0"
-        style="min-height:80vh;max-height:80vh;width:100vw;transform:scale(1)"
+        style="margin-top:200px !important;min-height:80vh;width:100vw;transform:scale(1)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
         align="center"
       >
@@ -370,6 +348,28 @@
           style="width:5vw"
         >
 
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 mx-16 pa-0"
+        style="width:100vw;height:20vh;margin-bottom:140px !important"
+        justify="center"
+      >
+        <v-row
+          v-for="logo in this.logos" :key="logo"
+          class="ma-0 pa-0"
+          style="height:80px;max-width:12%;min-width:10%"
+          align="center"
+          justify="center"
+        >
+          <v-img
+            style="opacity:0.75"
+            class="ma-0 mt-3 pa-0"
+            eager
+            max-height="110"
+            max-width="90px"
+            :src="logo"
+          ></v-img>
         </v-row>
       </v-row>
     </v-row>
