@@ -198,6 +198,10 @@
               style="height:100%"
               align="center"
               justify="center"
+              data-aos="zoom-out"
+              data-aos-duration="600"
+              data-aos-delay="1000"
+              data-aos-once="false"
             >
               {{ $store.state.servicios[servicio.index].letra }}
 

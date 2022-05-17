@@ -528,7 +528,8 @@
             style="height:7vh;font-size:19px"
           >
             Trabaja con nosotras
-
+            <v-spacer></v-spacer>
+            
             <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
           </v-card-title>
 

@@ -37,28 +37,7 @@
         </v-row>
       </v-row>
     </v-row>
-    <v-row
-      class="ma-0 mt-16 pa-0"
-      style="width:100vw"
-      align="center"
-    >
-      <v-row
-        class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
-        v-for="logo in this.logos" :key="logo"
-        align="center"
-        justify="center"
-      >
 
-          <v-img
-            style="opacity:0.8"
-            eager
-            max-height="111"
-            max-width="79"
-            :src="logo"
-          ></v-img>
-
-      </v-row>
-    </v-row>
     <v-row
       class="ma-0 mt-16 mb-16 pa-0"
       style="transform:scale(1);background-color:#F2F2F2"
@@ -66,128 +45,116 @@
     >
       <v-row
         class="ma-0 mt-8 ml-16 pa-0"
-        style="width:100%;font-size:35px;font-weight:300;color:#101010"
+        style="width:100%;font-size:25px;font-weight:300;color:#101010"
       >
-        ON GOING
+        EN QUÉ ESTAMOS
       </v-row>
       <v-row
         class="ma-0 my-10 pa-0"
         style="width:100%"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="0"
+        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:40%"
-          justify="center"
-          align="center"
+          style="width:100%"
         >
           <v-img
             contain
             eager
             style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            max-height="100px"
-            max-width="100px"
-            src="mocks/LAB_HDC.png"
+            max-height="200px"
+            max-width="200px"
+            src="mocks/LAB_HDC.webp"
           ></v-img>
         </v-row>
         <v-row
-          class="ma-0 pa-0"
-          style="width:60%"
+          class="ma-0 mt-4 pa-0"
+          style="width:100%;font-weight:bold"
           justify="center"
-          align="center"
         >
-          <p
-            style="max-width:80%"
-          ><span style="font-weight:bold" class="ma-0 pa-0">
-            Hogar de Cristo, Dirección Social
-          </span>
-            <br>Diseño de experiencia personas en situación de calle.
-            <br>Transformación digital gestión personas en situación de calle.
-
-          </p>
+          Hogar de Cristo – Dirección Social
+        </v-row>
+        <v-row
+          class="ma-0 mx-6 mt-6 pa-0 text-left"
+        >
+          El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
         </v-row>
       </v-row>
       <v-row
         class="ma-0 my-10 pa-0"
         style="width:100%"
+        justify="center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="0"
+        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:40%"
-          justify="center"
-          align="center"
+          style="width:100%"
         >
           <v-img
             contain
             eager
             style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            max-height="100px"
-            max-width="100px"
-            src="mocks/hkhumancapital mockup.png"
+            max-height="150px"
+            max-width="150px"
+            src="mocks/hkhumancapital mockup.webp"
           ></v-img>
         </v-row>
         <v-row
-          class="ma-0 pa-0"
-          style="width:60%"
+          class="ma-0 mt-4 pa-0"
+          style="width:100%;font-weight:bold"
           justify="center"
-          align="center"
         >
-          <v-row
-            class="ma-0 pa-0 text-center"
-            style="width:100%"
-            justify="center"
-          >
-            <a href="https://www.hkhumancapital.cl/">https://www.hkhumancapital.cl/</a>
-            <p
-              style="max-width:80%"
-            ><span style="font-weight:bold" class="ma-0 pa-0">
-              HK Human Capital, Executive Search
-            </span>
-              <br>Consultoría para la aceleración de su transformación digital.
-            </p>
-          </v-row>
+          HK Human Capital – Executive Search
         </v-row>
+        <v-row
+          class="ma-0 mx-6 mt-6 pa-0 text-left"
+        >
+          Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
+        </v-row>
+        <a class="ma-0 mt-3 pa-0" href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
       </v-row>
       <v-row
         class="ma-0 my-10 pa-0"
         style="width:100%"
+        justify="center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="0"
+        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
-          style="width:40%"
-          justify="center"
-          align="center"
+          style="width:100%"
         >
           <v-img
             contain
             eager
-            style="opacity:.85;z-index:10"
+            style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            max-height="100px"
-            max-width="100px"
-            src="mocks/LAB-Copeuch.png"
+            max-height="180px"
+            max-width="180px"
+            src="mocks/LAB-Copeuch.webp"
           ></v-img>
         </v-row>
         <v-row
-          class="ma-0 pa-0"
-          style="width:60%"
+          class="ma-0 mt-4 pa-0"
+          style="width:100%;font-weight:bold"
           justify="center"
-          align="center"
         >
-          <v-row
-            class="ma-0 pa-0 text-center"
-            style="width:100%"
-            justify="center"
-          >
-            <p
-              style="max-width:80%"
-            ><span style="font-weight:bold" class="ma-0 pa-0">
-              Coopeuch
-            </span>
-              <br>Estrategia Aceleración Digital.
-            </p>
-          </v-row>
+          Coopeuch – Institución Financiera Cooperativa
+        </v-row>
+        <v-row
+          class="ma-0 mx-6 mt-6 pa-0 text-left"
+        >
+          Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
         </v-row>
       </v-row>
     </v-row>
@@ -234,6 +201,10 @@
         <v-row
           class="ma-0 mt-5 pa-0"
           style="width:100%"
+          data-aos="fade-down"
+          data-aos-duration="600"
+          data-aos-delay="0"
+          data-aos-once="false"
         >
           <v-img
             eager
@@ -283,6 +254,30 @@
           <p>
             <span v-html="text"></span>
           </p>
+        </v-row>
+      </v-row>
+    </v-row>
+    <v-row
+      class="ma-0 mb-16 pa-0"
+      style="width:100vw"
+      align="center"
+    >
+      <v-row
+        class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
+        v-for="(logo,index) in this.logos" :key="index"
+        align="center"
+        justify="center"
+      >
+        <v-row
+          class="ma-0 pa-0"
+        >
+          <v-img
+            style="opacity:0.8"
+            eager
+            max-height="111"
+            max-width="79"
+            :src="logo"
+          ></v-img>
         </v-row>
       </v-row>
     </v-row>

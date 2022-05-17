@@ -171,6 +171,10 @@
               style="height:100%"
               align="center"
               justify="center"
+              data-aos="zoom-out"
+              data-aos-duration="600"
+              data-aos-delay="1000"
+              data-aos-once="false"
             >
               {{ $store.state.servicios[servicio.index].letra }}
 
@@ -561,7 +565,8 @@
             style="height:7vh;font-size:19px"
           >
             Trabaja con nosotras
-
+            <v-spacer></v-spacer>
+            
             <v-icon class="ma-0 ml-2 pa-0" size="30">$bus</v-icon>
           </v-card-title>
 
