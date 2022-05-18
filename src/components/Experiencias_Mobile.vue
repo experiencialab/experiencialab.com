@@ -41,7 +41,7 @@
 
     <v-row
       class="ma-0 mt-16 mb-16 pa-0"
-      style="transform:scale(1);background-color:#F2F2F2"
+      style="transform:scale(1);background-color:#F2F2F2;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
       justify="center"
     >
       <v-row
@@ -204,7 +204,7 @@
           <v-icon v-if="experiencia.index == 8" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
         </v-row>
         <v-row
-          class="ma-0 pa-0"
+          class="ma-0 mt-n5 pa-0"
           style="width:100%"
         >
           <v-img

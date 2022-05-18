@@ -77,7 +77,7 @@
       >
         <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="background-color:#F2F2F2;font-family:Space Grotesk"
+          style="background-color:#F2F2F2;font-family:Space Grotesk;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
           justify="center"
           align="center"
         >
