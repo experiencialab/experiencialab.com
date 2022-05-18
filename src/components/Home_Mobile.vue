@@ -153,7 +153,7 @@
         <v-row
           class="ma-0 pa-0"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1300"
           data-aos-once="false"
           style="height:55vh;width:100%"
         >
@@ -234,7 +234,7 @@
               <video
                 v-if="servicio.index == 0"
                 class="ma-0 mt-n16 pa-0"
-                style="height:150px;margin-top:-100px !important"
+                style="height:100px;margin-top:-100px !important"
                 playsinline autoplay muted loop>
                 <source src='iconos/LAB-Lancha.mp4' type='video/mp4'>
               </video>
@@ -285,6 +285,7 @@
     <v-row
       class="ma-0 mt-10 pa-0"
       style="width:100vw;position:relative;background-color:white;font-size:40px;font-family:Space Grotesk;font-weight:300"
+      justify="center"
     >
       <v-row
         class="ma-0 pa-0 justify-end"
@@ -367,25 +368,26 @@
         </v-img>
       </v-row>
       <v-row
-        class="ma-0 mt-16 pa-0"
-        style="width:100vw;background-color:white"
+        class="ma-0 mb-16 pa-0"
+        style="max-width:90vw"
         align="center"
+        justify="center"
       >
         <v-row
-          class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
           v-for="logo in this.logos" :key="logo"
+          class="ma-0 pa-0"
+          style="height:80px;max-width:33%;min-width:33%"
           align="center"
           justify="center"
         >
-
-            <v-img
-              eager
-              max-height="111"
-              max-width="79"
-              :src="logo"
-              style="opacity:.8"
-            ></v-img>
-
+          <v-img
+            style="opacity:0.75"
+            class="ma-0 mt-3 pa-0"
+            eager
+            max-height="110"
+            max-width="90px"
+            :src="logo"
+          ></v-img>
         </v-row>
       </v-row>
     </v-row>

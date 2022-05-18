@@ -53,10 +53,6 @@
       <v-row
         class="ma-0 my-10 pa-0"
         style="width:100%"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="0"
-        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
@@ -89,10 +85,6 @@
         class="ma-0 my-10 pa-0"
         style="width:100%"
         justify="center"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="0"
-        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
@@ -126,10 +118,6 @@
         class="ma-0 my-10 pa-0"
         style="width:100%"
         justify="center"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="0"
-        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
