@@ -2,6 +2,7 @@
   <v-row
     class="ma-0 pa-0"
     style="width:100vw;overflow:hidden"
+    justify="center"
   >
     <v-row
       class="ma-0 mt-16 pa-0"
@@ -163,12 +164,17 @@
       style="width:100vw"
       v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
       align="center"
+      justify="center"
     >
       <v-row
         class="ma-0 mt-16 mb-16 pa-0"
         style="width:100vw"
         justify="center"
         align="center"
+        data-aos="fade-up"
+        data-aos-duration="1300"
+        data-aos-delay="0"
+        data-aos-once="false"
       >
         <v-row
           class="ma-0 pa-0"
@@ -176,7 +182,6 @@
           justify="center"
           align="center"
         >
-          <v-spacer></v-spacer>
           <v-img
             contain
             eager
@@ -188,23 +193,19 @@
           >
           </v-img>
           <v-spacer></v-spacer>
-          <v-icon v-if="experiencia.index == 0" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-          <v-icon v-if="experiencia.index == 1" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-          <v-icon v-if="experiencia.index == 2" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
-          <v-icon v-if="experiencia.index == 3" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 4" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 5" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
-          <v-icon v-if="experiencia.index == 6" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 7" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
-          <v-icon v-if="experiencia.index == 8" class="ma-0 ml-5 mr-5  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 0" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+          <v-icon v-if="experiencia.index == 1" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 2" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 3" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 4" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 5" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+          <v-icon v-if="experiencia.index == 6" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 7" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
+          <v-icon v-if="experiencia.index == 8" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
         </v-row>
         <v-row
-          class="ma-0 mt-5 pa-0"
+          class="ma-0 pa-0"
           style="width:100%"
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-delay="0"
-          data-aos-once="false"
         >
           <v-img
             eager
@@ -223,14 +224,14 @@
 
           >
             <v-row
-              class="ma-0 ml-5 mr-12 pa-0"
+              class="ma-0 ml-10 mr-12 pa-0"
               style="width:100%;font-family:Space Grotesk"
               v-for="dex in 2" :key="dex"
             >
               <span v-html="experiencia.text[dex - 1]"></span>
             </v-row>
             <v-row
-              class="ma-0 ml-5 mr-12 pa-0"
+              class="ma-0 ml-10 mr-12 pa-0"
               style="width:100%;font-family:Space Grotesk"
               v-for="dex in $store.state.experiencias.length"  :key="dex + 100"
             >
@@ -242,7 +243,7 @@
             >
               <v-row
                 v-if="experiencia.web"
-                class="ma-0 ml-5 pa-0"
+                class="ma-0 ml-10 pa-0"
               >
                 <a style="text-decoration:none;font-weight:bold" :href="experiencia.web" target="_blank">Ver plataforma digital</a><br><br>
               </v-row>
@@ -265,26 +266,25 @@
     </v-row>
     <v-row
       class="ma-0 mb-16 pa-0"
-      style="width:100vw"
+      style="max-width:90vw"
       align="center"
+      justify="center"
     >
       <v-row
-        class="ma-0 mt-3 mb-5 mx-5 pa-0 logo"
-        v-for="(logo,index) in this.logos" :key="index"
+        v-for="logo in this.logos" :key="logo"
+        class="ma-0 pa-0"
+        style="height:80px;max-width:33%;min-width:33%"
         align="center"
         justify="center"
       >
-        <v-row
-          class="ma-0 pa-0"
-        >
-          <v-img
-            style="opacity:0.8"
-            eager
-            max-height="111"
-            max-width="79"
-            :src="logo"
-          ></v-img>
-        </v-row>
+        <v-img
+          style="opacity:0.75"
+          class="ma-0 mt-3 pa-0"
+          eager
+          max-height="110"
+          max-width="90px"
+          :src="logo"
+        ></v-img>
       </v-row>
     </v-row>
   </v-row>
