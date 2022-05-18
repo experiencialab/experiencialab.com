@@ -40,8 +40,8 @@
     </v-row>
 
     <v-row
-      class="ma-0 mt-16 mb-16 pa-0"
-      style="transform:scale(1);background-color:#F2F2F2;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+      class="ma-0 mt-16 mx-5 mb-16 pa-0"
+      style="transform:scale(1);border-top: 1px solid black;border-bottom: 1px solid black"
       justify="center"
     >
       <v-row

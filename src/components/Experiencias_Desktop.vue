@@ -98,18 +98,18 @@
       >
         <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="background-color:#F2F2F2;font-family:Space Grotesk;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+          style="border-top: 1px solid black;border-bottom: 1px solid black;font-family:Space Grotesk"
           justify="center"
           align="center"
         >
           <v-row
             class="ma-0 mt-10 ml-16 pa-0"
-            style="width:100%;font-size:35px;font-weight:300;color:#101010"
+            style="width:100%;font-size:35px;font-weight:300"
           >
             EN QUÉ ESTAMOS
           </v-row>
           <v-row
-            class="ma-0 mt-5 pa-0"
+            class="ma-0 mt-16 pa-0"
             style="width:100%;height:300px"
           >
             <v-row
@@ -136,10 +136,10 @@
                 eager
                 style="z-index:10;opacity:.85"
                 class="ma-0 mt-1 pa-0"
-                min-height="290px"
-                max-height="290px"
+                min-height="300px"
+                max-height="300px"
                 max-width="34vw"
-                src="mocks/hkhumancapital mockup.webp"
+                src="mocks/LAB-hkhumancapital.webp"
               ></v-img>
             </v-row>
             <v-row
@@ -151,8 +151,8 @@
                 eager
                 style="z-index:10;opacity:.85"
                 class="ma-0 mt-1 pa-0"
-                min-height="290px"
-                max-height="290px"
+                min-height="300px"
+                max-height="300px"
                 max-width="33vw"
                 src="mocks/LAB-Copeuch.webp"
               ></v-img>
@@ -200,7 +200,7 @@
             </v-row>
           </v-row>
           <v-row
-            class="ma-0 pa-0"
+            class="ma-0 mb-8 pa-0"
             style="font-size:15px"
           >
             <v-row
