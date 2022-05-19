@@ -65,7 +65,7 @@
             class="ma-0 pa-0"
             max-height="200px"
             max-width="200px"
-            src="mocks/LAB_HDC.webp"
+            src="mocks/hdc.png"
           ></v-img>
         </v-row>
         <v-row
@@ -97,7 +97,7 @@
             class="ma-0 pa-0"
             max-height="150px"
             max-width="150px"
-            src="mocks/hkhumancapital mockup.webp"
+            src="mocks/LAB-hkhumancapital_01.webp"
           ></v-img>
         </v-row>
         <v-row
@@ -115,7 +115,7 @@
         <a class="ma-0 mt-3 pa-0" href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
       </v-row>
       <v-row
-        class="ma-0 my-10 pa-0"
+        class="ma-0 mb-10 pa-0"
         style="width:100%"
         justify="center"
       >
@@ -128,9 +128,9 @@
             eager
             style="opacity:.85;z-index:10;min-width:100%"
             class="ma-0 pa-0"
-            max-height="180px"
-            max-width="180px"
-            src="mocks/LAB-Copeuch.webp"
+            max-height="250px"
+            max-width="250px"
+            src="mocks/copeuch.png"
           ></v-img>
         </v-row>
         <v-row

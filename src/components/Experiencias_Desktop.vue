@@ -91,25 +91,36 @@
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mt-8 pa-0"
+        class="ma-0 mt-16 pa-0"
         style="height:100vh"
         justify="center"
-        align="center"
       >
         <v-row
+          class="ma-0 pa-0"
+          style="width:100%"
+          justify="center"
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="max-width:50%;border-bottom: 1px solid grey"
+          >
+
+          </v-row>
+        </v-row>
+        <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="border-top: 1px solid black;border-bottom: 1px solid black;font-family:Space Grotesk"
+          style="font-family:Space Grotesk"
           justify="center"
           align="center"
         >
           <v-row
             class="ma-0 mt-10 ml-16 pa-0"
-            style="width:100%;font-size:35px;font-weight:300"
+            style="width:100%;font-size:35px;font-weight:300;color:#101010"
           >
             EN QUÉ ESTAMOS
           </v-row>
           <v-row
-            class="ma-0 mt-16 pa-0"
+            class="ma-0 mt-5 pa-0"
             style="width:100%;height:300px"
           >
             <v-row
@@ -120,11 +131,11 @@
                 contain
                 eager
                 style="max-height:40%;z-index:10;opacity:.85"
-                class="ma-0 pa-0"
-                min-height="300px"
-                max-height="300px"
+                class="ma-0 mt-8 pa-0"
+                min-height="260px"
+                max-height="260px"
                 width="33vw"
-                src="mocks/LAB_HDC.webp"
+                src="mocks/hdc.png"
               ></v-img>
             </v-row>
             <v-row
@@ -135,11 +146,11 @@
                 contain
                 eager
                 style="z-index:10;opacity:.85"
-                class="ma-0 mt-1 pa-0"
-                min-height="300px"
-                max-height="300px"
+                class="ma-0 mt-14 pa-0"
+                min-height="220px"
+                max-height="220px"
                 max-width="34vw"
-                src="mocks/LAB-hkhumancapital.webp"
+                src="mocks/LAB-hkhumancapital_01.webp"
               ></v-img>
             </v-row>
             <v-row
@@ -154,7 +165,7 @@
                 min-height="300px"
                 max-height="300px"
                 max-width="33vw"
-                src="mocks/LAB-Copeuch.webp"
+                src="mocks/copeuch.png"
               ></v-img>
             </v-row>
           </v-row>
@@ -256,11 +267,22 @@
               </v-row>
             </v-row>
           </v-row>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:100%"
+          justify="center"
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="max-width:50%;border-top: 1px solid grey"
+          >
 
+          </v-row>
         </v-row>
       </v-row>
       <v-row
-        class="ma-0 mb-8 pa-0"
+        class="ma-0 mt-16 mb-8 pa-0"
         style="min-height:80vh;max-height:80vh;width:100vw;transform:scale(1)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
         align="center"

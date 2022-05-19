@@ -22,10 +22,10 @@ export default new Vuex.Store({
     ],
     ciclo: [
       'Tanto para el desarrollo de software como proyectos de negocios nuestra aproximación y metodología esta basada en  agilidad.',
-      'Para nosotros Agilidad es un conjunto de principios, valores y ceremonias que al articularse y ser vividas de manera consciente, contribuyen a tomar mejores decisiones respecto al desafío que tenemos en frente  y facilitar a los equipos el descubrimiento continuo de mejores formas de hacer.'
+      'Para nosotras Agilidad es un conjunto de principios, valores y ceremonias que al articularse y ser vividas de manera consciente, contribuyen a tomar mejores decisiones respecto al desafío que tenemos en frente  y facilitar a los equipos el descubrimiento continuo de mejores formas de hacer.'
     ],
     historia: [
-      'Inquietos  por la lentitud del desarrollo de productos digitales,  frustrados del desarrollo de cascada,  cansados de que las organizaciones no incorporen a sus usuarios en el diseño y desarrollo de software....en marzo de 2017 nos propusimos cambiar la realidad:  nace experienciaLAB  impulsado la aceleración digital, desarrollo  ágil de ecosistemas digitales en base a tecnología emergente centrado en las necesidades de usuarios, orientando la  toma de decisiones en torno a datos y fomentando la adopción de metodologías ágiles al servicio de las organizaciones.' ,
+      'Inquietas por la lentitud del desarrollo de productos digitales,  frustrados del desarrollo de cascada,  cansados de que las organizaciones no incorporen a sus usuarios en el diseño y desarrollo de software....en marzo de 2017 nos propusimos cambiar la realidad:  nace experienciaLAB  impulsado la aceleración digital, desarrollo  ágil de ecosistemas digitales en base a tecnología emergente centrado en las necesidades de usuarios, orientando la  toma de decisiones en torno a datos y fomentando la adopción de metodologías ágiles al servicio de las organizaciones.' ,
       '<span>Somos un equipo  100% ágil y digital</span>.' ,
       'Trabajamos como un solo equipo con nuestros clientes, combinando nuestras capacidades, experiencia y conocimiento experto para co-crear el futuro de cualquier organización, habilitar el alineamiento organizacional, acelerar el  desarrollo de ecosistemas y productos digitales con funcionalidades atesoradas por sus usuarios.'
     ],

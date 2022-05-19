@@ -73,11 +73,22 @@
         class="ma-0 mt-16 pa-0"
         style="height:100vh"
         justify="center"
-        align="center"
       >
         <v-row
+          class="ma-0 pa-0"
+          style="width:100%"
+          justify="center"
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="max-width:50%;border-bottom: 1px solid grey"
+          >
+
+          </v-row>
+        </v-row>
+        <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="font-family:Space Grotesk;border-top: 1px solid black;border-bottom: 1px solid black"
+          style="font-family:Space Grotesk"
           justify="center"
           align="center"
         >
@@ -99,11 +110,11 @@
                 contain
                 eager
                 style="max-height:40%;z-index:10;opacity:.85"
-                class="ma-0 pa-0"
+                class="ma-0 mt-8 pa-0"
                 min-height="260px"
                 max-height="260px"
                 width="33vw"
-                src="mocks/LAB_HDC.webp"
+                src="mocks/hdc.png"
               ></v-img>
             </v-row>
             <v-row
@@ -114,11 +125,11 @@
                 contain
                 eager
                 style="z-index:10;opacity:.85"
-                class="ma-0 mt-1 pa-0"
-                min-height="260px"
-                max-height="260px"
+                class="ma-0 mt-14 pa-0"
+                min-height="220px"
+                max-height="220px"
                 max-width="34vw"
-                src="mocks/hkhumancapital mockup.webp"
+                src="mocks/LAB-hkhumancapital_01.webp"
               ></v-img>
             </v-row>
             <v-row
@@ -130,10 +141,10 @@
                 eager
                 style="z-index:10;opacity:.85"
                 class="ma-0 mt-1 pa-0"
-                min-height="260px"
-                max-height="260px"
+                min-height="300px"
+                max-height="300px"
                 max-width="33vw"
-                src="mocks/LAB-Copeuch.webp"
+                src="mocks/copeuch.png"
               ></v-img>
             </v-row>
           </v-row>
@@ -214,7 +225,7 @@
                 >
                 Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
                 </p>
-                <a class="ma-0 mt-1 mb-8 pa-0" href="https://www.hkhumancapital.cl/">www.hkhumancapital.cl</a>
+                <a class="ma-0 mt-4 mb-8 pa-0" style="text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
               </v-row>
             </v-row>
             <v-row
@@ -234,6 +245,18 @@
                 </p>
               </v-row>
             </v-row>
+          </v-row>
+        </v-row>
+        <v-row
+          class="ma-0 pa-0"
+          style="width:100%"
+          justify="center"
+        >
+          <v-row
+            class="ma-0 pa-0"
+            style="max-width:50%;border-top: 1px solid grey"
+          >
+
           </v-row>
         </v-row>
       </v-row>

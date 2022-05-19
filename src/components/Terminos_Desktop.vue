@@ -21,7 +21,7 @@
     <p
     class="ma-0 mx-16 pa-0 px-16"
     style="max-width:50vw;font-size:12px;text-align:justify;font-weight:normal;color:grey"
-    >Los Términos y Condiciones reemplazarán cualquier término o condición subsecuente incluido con cualquier orden de compra, ya sea que dichos términos o condiciones estén firmados por experiencialab ("experiencialab", "nosotros" o "nos").<br><br></p>
+    >Los Términos y Condiciones reemplazarán cualquier término o condición subsecuente incluido con cualquier orden de compra, ya sea que dichos términos o condiciones estén firmados por experiencialab ("experiencialab", "nosotras" o "nos").<br><br></p>
     <p
       class="ma-0 mx-16 pa-0 px-16"
       style="max-width:50vw;font-size:12px;text-align:justify;font-weight:normal;color:grey"
