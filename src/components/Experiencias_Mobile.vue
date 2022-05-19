@@ -112,7 +112,7 @@
         >
           Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
         </v-row>
-        <a class="ma-0 mt-3 pa-0" style:"text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
+        <a class="ma-0 mt-3 pa-0" style="text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
       </v-row>
       <v-row
         class="ma-0 mb-10 pa-0"
