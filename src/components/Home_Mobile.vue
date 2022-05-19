@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="opacity:.85;width:100vw;overflow:hidden"
+          style="opacity:.85;min-width:100vw;overflow:hidden"
         >
           <video
             class="ma-0 pa-0"
@@ -369,14 +369,13 @@
       </v-row>
       <v-row
         class="ma-0 mb-16 pa-0"
-        style="max-width:90vw"
-        align="center"
+        style="margin-top:80px !important;max-width:90vw"
         justify="center"
       >
         <v-row
           v-for="logo in this.logos" :key="logo"
           class="ma-0 pa-0"
-          style="height:80px;max-width:33%;min-width:33%"
+          style="height:80px;max-width:33%;min-width:28%"
           align="center"
           justify="center"
         >
