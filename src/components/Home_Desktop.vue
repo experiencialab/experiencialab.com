@@ -360,12 +360,14 @@
       </v-row>
       <v-row
         class="ma-0 mr-3 pa-0"
-        style="top:400px;z-index:1;position:absolute;color:white;height:70px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        style="top:400px;z-index:1;position:absolute;color:white;height:80px;box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3)"
+        align="center"
       >
         <v-row
           class="ma-0 pa-0"
           style="width:340px;height:100%;background-color:#101010"
           justify="center"
+          align="center"
         >
           <v-carousel
             hide-delimiters
@@ -383,6 +385,7 @@
             >
               <v-row
                 class="ma-0 pa-0"
+                style="height:60px"
               >
                 <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3);width:100%">{{ item.autor }}</p>
                 <p class="ma-0 ml-5 pa-0" style="color:white;font-size:12px;width:100%">{{ item.cargo }}</p>
