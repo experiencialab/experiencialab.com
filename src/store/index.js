@@ -64,6 +64,10 @@ export default new Vuex.Store({
         cita: "Agradecidos del aporte profesional y humano, el cual se tradujo en un plan de acción que funcionó",
         autor: "César Oyarzo Mansilla",
         cargo: "Gerente Áreas Ambulatorias UC-Christus"
+      },{
+        cita: "Trabajar con experienciaLAB ha sido una vivencia de transformación y crecimiento organizacional, fue la semilla de un cambio cultural para estructurar nuestra oferta de valor en digital y centrarla en nuestros beneficiarios y clientes, para lograr soluciones que realmente aporten valor.",
+        autor: "Tania Sutin",
+        cargo: "Gerenta Futuro Laboral e Innovación Social en Fundación Kodea"
       }
     ],
     servicios: [

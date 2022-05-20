@@ -22,7 +22,7 @@
         </v-row>
         <v-row
           class="ma-0 mt-1 pa-0"
-          style="opacity:.85;min-width:100vw;overflow:hidden"
+          style="opacity:.85;width:100vw;overflow:hidden"
         >
           <video
             class="ma-0 pa-0"
@@ -122,7 +122,7 @@
                   class="ma-0 pa-0"
                   style="width:40%;border-right:1px solid #03F7F7"
                 >
-                  <p class="ma-auto mt-2 pa-0 text-center" style="font-size:35px;max-height:80%;width:100%">1000+</p>
+                  <p class="ma-auto mt-2 pa-0 text-center" style="font-size:35px;max-height:80%;width:100%">2000+</p>
                   <p class="ma-0 mb-3 pa-0 text-center" style="font-size:15px;line-height:16px;width:100%">Profesionales y Usuarios</p>
                 </v-row>
               </v-row>
@@ -231,27 +231,36 @@
               align="center"
               justify="center"
             >
-              <video
+              <v-img
                 v-if="servicio.index == 0"
-                class="ma-0 mt-n16 pa-0"
-                style="height:100px;margin-top:-100px !important"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Lancha.mp4' type='video/mp4'>
-              </video>
-              <video
+                contain
+                eager
+                style="max-width:180px;margin-top:-80px !important"
+                class="ma-0 pa-0"
+                min-height="150px"
+                max-height="150px"
+                src="iconos/LAB--Lancha.gif"
+              ></v-img>
+              <v-img
                 v-if="servicio.index == 1"
-                class="ma-0 mt-n16 pa-0"
-                style="height:100px"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Cohete.mp4' type='video/mp4'>
-              </video>
-              <video
+                contain
+                eager
+                style="max-width:180px;margin-top:-60px !important"
+                class="ma-0 pa-0"
+                min-height="120px"
+                max-height="120px"
+                src="iconos/LAB--Cohete.gif"
+              ></v-img>
+              <v-img
                 v-if="servicio.index == 2"
-                class="ma-0 mt-n14 pa-0"
-                style="height:100px"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Avion.mp4' type='video/mp4'>
-              </video>
+                contain
+                eager
+                style="max-width:180px;margin-top:-40px !important"
+                class="ma-0 pa-0"
+                min-height="110px"
+                max-height="110px"
+                src="iconos/LAB--Avion.gif"
+              ></v-img>
             </v-row>
             <v-row
               v-if="servicio.index == 1"
@@ -359,7 +368,7 @@
                     align="center"
                   >
                     <p class="ma-0 ml-5 mt-3 pa-0" style="min-width:100%;color:white;text-shadow: 2px 2px 5px rgba(255,255,255,0.3)">{{ item.autor }}</p>
-                    <p class="ma-0 ml-5 pa-0" style="min-width:100%;color:white;font-size:10px">{{ item.cargo }}</p>
+                    <p class="ma-0 ml-5 pa-0" style="width:80%;line-height:1;color:white;font-size:10px">{{ item.cargo }}</p>
                   </v-row>
                 </v-carousel-item>
               </v-carousel>

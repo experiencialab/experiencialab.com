@@ -219,12 +219,12 @@
               style="width:33%"
             >
               <v-row
-                class="ma-0 mt-12 pa-0 text-center"
+                class="ma-0 mt-12 pa-0 text-left"
                 style="width:100%"
                 justify="center"
               >
                 <p
-                  class="ma-0 pa-0 text-justify"
+                  class="ma-0 pa-0 text-left"
                   style="max-width:80%;height:120px"
                 >
                 El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
@@ -236,17 +236,17 @@
               style="width:34%"
             >
               <v-row
-                class="ma-0 mt-12 pa-0 text-center"
+                class="ma-0 mt-12 pa-0 text-left"
                 style="width:100%"
                 justify="center"
               >
                 <p
-                  class="ma-0 pa-0 text-justify"
+                  class="ma-0 pa-0 text-left"
                   style="max-width:80%"
                 >
                 Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
                 </p>
-                <a class="ma-0 mt-4 mb-8 pa-0" style="text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
+                <a class="ma-0 mt-4 mb-8 pa-0" style="color:black;font-family:roboto;text-decoration:none;font-weight:bold" href="https://www.hkhumancapital.cl/">Ver plataforma digital</a>
               </v-row>
             </v-row>
             <v-row
@@ -254,12 +254,12 @@
               style="width:33%"
             >
               <v-row
-                class="ma-0 mt-12 pa-0 text-center"
+                class="ma-0 mt-12 pa-0 text-left"
                 style="width:100%"
                 justify="center"
               >
                 <p
-                  class="ma-0 pa-0 text-justify"
+                  class="ma-0 pa-0 text-left"
                   style="max-width:80%"
                 >
                 Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
@@ -384,7 +384,7 @@
                   v-if="experiencia.web"
                   class="ma-0 ml-5 pa-0"
                 >
-                  <a style="text-decoration:none;font-weight:bold" :href="experiencia.web" target="_blank">Ver plataforma digital</a><br><br>
+                  <a style="color:black;text-decoration:none;font-weight:bold" :href="experiencia.web" target="_blank">Ver plataforma digital</a><br><br>
                 </v-row>
                 <v-spacer></v-spacer>
                 <v-icon @click="$store.commit('extending', experiencia.index)" v-if="experiencia.text.length > 2 && !experiencia.extend" color="#101010" medium class="ma-0 mr-10 mb-5 mr-12 pa-0">mdi-plus</v-icon>

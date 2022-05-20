@@ -251,27 +251,36 @@
               align="center"
               justify="center"
             >
-              <video
+              <v-img
                 v-if="servicio.index == 0"
-                class="ma-0 mt-n10 pa-0"
-                style="height:130px"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Lancha.mp4' type='video/mp4'>
-              </video>
-              <video
+                contain
+                eager
+                style="max-width:180px;margin-top:-80px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="150px"
+                max-height="150px"
+                src="iconos/LAB--Lancha.gif"
+              ></v-img>
+              <v-img
                 v-if="servicio.index == 1"
-                class="ma-0 mt-n10 pa-0"
-                style="height:100px"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Cohete.mp4' type='video/mp4'>
-              </video>
-              <video
+                contain
+                eager
+                style="max-width:180px;margin-top:-40px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="130px"
+                max-height="130px"
+                src="iconos/LAB--Cohete.gif"
+              ></v-img>
+              <v-img
                 v-if="servicio.index == 2"
-                class="ma-0 mt-n10 pa-0"
-                style="height:100px"
-                playsinline autoplay muted loop>
-                <source src='iconos/LAB-Avion.mp4' type='video/mp4'>
-              </video>
+                contain
+                eager
+                style="max-width:180px;margin-top:-20px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="120px"
+                max-height="120px"
+                src="iconos/LAB--Avion.gif"
+              ></v-img>
             </v-row>
             <v-row
               v-if="servicio.index == 1"
