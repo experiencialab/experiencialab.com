@@ -385,7 +385,7 @@
                 style="height:70px"
               >
                 <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3);width:100%">{{ item.autor }}</p>
-                <p class="ma-0 ml-5 mt-n5 pa-0" style="color:white;font-size:12px;width:100%">{{ item.cargo }}</p>
+                <p class="ma-0 ml-5 mt-n3 pa-0" style="line-height:1;color:white;font-size:12px;width:100%">{{ item.cargo }}</p>
               </v-row>
             </v-carousel-item>
           </v-carousel>
