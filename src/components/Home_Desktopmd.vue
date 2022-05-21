@@ -382,7 +382,7 @@
             >
               <v-row
                 class="ma-0 pa-0"
-                style="height:60px"
+                style="height:70px"
               >
                 <p class="ma-0 ml-5 mt-3 pa-0" style="color:white;text-shadow: 2px 2px 5px rgba(0,0,0,0.3);width:100%">{{ item.autor }}</p>
                 <p class="ma-0 ml-5 pa-0" style="color:white;font-size:12px;width:100%">{{ item.cargo }}</p>
