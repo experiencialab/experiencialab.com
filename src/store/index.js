@@ -25,7 +25,7 @@ export default new Vuex.Store({
       'Para nosotras Agilidad es un conjunto de principios, valores y ceremonias que al articularse y ser vividas de manera consciente, contribuyen a tomar mejores decisiones respecto al desafío que tenemos en frente  y facilitar a los equipos el descubrimiento continuo de mejores formas de hacer.'
     ],
     historia: [
-      'Inquietas por la lentitud del desarrollo de productos digitales,  frustrados del desarrollo de cascada,  cansados de que las organizaciones no incorporen a sus usuarios en el diseño y desarrollo de software....en marzo de 2017 nos propusimos cambiar la realidad:  nace experienciaLAB  impulsado la aceleración digital, desarrollo  ágil de ecosistemas digitales en base a tecnología emergente centrado en las necesidades de usuarios, orientando la  toma de decisiones en torno a datos y fomentando la adopción de metodologías ágiles al servicio de las organizaciones.' ,
+      'Inquietas por la lentitud del desarrollo de productos digitales,  frustradas del desarrollo de cascada,  cansadas de que las organizaciones no incorporen a sus usuarios en el diseño y desarrollo de software....en marzo de 2017 nos propusimos cambiar la realidad:  nace experienciaLAB  impulsado la aceleración digital, desarrollo  ágil de ecosistemas digitales en base a tecnología emergente centrado en las necesidades de usuarios, orientando la  toma de decisiones en torno a datos y fomentando la adopción de metodologías ágiles al servicio de las organizaciones.' ,
       '<span>Somos un equipo  100% ágil y digital</span>.' ,
       'Trabajamos como un solo equipo con nuestros clientes, combinando nuestras capacidades, experiencia y conocimiento experto para co-crear el futuro de cualquier organización, habilitar el alineamiento organizacional, acelerar el  desarrollo de ecosistemas y productos digitales con funcionalidades atesoradas por sus usuarios.'
     ],
@@ -38,36 +38,46 @@ export default new Vuex.Store({
       {
         cita: "Estoy más que agradecido por lo que hemos hecho en conjunto, el desafío y la apuesta era gigante, después de 6 meses de arduo trabajo puedo decir que las soluciones digitales de i-Construye y Toc Toc se trabajan en agilidad, y lo más importante: la organización tiene una cultura digital donde los equipos y clientes están felices, nuestro time to market nos tiene optimistas y motivados",
         autor: "Nicolas Errázuriz",
-        cargo: "Director Ejecutivo i-Construye - Toc Toc"
+        cargo: "Director Ejecutivo, i-Construye - Toc Toc"
       },
       {
         cita: "El equipo de LAB nos desafió a reconocer una nueva realidad, desafió al management y nos indujo a considerar soluciones radicales",
         autor: "Pablo Turner",
-        cargo: "Presidente Directorio AD Retail"
+        cargo: "Presidente Directorio, AD Retail"
       },
       {
         cita: "Trabajar con Experiencia LAB nos empujó a tomar decisiones, desafiarnos y pensar definitivamente fuera de la caja.... Hemos logrado avances reales y poner sobre los productos que diseñamos en conjunto, experiencias superadoras para nuestros clientes.",
         autor: "Andrés Pérez Algarra",
-        cargo: "Director Comercial Corporativo Cementos Polpaico"
+        cargo: "Director Comercial Corporativo, Cementos Polpaico"
       },
       {
         cita: "Agradezco con todo mi corazón el aprendizaje que he tenido, la compañía y el apoyo de todo el equipo de experiencia LAB en este proyecto",
         autor: "Marcos Kulka",
-        cargo: "Gerente general Fundación Chile"
+        cargo: "Gerente General, Fundación Chile"
       },
       {
         cita: "Gracias a  experienciaLAB conocí una nueva forma de trabajar y desarrollar  proyectos! Lo que más valoro es lo muchísimo que aprendí en muy poco tiempo! Esta es una nueva forma de trabajar, de hacer las cosas, y de crear profesionales enfocados a proyectos 5.0 que son los que cambian la industria.",
         autor: "Dunia Alangua",
-        cargo: "Gerente servicio al cliente Polpaico"
+        cargo: "Gerente Servicio al Cliente, Cementos Polpaico"
       },
       {
         cita: "Agradecidos del aporte profesional y humano, el cual se tradujo en un plan de acción que funcionó",
         autor: "César Oyarzo Mansilla",
-        cargo: "Gerente Áreas Ambulatorias UC-Christus"
+        cargo: "Gerente Áreas Ambulatorias, UC-Christus"
       },{
         cita: "Trabajar con experienciaLAB ha sido una vivencia de transformación y crecimiento organizacional, fue la semilla de un cambio cultural para estructurar nuestra oferta de valor en digital y centrarla en nuestros beneficiarios y clientes, para lograr soluciones que realmente aporten valor.",
         autor: "Tania Sutin",
-        cargo: "Gerenta Futuro Laboral e Innovación Social en Fundación Kodea"
+        cargo: "Gerenta Futuro Laboral e Innovación Social, Fundación Kodea"
+      },
+      {
+        cita: "Nos empujaron a pensar más allá, poder trabajar en equipo buscando soluciones, buscando nuevas experiencias, y la verdad que estamos muy agradecidas de todo el proceso que vivimos con ustedes.",
+        autor: "Fernanda Mackenna",
+        cargo: "Jefa de Oficina y Proyectos, HK Human Capital"
+      },
+      {
+        cita: "Hemos tenido una muy buena y ágil experiencia de trabajo para reconocer trayectorias de inclusión de personas en situación de calle y aproximarnos a herramientas que favorezcan y fortalezcan nuestros trabajo dentro del Hogar de Cristo. Experiencia Lab con su equipo agudo, competente y versátil ha contribuido de manera significativa en este proceso.",
+        autor: "Andrés Millar",
+        cargo: "Director Técnico Área Inclusión Integral, Hogar de Cristo"
       }
     ],
     servicios: [
@@ -96,7 +106,7 @@ export default new Vuex.Store({
     equipo: [
       {
         index: 1,
-        nombre: 'Vivi Ponce',
+        nombre: 'Vivi Serri',
         cargo: 'CEO and CTO: Chief technology officer',
         bio: ['Consultora experta en la concepción de la próxima generación de features en la experiencia digital de usuarios para ecosistemas y productos digitales basados en tecnología emergente. Agilista articuladora de procesos de co-creación e intervenciones de shock en organizaciones.',
         'Gluten free, vegetariana, bike lover, inmigrante italiana en Chile, hacer que las cosas pasen y honestidad brutal son mis superpoderes.',
@@ -164,7 +174,7 @@ export default new Vuex.Store({
       {
         index: 5,
         nombre: 'Solange Morello',
-        cargo: 'Diseñadora UX/UI Trainee',
+        cargo: 'Diseñadora UX/UI',
         bio: [
           'Observadora, comprometida y entusiasta | Dog lover 🖤 | Aficionada a la cocina y las plantas.',
           'Fan de disciplinas orientales como el Kintsugi y Katazome.',
