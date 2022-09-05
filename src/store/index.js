@@ -102,6 +102,13 @@ export default new Vuex.Store({
         letra: 'c.',
         texto: '¿Quieres más delivery, mejor time to market, productos digitales más centrados en tus usuarios? Nos especializamos en hacer que equipos de desarrollo digital adopten metodologías ágiles a través de entrenamiento y acompañamiento por 4 sprints (8 semanas), logrando desarrollo de productos digitales sorprendentes!'
       }
+      // {
+      //   index: 3,
+      //   titulo: 'Planeación Estratégica Ágil! (No a las formas de hacer obsoletas)',
+      //   foto: 'fotos/nuevo_producto_agil.png',
+      //   letra: 'd.',
+      //   texto: 'En un entorno turbulento, ambiguo, incierto donde lo único constante es el cambio, co-creamos junto a las organizaciones sus líneas estratégicas de desarrollo en cuatro simples pasos: <>1)Inmersión a la realidad y contexto que enfrentan, 2)Assessments y pulsos organizacionales y de Mercado para cuantificar oportunidades, 3)Co-creación y diseño participativo del futuro proyectado, 4)Desarrollo de su hoja de ruta e iniciativas claves para los próximos 3-6-9 y 12 meses móviles.'
+      // }
     ],
     equipo: [
       {
@@ -329,6 +336,20 @@ export default new Vuex.Store({
           'Desde Diciembre de 2021 a Marzo de 2022, trabajamos con alrededor de 100 microemprendedoras de subsistencia para co-crear la plataforma digital que les facilitará: colaborar, adquirir destrezas, manejar herramientas digitales y metodologías de trabajo que eleven el nivel de rentabilidad de sus negocios y potencien nuevos negocios conjuntos entre emprendedores de la comunidad.'
         ],
         extend: false
+      }
+    ],
+    ongoings: [
+      {
+        index: 0,
+        nombre: 'Duoc - Formación Técnico Profesional',
+        image: 'mocks/lab_experiencias_duoc.png',
+        text: 'DUOC tiene la oportunidad de explorar y descubrir de la mano de experienciaLAB disruptivas soluciones para la educación superior y continua.'
+      },
+      {
+        index: 1,
+        nombre: 'Coopeuch - Institución Financiera Cooperativa',
+        image: 'mocks/lab_experiencias_coopeuch.png',
+        text: 'Coming soon...'
       }
     ],
     trabaja: "En LAB queremos más talento digital! Quieres ser parte?<br>Preséntanos los tres productos digitales más atesorables en que hayas participado. Por favor especifica tu rol y el desafío que enfrentaron.",

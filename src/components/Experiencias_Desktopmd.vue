@@ -68,10 +68,31 @@
           </v-row>
         </v-row>
       </v-row>
-
       <v-row
-        class="ma-0 mt-16 pa-0"
-        style="height:100vh"
+        class="ma-0 mt-10 mx-16 pa-0"
+        style="width:100vw;height:20vh;margin-bottom:140px !important"
+        justify="center"
+      >
+        <v-row
+          v-for="logo in this.logos" :key="logo"
+          class="ma-0 pa-0"
+          style="height:80px;max-width:12%;min-width:10%"
+          align="center"
+          justify="center"
+        >
+          <v-img
+            style="opacity:0.75"
+            class="ma-0 mt-3 pa-0"
+            eager
+            max-height="110"
+            max-width="90px"
+            :src="logo"
+          ></v-img>
+        </v-row>
+      </v-row>
+      <v-row
+        class="ma-0 pa-0"
+        style="height:700px"
         justify="center"
       >
         <v-row
@@ -88,161 +109,72 @@
         </v-row>
         <v-row
           class="ma-0 ml-4 mr-5 pa-0"
-          style="font-family:Space Grotesk"
+          style="font-family:Space Grotesk;height:450px"
           justify="center"
           align="center"
         >
           <v-row
-            class="ma-0 mt-10 ml-16 pa-0"
+            class="ma-0 mt-12 pa-0"
             style="width:100%;font-size:35px;font-weight:300;color:#101010"
+            justify="center"
           >
             EN QUÉ ESTAMOS
           </v-row>
           <v-row
-            class="ma-0 mt-5 pa-0"
-            style="width:100%;height:300px"
+            class="ma-0 pa-0"
+            align="center"
+            justify="center"
           >
             <v-row
+              v-for="ongoing in $store.state.ongoings" :key="ongoing.index"
               class="ma-0 pa-0"
-              style="height:300px;width:33%"
-            >
-              <v-img
-                contain
-                eager
-                style="max-height:40%;z-index:10;opacity:.85"
-                class="ma-0 mt-8 pa-0"
-                min-height="260px"
-                max-height="260px"
-                width="33vw"
-                src="mocks/hdc.png"
-              ></v-img>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:34%"
-            >
-              <v-img
-                contain
-                eager
-                style="z-index:10;opacity:.85"
-                class="ma-0 mt-14 pa-0"
-                min-height="220px"
-                max-height="220px"
-                max-width="34vw"
-                src="mocks/LAB-hkhumancapital_01.webp"
-              ></v-img>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:33%"
-            >
-              <v-img
-                contain
-                eager
-                style="z-index:10;opacity:.85"
-                class="ma-0 mt-1 pa-0"
-                min-height="300px"
-                max-height="300px"
-                max-width="33vw"
-                src="mocks/copeuch.png"
-              ></v-img>
-            </v-row>
-          </v-row>
-          <v-row
-            class="ma-0 mt-5 pa-0"
-            style="width:100%;height:0px"
-          >
-            <v-row
-              class="ma-0 pa-0"
-              style="width:33%"
+              style="max-width:30%;height:100%"
+              align="center"
               justify="center"
             >
-              <p
-                style="font-weight:bold"
-                class="ma-0 pa-0 text-center"
-              >
-                Hogar de Cristo - Dirección Social
-              </p>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:34%"
-              justify="center"
-            >
-              <p
-                style="font-weight:bold"
-                class="ma-0 pa-0 text-center"
-              >
-                HK Human Capital – Executive Search
-              </p>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:33%"
-              justify="center"
-            >
-              <p
-                style="font-weight:bold"
-                class="ma-0 pa-0 text-center"
-              >
-                Coopeuch – Institución Financiera Cooperativa
-              </p>
-            </v-row>
-          </v-row>
-          <v-row
-            class="ma-0 mb-8 pa-0"
-            style="font-size:15px"
-          >
-            <v-row
-              class="ma-0 pa-0"
-              style="width:33%"
-            >
               <v-row
-                class="ma-0 mt-12 pa-0 text-left"
-                style="width:100%"
+                class="ma-0 mt-n16 pa-0"
+                style="height:100%;font-weight:bold"
+                align="center"
                 justify="center"
               >
-                <p
-                  class="ma-0 pa-0 text-left"
-                  style="max-width:80%;height:120px"
+                <v-img
+                  contain
+                  eager
+                  style="z-index:10;opacity:.85"
+                  class="ma-0 mt-14 pa-0"
+                  min-height="220px"
+                  max-height="220px"
+                  width="100%"
+                  :src="ongoing.image"
+                ></v-img>
+                <v-row
+                  class="ma-0 pa-0"
+                  style="width:100%"
+                  align="center"
+                  justify="center"
                 >
-                El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
-                </p>
-              </v-row>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:34%"
-            >
-              <v-row
-                class="ma-0 mt-12 pa-0 text-left"
-                style="width:100%"
-                justify="center"
-              >
-                <p
-                  class="ma-0 pa-0 text-left"
-                  style="max-width:80%"
+                  {{ ongoing.nombre }}
+                </v-row>
+                <v-row
+                  class="ma-0 pa-0"
+                  style="font-weight:normal;width:34%;min-height:130px"
+                  align="center"
                 >
-                Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
-                </p>
-              </v-row>
-            </v-row>
-            <v-row
-              class="ma-0 pa-0"
-              style="width:33%"
-            >
-              <v-row
-                class="ma-0 mt-12 pa-0 text-left"
-                style="width:100%"
-                justify="center"
-              >
-                <p
-                  class="ma-0 pa-0 text-left"
-                  style="max-width:80%"
-                >
-                Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
-                </p>
-              </v-row>
+                  <v-row
+                    class="ma-0 mt-12 pa-0 text-left"
+                    style="width:100%"
+                    justify="center"
+                  >
+                    <p
+                      class="ma-0 pa-0 text-left"
+                      style="max-width:80%"
+                    >
+                      {{ ongoing.text }}
+                    </p>
+                  </v-row>
+                </v-row>
+              </v-row> 
             </v-row>
           </v-row>
         </v-row>
@@ -261,7 +193,7 @@
       </v-row>
       <v-row
         class="ma-0 mb-8 pa-0"
-        style="margin-top:200px !important;min-height:80vh;width:100vw;transform:scale(1)"
+        style="min-height:80vh;width:100vw;transform:scale(1)"
         v-for="experiencia in $store.state.experiencias"  :key="experiencia.index"
         align="center"
       >
@@ -376,28 +308,6 @@
           style="width:5vw"
         >
 
-        </v-row>
-      </v-row>
-      <v-row
-        class="ma-0 mx-16 pa-0"
-        style="width:100vw;height:20vh;margin-bottom:140px !important"
-        justify="center"
-      >
-        <v-row
-          v-for="logo in this.logos" :key="logo"
-          class="ma-0 pa-0"
-          style="height:80px;max-width:12%;min-width:10%"
-          align="center"
-          justify="center"
-        >
-          <v-img
-            style="opacity:0.75"
-            class="ma-0 mt-3 pa-0"
-            eager
-            max-height="110"
-            max-width="90px"
-            :src="logo"
-          ></v-img>
         </v-row>
       </v-row>
     </v-row>

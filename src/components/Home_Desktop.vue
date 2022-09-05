@@ -281,6 +281,16 @@
                 max-height="120px"
                 src="iconos/LAB--Avion.gif"
               ></v-img>
+              <v-img
+                v-if="servicio.index == 3"
+                contain
+                eager
+                style="max-width:180px;margin-top:-20px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="120px"
+                max-height="120px"
+                src="iconos/Bicicleta.gif"
+              ></v-img>
             </v-row>
             <v-row
               v-if="servicio.index == 1"

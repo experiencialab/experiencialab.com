@@ -40,109 +40,73 @@
     </v-row>
 
     <v-row
-      class="ma-0 mt-16 mx-5 mb-16 pa-0"
-      style="transform:scale(1);border-top: 1px solid black;border-bottom: 1px solid black"
+      class="ma-0 mt-16 mb-16 pa-0"
+      style="max-width:100vw;transform:scale(1);border-top: 1px solid #101010;border-bottom: 1px solid #101010;height:600px"
       justify="center"
     >
       <v-row
-        class="ma-0 mt-8 ml-16 pa-0"
+        class="ma-0 mt-16 pa-0"
         style="width:100%;font-size:25px;font-weight:300;color:#101010"
+        justify="center"
       >
         EN QUÉ ESTAMOS
       </v-row>
       <v-row
-        class="ma-0 my-10 pa-0"
-        style="width:100%"
-      >
-        <v-row
-          class="ma-0 pa-0"
-          style="width:100%"
-        >
-          <v-img
-            contain
-            eager
-            style="opacity:.85;z-index:10;min-width:100%"
-            class="ma-0 pa-0"
-            max-height="200px"
-            max-width="200px"
-            src="mocks/hdc.png"
-          ></v-img>
-        </v-row>
-        <v-row
-          class="ma-0 mt-4 pa-0"
-          style="width:100%;font-weight:bold"
-          justify="center"
-        >
-          Hogar de Cristo – Dirección Social
-        </v-row>
-        <v-row
-          class="ma-0 mx-6 mt-6 pa-0 text-left"
-        >
-          El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes. En experienciaLAB estamos trabajando en conjunto al equipo de Hogar de Cristo para tangibilizar soluciones digitales al servicio de esta realidad.
-        </v-row>
-      </v-row>
-      <v-row
-        class="ma-0 my-10 pa-0"
-        style="width:100%"
+        class="ma-0 pa-0"
+        style="max-height:100vw;margin-top:-200px !important"
+        align="center"
         justify="center"
       >
         <v-row
+          v-for="ongoing in $store.state.ongoings" :key="ongoing.index"
           class="ma-0 pa-0"
-          style="width:100%"
-        >
-          <v-img
-            contain
-            eager
-            style="opacity:.85;z-index:10;min-width:100%"
-            class="ma-0 pa-0"
-            max-height="150px"
-            max-width="150px"
-            src="mocks/LAB-hkhumancapital_01.webp"
-          ></v-img>
-        </v-row>
-        <v-row
-          class="ma-0 mt-4 pa-0"
-          style="width:100%;font-weight:bold"
+          style="max-width:50vw;height:100%"
+          align="center"
           justify="center"
         >
-          HK Human Capital – Executive Search
-        </v-row>
-        <v-row
-          class="ma-0 mx-6 mt-6 pa-0 text-left"
-        >
-          Estamos colaborando con el equipo de  HK en la aceleración de su transformación digital, poniendo en el centro de nuestro quehacer las expectativas de sus usuarios, clientes, la naturaleza evolutiva del negocio y las múltiples oportunidades que nos impone el entorno tecnológico emergente.
-        </v-row>
-      </v-row>
-      <v-row
-        class="ma-0 mb-10 pa-0"
-        style="width:100%"
-        justify="center"
-      >
-        <v-row
-          class="ma-0 pa-0"
-          style="width:100%"
-        >
-          <v-img
-            contain
-            eager
-            style="opacity:.85;z-index:10;min-width:100%"
+          <v-row
             class="ma-0 pa-0"
-            max-height="250px"
-            max-width="250px"
-            src="mocks/copeuch.png"
-          ></v-img>
-        </v-row>
-        <v-row
-          class="ma-0 mt-4 pa-0"
-          style="width:100%;font-weight:bold"
-          justify="center"
-        >
-          Coopeuch – Institución Financiera Cooperativa
-        </v-row>
-        <v-row
-          class="ma-0 mx-6 mt-6 pa-0 text-left"
-        >
-          Estamos asesorando al equipo de Coopeuch en la estrategia de tangibilización de la experiencia digital que viven sus socios, con el propósito de favorecer  la vinculación hacia sus servicios claves e interacciones libres de fricciones.
+            style="margin-top:-100px !important;width:100%;height:100%;font-weight:bold"
+            align="center"
+            justify="center"
+          >
+            <v-img
+              contain
+              eager
+              style="z-index:10;opacity:.85"
+              class="ma-0 pa-0"
+              min-height="120px"
+              max-height="120px"
+              width="100%"
+              :src="ongoing.image"
+            ></v-img>
+            <v-row
+              class="ma-0 pa-0 mt-n6 text-center"
+              style="max-width:90%"
+              align="center"
+              justify="center"
+            >
+              {{ ongoing.nombre }}
+            </v-row>
+            <v-row
+              class="ma-0 mt-n6 pa-0"
+              style="font-weight:normal;min-width:80%;max-width:80%;font-size:15px;height:130px"
+              align="center"
+            >
+              <v-row
+                class="ma-0 pa-0 text-left"
+                style="width:100%"
+                justify="center"
+              >
+                <p
+                  class="ma-0 pa-0 text-left"
+                  style="max-width:100%"
+                >
+                  {{ ongoing.text }}
+                </p>
+              </v-row>
+            </v-row>
+          </v-row>
         </v-row>
       </v-row>
     </v-row>
