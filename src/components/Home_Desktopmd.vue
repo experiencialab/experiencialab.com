@@ -219,8 +219,8 @@
           >
             <v-row
               class="ma-0 pa-0"
-              style="width:100%;height:10vh"
-              align="center"
+              style="max-width:100%;height:10vh"
+              
             >
               <v-row
                 class="ma-0 pa-0"
@@ -231,8 +231,9 @@
               </v-row>
               <v-row
                 class="ma-0 ml-6 pa-0"
-                style="font-size:22px;font-family:Space Grotesk;font-weight:700"
-              >
+                style="font-size:22px;font-family:Space Grotesk;font-weight:700;max-height:100%;line-height:22px;max-width:600px"
+                align="center"
+                >
                 {{ $store.state.servicios[servicio.index].titulo }}
               </v-row>
             </v-row>
@@ -280,6 +281,16 @@
                 min-height="120px"
                 max-height="120px"
                 src="iconos/LAB--Avion.gif"
+              ></v-img>
+              <v-img
+                v-if="servicio.index == 3"
+                contain
+                eager
+                style="max-width:180px;margin-top:-20px !important"
+                class="ma-0 ml-5 pa-0"
+                min-height="120px"
+                max-height="120px"
+                src="iconos/Bicicleta.gif"
               ></v-img>
             </v-row>
             <v-row
