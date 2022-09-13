@@ -153,6 +153,8 @@
           <v-icon v-if="experiencia.index == 6" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
           <v-icon v-if="experiencia.index == 7" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$m</v-icon>
           <v-icon v-if="experiencia.index == 8" class="ma-0 ml-5 mr-10  pa-0" size="50" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$s</v-icon>
+          <v-icon v-if="experiencia.index == 9" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
+          <v-icon v-if="experiencia.index == 10" class="ma-0 ml-12 mr-16 pa-0" size="60" style="filter: invert(90%) sepia(30%) saturate(4740%) hue-rotate(111deg) brightness(108%) contrast(104%)">$xl</v-icon>
         </v-row>
         <v-row
           class="ma-0 mt-n5 pa-0"

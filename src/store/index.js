@@ -336,6 +336,29 @@ export default new Vuex.Store({
           'Desde Diciembre de 2021 a Marzo de 2022, trabajamos con alrededor de 100 microemprendedoras de subsistencia para co-crear la plataforma digital que les facilitará: colaborar, adquirir destrezas, manejar herramientas digitales y metodologías de trabajo que eleven el nivel de rentabilidad de sus negocios y potencien nuevos negocios conjuntos entre emprendedores de la comunidad.'
         ],
         extend: false
+      },
+      {
+        index: 9,
+        nombre: 'HK',
+        logo: "logos/HK-human-capital_logo.png",
+        mock: 'mocks/LAB-HK.webp',
+        text: [
+          'La industria de la contratación ha experimentado cambios importantes en los últimos años. Sin duda, las nuevas tecnologías y las prácticas de contratación avanzadas influyeron, y esta irrupción no muestra signos de desaceleración.', 
+          '<br>La Batalla Global por el talento es ¡Ser el mejor desafío para una persona y sus súper poderes!',
+          '<br> En este contexto hemos acompañado y co-creado el Diseño y estrategia de desarrollo de una plataforma digital multilateral basada en inteligencia artificial y gamificación para búsqueda, conexión y selección de talentos críticos para las organizaciones.'
+        ],
+        extend: false
+      },
+      {
+        index: 10,
+        nombre: 'Hogar de Cristo',
+        logo: "logos/hogar_de_cristo.png",
+        mock: 'mocks/LAB-HDC.webp',
+        text: [
+          'El contexto social, económico y político de hoy ha generado nuevas vulnerabilidades, específicamente las personas en situación de calle aumentan y experimentan problemáticas urgentes.',
+          '<br> En conjunto con el Hogar de Cristo hemos co-diseñado la nueva experiencia de las personas en situación de calle para tangibilizar soluciones digitales al servicio de esta realidad. visualizando el viaje actual del usuario desde una mirada holística, co-diseñando su experiencia ideal e identificando soluciones factibles e implementables.'
+        ],
+        extend: false
       }
     ],
     ongoings: [
